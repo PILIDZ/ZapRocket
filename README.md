@@ -5,6 +5,58 @@ WordPress 性能优化插件：站点瘦身、CDN / 预载 / 懒加载 / 脚本�
 > 英文名：**ZapRocket**　中文名：**闪电WP性能**　版本：**1.2.1**  
 > 与 [WP Rocket](https://wp-rocket.me/) **无关联**。
 
+<p align="center">
+  <img src=".wordpress-org/banner-1544x500.png" alt="ZapRocket banner" width="100%" />
+</p>
+
+## 界面预览
+
+### 欢迎页
+
+后台欢迎页展示插件简介与核心能力入口。
+
+![欢迎页](screenshot-1.png)
+
+### 概览
+
+总开关、状态卡片与低风险推荐。
+
+![概览](screenshot-2.png)
+
+### 站点瘦身
+
+页头清理与功能开关，按需关闭冗余输出。
+
+| 页头清理 | 功能开关 |
+|:---:|:---:|
+| ![页头清理](screenshot-3.png) | ![功能开关](screenshot-4.png) |
+
+### 速度优化
+
+媒体懒加载、整页缓存与高级规则。
+
+| 媒体优化 | 高级规则 |
+|:---:|:---:|
+| ![媒体优化](screenshot-5.png) | ![高级规则](screenshot-6.png) |
+
+### 对象存储
+
+多云厂商对接：阿里云、腾讯云、R2、七牛与兼容 S3。
+
+![对象存储](screenshot-7.png)
+
+### 数据库清理
+
+扫描预估体积后按项清理；动手前请备份。
+
+![数据库清理](screenshot-8.png)
+
+### 英文界面
+
+插件后台支持中英切换（仅本插件界面，不改站点语言）。
+
+![英文欢迎页](screenshot-9.png)
+
 ## 功能概览
 
 | 模块 | 说明 |
@@ -25,7 +77,7 @@ WordPress 性能优化插件：站点瘦身、CDN / 预载 / 懒加载 / 脚本�
 
 ## 安装
 
-1. 将本仓库目录放到 `wp-content/plugins/`（或安装发行 zip）
+1. 将本仓库目录放到 `wp-content/plugins/`（或安装 [Releases](https://gitcode.com/pilidz/ZapRocket/releases) 中的发行 zip）
 2. 确认目录内包含 `pili-core/bootstrap.php`
 3. 在「插件」中启用 **ZapRocket / 闪电WP性能**
 4. 打开设置：先开概览总开关，再按需打开各分区
@@ -35,27 +87,25 @@ WordPress 性能优化插件：站点瘦身、CDN / 预载 / 懒加载 / 脚本�
 - 产品页：https://www.pilipost.net/products/zaprocket/
 - 更多产品：https://www.pilipost.net/
 - 作者：https://gitcode.com/pilidz
-- WordPress 商店用说明见仓库内 [`readme.txt`](./readme.txt)（与 Git 本 README 用途不同）
+- WordPress 商店用说明见 [`readme.txt`](./readme.txt)（与本 README 用途不同）
 
 ## 目录说明
 
 ```
 zaprocket.php       # 插件入口
 admin/              # 后台分区与欢迎页
-includes/           # 业务模块（瘦身 / 速度 / OSS / 数据库等）
 assets/             # 后台样式与脚本
+includes/           # 业务模块（瘦身 / 速度 / OSS / 数据库等）
 languages/          # 语言包（文本域：zaprocket-wp）
 pili-core/          # 内置设置框架运行时
 vendor/             # Composer 依赖（如 AWS SDK）
-screenshot-*.png    # WordPress.org 截图
+screenshot-*.png    # 界面截图
 .wordpress-org/     # 商店横幅资源
 ```
 
 ## 开发说明
 
 本仓库内容与 **WordPress.org 发行包** 对齐，不包含内部文档、Cursor 配置、i18n 构建源文件等开发附件。
-
-本地二次开发时，请在完整工作副本中维护；向本仓库推送前请保持与商店包文件范围一致。
 
 ## 许可证
 
