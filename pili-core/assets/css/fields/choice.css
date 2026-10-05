@@ -1,0 +1,147 @@
+/**
+ * XUN choice field — 单选/多选条目（无外层大框）
+ */
+
+.pili-choice-field {
+	width: 100%;
+}
+
+.pili-choice-list {
+	display: flex;
+	flex-direction: column;
+	gap: 0.625rem;
+}
+
+.pili-choice-field--inline .pili-choice-list {
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.pili-choice-item {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.75rem;
+	margin: 0;
+	padding: 0.875rem 1rem;
+	border: 1px solid #e5e7eb;
+	border-radius: 0.75rem;
+	background: #fff;
+	cursor: pointer;
+	transition: border-color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+	box-sizing: border-box;
+}
+
+.pili-choice-field--row .pili-choice-item {
+	border: 0;
+	border-radius: 0.5rem;
+	padding: 0.625rem 0.5rem;
+	background: transparent;
+}
+
+.pili-choice-field--row .pili-choice-item:hover {
+	background: #f9fafb;
+}
+
+.pili-choice-item:hover {
+	border-color: #cbd5e1;
+}
+
+.pili-choice-item.is-selected {
+	border-color: var(--pili-choice-border, #93c5fd);
+	background: var(--pili-choice-bg, #eff6ff);
+	box-shadow: 0 0 0 3px var(--pili-choice-ring, rgba(37, 99, 235, 0.18));
+}
+
+.pili-choice-field--row .pili-choice-item.is-selected {
+	box-shadow: none;
+	background: var(--pili-choice-bg, #eff6ff);
+}
+
+.pili-choice-control {
+	position: relative;
+	flex-shrink: 0;
+	width: 1.125rem;
+	height: 1.125rem;
+	margin-top: 0.125rem;
+}
+
+.pili-choice-input {
+	position: absolute;
+	inset: 0;
+	opacity: 0;
+	margin: 0;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.pili-choice-indicator {
+	display: block;
+	width: 1.125rem;
+	height: 1.125rem;
+	border: 2px solid #d1d5db;
+	border-radius: 9999px;
+	background: #fff;
+	box-sizing: border-box;
+	transition: border-color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.pili-choice-field[data-multiple="1"] .pili-choice-indicator {
+	border-radius: 0.25rem;
+}
+
+.pili-choice-item.is-selected .pili-choice-indicator {
+	border-color: var(--pili-choice-accent, #2563eb);
+	background: var(--pili-choice-accent, #2563eb);
+	box-shadow: inset 0 0 0 3px #fff;
+}
+
+.pili-choice-body {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+	min-width: 0;
+	flex: 1;
+}
+
+.pili-choice-icon {
+	display: inline-flex;
+	align-items: center;
+	font-size: 1.125rem;
+	line-height: 1;
+	color: var(--pili-choice-accent, #2563eb);
+	margin-bottom: 0.125rem;
+}
+
+.pili-choice-field--inline .pili-choice-item {
+	flex: 1 1 12rem;
+	min-width: 11rem;
+}
+
+.pili-choice-label {
+	font-size: 0.875rem;
+	font-weight: 500;
+	line-height: 1.45;
+	color: #111827;
+}
+
+.pili-choice-item.is-selected .pili-choice-label {
+	color: #0f172a;
+}
+
+.pili-choice-desc {
+	font-size: 0.75rem;
+	line-height: 1.45;
+	color: #6b7280;
+}
+
+.pili-choice-item:focus-within {
+	outline: none;
+}
+
+.pili-choice-item:focus-within .pili-choice-indicator {
+	box-shadow: 0 0 0 3px var(--pili-choice-ring, rgba(37, 99, 235, 0.18));
+}
+
+.pili-choice-item.is-selected:focus-within .pili-choice-indicator {
+	box-shadow: inset 0 0 0 3px #fff, 0 0 0 3px var(--pili-choice-ring, rgba(37, 99, 235, 0.18));
+}

@@ -1,0 +1,133 @@
+/**
+ * XUN record_viewer field — 对齐 table 字段紧凑样式 + 正圆翻页按钮
+ */
+
+/* 正圆 icon 按钮（避免 WP 后台把按钮拉成椭圆） */
+.pili-record-viewer-nav-btn {
+	display: inline-flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	width: 2.5rem !important;
+	height: 2.5rem !important;
+	min-width: 2.5rem !important;
+	min-height: 2.5rem !important;
+	max-width: 2.5rem !important;
+	max-height: 2.5rem !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	flex: 0 0 2.5rem !important;
+	border-radius: 50% !important;
+	border: 1px solid #d1d5db !important;
+	background: #fff !important;
+	color: #4b5563 !important;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04) !important;
+	cursor: pointer !important;
+	transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease !important;
+	box-sizing: border-box !important;
+	line-height: 1 !important;
+}
+
+.pili-record-viewer-nav-btn i {
+	font-size: 1.25rem !important;
+	line-height: 1 !important;
+	pointer-events: none;
+}
+
+.pili-record-viewer-nav-btn:hover:not(:disabled) {
+	background: #f9fafb !important;
+	color: #111827 !important;
+	border-color: #9ca3af !important;
+}
+
+.pili-record-viewer-nav-btn:focus {
+	outline: none !important;
+	box-shadow: 0 0 0 2px #fff, 0 0 0 4px #3b82f6 !important;
+}
+
+.pili-record-viewer-nav-btn:disabled {
+	opacity: 0.4 !important;
+	cursor: not-allowed !important;
+}
+
+/* 页码：嵌套 XUN text 字段，收窄宽度 */
+.pili-record-viewer-page-wrap {
+	flex-shrink: 0;
+	width: 5.5rem;
+}
+
+.pili-record-viewer-page-wrap .pili-field,
+.pili-record-viewer-page-wrap .pili-field-text,
+.pili-record-viewer-page-wrap .pili-fieldset,
+.pili-record-viewer-page-wrap > div {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.pili-record-viewer-page-wrap .mt-2 {
+	margin-top: 0 !important;
+}
+
+.pili-record-viewer-page-wrap .pili-input {
+	width: 100% !important;
+	max-width: 5.5rem !important;
+	min-height: 2.5rem !important;
+	height: 2.5rem !important;
+	text-align: center !important;
+}
+
+.pili-record-viewer-page-input::-webkit-inner-spin-button,
+.pili-record-viewer-page-input::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.pili-record-viewer-page-input {
+	-moz-appearance: textfield;
+}
+
+.pili-record-viewer-of {
+	font-size: 12px;
+	color: #6b7280;
+}
+
+/* 字段名列：原版蓝色主色（#155DFC / blue-600） */
+.pili-record-viewer-grid th.pili-record-viewer-key {
+	border: 1px solid #e5e7eb;
+	background-color: rgb(249 250 251 / 0.5);
+	color: #2563eb;
+	font-size: 13px;
+	font-weight: 600;
+	padding: 0.65rem 0.875rem;
+	width: 7rem;
+	vertical-align: top;
+	white-space: nowrap;
+	transition: background-color 0.15s ease;
+}
+
+.pili-record-viewer-row:hover th.pili-record-viewer-key {
+	background-color: rgb(241 245 249 / 0.5);
+}
+
+.pili-record-viewer-toggle {
+	color: #2563eb;
+	font-weight: 500;
+	cursor: pointer;
+	margin-left: 0.25rem;
+}
+
+.pili-record-viewer-toggle:hover {
+	color: #1d4ed8;
+}
+
+.pili-record-viewer-placeholder-row.is-loading td {
+	animation: xunRecordViewerPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes xunRecordViewerPulse {
+	0%, 100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.5;
+	}
+}

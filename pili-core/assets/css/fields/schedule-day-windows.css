@@ -1,0 +1,101 @@
+/**
+ * schedule_day_windows — 对齐 sitemap_items：星期 | 滑块 | 预览时间
+ */
+.pili-schedule-day-windows {
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #e5e7eb;
+	border-radius: 0.5rem;
+	background: #fff;
+	overflow: hidden;
+}
+
+.pili-schedule-day-windows__head,
+.pili-schedule-day-windows__row {
+	display: grid;
+	grid-template-columns: 5rem 1fr minmax(8rem, 10rem);
+	column-gap: 1.75rem;
+	row-gap: 0.5rem;
+	align-items: center;
+	padding: 0.75rem 1rem;
+	box-sizing: border-box;
+}
+
+.pili-schedule-day-windows__head {
+	background: #f9fafb;
+	border-bottom: 1px solid #e5e7eb;
+	font-size: 12px;
+	font-weight: 600;
+	color: #6b7280;
+}
+
+.pili-schedule-day-windows__row + .pili-schedule-day-windows__row {
+	border-top: 1px solid #f3f4f6;
+}
+
+.pili-schedule-day-windows__row:hover {
+	background: #fafafa;
+}
+
+.pili-schedule-day-windows__label {
+	display: block;
+	font-size: 13px;
+	font-weight: 600;
+	color: #111827;
+	line-height: 1.35;
+}
+
+.pili-schedule-day-windows__col .pili-field {
+	margin: 0;
+}
+
+.pili-schedule-day-windows__col .pili-title,
+.pili-schedule-day-windows__col .pili-fieldset > .mt-3 {
+	display: none;
+}
+
+.pili-schedule-day-windows__col .pili-fieldset {
+	margin: 0;
+	padding: 0;
+}
+
+/* 行内滑块：只要轨道 */
+.pili-schedule-day-windows__col--range .pili-slider-field > .relative.mb-4 {
+	margin-bottom: 0;
+}
+
+.pili-schedule-day-windows__col--range .pili-slider-field .flex.items-center.space-x-3 {
+	display: none;
+}
+
+.pili-schedule-day-windows__clock {
+	display: inline-block;
+	font-size: 13px;
+	font-weight: 600;
+	font-variant-numeric: tabular-nums;
+	color: #2563eb;
+	line-height: 1.35;
+	white-space: nowrap;
+}
+
+@media (max-width: 782px) {
+	.pili-schedule-day-windows__head {
+		display: none;
+	}
+
+	.pili-schedule-day-windows__row {
+		grid-template-columns: 1fr;
+		gap: 0.5rem;
+		padding: 0.85rem 0.9rem;
+	}
+
+	.pili-schedule-day-windows__col--range::before,
+	.pili-schedule-day-windows__col--preview::before {
+		display: block;
+		content: attr(data-mobile-label);
+		font-size: 11px;
+		font-weight: 600;
+		color: #6b7280;
+		margin-bottom: 0.25rem;
+	}
+}

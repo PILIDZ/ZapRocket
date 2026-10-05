@@ -1,0 +1,869 @@
+/**
+ * XUN log_viewer — SaaS 卡片外壳 + 控制台日志区
+ * 对齐 table / record_viewer：白底、灰边、圆角、次级按钮
+ */
+
+.pili-log-viewer-field {
+	position: relative;
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #e5e7eb;
+	border-radius: 0.75rem;
+	background: #fff;
+	box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+	overflow: visible;
+	font-family: inherit;
+	color: #374151;
+}
+
+/* —— 工具栏 —— */
+.pili-log-viewer-toolbar {
+	position: relative;
+	z-index: 5;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.75rem;
+	padding: 0.875rem 1rem;
+	background: #fff;
+	border-bottom: 1px solid #e5e7eb;
+	border-radius: 0.75rem 0.75rem 0 0;
+}
+
+.pili-log-viewer-filters {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.5rem;
+	min-width: 0;
+	flex: 1 1 auto;
+}
+
+.pili-log-viewer-actions {
+	display: inline-flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.5rem;
+	flex: 0 0 auto;
+}
+
+/* —— 导出时间段面板 —— */
+.pili-log-viewer-export-panel {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	padding: 0.875rem 1rem 1rem;
+	background: #f8fafc;
+	border-bottom: 1px solid #e5e7eb;
+}
+
+.pili-log-viewer-export-panel[hidden] {
+	display: none !important;
+}
+
+.pili-log-viewer-export-panel-title {
+	font-size: 13px;
+	font-weight: 600;
+	color: #111827;
+	line-height: 1.3;
+}
+
+.pili-log-viewer-export-fields {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	gap: 0.75rem;
+}
+
+.pili-log-viewer-export-field {
+	display: flex;
+	flex-direction: column;
+	gap: 0.35rem;
+	min-width: 11.5rem;
+	flex: 0 1 14rem;
+	margin: 0;
+	font-size: 12px;
+	font-weight: 500;
+	color: #4b5563;
+}
+
+.pili-log-viewer-export-field input[type='datetime-local'] {
+	width: 100%;
+	min-height: 2.5rem;
+	padding: 0.4rem 0.65rem;
+	border: 1px solid #d1d5db;
+	border-radius: 0.375rem;
+	background: #fff;
+	color: #111827;
+	font-size: 13px;
+	font-family: inherit;
+	line-height: 1.3;
+	box-sizing: border-box;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.pili-log-viewer-export-field input[type='datetime-local']:focus {
+	outline: none;
+	border-color: #93c5fd;
+	box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.pili-log-viewer-export-presets {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+}
+
+.pili-log-viewer-export-preset {
+	margin: 0;
+	padding: 0.3rem 0.65rem;
+	border: 1px solid #d1d5db;
+	border-radius: 999px;
+	background: #fff;
+	color: #374151;
+	font-size: 12px;
+	font-weight: 500;
+	font-family: inherit;
+	line-height: 1.3;
+	cursor: pointer;
+}
+
+.pili-log-viewer-export-preset:hover {
+	background: #f3f4f6;
+	border-color: #9ca3af;
+}
+
+.pili-log-viewer-export-hint {
+	margin: 0;
+	font-size: 12px;
+	line-height: 1.45;
+	color: #6b7280;
+}
+
+.pili-log-viewer-export-actions {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+/* 自绘多选下拉（标签式） */
+.pili-log-dd {
+	position: relative;
+	min-width: 180px;
+	flex: 0 1 220px;
+}
+
+.pili-log-dd-label {
+	display: none;
+}
+
+.pili-log-dd-trigger {
+	display: flex !important;
+	align-items: center !important;
+	gap: 0.5rem !important;
+	width: 100% !important;
+	min-height: 2.5rem !important;
+	margin: 0 !important;
+	padding: 0.35rem 0.55rem 0.35rem 0.65rem !important;
+	border: 1px solid #d1d5db !important;
+	border-radius: 0.375rem !important;
+	background: #fff !important;
+	color: #111827 !important;
+	font-size: 13px !important;
+	font-weight: 500 !important;
+	font-family: inherit !important;
+	line-height: 1.3 !important;
+	text-align: left !important;
+	cursor: pointer !important;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04) !important;
+	box-sizing: border-box !important;
+}
+
+.pili-log-dd.is-open .pili-log-dd-trigger,
+.pili-log-dd-trigger:hover {
+	border-color: #93c5fd !important;
+}
+
+.pili-log-dd.is-open .pili-log-dd-trigger {
+	box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12) !important;
+}
+
+.pili-log-dd-tags {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.3rem;
+	flex: 1 1 auto;
+	min-width: 0;
+}
+
+.pili-log-dd-placeholder {
+	color: #9ca3af;
+	font-weight: 500;
+	white-space: nowrap;
+}
+
+.pili-log-dd-tag {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.2rem;
+	max-width: 100%;
+	padding: 0.15rem 0.4rem;
+	border-radius: 0.25rem;
+	background: #eff6ff;
+	border: 1px solid #bfdbfe;
+	color: #1d4ed8;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1.3;
+}
+
+.pili-log-dd-tag-text {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.pili-log-dd-tag-x {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 0.9rem;
+	height: 0.9rem;
+	border-radius: 999px;
+	color: #3b82f6;
+	font-size: 12px;
+	line-height: 1;
+	cursor: pointer;
+}
+
+.pili-log-dd-tag-x:hover {
+	background: #dbeafe;
+	color: #1e40af;
+}
+
+.pili-log-dd-more {
+	color: #6b7280;
+	font-size: 12px;
+	font-weight: 600;
+	white-space: nowrap;
+}
+
+.pili-log-dd-caret {
+	flex: 0 0 auto;
+	font-size: 1.05rem;
+	color: #9ca3af;
+	transition: transform 0.15s ease;
+}
+
+.pili-log-dd.is-open .pili-log-dd-caret {
+	transform: rotate(180deg);
+	color: #2563eb;
+}
+
+.pili-log-dd-panel {
+	position: absolute;
+	z-index: 50;
+	top: calc(100% + 6px);
+	left: 0;
+	width: 100%;
+	min-width: 240px;
+	border: 1px solid #e5e7eb;
+	border-radius: 0.5rem;
+	background: #fff;
+	box-shadow: 0 12px 32px rgba(15, 23, 42, 0.14);
+	overflow: hidden;
+}
+
+.pili-log-dd-panel[hidden] {
+	display: none !important;
+}
+
+.pili-log-dd-panel-head {
+	padding: 0.55rem;
+	border-bottom: 1px solid #f3f4f6;
+	background: #fafafa;
+}
+
+.pili-log-dd-filter-wrap {
+	display: flex;
+	align-items: center;
+	gap: 0.4rem;
+	min-height: 2rem;
+	padding: 0 0.55rem;
+	border: 1px solid #e5e7eb;
+	border-radius: 0.375rem;
+	background: #fff;
+	box-sizing: border-box;
+}
+
+.pili-log-dd-filter-wrap > i {
+	flex: 0 0 auto;
+	font-size: 0.95rem;
+	color: #9ca3af;
+	line-height: 1;
+}
+
+.pili-log-dd-filter {
+	flex: 1 1 auto;
+	min-width: 0;
+	width: 100%;
+	height: 2rem !important;
+	min-height: 2rem !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	background: transparent !important;
+	box-shadow: none !important;
+	outline: none !important;
+	color: #111827 !important;
+	font-size: 12px !important;
+	font-family: inherit !important;
+	line-height: 2rem !important;
+	-webkit-appearance: none !important;
+	appearance: none !important;
+}
+
+.pili-log-dd-filter::placeholder {
+	color: #9ca3af;
+}
+
+.pili-log-dd-actions {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 0.75rem;
+	margin-top: 0.45rem;
+}
+
+.pili-log-dd-link {
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	background: transparent !important;
+	color: #2563eb !important;
+	font-size: 12px !important;
+	font-weight: 600 !important;
+	font-family: inherit !important;
+	cursor: pointer !important;
+	box-shadow: none !important;
+	line-height: 1.2 !important;
+}
+
+.pili-log-dd-link:hover {
+	color: #1d4ed8 !important;
+	text-decoration: underline;
+}
+
+.pili-log-dd-list {
+	list-style: none;
+	margin: 0;
+	padding: 0.35rem;
+	max-height: 220px;
+	overflow: auto;
+}
+
+.pili-log-dd-option {
+	display: flex;
+	align-items: center;
+	gap: 0.55rem;
+	padding: 0.5rem 0.55rem;
+	border-radius: 0.375rem;
+	cursor: pointer;
+	user-select: none;
+}
+
+.pili-log-dd-option.is-hidden {
+	display: none;
+}
+
+.pili-log-dd-option:hover {
+	background: #f3f4f6;
+}
+
+.pili-log-dd-option[aria-selected="true"] {
+	background: #eff6ff;
+}
+
+.pili-log-dd-check {
+	flex: 0 0 auto;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 1rem;
+	height: 1rem;
+	border: 1.5px solid #d1d5db;
+	border-radius: 0.25rem;
+	background: #fff;
+	box-sizing: border-box;
+	line-height: 1;
+}
+
+.pili-log-dd-check i {
+	display: none;
+	font-size: 0.75rem;
+	line-height: 1;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+.pili-log-dd-option[aria-selected="true"] .pili-log-dd-check {
+	border-color: #2563eb;
+	background: #2563eb;
+}
+
+.pili-log-dd-option[aria-selected="true"] .pili-log-dd-check i {
+	display: inline-block;
+}
+
+.pili-log-dd-option-text {
+	font-size: 13px;
+	color: #111827;
+	line-height: 1.3;
+}
+
+.pili-log-dd-empty {
+	padding: 1rem 0.75rem;
+	text-align: center;
+	color: #9ca3af;
+	font-size: 12px;
+}
+
+.pili-log-dd-empty[hidden] {
+	display: none !important;
+}
+
+/* 自绘搜索框：flex 左右排布，避免 icon 叠字 */
+.pili-log-viewer-search-wrap {
+	display: flex;
+	align-items: center;
+	gap: 0.45rem;
+	min-width: 200px;
+	flex: 1 1 220px;
+	max-width: 320px;
+	min-height: 2.5rem;
+	padding: 0 0.7rem;
+	border: 1px solid #d1d5db;
+	border-radius: 0.375rem;
+	background: #fff;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+	box-sizing: border-box;
+}
+
+.pili-log-viewer-search-wrap:focus-within {
+	border-color: #2563eb;
+	box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.pili-log-viewer-search-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex: 0 0 auto;
+	width: 1rem;
+	height: 1rem;
+	color: #9ca3af;
+	line-height: 1;
+}
+
+.pili-log-viewer-search-icon i {
+	font-size: 1rem;
+	line-height: 1;
+}
+
+.pili-log-viewer-search {
+	display: block !important;
+	flex: 1 1 auto !important;
+	min-width: 0 !important;
+	width: 100% !important;
+	height: 2.35rem !important;
+	min-height: 2.35rem !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	border-radius: 0 !important;
+	background: transparent !important;
+	box-shadow: none !important;
+	outline: none !important;
+	color: #111827 !important;
+	font-size: 13px !important;
+	font-family: inherit !important;
+	line-height: 2.35rem !important;
+	-webkit-appearance: none !important;
+	appearance: none !important;
+}
+
+.pili-log-viewer-search::placeholder {
+	color: #9ca3af !important;
+}
+
+/* 自绘开关 */
+.pili-log-viewer-switch {
+	display: inline-flex !important;
+	align-items: center !important;
+	gap: 0.45rem !important;
+	margin: 0 !important;
+	padding: 0.25rem 0.15rem !important;
+	border: 0 !important;
+	background: transparent !important;
+	box-shadow: none !important;
+	cursor: pointer !important;
+	font-family: inherit !important;
+	color: #6b7280 !important;
+}
+
+.pili-log-viewer-switch-track {
+	position: relative;
+	width: 2.25rem;
+	height: 1.25rem;
+	border-radius: 999px;
+	background: #d1d5db;
+	transition: background-color 0.15s ease;
+	flex: 0 0 auto;
+}
+
+.pili-log-viewer-switch-thumb {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	background: #fff;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18);
+	transition: transform 0.15s ease;
+}
+
+.pili-log-viewer-switch.is-on .pili-log-viewer-switch-track {
+	background: #2563eb;
+}
+
+.pili-log-viewer-switch.is-on .pili-log-viewer-switch-thumb {
+	transform: translateX(1rem);
+}
+
+.pili-log-viewer-switch-label {
+	font-size: 12px;
+	font-weight: 600;
+	white-space: nowrap;
+}
+
+.pili-log-viewer-btn {
+	display: inline-flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	gap: 0.375rem !important;
+	padding: 0.5rem 0.75rem !important;
+	margin: 0 !important;
+	min-height: 2.5rem !important;
+	border: 1px solid #d1d5db !important;
+	border-radius: 0.375rem !important;
+	background: #fff !important;
+	color: #374151 !important;
+	font-size: 13px !important;
+	font-weight: 600 !important;
+	line-height: 1.2 !important;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04) !important;
+	cursor: pointer !important;
+	white-space: nowrap !important;
+	font-family: inherit !important;
+	text-transform: none !important;
+	text-decoration: none !important;
+	transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease !important;
+}
+
+.pili-log-viewer-btn i {
+	font-size: 1rem;
+	line-height: 1;
+	pointer-events: none;
+}
+
+.pili-log-viewer-btn:hover {
+	background: #f9fafb !important;
+	border-color: #9ca3af !important;
+	color: #111827 !important;
+}
+
+.pili-log-viewer-btn:focus {
+	outline: none !important;
+	box-shadow: 0 0 0 2px #fff, 0 0 0 4px #3b82f6 !important;
+}
+
+.pili-log-viewer-btn--danger {
+	border-color: #fecaca !important;
+	color: #dc2626 !important;
+}
+
+.pili-log-viewer-btn--danger:hover {
+	background: #fef2f2 !important;
+	border-color: #f87171 !important;
+	color: #b91c1c !important;
+}
+
+/* —— 日志区（内嵌控制台，外壳仍是 SaaS 卡片） —— */
+.pili-log-viewer-body {
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	box-sizing: border-box;
+	margin: 0.75rem 1rem 0;
+	border: 1px solid #e5e7eb;
+	border-radius: 0.5rem;
+	background: #0f172a;
+	padding: 0.75rem 0.875rem;
+}
+
+.pili-log-viewer-field--light .pili-log-viewer-body {
+	background: #f8fafc;
+}
+
+.pili-log-viewer-stream {
+	min-height: 100%;
+	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	font-size: 12.5px;
+	line-height: 1.65;
+}
+
+.pili-log-viewer-placeholder {
+	padding: 2.25rem 0.5rem;
+	text-align: center;
+	color: #94a3b8;
+	font-family: inherit;
+	font-size: 13px;
+}
+
+.pili-log-viewer-field--light .pili-log-viewer-placeholder {
+	color: #64748b;
+}
+
+.pili-log-viewer-row {
+	display: block;
+	padding: 0.1rem 0.25rem;
+	border-radius: 0.25rem;
+	white-space: pre-wrap;
+	word-break: break-word;
+	color: #e2e8f0;
+}
+
+.pili-log-viewer-row:hover {
+	background: rgba(148, 163, 184, 0.08);
+}
+
+.pili-log-viewer-field--light .pili-log-viewer-row {
+	color: #1f2937;
+}
+
+.pili-log-viewer-field--light .pili-log-viewer-row:hover {
+	background: rgba(37, 99, 235, 0.04);
+}
+
+.pili-log-viewer-time {
+	color: #94a3b8;
+}
+
+.pili-log-viewer-field--light .pili-log-viewer-time {
+	color: #6b7280;
+}
+
+.pili-log-viewer-level-tag {
+	font-weight: 700;
+}
+
+.pili-log-viewer-row.is-debug .pili-log-viewer-level-tag,
+.pili-log-viewer-row.is-debug .pili-log-viewer-message {
+	color: #94a3b8;
+}
+
+.pili-log-viewer-row.is-info .pili-log-viewer-level-tag {
+	color: #38bdf8;
+}
+
+.pili-log-viewer-row.is-info .pili-log-viewer-message {
+	color: #e2e8f0;
+}
+
+.pili-log-viewer-row.is-success .pili-log-viewer-level-tag,
+.pili-log-viewer-row.is-success .pili-log-viewer-message {
+	color: #4ade80;
+}
+
+.pili-log-viewer-row.is-warning .pili-log-viewer-level-tag,
+.pili-log-viewer-row.is-warning .pili-log-viewer-message {
+	color: #fbbf24;
+}
+
+.pili-log-viewer-row.is-error .pili-log-viewer-level-tag,
+.pili-log-viewer-row.is-error .pili-log-viewer-message {
+	color: #f87171;
+}
+
+.pili-log-viewer-field--light .pili-log-viewer-row.is-debug .pili-log-viewer-level-tag,
+.pili-log-viewer-field--light .pili-log-viewer-row.is-debug .pili-log-viewer-message {
+	color: #6b7280;
+}
+
+.pili-log-viewer-field--light .pili-log-viewer-row.is-info .pili-log-viewer-level-tag {
+	color: #2563eb;
+}
+
+.pili-log-viewer-field--light .pili-log-viewer-row.is-info .pili-log-viewer-message {
+	color: #111827;
+}
+
+.pili-log-viewer-field--light .pili-log-viewer-row.is-success .pili-log-viewer-level-tag,
+.pili-log-viewer-field--light .pili-log-viewer-row.is-success .pili-log-viewer-message {
+	color: #15803d;
+}
+
+.pili-log-viewer-field--light .pili-log-viewer-row.is-warning .pili-log-viewer-level-tag,
+.pili-log-viewer-field--light .pili-log-viewer-row.is-warning .pili-log-viewer-message {
+	color: #b45309;
+}
+
+.pili-log-viewer-field--light .pili-log-viewer-row.is-error .pili-log-viewer-level-tag,
+.pili-log-viewer-field--light .pili-log-viewer-row.is-error .pili-log-viewer-message {
+	color: #b91c1c;
+}
+
+.pili-log-viewer-channel-tag {
+	color: #a78bfa;
+}
+
+.pili-log-viewer-field--light .pili-log-viewer-channel-tag {
+	color: #7c3aed;
+}
+
+.pili-log-viewer-context-toggle {
+	color: #67e8f9;
+	cursor: pointer;
+	margin-left: 0.35rem;
+	font-weight: 600;
+}
+
+.pili-log-viewer-context-toggle:hover {
+	text-decoration: underline;
+}
+
+.pili-log-viewer-field--light .pili-log-viewer-context-toggle {
+	color: #0284c7;
+}
+
+.pili-log-viewer-context {
+	display: block;
+	margin: 0.2rem 0 0.4rem 0.5rem;
+	padding: 0.45rem 0.65rem;
+	border-left: 2px solid #334155;
+	border-radius: 0 0.25rem 0.25rem 0;
+	background: rgba(15, 23, 42, 0.55);
+	color: #94a3b8;
+	white-space: pre-wrap;
+	word-break: break-word;
+	font-size: 12px;
+	max-height: 480px;
+	overflow: auto;
+}
+
+.pili-log-viewer-field--light .pili-log-viewer-context {
+	border-left-color: #cbd5e1;
+	background: #fff;
+	color: #4b5563;
+}
+
+/* —— 底栏 —— */
+.pili-log-viewer-footer {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.75rem;
+	padding: 0.875rem 1rem;
+	margin-top: 0.75rem;
+	background: #fff;
+	border-top: 1px solid #f3f4f6;
+	font-size: 12px;
+	color: #6b7280;
+}
+
+.pili-log-viewer-summary {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+}
+
+.pili-log-viewer-summary strong {
+	color: #374151;
+	font-weight: 600;
+}
+
+.pili-log-viewer-page-sep {
+	color: #d1d5db;
+}
+
+.pili-log-viewer-pagination {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.375rem;
+}
+
+.pili-log-viewer-pager-btn {
+	display: inline-flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	min-width: 34px !important;
+	height: 32px !important;
+	padding: 0 0.5rem !important;
+	margin: 0 !important;
+	border: 1px solid #e5e7eb !important;
+	border-radius: 0.375rem !important;
+	background: #fff !important;
+	color: #4b5563 !important;
+	font-size: 14px !important;
+	line-height: 1 !important;
+	cursor: pointer !important;
+	box-shadow: none !important;
+	font-family: inherit !important;
+}
+
+.pili-log-viewer-pager-btn:hover:not(:disabled) {
+	background: #f9fafb !important;
+	color: #111827 !important;
+}
+
+.pili-log-viewer-pager-btn:disabled {
+	opacity: 0.4 !important;
+	cursor: not-allowed !important;
+}
+
+.pili-log-viewer-toast {
+	position: absolute;
+	right: 1rem;
+	bottom: 3.25rem;
+	z-index: 5;
+	padding: 0.4rem 0.75rem;
+	border-radius: 0.375rem;
+	background: #111827;
+	color: #fff;
+	font-size: 12px;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.2s ease;
+}
+
+.pili-log-viewer-toast.is-visible {
+	opacity: 1;
+}
+
+@media (max-width: 782px) {
+	.pili-log-dd,
+	.pili-log-viewer-search-wrap {
+		max-width: none;
+		flex: 1 1 100%;
+	}
+
+	.pili-log-viewer-body {
+		margin-left: 0.75rem;
+		margin-right: 0.75rem;
+	}
+}

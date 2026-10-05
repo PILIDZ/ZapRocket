@@ -1,0 +1,32 @@
+/**
+ * XUN chart — 画布容器防溢出
+ */
+.pili-field-chart,
+.pili-chart-field {
+	min-width: 0;
+	max-width: 100%;
+}
+
+.pili-chart-field {
+	overflow: hidden;
+}
+
+.pili-chart-canvas {
+	width: 100%;
+	max-width: 100%;
+	overflow: hidden;
+	border: 0;
+	border-radius: 10px;
+	background: #fff;
+	box-sizing: border-box;
+}
+
+.pili-chart-group-layout {
+	width: 100%;
+	min-width: 0;
+}
+
+.pili-chart-group-layout > .pili-field {
+	min-width: 0;
+	max-width: 100%;
+}

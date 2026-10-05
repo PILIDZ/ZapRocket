@@ -1,0 +1,46 @@
+@keyframes pili-input-shake {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+	20% {
+		transform: translateX(-7px);
+	}
+	40% {
+		transform: translateX(7px);
+	}
+	60% {
+		transform: translateX(-4px);
+	}
+	80% {
+		transform: translateX(4px);
+	}
+}
+
+.pili-input.pili-input--invalid {
+	border-color: #ef4444 !important;
+	box-shadow: 0 0 0 1px #ef4444;
+	color: #991b1b;
+}
+
+.pili-input.pili-input--invalid:focus {
+	border-color: #dc2626 !important;
+	outline: none;
+	box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.25);
+}
+
+.pili-input.pili-input--shake {
+	animation: pili-input-shake 0.42s ease;
+}
+
+.pili-input-error {
+	display: none;
+	margin: 8px 0 0;
+	font-size: 13px;
+	line-height: 1.45;
+	color: #dc2626;
+}
+
+.pili-input-error.is-visible {
+	display: block;
+}

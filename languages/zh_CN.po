@@ -1,0 +1,4215 @@
+# Copyright (C) 2026 霹雳设计
+# This file is distributed under the same license as the ZapRocket plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: ZapRocket 1.2.1\n"
+"Report-Msgid-Bugs-To: https://piliai.com/\n"
+"POT-Creation-Date: 2026-10-05 14:40+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Domain: zaprocket\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "%d 条"
+msgstr "%d 条"
+
+msgid "%d 项"
+msgstr "%d 项"
+
+msgid "%s是必填项"
+msgstr "%s是必填项"
+
+msgid "1 分钟"
+msgstr "1 分钟"
+
+msgid "10月"
+msgstr "10月"
+
+msgid "11月"
+msgstr "11月"
+
+msgid "12月"
+msgstr "12月"
+
+msgid "1月"
+msgstr "1月"
+
+msgid "2 分钟"
+msgstr "2 分钟"
+
+msgid "2月"
+msgstr "2月"
+
+msgid "3 分钟"
+msgstr "3 分钟"
+
+msgid "30 秒"
+msgstr "30 秒"
+
+msgid "3月"
+msgstr "3月"
+
+msgid "4月"
+msgstr "4月"
+
+msgid "5月"
+msgstr "5月"
+
+msgid "6月"
+msgstr "6月"
+
+msgid "7月"
+msgstr "7月"
+
+msgid "8月"
+msgstr "8月"
+
+msgid "9月"
+msgstr "9月"
+
+msgid "API 域名只用于上传管理，不能当图片地址。必须带 http:// 或 https://，不要带桶名。"
+msgstr "API 域名只用于上传管理，不能当图片地址。必须带 http:// 或 https://，不要带桶名。"
+
+msgid "API 域名只用于上传管理；浏览器看图必须走自定义域名。"
+msgstr "API 域名只用于上传管理；浏览器看图必须走自定义域名。"
+
+msgid "API 域名（上传用）。不要当图片地址。"
+msgstr "API 域名（上传用）。不要当图片地址。"
+
+msgid "API 域名（上传用），不要带桶名。"
+msgstr "API 域名（上传用），不要带桶名。"
+
+msgid "APPID 必填。自定义域名未做 CNAME 时，前台无法用加速域名访问。"
+msgstr "APPID 必填。自定义域名未做 CNAME 时，前台无法用加速域名访问。"
+
+msgid "Access Key ID，默认掩码显示。"
+msgstr "Access Key ID，默认掩码显示。"
+
+msgid "AccessKey 不正确，请核对访问密钥 ID。"
+msgstr "AccessKey 不正确，请核对访问密钥 ID。"
+
+msgid "AccessKey（访问密钥 ID）"
+msgstr "AccessKey（访问密钥 ID）"
+
+msgid "Bucket 所在区域，可搜索中文或 Region ID。"
+msgstr "Bucket 所在区域，可搜索中文或 Region ID。"
+
+msgid "Bucket（存储桶 / 空间名称）"
+msgstr "Bucket（存储桶 / 空间名称）"
+
+msgid "CDN / 懒加载 / 压缩 / 缓存等"
+msgstr "CDN / 懒加载 / 压缩 / 缓存等"
+
+msgid "CDN 地址（加速域名）"
+msgstr "CDN 地址（加速域名）"
+
+msgid "CDN 排除（这些不换地址）"
+msgstr "CDN 排除（这些不换地址）"
+
+msgid "CDN、预载、懒加载、脚本压缩与延迟。压缩、Delay JS、整页缓存默认关。"
+msgstr "CDN、预载、懒加载、脚本压缩与延迟。压缩、Delay JS、整页缓存默认关。"
+
+msgid "CDN加速"
+msgstr "CDN加速"
+
+msgid "CSS 压缩（减小 CSS 体积）"
+msgstr "CSS 压缩（减小 CSS 体积）"
+
+msgid "CSS 排除（这些文件不压缩）"
+msgstr "CSS 排除（这些文件不压缩）"
+
+msgid "CSS 文件"
+msgstr "CSS 文件"
+
+msgid "Cloudflare R2"
+msgstr "Cloudflare R2"
+
+msgid "Cookie 是网站存在浏览器里的一小段记号，用来记住登录、购物车等。填写：每行一个名称，或名称里的一段文字。只要这次访问带着匹配的 Cookie，就不走缓存，避免「登录后还看到未登录的页面」。名称可在浏览器开发者工具 → 应用/存储 → Cookie 里看到。示例：wordpress_logged_in 。不确定就留空。"
+msgstr "Cookie 是网站存在浏览器里的一小段记号，用来记住登录、购物车等。填写：每行一个名称，或名称里的一段文字。只要这次访问带着匹配的 Cookie，就不走缓存，避免「登录后还看到未登录的页面」。名称可在浏览器开发者工具 → 应用/存储 → Cookie 里看到。示例：wordpress_logged_in 。不确定就留空。"
+
+msgid "ECharts 加载失败"
+msgstr "ECharts 加载失败"
+
+msgid "Endpoint 不要带桶名。未绑定自定义域时不会改写前台地址。"
+msgstr "Endpoint 不要带桶名。未绑定自定义域时不会改写前台地址。"
+
+msgid "Endpoint 必须以 http:// 或 https:// 开头。"
+msgstr "Endpoint 必须以 http:// 或 https:// 开头。"
+
+msgid "Endpoint 是 API 地址，不要当作图片域名。"
+msgstr "Endpoint 是 API 地址，不要当作图片域名。"
+
+msgid "Endpoint 是 API 地址，只用于上传。图片公网必须用已绑定的自定义域，不能用 r2.cloudflarestorage.com。"
+msgstr "Endpoint 是 API 地址，只用于上传。图片公网必须用已绑定的自定义域，不能用 r2.cloudflarestorage.com。"
+
+msgid "Endpoint（API 接口地址，仅上传）"
+msgstr "Endpoint（API 接口地址，仅上传）"
+
+msgid "Gravatar（评论头像来源）"
+msgstr "Gravatar（评论头像来源）"
+
+msgid "HTTPS 证书校验失败。请检查服务器 CA 证书与接口地址。"
+msgstr "HTTPS 证书校验失败。请检查服务器 CA 证书与接口地址。"
+
+msgid "Heartbeat（后台定时刷新）"
+msgstr "Heartbeat（后台定时刷新）"
+
+msgid "JS 压缩（减小 JS 体积）"
+msgstr "JS 压缩（减小 JS 体积）"
+
+msgid "JS 延迟加载（点一下或滚动后再跑）"
+msgstr "JS 延迟加载（点一下或滚动后再跑）"
+
+msgid "JS 异步加载（页面先出来再跑脚本）"
+msgstr "JS 异步加载（页面先出来再跑脚本）"
+
+msgid "JS 排除（这些文件不压缩、不合并）"
+msgstr "JS 排除（这些文件不压缩、不合并）"
+
+msgid "JavaScript 文件"
+msgstr "JavaScript 文件"
+
+msgid "MD5 哈希文件名"
+msgstr "MD5 哈希文件名"
+
+msgid "PHP 内存限制：%s"
+msgstr "PHP 内存限制：%s"
+
+msgid "PHP 最大执行时间：%s"
+msgstr "PHP 最大执行时间：%s"
+
+msgid "PHP 版本"
+msgstr "PHP 版本"
+
+msgid "R2 Access Key ID，默认掩码显示。"
+msgstr "R2 Access Key ID，默认掩码显示。"
+
+msgid "R2 Secret Access Key，加密保存。"
+msgstr "R2 Secret Access Key，加密保存。"
+
+msgid "R2 填 us-east-1 或 auto。自定义 S3 按厂商文档填写。"
+msgstr "R2 填 us-east-1 或 auto。自定义 S3 按厂商文档填写。"
+
+msgid "RAM AccessKey ID，默认掩码显示。"
+msgstr "RAM AccessKey ID，默认掩码显示。"
+
+msgid "RAM AccessKey Secret，加密保存。"
+msgstr "RAM AccessKey Secret，加密保存。"
+
+msgid "RAM 授权 OSS 读写后，复制 AccessKey ID 与 Secret。"
+msgstr "RAM 授权 OSS 读写后，复制 AccessKey ID 与 Secret。"
+
+msgid "REST API 给区块编辑器和第三方用。本项默认关。打开后只拦未登录访客访问 /wp-json/，已登录后台写文章不受影响。不会关掉整个 REST，站点不会因此白屏。前台表单若要用接口，把路径写进排除。"
+msgstr "REST API 给区块编辑器和第三方用。本项默认关。打开后只拦未登录访客访问 /wp-json/，已登录后台写文章不受影响。不会关掉整个 REST，站点不会因此白屏。前台表单若要用接口，把路径写进排除。"
+
+msgid "REST 排除（这些接口仍然放行）"
+msgstr "REST 排除（这些接口仍然放行）"
+
+msgid "Region（区域）"
+msgstr "Region（区域）"
+
+msgid "S3 桶名，不要带域名。"
+msgstr "S3 桶名，不要带域名。"
+
+msgid "Secret Access Key，加密保存。"
+msgstr "Secret Access Key，加密保存。"
+
+msgid "SecretId，默认掩码显示。"
+msgstr "SecretId，默认掩码显示。"
+
+msgid "SecretKey（访问密钥）"
+msgstr "SecretKey（访问密钥）"
+
+msgid "SecretKey，加密保存。"
+msgstr "SecretKey，加密保存。"
+
+msgid "URL 包含所列片段则不替换。每行一项，例如 .php、preview=。"
+msgstr "URL 包含所列片段则不替换。每行一项，例如 .php、preview=。"
+
+msgid "User Agent 是浏览器报给网站的身份，例如手机 Safari。填写：每行一段文字。只要访问者的身份里包含这段，就不给他缓存页。适合「某种 App 内置浏览器显示错乱」时单独排除。 (.*) 表示中间可以是任意内容。普通网站一般不用填。示例：(.*)Mobile(.*)Safari(.*)"
+msgstr "User Agent 是浏览器报给网站的身份，例如手机 Safari。填写：每行一段文字。只要访问者的身份里包含这段，就不给他缓存页。适合「某种 App 内置浏览器显示错乱」时单独排除。 (.*) 表示中间可以是任意内容。普通网站一般不用填。示例：(.*)Mobile(.*)Safari(.*)"
+
+msgid "WordPress 会在页头加 EditURI。用第三方软件远程发文章时才需要。大部分站点用不上。"
+msgstr "WordPress 会在页头加 EditURI。用第三方软件远程发文章时才需要。大部分站点用不上。"
+
+msgid "WordPress 版本"
+msgstr "WordPress 版本"
+
+msgid "WordPress 默认"
+msgstr "WordPress 默认"
+
+msgid "YouTube 预览图（先出图再播）"
+msgstr "YouTube 预览图（先出图再播）"
+
+msgid "Y年m月d日"
+msgstr "Y年m月d日"
+
+msgid "https://你的域名/wp-content/uploads/logo.png"
+msgstr "https://你的域名/wp-content/uploads/logo.png"
+
+msgid "iframe 懒加载（视频框滚到再加载）"
+msgstr "iframe 懒加载（视频框滚到再加载）"
+
+msgid "inputs_grid：请在字段配置中设置 keys（键名 => 标签）。"
+msgstr "inputs_grid：请在字段配置中设置 keys（键名 => 标签）。"
+
+msgid "of"
+msgstr "of"
+
+msgid "options 表里过期的 transient。未过期的不会动。"
+msgstr "options 表里过期的 transient。未过期的不会动。"
+
+msgid "preserve_existing=false 且存在未提交字段，这些字段可能被清空。"
+msgstr "preserve_existing=false 且存在未提交字段，这些字段可能被清空。"
+
+msgid "uploads 目录可读"
+msgstr "uploads 目录可读"
+
+msgid "一"
+msgstr "一"
+
+msgid "一月"
+msgstr "一月"
+
+msgid "一般是对象存储自定义域名加桶内目录。例如 https://img.example.com/wp-content/uploads。不会上传文件。"
+msgstr "一般是对象存储自定义域名加桶内目录。例如 https://img.example.com/wp-content/uploads。不会上传文件。"
+
+msgid "一般是本站媒体库前缀。只替换文章正文和自定义字段里完全匹配的字符串。例如 https://www.example.com/wp-content/uploads。"
+msgstr "一般是本站媒体库前缀。只替换文章正文和自定义字段里完全匹配的字符串。例如 https://www.example.com/wp-content/uploads。"
+
+msgid "一键迁移"
+msgstr "一键迁移"
+
+msgid "七月"
+msgstr "七月"
+
+msgid "七牛 AccessKey，默认掩码显示。"
+msgstr "七牛 AccessKey，默认掩码显示。"
+
+msgid "七牛 Kodo"
+msgstr "七牛 Kodo"
+
+msgid "七牛 SecretKey，加密保存。"
+msgstr "七牛 SecretKey，加密保存。"
+
+msgid "七牛上传凭证无效。请核对 AccessKey 和 SecretKey。"
+msgstr "七牛上传凭证无效。请核对 AccessKey 和 SecretKey。"
+
+msgid "七牛上传失败。请核对空间名、密钥和网络。"
+msgstr "七牛上传失败。请核对空间名、密钥和网络。"
+
+msgid "七牛请求失败。请核对空间名与密钥。"
+msgstr "七牛请求失败。请核对空间名与密钥。"
+
+msgid "三"
+msgstr "三"
+
+msgid "三月"
+msgstr "三月"
+
+msgid "上"
+msgstr "上"
+
+msgid "上/下午"
+msgstr "上/下午"
+
+msgid "上一条"
+msgstr "上一条"
+
+msgid "上一页"
+msgstr "上一页"
+
+msgid "上个月"
+msgstr "上个月"
+
+msgid "上传与替换中"
+msgstr "上传与替换中"
+
+msgid "上传中…"
+msgstr "上传中…"
+
+msgid "上传文件"
+msgstr "上传文件"
+
+msgid "上午"
+msgstr "上午"
+
+msgid "上次可回滚"
+msgstr "上次可回滚"
+
+msgid "上次失败"
+msgstr "上次失败"
+
+msgid "上次已上传"
+msgstr "上次已上传"
+
+msgid "上次已扫描"
+msgstr "上次已扫描"
+
+msgid "上次清理"
+msgstr "上次清理"
+
+msgid "上海"
+msgstr "上海"
+
+msgid "上海金融"
+msgstr "上海金融"
+
+msgid "上海金融云外网"
+msgstr "上海金融云外网"
+
+msgid "上移"
+msgstr "上移"
+
+msgid "上边框"
+msgstr "上边框"
+
+msgid "下"
+msgstr "下"
+
+msgid "下一条"
+msgstr "下一条"
+
+msgid "下一页"
+msgstr "下一页"
+
+msgid "下个月"
+msgstr "下个月"
+
+msgid "下列字段本次提交为空，但库中曾有非空值（可能是用户清空，也可能是表单异常）。"
+msgstr "下列字段本次提交为空，但库中曾有非空值（可能是用户清空，也可能是表单异常）。"
+
+msgid "下午"
+msgstr "下午"
+
+msgid "下移"
+msgstr "下移"
+
+msgid "下边框"
+msgstr "下边框"
+
+msgid "不勾选不能启动。此开关不会当作长期配置保存。"
+msgstr "不勾选不能启动。此开关不会当作长期配置保存。"
+
+msgid "不支持的字段类型"
+msgstr "不支持的字段类型"
+
+msgid "不支持的文件类型"
+msgstr "不支持的文件类型"
+
+msgid "不支持的文件类型。允许的类型：%s"
+msgstr "不支持的文件类型。允许的类型：%s"
+
+msgid "不支持的语言。"
+msgstr "不支持的语言。"
+
+msgid "不改（大约 1 分钟）"
+msgstr "不改（大约 1 分钟）"
+
+msgid "不改，跟 WordPress 默认一样"
+msgstr "不改，跟 WordPress 默认一样"
+
+msgid "不是有效的配置文件"
+msgstr "不是有效的配置文件"
+
+msgid "不显示头像"
+msgstr "不显示头像"
+
+msgid "不用自己贴图片地址。填 1 或 2 即可：把当前页从上往下数的头几张图提前下载，减轻「字出来了图还在转」。填 0 表示不自动预载。最多 5。"
+msgstr "不用自己贴图片地址。填 1 或 2 即可：把当前页从上往下数的头几张图提前下载，减轻「字出来了图还在转」。填 0 表示不自动预载。最多 5。"
+
+msgid "不确定就选「连连接也建好」。"
+msgstr "不确定就选「连连接也建好」。"
+
+msgid "不能大于 %s"
+msgstr "不能大于 %s"
+
+msgid "不能小于 %s"
+msgstr "不能小于 %s"
+
+msgid "不自动跑"
+msgstr "不自动跑"
+
+msgid "不要与 WP Rocket、LiteSpeed Cache 等同时开同类缓存或压缩"
+msgstr "不要与 WP Rocket、LiteSpeed Cache 等同时开同类缓存或压缩"
+
+msgid "不重复"
+msgstr "不重复"
+
+msgid "不限制"
+msgstr "不限制"
+
+msgid "东京"
+msgstr "东京"
+
+msgid "丢掉但仍暂存在回收站的评论。"
+msgstr "丢掉但仍暂存在回收站的评论。"
+
+msgid "丢进回收站还没清空的文章。"
+msgstr "丢进回收站还没清空的文章。"
+
+msgid "个项目"
+msgstr "个项目"
+
+msgid "中上"
+msgstr "中上"
+
+msgid "中下"
+msgstr "中下"
+
+msgid "中东"
+msgstr "中东"
+
+msgid "中国大陆"
+msgstr "中国大陆"
+
+msgid "中国香港"
+msgstr "中国香港"
+
+msgid "临时数据"
+msgstr "临时数据"
+
+msgid "为桶绑定自定义域名并完成 DNS / CNAME，前台才会改写媒体地址。"
+msgstr "为桶绑定自定义域名并完成 DNS / CNAME，前台才会改写媒体地址。"
+
+msgid "主机名（只填域名）"
+msgstr "主机名（只填域名）"
+
+msgid "九月"
+msgstr "九月"
+
+msgid "二"
+msgstr "二"
+
+msgid "二月"
+msgstr "二月"
+
+msgid "云上路径已符合前缀：%s"
+msgstr "云上路径已符合前缀：%s"
+
+msgid "五"
+msgstr "五"
+
+msgid "五月"
+msgstr "五月"
+
+msgid "亚太"
+msgstr "亚太"
+
+msgid "亚太 - 中国"
+msgstr "亚太 - 中国"
+
+msgid "亚太 - 其他"
+msgstr "亚太 - 其他"
+
+msgid "仅切换本插件后台界面语言，不会修改 WordPress 站点语言"
+msgstr "仅切换本插件后台界面语言，不会修改 WordPress 站点语言"
+
+msgid "仅在「垃圾清理」或定时清理勾了修订项时生效。打开后会按「全删」处理，不再看上面的份数。默认关闭。"
+msgstr "仅在「垃圾清理」或定时清理勾了修订项时生效。打开后会按「全删」处理，不再看上面的份数。默认关闭。"
+
+msgid "仅在原图和全部额外尺寸都上传成功后删除本机文件。卸载插件不会删除云上文件。"
+msgstr "仅在原图和全部额外尺寸都上传成功后删除本机文件。卸载插件不会删除云上文件。"
+
+msgid "仅在规则选「自定义前缀」时生效。会加在清理后的原名前面，例如 sitea-photo.jpg。"
+msgstr "仅在规则选「自定义前缀」时生效。会加在清理后的原名前面，例如 sitea-photo.jpg。"
+
+msgid "仅填写桶名或空间名，不要带域名。"
+msgstr "仅填写桶名或空间名，不要带域名。"
+
+msgid "仅替换勾选目录中的静态资源。wp-includes 含核心脚本，谨慎启用。"
+msgstr "仅替换勾选目录中的静态资源。wp-includes 含核心脚本，谨慎启用。"
+
+msgid "今天"
+msgstr "今天"
+
+msgid "从不（never）"
+msgstr "从不（never）"
+
+msgid "从左侧菜单进入对应分区开始配置"
+msgstr "从左侧菜单进入对应分区开始配置"
+
+msgid "从左侧选择分区开始配置。组件测试页请点「基础输入」等分组。"
+msgstr "从左侧选择分区开始配置。组件测试页请点「基础输入」等分组。"
+
+msgid "从这里开始"
+msgstr "从这里开始"
+
+msgid "代码"
+msgstr "代码"
+
+msgid "代码已复制到剪贴板"
+msgstr "代码已复制到剪贴板"
+
+msgid "代码格式化完成"
+msgstr "代码格式化完成"
+
+msgid "仪表盘少刷新一点（写文章不受影响）"
+msgstr "仪表盘少刷新一点（写文章不受影响）"
+
+msgid "任务"
+msgstr "任务"
+
+msgid "任务已启动。关闭本页不会中止后台队列。"
+msgstr "任务已启动。关闭本页不会中止后台队列。"
+
+msgid "任务已暂停。"
+msgstr "任务已暂停。"
+
+msgid "任务已终止。已上传的云文件不会自动删除。"
+msgstr "任务已终止。已上传的云文件不会自动删除。"
+
+msgid "任务已继续。"
+msgstr "任务已继续。"
+
+msgid "任务控制"
+msgstr "任务控制"
+
+msgid "份"
+msgstr "份"
+
+msgid "优先级"
+msgstr "优先级"
+
+msgid "传输加速"
+msgstr "传输加速"
+
+msgid "估算"
+msgstr "估算"
+
+msgid "体积为估算值，仅供参考；部分数据只能估算，无法拿到精确值。实际释放空间以清理完成后为准。"
+msgstr "体积为估算值，仅供参考；部分数据只能估算，无法拿到精确值。实际释放空间以清理完成后为准。"
+
+msgid "作者微信二维码"
+msgstr "作者微信二维码"
+
+msgid "你更新任意一篇文章或页面时，除了那一篇本身，还会把这里列出的地址缓存一并清掉。适合首页、列表页、栏目页，避免新文章发出去了列表还是旧的。填写：每行一条路径，可粘贴完整网址（域名会自动去掉）。整栏都清可写 /blog/(.*) 。不确定就留空。"
+msgstr "你更新任意一篇文章或页面时，除了那一篇本身，还会把这里列出的地址缓存一并清掉。适合首页、列表页、栏目页，避免新文章发出去了列表还是旧的。填写：每行一条路径，可粘贴完整网址（域名会自动去掉）。整栏都清可写 /blog/(.*) 。不确定就留空。"
+
+msgid "使用技巧"
+msgstr "使用技巧"
+
+msgid "使用文档"
+msgstr "使用文档"
+
+msgid "使用空间密钥，不要用登录密码。"
+msgstr "使用空间密钥，不要用登录密码。"
+
+msgid "使用这些图片"
+msgstr "使用这些图片"
+
+msgid "保存中..."
+msgstr "保存中..."
+
+msgid "保存失败"
+msgstr "保存失败"
+
+msgid "保存失败:"
+msgstr "保存失败:"
+
+msgid "保存失败：数据库写入未通过校验"
+msgstr "保存失败：数据库写入未通过校验"
+
+msgid "保存失败：数据库写入未通过校验。"
+msgstr "保存失败：数据库写入未通过校验。"
+
+msgid "保存设置"
+msgstr "保存设置"
+
+msgid "保存设置配置"
+msgstr "保存设置配置"
+
+msgid "保存过程中发生未知错误"
+msgstr "保存过程中发生未知错误"
+
+msgid "保存过程中发生网络错误，请稍后重试"
+msgstr "保存过程中发生网络错误，请稍后重试"
+
+msgid "保留原文件名，只清理中文 / 空格 / 特殊符号"
+msgstr "保留原文件名，只清理中文 / 空格 / 特殊符号"
+
+msgid "保留天数"
+msgstr "保留天数"
+
+msgid "信息"
+msgstr "信息"
+
+msgid "修改后保存即可生效，组件测试页可逐项验证"
+msgstr "修改后保存即可生效，组件测试页可逐项验证"
+
+msgid "修订全部不留（新保存不再留历史稿）"
+msgstr "修订全部不留（新保存不再留历史稿）"
+
+msgid "修订版本"
+msgstr "修订版本"
+
+msgid "修订版本保留（每篇最多留几份）"
+msgstr "修订版本保留（每篇最多留几份）"
+
+msgid "修订版本（保存时多出来的历史稿）"
+msgstr "修订版本（保存时多出来的历史稿）"
+
+msgid "值"
+msgstr "值"
+
+msgid "值不能大于 %s"
+msgstr "值不能大于 %s"
+
+msgid "值不能小于 %s"
+msgstr "值不能小于 %s"
+
+msgid "像素"
+msgstr "像素"
+
+msgid "允许跨域（字体一般要开）"
+msgstr "允许跨域（字体一般要开）"
+
+msgid "先勾选再清理。删了不能恢复，动手前请备份。预估体积仅供参考，实际释放空间以清理完成后为准。数据不会自动刷新，如需最新预估，请手动点击重新扫描。"
+msgstr "先勾选再清理。删了不能恢复，动手前请备份。预估体积仅供参考，实际释放空间以清理完成后为准。数据不会自动刷新，如需最新预估，请手动点击重新扫描。"
+
+msgid "全屏"
+msgstr "全屏"
+
+msgid "全屏编辑"
+msgstr "全屏编辑"
+
+msgid "全球传输加速"
+msgstr "全球传输加速"
+
+msgid "全球加速"
+msgstr "全球加速"
+
+msgid "全选"
+msgstr "全选"
+
+msgid "全选当前页"
+msgstr "全选当前页"
+
+msgid "全部启用"
+msgstr "全部启用"
+
+msgid "全部展开"
+msgstr "全部展开"
+
+msgid "全部折叠"
+msgstr "全部折叠"
+
+msgid "全部时间"
+msgstr "全部时间"
+
+msgid "全部禁用"
+msgstr "全部禁用"
+
+msgid "全部级别"
+msgstr "全部级别"
+
+msgid "全部通道"
+msgstr "全部通道"
+
+msgid "八月"
+msgstr "八月"
+
+msgid "公网展示请填写已可访问的自定义域名。"
+msgstr "公网展示请填写已可访问的自定义域名。"
+
+msgid "六"
+msgstr "六"
+
+msgid "六月"
+msgstr "六月"
+
+msgid "共 %d 个选项"
+msgstr "共 %d 个选项"
+
+msgid "关"
+msgstr "关"
+
+msgid "关掉后本页不再写入，已有记录仍可查看。"
+msgstr "关掉后本页不再写入，已有记录仍可查看。"
+
+msgid "关闭"
+msgstr "关闭"
+
+msgid "关闭取色器"
+msgstr "关闭取色器"
+
+msgid "关闭后瘦身、前台优化全部停掉（含心跳/修订/自动保存），站点跟没装本插件一样。本设置页仍可访问。"
+msgstr "关闭后瘦身、前台优化全部停掉（含心跳/修订/自动保存），站点跟没装本插件一样。本设置页仍可访问。"
+
+msgid "关闭弹窗"
+msgstr "关闭弹窗"
+
+msgid "关闭说明"
+msgstr "关闭说明"
+
+msgid "内容类型"
+msgstr "内容类型"
+
+msgid "内容长度不能少于 %1$d 个字符，当前 %2$d 个字符"
+msgstr "内容长度不能少于 %1$d 个字符，当前 %2$d 个字符"
+
+msgid "内容长度不能超过 %1$d 个字符，当前 %2$d 个字符"
+msgstr "内容长度不能超过 %1$d 个字符，当前 %2$d 个字符"
+
+msgid "内嵌"
+msgstr "内嵌"
+
+msgid "写入推荐配置失败。"
+msgstr "写入推荐配置失败。"
+
+msgid "写在这里的页面每次都出现场内容，不读缓存。适合登录、退出、购物车、结账、会员中心。填写：每行一条；可粘贴完整网址，保存时会自动去掉 https://域名，只留后面的路径。单页示例：/wp-login.php 。某一栏下面全部页面示例：/docs/(.*) ，其中 (.*) 表示「这一段后面不管是什么都算」。WooCommerce 的购物车、结账、我的账户默认已经不缓存，一般不用再写。不确定就先留空。"
+msgstr "写在这里的页面每次都出现场内容，不读缓存。适合登录、退出、购物车、结账、会员中心。填写：每行一条；可粘贴完整网址，保存时会自动去掉 https://域名，只留后面的路径。单页示例：/wp-login.php 。某一栏下面全部页面示例：/docs/(.*) ，其中 (.*) 表示「这一段后面不管是什么都算」。WooCommerce 的购物车、结账、我的账户默认已经不缓存，一般不用再写。不确定就先留空。"
+
+msgid "写文章、仪表盘会定时跟服务器打招呼。太勤了占 CPU。写文章时不会一刀切关掉，避免丢稿。"
+msgstr "写文章、仪表盘会定时跟服务器打招呼。太勤了占 CPU。写文章时不会一刀切关掉，避免丢稿。"
+
+msgid "写文章时 WordPress 会定时跟服务器打招呼：自动存草稿、刷新仪表盘。太勤了会占 CPU。写文章时不要把它彻底关掉，不然可能丢稿。"
+msgstr "写文章时 WordPress 会定时跟服务器打招呼：自动存草稿、刷新仪表盘。太勤了会占 CPU。写文章时不要把它彻底关掉，不然可能丢稿。"
+
+msgid "准备工作"
+msgstr "准备工作"
+
+msgid "凸起"
+msgstr "凸起"
+
+msgid "凹槽"
+msgstr "凹槽"
+
+msgid "分"
+msgstr "分"
+
+msgid "分区 HTML 为空"
+msgstr "分区 HTML 为空"
+
+msgid "分区不存在"
+msgstr "分区不存在"
+
+msgid "分区内容加载失败，请刷新后重试。"
+msgstr "分区内容加载失败，请刷新后重试。"
+
+msgid "分区加载失败"
+msgstr "分区加载失败"
+
+msgid "分类"
+msgstr "分类"
+
+msgid "列表里的项目数"
+msgstr "列表里的项目数"
+
+msgid "创建 Bucket，记下 Region ID（如 oss-cn-hangzhou）。"
+msgstr "创建 Bucket，记下 Region ID（如 oss-cn-hangzhou）。"
+
+msgid "创建 R2 桶，记下 Account ID 以填写 Endpoint。"
+msgstr "创建 R2 桶，记下 Account ID 以填写 Endpoint。"
+
+msgid "创建具备该桶读写权限的 R2 API 令牌。"
+msgstr "创建具备该桶读写权限的 R2 API 令牌。"
+
+msgid "创建具备该桶读写权限的密钥。"
+msgstr "创建具备该桶读写权限的密钥。"
+
+msgid "创建空间，绑定加速域名并完成 CNAME。国内站点域名需备案。"
+msgstr "创建空间，绑定加速域名并完成 CNAME。国内站点域名需备案。"
+
+msgid "删了不能恢复，请先备份。预估体积仅参考，数据不会自动刷新。"
+msgstr "删了不能恢复，请先备份。预估体积仅参考，数据不会自动刷新。"
+
+msgid "删除"
+msgstr "删除"
+
+msgid "删除中…"
+msgstr "删除中…"
+
+msgid "删除云上对象失败。"
+msgstr "删除云上对象失败。"
+
+msgid "删除失败"
+msgstr "删除失败"
+
+msgid "删除已选"
+msgstr "删除已选"
+
+msgid "删除成功。"
+msgstr "删除成功。"
+
+msgid "删除所选"
+msgstr "删除所选"
+
+msgid "删除选中"
+msgstr "删除选中"
+
+msgid "删除项目"
+msgstr "删除项目"
+
+msgid "利雅得"
+msgstr "利雅得"
+
+msgid "刷新"
+msgstr "刷新"
+
+msgid "刷新中"
+msgstr "刷新中"
+
+msgid "刷新失败"
+msgstr "刷新失败"
+
+msgid "前台优化"
+msgstr "前台优化"
+
+msgid "前台站点"
+msgstr "前台站点"
+
+msgid "功能开关"
+msgstr "功能开关"
+
+msgid "加载中"
+msgstr "加载中"
+
+msgid "加载中..."
+msgstr "加载中..."
+
+msgid "加载中…"
+msgstr "加载中…"
+
+msgid "加载失败"
+msgstr "加载失败"
+
+msgid "加载数据失败"
+msgstr "加载数据失败"
+
+msgid "加速域名不是接口地址。未完成 CNAME 时前台不会改写图片地址。"
+msgstr "加速域名不是接口地址。未完成 CNAME 时前台不会改写图片地址。"
+
+msgid "加速域名必须完成 CNAME；中国内地请使用已备案域名。"
+msgstr "加速域名必须完成 CNAME；中国内地请使用已备案域名。"
+
+msgid "加速域名（公网看图），需已做 CNAME。"
+msgstr "加速域名（公网看图），需已做 CNAME。"
+
+msgid "勾选安全项"
+msgstr "勾选安全项"
+
+msgid "包含"
+msgstr "包含"
+
+msgid "包含目录（哪些文件夹走加速）"
+msgstr "包含目录（哪些文件夹走加速）"
+
+msgid "北京"
+msgstr "北京"
+
+msgid "北京金融"
+msgstr "北京金融"
+
+msgid "北京金融云外网"
+msgstr "北京金融云外网"
+
+msgid "北美"
+msgstr "北美"
+
+msgid "区块 %d"
+msgstr "区块 %d"
+
+msgid "区域下拉选择，接口地址自动拼接。图片公网访问请用已绑定的自定义域名，不要用 API 域名。"
+msgstr "区域下拉选择，接口地址自动拼接。图片公网访问请用已绑定的自定义域名，不要用 API 域名。"
+
+msgid "十一月"
+msgstr "十一月"
+
+msgid "十二月"
+msgstr "十二月"
+
+msgid "十月"
+msgstr "十月"
+
+msgid "升序"
+msgstr "升序"
+
+msgid "华东 1（杭州）"
+msgstr "华东 1（杭州）"
+
+msgid "华东 2（上海）"
+msgstr "华东 2（上海）"
+
+msgid "华中 1（武汉-本地地域）"
+msgstr "华中 1（武汉-本地地域）"
+
+msgid "华北 1（青岛）"
+msgstr "华北 1（青岛）"
+
+msgid "华北 2 阿里政务云 1"
+msgstr "华北 2 阿里政务云 1"
+
+msgid "华北 2（北京）"
+msgstr "华北 2（北京）"
+
+msgid "华北 3（张家口）"
+msgstr "华北 3（张家口）"
+
+msgid "华北 5（呼和浩特）"
+msgstr "华北 5（呼和浩特）"
+
+msgid "华北 6（乌兰察布）"
+msgstr "华北 6（乌兰察布）"
+
+msgid "华南 1（深圳）"
+msgstr "华南 1（深圳）"
+
+msgid "华南 2（河源）"
+msgstr "华南 2（河源）"
+
+msgid "华南 3（广州）"
+msgstr "华南 3（广州）"
+
+msgid "单项清理尚未接删除接口："
+msgstr "单项清理尚未接删除接口："
+
+msgid "南京"
+msgstr "南京"
+
+msgid "南美"
+msgstr "南美"
+
+msgid "印度尼西亚（雅加达）"
+msgstr "印度尼西亚（雅加达）"
+
+msgid "危险"
+msgstr "危险"
+
+msgid "危险操作"
+msgstr "危险操作"
+
+msgid "卸载时删除 option、运行日志表、uploads/zaprocket 与 wp-content/cache/zaprocket。默认关闭。"
+msgstr "卸载时删除 option、运行日志表、uploads/zaprocket 与 wp-content/cache/zaprocket。默认关闭。"
+
+msgid "卸载时删除数据（卸插件一并清空）"
+msgstr "卸载时删除数据（卸插件一并清空）"
+
+msgid "历史媒体用「一键迁移」；只改正文死链用「快捷操作」"
+msgstr "历史媒体用「一键迁移」；只改正文死链用「快捷操作」"
+
+msgid "历史颜色"
+msgstr "历史颜色"
+
+msgid "压缩、合并、defer、延迟加载都会改前台，默认全关，需管理员手动打开。开了「JS 延迟加载」时，「合并 JS」不生效。菜单、支付、轮播出问题就关掉对应项，或写进排除。"
+msgstr "压缩、合并、defer、延迟加载都会改前台，默认全关，需管理员手动打开。开了「JS 延迟加载」时，「合并 JS」不生效。菜单、支付、轮播出问题就关掉对应项，或写进排除。"
+
+msgid "原因"
+msgstr "原因"
+
+msgid "原图上传失败。"
+msgstr "原图上传失败。"
+
+msgid "原图尺寸都传完后删除本地文件"
+msgstr "原图尺寸都传完后删除本地文件"
+
+msgid "去掉空格和注释，文件更小、下载更快。"
+msgstr "去掉空格和注释，文件更小、下载更快。"
+
+msgid "去掉空格和注释，脚本更小。"
+msgstr "去掉空格和注释，脚本更小。"
+
+msgid "参数不正确。请检查桶名、区域和对象路径格式。"
+msgstr "参数不正确。请检查桶名、区域和对象路径格式。"
+
+msgid "双线"
+msgstr "双线"
+
+msgid "发文清缓存网址（更新文章时一并清）"
+msgstr "发文清缓存网址（更新文章时一并清）"
+
+msgid "发现"
+msgstr "发现"
+
+msgid "取消"
+msgstr "取消"
+
+msgid "取消全选"
+msgstr "取消全选"
+
+msgid "取消勾选"
+msgstr "取消勾选"
+
+msgid "取色"
+msgstr "取色"
+
+msgid "取色器"
+msgstr "取色器"
+
+msgid "取色失败"
+msgstr "取色失败"
+
+msgid "另有导入正在进行，请稍后再试"
+msgstr "另有导入正在进行，请稍后再试"
+
+msgid "只填域名，例如 cdn.example.com 或 fonts.gstatic.com，不要写成整段网址。"
+msgstr "只填域名，例如 cdn.example.com 或 fonts.gstatic.com，不要写成整段网址。"
+
+msgid "只填桶名。"
+msgstr "只填桶名。"
+
+msgid "只填桶名自定义段，不要带 -APPID。"
+msgstr "只填桶名自定义段，不要带 -APPID。"
+
+msgid "只填桶名，不要带域名。"
+msgstr "只填桶名，不要带域名。"
+
+msgid "只处理媒体库里新上传的附件（含 REST / 远程导入 / 媒体替换）。文章正文里已经写死的旧链接、上传失败的附件，请到「快捷操作」。要把历史文件也传到云上，请用「一键迁移」。不上传主题或插件静态文件。密钥单独加密保存，不会写进普通配置。"
+msgstr "只处理媒体库里新上传的附件（含 REST / 远程导入 / 媒体替换）。文章正文里已经写死的旧链接、上传失败的附件，请到「快捷操作」。要把历史文件也传到云上，请用「一键迁移」。不上传主题或插件静态文件。密钥单独加密保存，不会写进普通配置。"
+
+msgid "只改对象存储上的对象 Key，不改 WordPress 媒体库里的原始文件名和数据库引用。WebP / AVIF 等副本跟主文件同一套规则。默认关。"
+msgstr "只改对象存储上的对象 Key，不改 WordPress 媒体库里的原始文件名和数据库引用。WebP / AVIF 等副本跟主文件同一套规则。默认关。"
+
+msgid "只是不在网页头部打印接口链接。接口本身还在，后台写文章不受影响。很多站点用不上这段代码。"
+msgstr "只是不在网页头部打印接口链接。接口本身还在，后台写文章不受影响。很多站点用不上这段代码。"
+
+msgid "只查域名（轻）"
+msgstr "只查域名（轻）"
+
+msgid "只能再添加 %1$d 张图片，已自动截取前 %2$d 张。"
+msgstr "只能再添加 %1$d 张图片，已自动截取前 %2$d 张。"
+
+msgid "可回滚正文"
+msgstr "可回滚正文"
+
+msgid "可复用的后台字段与交互组件"
+msgstr "可复用的后台字段与交互组件"
+
+msgid "可清理项"
+msgstr "可清理项"
+
+msgid "可用项目"
+msgstr "可用项目"
+
+msgid "可缓存查询参数（带这些问号也缓存）"
+msgstr "可缓存查询参数（带这些问号也缓存）"
+
+msgid "可释放空间"
+msgstr "可释放空间"
+
+msgid "右"
+msgstr "右"
+
+msgid "右上"
+msgstr "右上"
+
+msgid "右下"
+msgstr "右下"
+
+msgid "右中"
+msgstr "右中"
+
+msgid "右边框"
+msgstr "右边框"
+
+msgid "各字段均附带说明，便于快速理解用途"
+msgstr "各字段均附带说明，便于快速理解用途"
+
+msgid "合并 JS（减少请求次数）"
+msgstr "合并 JS（减少请求次数）"
+
+msgid "合计"
+msgstr "合计"
+
+msgid "同时开着其它性能插件时，可能重复改同一处：%s。建议只留一套负责前台加速。"
+msgstr "同时开着其它性能插件时，可能重复改同一处：%s。建议只留一套负责前台加速。"
+
+msgid "名称"
+msgstr "名称"
+
+msgid "含未过期记录"
+msgstr "含未过期记录"
+
+msgid "启动前预检"
+msgstr "启动前预检"
+
+msgid "启动后关闭本页不会中止队列。终止不会自动回滚，也不会删除云上文件。"
+msgstr "启动后关闭本页不会中止队列。终止不会自动回滚，也不会删除云上文件。"
+
+msgid "启动迁移"
+msgstr "启动迁移"
+
+msgid "启用"
+msgstr "启用"
+
+msgid "启用 CDN（静态文件换加速域名）"
+msgstr "启用 CDN（静态文件换加速域名）"
+
+msgid "启用上传文件自动重命名"
+msgstr "启用上传文件自动重命名"
+
+msgid "启用优化（关掉后前台暂停）"
+msgstr "启用优化（关掉后前台暂停）"
+
+msgid "启用后匿名请求 /wp-json/ 将被拒绝。联系表单等请加入排除路由。不会全局关闭 REST。"
+msgstr "启用后匿名请求 /wp-json/ 将被拒绝。联系表单等请加入排除路由。不会全局关闭 REST。"
+
+msgid "启用对象存储（新媒体上传到云）"
+msgstr "启用对象存储（新媒体上传到云）"
+
+msgid "启用运行日志"
+msgstr "启用运行日志"
+
+msgid "周一"
+msgstr "周一"
+
+msgid "周三"
+msgstr "周三"
+
+msgid "周二"
+msgstr "周二"
+
+msgid "周五"
+msgstr "周五"
+
+msgid "周六"
+msgstr "周六"
+
+msgid "周四"
+msgstr "周四"
+
+msgid "周日"
+msgstr "周日"
+
+msgid "和上面的数字一起读：选「小时」则 10 就是 10 小时；选「天」则 10 就是 10 天。"
+msgstr "和上面的数字一起读：选「小时」则 10 就是 10 小时；选「天」则 10 就是 10 天。"
+
+msgid "品牌"
+msgstr "品牌"
+
+msgid "善用导入/导出备份当前配置"
+msgstr "善用导入/导出备份当前配置"
+
+msgid "四"
+msgstr "四"
+
+msgid "四月"
+msgstr "四月"
+
+msgid "回收站文章"
+msgstr "回收站文章"
+
+msgid "回收站文章（丢掉还没清空的）"
+msgstr "回收站文章（丢掉还没清空的）"
+
+msgid "回收站评论"
+msgstr "回收站评论"
+
+msgid "回收站评论（丢掉还没清空的）"
+msgstr "回收站评论（丢掉还没清空的）"
+
+msgid "回收表里空出来的空间。对常见 InnoDB 效果有限，白天可能短暂停一下。"
+msgstr "回收表里空出来的空间。对常见 InnoDB 效果有限，白天可能短暂停一下。"
+
+msgid "回滚中"
+msgstr "回滚中"
+
+msgid "回滚只会还原已备份的正文链接，不会删除云上文件，也不会清除附件云标记。确定继续？"
+msgstr "回滚只会还原已备份的正文链接，不会删除云上文件，也不会清除附件云标记。确定继续？"
+
+msgid "回滚正文链接"
+msgstr "回滚正文链接"
+
+msgid "固定"
+msgstr "固定"
+
+msgid "图标"
+msgstr "图标"
+
+msgid "图标 '%s' 未找到"
+msgstr "图标 '%s' 未找到"
+
+msgid "图片"
+msgstr "图片"
+
+msgid "图片 ID: %d"
+msgstr "图片 ID: %d"
+
+msgid "图片对外地址。须已绑定并完成 CNAME。国内厂商请用已备案域名。不要填 API 域名。"
+msgstr "图片对外地址。须已绑定并完成 CNAME。国内厂商请用已备案域名。不要填 API 域名。"
+
+msgid "图片已移除。"
+msgstr "图片已移除。"
+
+msgid "图片库已更新，共 %d 张图片。"
+msgstr "图片库已更新，共 %d 张图片。"
+
+msgid "图片库已清空。"
+msgstr "图片库已清空。"
+
+msgid "图片懒加载（滚到再下载）"
+msgstr "图片懒加载（滚到再下载）"
+
+msgid "图片文件"
+msgstr "图片文件"
+
+msgid "图片没有额外尺寸文件，未调度缩略图上传。"
+msgstr "图片没有额外尺寸文件，未调度缩略图上传。"
+
+msgid "图表"
+msgstr "图表"
+
+msgid "图表初始化失败"
+msgstr "图表初始化失败"
+
+msgid "图表加载失败"
+msgstr "图表加载失败"
+
+msgid "图表字段类未加载"
+msgstr "图表字段类未加载"
+
+msgid "图表数据加载中…"
+msgstr "图表数据加载中…"
+
+msgid "图表数据请求失败"
+msgstr "图表数据请求失败"
+
+msgid "圣保罗"
+msgstr "圣保罗"
+
+msgid "在密钥管理复制 AccessKey 和 SecretKey。"
+msgstr "在密钥管理复制 AccessKey 和 SecretKey。"
+
+msgid "垂直重复"
+msgstr "垂直重复"
+
+msgid "垃圾清理"
+msgstr "垃圾清理"
+
+msgid "垃圾留言和回收站里的评论。"
+msgstr "垃圾留言和回收站里的评论。"
+
+msgid "垃圾评论"
+msgstr "垃圾评论"
+
+msgid "垃圾评论（标成垃圾的留言）"
+msgstr "垃圾评论（标成垃圾的留言）"
+
+msgid "填写 API Endpoint 用于上传；公网看图请另填自定义域名。"
+msgstr "填写 API Endpoint 用于上传；公网看图请另填自定义域名。"
+
+msgid "填写示例"
+msgstr "填写示例"
+
+msgid "填写示例：%s"
+msgstr "填写示例：%s"
+
+msgid "填空间名，不要带域名。"
+msgstr "填空间名，不要带域名。"
+
+msgid "墨西哥"
+msgstr "墨西哥"
+
+msgid "处理"
+msgstr "处理"
+
+msgid "处理中…"
+msgstr "处理中…"
+
+msgid "处理失败"
+msgstr "处理失败"
+
+msgid "处理媒体选择时出现错误"
+msgstr "处理媒体选择时出现错误"
+
+msgid "处理完成"
+msgstr "处理完成"
+
+msgid "处理条数"
+msgstr "处理条数"
+
+msgid "复制"
+msgstr "复制"
+
+msgid "复制代码"
+msgstr "复制代码"
+
+msgid "复制功能不可用"
+msgstr "复制功能不可用"
+
+msgid "复制失败"
+msgstr "复制失败"
+
+msgid "复制失败，请手动复制"
+msgstr "复制失败，请手动复制"
+
+msgid "复制此项"
+msgstr "复制此项"
+
+msgid "复制项目"
+msgstr "复制项目"
+
+msgid "复制颜色"
+msgstr "复制颜色"
+
+msgid "外凸"
+msgstr "外凸"
+
+msgid "外站名单（提前打招呼）"
+msgstr "外站名单（提前打招呼）"
+
+msgid "外站预连接"
+msgstr "外站预连接"
+
+msgid "大阪"
+msgstr "大阪"
+
+msgid "天"
+msgstr "天"
+
+msgid "失败"
+msgstr "失败"
+
+msgid "失败条目不属于当前任务。"
+msgstr "失败条目不属于当前任务。"
+
+msgid "失败条目（最多列出最近 50 条）"
+msgstr "失败条目（最多列出最近 50 条）"
+
+msgid "失败次数"
+msgstr "失败次数"
+
+msgid "失败表最多列出最近 50 条。超过后更早的失败不会出现在本表翻页里，请到下方迁移日志查看。重试只作用于本表列出的条目。"
+msgstr "失败表最多列出最近 50 条。超过后更早的失败不会出现在本表翻页里，请到下方迁移日志查看。重试只作用于本表列出的条目。"
+
+msgid "失败记录（上传没成功的附件）"
+msgstr "失败记录（上传没成功的附件）"
+
+msgid "套用低风险推荐"
+msgstr "套用低风险推荐"
+
+msgid "如果你已经用了好看的固定链接（比如 /文章名/），源码里那种 ?p=123 的短链就没意义了，可以去掉。"
+msgstr "如果你已经用了好看的固定链接（比如 /文章名/），源码里那种 ?p=123 的短链就没意义了，可以去掉。"
+
+msgid "媒体"
+msgstr "媒体"
+
+msgid "媒体优化"
+msgstr "媒体优化"
+
+msgid "媒体库"
+msgstr "媒体库"
+
+msgid "媒体库不可用，请刷新页面重试"
+msgstr "媒体库不可用，请刷新页面重试"
+
+msgid "媒体库未正确加载，请刷新页面重试"
+msgstr "媒体库未正确加载，请刷新页面重试"
+
+msgid "子项 %d"
+msgstr "子项 %d"
+
+msgid "字体文件"
+msgstr "字体文件"
+
+msgid "字段ID冲突错误"
+msgstr "字段ID冲突错误"
+
+msgid "字段不存在"
+msgstr "字段不存在"
+
+msgid "字段渲染错误:"
+msgstr "字段渲染错误:"
+
+msgid "字段类型 \"%s\" 未找到"
+msgstr "字段类型 \"%s\" 未找到"
+
+msgid "字段类型未指定"
+msgstr "字段类型未指定"
+
+msgid "字段组件"
+msgstr "字段组件"
+
+msgid "字段配置无效"
+msgstr "字段配置无效"
+
+msgid "存储桶或空间不存在。请检查名称、APPID 和区域。"
+msgstr "存储桶或空间不存在。请检查名称、APPID 和区域。"
+
+msgid "存储桶所在地域，可搜索中文或简称。"
+msgstr "存储桶所在地域，可搜索中文或简称。"
+
+msgid "存储空间不存在。"
+msgstr "存储空间不存在。"
+
+msgid "存储设置"
+msgstr "存储设置"
+
+msgid "孤立元数据"
+msgstr "孤立元数据"
+
+msgid "孤立元数据（主数据没了还留着的）"
+msgstr "孤立元数据（主数据没了还留着的）"
+
+msgid "安全校验失败，请刷新页面后重试"
+msgstr "安全校验失败，请刷新页面后重试"
+
+msgid "安全验证失败"
+msgstr "安全验证失败"
+
+msgid "安全验证失败，请刷新页面后重试。"
+msgstr "安全验证失败，请刷新页面后重试。"
+
+msgid "完整内容"
+msgstr "完整内容"
+
+msgid "完整网址，以 https:// 开头。可从媒体库复制。"
+msgstr "完整网址，以 https:// 开头。可从媒体库复制。"
+
+msgid "官方文档"
+msgstr "官方文档"
+
+msgid "定制插件联系开发者"
+msgstr "定制插件联系开发者"
+
+msgid "定时清理"
+msgstr "定时清理"
+
+msgid "定时清理处理 %d 条。"
+msgstr "定时清理处理 %d 条。"
+
+msgid "实时预览"
+msgstr "实时预览"
+
+msgid "实线"
+msgstr "实线"
+
+msgid "密码"
+msgstr "密码"
+
+msgid "对应文章或评论已经没了，却还留着的附加信息。"
+msgstr "对应文章或评论已经没了，却还留着的附加信息。"
+
+msgid "对比度:"
+msgstr "对比度:"
+
+msgid "对比度不足"
+msgstr "对比度不足"
+
+msgid "对比度良好"
+msgstr "对比度良好"
+
+msgid "对象不存在。请检查对象路径。"
+msgstr "对象不存在。请检查对象路径。"
+
+msgid "对象存储"
+msgstr "对象存储"
+
+msgid "对象存储先测试连接再迁移；数据库清理前请备份"
+msgstr "对象存储先测试连接再迁移；数据库清理前请备份"
+
+msgid "对象存储服务暂时不可用，请稍后重试。"
+msgstr "对象存储服务暂时不可用，请稍后重试。"
+
+msgid "对象存储请求失败。请核对配置后重试。"
+msgstr "对象存储请求失败。请核对配置后重试。"
+
+msgid "对象存储请求失败（HTTP %d）。请核对密钥、桶名和区域。"
+msgstr "对象存储请求失败（HTTP %d）。请核对密钥、桶名和区域。"
+
+msgid "对象存储连通"
+msgstr "对象存储连通"
+
+msgid "对象存储配置不完整。请填写 AccessKey、SecretKey、Bucket。"
+msgstr "对象存储配置不完整。请填写 AccessKey、SecretKey、Bucket。"
+
+msgid "导入中..."
+msgstr "导入中..."
+
+msgid "导入失败"
+msgstr "导入失败"
+
+msgid "导入成功"
+msgstr "导入成功"
+
+msgid "导入过程中发生网络错误，请稍后重试"
+msgstr "导入过程中发生网络错误，请稍后重试"
+
+msgid "导入过程中发生错误"
+msgstr "导入过程中发生错误"
+
+msgid "导入配置"
+msgstr "导入配置"
+
+msgid "导入配置将覆盖当前所有设置，此操作不可撤销。确定要继续吗？"
+msgstr "导入配置将覆盖当前所有设置，此操作不可撤销。确定要继续吗？"
+
+msgid "导出"
+msgstr "导出"
+
+msgid "导出 CSV"
+msgstr "导出 CSV"
+
+msgid "导出中"
+msgstr "导出中"
+
+msgid "导出中..."
+msgstr "导出中..."
+
+msgid "导出失败"
+msgstr "导出失败"
+
+msgid "导出成功"
+msgstr "导出成功"
+
+msgid "导出时间段"
+msgstr "导出时间段"
+
+msgid "导出过程中发生网络错误，请稍后重试"
+msgstr "导出过程中发生网络错误，请稍后重试"
+
+msgid "导出过程中发生错误"
+msgstr "导出过程中发生错误"
+
+msgid "导出配置"
+msgstr "导出配置"
+
+msgid "将保存所有已加载分区的配置，弱机上可能较慢。推荐日常使用「保存当前页」。是否继续？"
+msgstr "将保存所有已加载分区的配置，弱机上可能较慢。推荐日常使用「保存当前页」。是否继续？"
+
+msgid "将匹配目录下的静态资源 URL 替换为 CDN 主机。CDN URL 为空时不替换。"
+msgstr "将匹配目录下的静态资源 URL 替换为 CDN 主机。CDN URL 为空时不替换。"
+
+msgid "将本站静态资源 URL 改写到 CDN 主机。须填写独立 CDN URL；Cloudflare 整站代理且无单独加速域名时不要启用。PHP 页面地址不会改写。"
+msgstr "将本站静态资源 URL 改写到 CDN 主机。须填写独立 CDN URL；Cloudflare 整站代理且无单独加速域名时不要启用。PHP 页面地址不会改写。"
+
+msgid "小数位数不能超过 %d 位"
+msgstr "小数位数不能超过 %d 位"
+
+msgid "小时"
+msgstr "小时"
+
+msgid "尝试使用其他关键词搜索"
+msgstr "尝试使用其他关键词搜索"
+
+msgid "尺寸:"
+msgstr "尺寸:"
+
+msgid "居中"
+msgstr "居中"
+
+msgid "展开"
+msgstr "展开"
+
+msgid "展开全部"
+msgstr "展开全部"
+
+msgid "展开或折叠"
+msgstr "展开或折叠"
+
+msgid "展开或折叠此项目"
+msgstr "展开或折叠此项目"
+
+msgid "展开或收起"
+msgstr "展开或收起"
+
+msgid "展开详情"
+msgstr "展开详情"
+
+msgid "左"
+msgstr "左"
+
+msgid "左上"
+msgstr "左上"
+
+msgid "左下"
+msgstr "左下"
+
+msgid "左中"
+msgstr "左中"
+
+msgid "左边框"
+msgstr "左边框"
+
+msgid "已上传"
+msgstr "已上传"
+
+msgid "已上传：%1$s → %2$s"
+msgstr "已上传：%1$s → %2$s"
+
+msgid "已从前端列表移除（未配置 delete_action 时不会写入数据库）。"
+msgstr "已从前端列表移除（未配置 delete_action 时不会写入数据库）。"
+
+msgid "已保存"
+msgstr "已保存"
+
+msgid "已保存变更字段"
+msgstr "已保存变更字段"
+
+msgid "已保存密钥"
+msgstr "已保存密钥"
+
+msgid "已保存密钥（留空则不改）"
+msgstr "已保存密钥（留空则不改）"
+
+msgid "已刷新"
+msgstr "已刷新"
+
+msgid "已加入重试。"
+msgstr "已加入重试。"
+
+msgid "已加入重试：%s"
+msgstr "已加入重试：%s"
+
+msgid "已勾选"
+msgstr "已勾选"
+
+msgid "已启用"
+msgstr "已启用"
+
+msgid "已启用对象存储"
+msgstr "已启用对象存储"
+
+msgid "已启用项目"
+msgstr "已启用项目"
+
+msgid "已启用项目："
+msgstr "已启用项目："
+
+msgid "已回滚"
+msgstr "已回滚"
+
+msgid "已回滚 %d 篇内容的图片链接。附件云标记未删除。"
+msgstr "已回滚 %d 篇内容的图片链接。附件云标记未删除。"
+
+msgid "已填写自定义公网域名"
+msgstr "已填写自定义公网域名"
+
+msgid "已填写，保存后生效"
+msgstr "已填写，保存后生效"
+
+msgid "已处理。"
+msgstr "已处理。"
+
+msgid "已复制到剪贴板"
+msgstr "已复制到剪贴板"
+
+msgid "已套用低风险推荐。请刷新本页核对开关。"
+msgstr "已套用低风险推荐。请刷新本页核对开关。"
+
+msgid "已套用低风险推荐配置（Emoji、Self-Ping、RSD、WLW、版本号）。"
+msgstr "已套用低风险推荐配置（Emoji、Self-Ping、RSD、WLW、版本号）。"
+
+msgid "已完成"
+msgstr "已完成"
+
+msgid "已完成。"
+msgstr "已完成。"
+
+msgid "已开启 CDN 加速。已上云的媒体地址不会再被 CDN 改写，避免两个域名抢同一张图。"
+msgstr "已开启 CDN 加速。已上云的媒体地址不会再被 CDN 改写，避免两个域名抢同一张图。"
+
+msgid "已开始下载日志文件"
+msgstr "已开始下载日志文件"
+
+msgid "已开速度项"
+msgstr "已开速度项"
+
+msgid "已打开低风险瘦身项。刷新本页后，可在「关掉用不到的功能」「网页源代码瘦身」里核对。高风险项（XML-RPC、评论、访客 REST）未改。"
+msgstr "已打开低风险瘦身项。刷新本页后，可在「关掉用不到的功能」「网页源代码瘦身」里核对。高风险项（XML-RPC、评论、访客 REST）未改。"
+
+msgid "已扫描"
+msgstr "已扫描"
+
+msgid "已按桶内前缀重传：%1$s → %2$s"
+msgstr "已按桶内前缀重传：%1$s → %2$s"
+
+msgid "已暂停"
+msgstr "已暂停"
+
+msgid "已暂停。"
+msgstr "已暂停。"
+
+msgid "已替换正文链接（已修改文章数据库，支持回滚）：%s"
+msgstr "已替换正文链接（已修改文章数据库，支持回滚）：%s"
+
+msgid "已有暂停中的迁移任务，请先继续或终止后再新建。"
+msgstr "已有暂停中的迁移任务，请先继续或终止后再新建。"
+
+msgid "已有迁移任务在运行。"
+msgstr "已有迁移任务在运行。"
+
+msgid "已清空日志"
+msgstr "已清空日志"
+
+msgid "已清空页面缓存和压缩文件。"
+msgstr "已清空页面缓存和压缩文件。"
+
+msgid "已清空页面缓存和压缩文件。字体文件仍保留。"
+msgstr "已清空页面缓存和压缩文件。字体文件仍保留。"
+
+msgid "已禁用"
+msgstr "已禁用"
+
+msgid "已禁用项目："
+msgstr "已禁用项目："
+
+msgid "已终止"
+msgstr "已终止"
+
+msgid "已终止。"
+msgstr "已终止。"
+
+msgid "已继续。"
+msgstr "已继续。"
+
+msgid "已设置附件云标记，前台动态替换图片，文章数据库正文未改动，无需回滚：%s"
+msgstr "已设置附件云标记，前台动态替换图片，文章数据库正文未改动，无需回滚：%s"
+
+msgid "已达到最多启用数量限制（%d 个），多出来的项目可以保留但不能启用。"
+msgstr "已达到最多启用数量限制（%d 个），多出来的项目可以保留但不能启用。"
+
+msgid "已达到最大数量"
+msgstr "已达到最大数量"
+
+msgid "已达到最大项目数量限制（%d 个）"
+msgstr "已达到最大项目数量限制（%d 个）"
+
+msgid "已选 %1$d / 共 %2$d 个选项"
+msgstr "已选 %1$d / 共 %2$d 个选项"
+
+msgid "已选 %d 项"
+msgstr "已选 %d 项"
+
+msgid "已选择 %1$d / %2$d 项"
+msgstr "已选择 %1$d / %2$d 项"
+
+msgid "已选择 %d 项"
+msgstr "已选择 %d 项"
+
+msgid "已选择的颜色"
+msgstr "已选择的颜色"
+
+msgid "巴西（圣保罗）"
+msgstr "巴西（圣保罗）"
+
+msgid "广州"
+msgstr "广州"
+
+msgid "开"
+msgstr "开"
+
+msgid "开关"
+msgstr "开关"
+
+msgid "开发友好"
+msgstr "开发友好"
+
+msgid "开始"
+msgstr "开始"
+
+msgid "开始导出"
+msgstr "开始导出"
+
+msgid "开始日期"
+msgstr "开始日期"
+
+msgid "开始时间不能晚于结束时间"
+msgstr "开始时间不能晚于结束时间"
+
+msgid "开始替换"
+msgstr "开始替换"
+
+msgid "开始替换（不保存当前填写）"
+msgstr "开始替换（不保存当前填写）"
+
+msgid "弗吉尼亚（美东）"
+msgstr "弗吉尼亚（美东）"
+
+msgid "当前主题"
+msgstr "当前主题"
+
+msgid "当前任务没有可恢复的正文备份（图片仅前台动态替换，文章原始内容未修改）。"
+msgstr "当前任务没有可恢复的正文备份（图片仅前台动态替换，文章原始内容未修改）。"
+
+msgid "当前值"
+msgstr "当前值"
+
+msgid "当前分区尚未加载完成，请稍后重试。"
+msgstr "当前分区尚未加载完成，请稍后重试。"
+
+msgid "当前勾选的清理项"
+msgstr "当前勾选的清理项"
+
+msgid "当前显示区间：%1$d-%2$d"
+msgstr "当前显示区间：%1$d-%2$d"
+
+msgid "当前服务商不支持该特性，已隐藏对应设置。"
+msgstr "当前服务商不支持该特性，已隐藏对应设置。"
+
+msgid "当前服务商专属接入教程"
+msgstr "当前服务商专属接入教程"
+
+msgid "当前没有其它迁移任务占用（含暂停、回滚）"
+msgstr "当前没有其它迁移任务占用（含暂停、回滚）"
+
+msgid "当前没有可恢复的正文备份（图片仅前台动态替换，文章原始内容未修改）。"
+msgstr "当前没有可恢复的正文备份（图片仅前台动态替换，文章原始内容未修改）。"
+
+msgid "当前没有可恢复的正文备份（图片仅前台动态替换，文章原始内容未修改）。回滚不会删除云上文件，也不会清除附件云标记。"
+msgstr "当前没有可恢复的正文备份（图片仅前台动态替换，文章原始内容未修改）。回滚不会删除云上文件，也不会清除附件云标记。"
+
+msgid "当前没有可清空的数据。"
+msgstr "当前没有可清空的数据。"
+
+msgid "当前页码"
+msgstr "当前页码"
+
+msgid "当前页设置已保存"
+msgstr "当前页设置已保存"
+
+msgid "当前页设置已保存。"
+msgstr "当前页设置已保存。"
+
+msgid "当前页面已重置"
+msgstr "当前页面已重置"
+
+msgid "当前页面没有可填充的空白项"
+msgstr "当前页面没有可填充的空白项"
+
+msgid "德国（法兰克福）"
+msgstr "德国（法兰克福）"
+
+msgid "必填。写成完整地址，末尾不要斜杠，例如 https://cdn.example.com。也可以只填域名，保存时会补上 https://。"
+msgstr "必填。写成完整地址，末尾不要斜杠，例如 https://cdn.example.com。也可以只填域名，保存时会补上 https://。"
+
+msgid "快捷操作"
+msgstr "快捷操作"
+
+msgid "快捷时间段"
+msgstr "快捷时间段"
+
+msgid "快捷选择"
+msgstr "快捷选择"
+
+msgid "快速开始"
+msgstr "快速开始"
+
+msgid "忽略"
+msgstr "忽略"
+
+msgid "性能友好"
+msgstr "性能友好"
+
+msgid "总开关已关闭"
+msgstr "总开关已关闭"
+
+msgid "总开关已打开"
+msgstr "总开关已打开"
+
+msgid "总是（always）"
+msgstr "总是（always）"
+
+msgid "您没有权限访问闪电WP性能设置页面。"
+msgstr "您没有权限访问闪电WP性能设置页面。"
+
+msgid "感谢使用霹雳框架，让后台配置更清晰可靠"
+msgstr "感谢使用霹雳框架，让后台配置更清晰可靠"
+
+msgid "懒加载分区与按需资源，减轻首屏压力"
+msgstr "懒加载分区与按需资源，减轻首屏压力"
+
+msgid "懒加载排除（这些不推迟）"
+msgstr "懒加载排除（这些不推迟）"
+
+msgid "成功"
+msgstr "成功"
+
+msgid "成功删除 %d 张图片。"
+msgstr "成功删除 %d 张图片。"
+
+msgid "成功次数"
+msgstr "成功次数"
+
+msgid "成都"
+msgstr "成都"
+
+msgid "我已备份数据库，并理解可能造成短时图文不一致"
+msgstr "我已备份数据库，并理解可能造成短时图文不一致"
+
+msgid "或点击浏览"
+msgstr "或点击浏览"
+
+msgid "所有配置已重置"
+msgstr "所有配置已重置"
+
+msgid "所选图片已存在于图片库中。"
+msgstr "所选图片已存在于图片库中。"
+
+msgid "手动清理"
+msgstr "手动清理"
+
+msgid "手风琴字段缺少必需的 \"accordions\" 配置数组。"
+msgstr "手风琴字段缺少必需的 \"accordions\" 配置数组。"
+
+msgid "打开「概览」总开关，需要时套用低风险推荐"
+msgstr "打开「概览」总开关，需要时套用低风险推荐"
+
+msgid "打开后，媒体库新上传会先传到对象存储。密钥、桶名未填完整时不会真正启用。"
+msgstr "打开后，媒体库新上传会先传到对象存储。密钥、桶名未填完整时不会真正启用。"
+
+msgid "打开后，新保存不再生成修订（相当于保留 0 份）。上面的份数滑块会被忽略。不会立刻批量删掉已经存在的历史稿，那是「垃圾清理」的事。默认关闭。"
+msgstr "打开后，新保存不再生成修订（相当于保留 0 份）。上面的份数滑块会被忽略。不会立刻批量删掉已经存在的历史稿，那是「垃圾清理」的事。默认关闭。"
+
+msgid "打开日期选择器"
+msgstr "打开日期选择器"
+
+msgid "打开时间选择器"
+msgstr "打开时间选择器"
+
+msgid "打开站点"
+msgstr "打开站点"
+
+msgid "打开站点首页预览效果"
+msgstr "打开站点首页预览效果"
+
+msgid "扫描 / 体积估算"
+msgstr "扫描 / 体积估算"
+
+msgid "扫描、手动清理、定时清理、套用推荐配置都会记在这里。关掉「概览」里的「优化日志」则不再写入。"
+msgstr "扫描、手动清理、定时清理、套用推荐配置都会记在这里。关掉「概览」里的「优化日志」则不再写入。"
+
+msgid "扫描中"
+msgstr "扫描中"
+
+msgid "扫描占位完成：尚未连接数据库统计。"
+msgstr "扫描占位完成：尚未连接数据库统计。"
+
+msgid "扫描完成。确认后点「清理」。"
+msgstr "扫描完成。确认后点「清理」。"
+
+msgid "扫描完成，合计 %1$d 条，预估 %2$s。"
+msgstr "扫描完成，合计 %1$d 条，预估 %2$s。"
+
+msgid "扫描完成，开始上传并替换正文链接。"
+msgstr "扫描完成，开始上传并替换正文链接。"
+
+msgid "扫描按媒体库总量估算；上传与替换按已完成条目计算，替换未完成时不会到 100%。"
+msgstr "扫描按媒体库总量估算；上传与替换按已完成条目计算，替换未完成时不会到 100%。"
+
+msgid "扫描接口将在后续版本接入，体积先显示为 —。"
+msgstr "扫描接口将在后续版本接入，体积先显示为 —。"
+
+msgid "批量操作"
+msgstr "批量操作"
+
+msgid "找不到 %1$s。请确认插件内已包含 %2$s 目录。"
+msgstr "找不到 %1$s。请确认插件内已包含 %2$s 目录。"
+
+msgid "技术支持"
+msgstr "技术支持"
+
+msgid "把 fonts.googleapis.com 的样式和 woff2 下到 uploads/zaprocket/fonts/。第一次打开该字体可能稍慢。"
+msgstr "把 fonts.googleapis.com 的样式和 woff2 下到 uploads/zaprocket/fonts/。第一次打开该字体可能稍慢。"
+
+msgid "把多个脚本合成一个。要先开「JS 压缩」。网站已是 HTTP/2 时一般不必开。开了「JS 延迟加载」后本项无效。"
+msgstr "把多个脚本合成一个。要先开「JS 压缩」。网站已是 HTTP/2 时一般不必开。开了「JS 延迟加载」后本项无效。"
+
+msgid "把整页存到 wp-content/cache/zaprocket，第二次打开更快。默认关。登录页、购物车、结账、账户页、404、搜索页不会缓存。和其它整页缓存插件一起开会乱。"
+msgstr "把整页存到 wp-content/cache/zaprocket，第二次打开更快。默认关。登录页、购物车、结账、账户页、404、搜索页不会缓存。和其它整页缓存插件一起开会乱。"
+
+msgid "折叠"
+msgstr "折叠"
+
+msgid "折叠/展开"
+msgstr "折叠/展开"
+
+msgid "折叠全部"
+msgstr "折叠全部"
+
+msgid "拖拽项目到此处启用"
+msgstr "拖拽项目到此处启用"
+
+msgid "拖拽项目到此处禁用"
+msgstr "拖拽项目到此处禁用"
+
+msgid "拦截谷歌字体（前台不加载外链字体）"
+msgstr "拦截谷歌字体（前台不加载外链字体）"
+
+msgid "按「垃圾清理」里勾过的项目执行。"
+msgstr "按「垃圾清理」里勾过的项目执行。"
+
+msgid "按当前筛选与时间段导出为 .log 文件"
+msgstr "按当前筛选与时间段导出为 .log 文件"
+
+msgid "按时间倒序。可搜索类型、状态或说明。导出只包含当前页。"
+msgstr "按时间倒序。可搜索类型、状态或说明。导出只包含当前页。"
+
+msgid "按时间列出。「重试」再排一次上传，「忽略」只清这条记录和排队标记。"
+msgstr "按时间列出。「重试」再排一次上传，「忽略」只清这条记录和排队标记。"
+
+msgid "按状态统计"
+msgstr "按状态统计"
+
+msgid "按需启用懒加载与分区保存，降低误改风险"
+msgstr "按需启用懒加载与分区保存，降低误改风险"
+
+msgid "按需禁用 WordPress 内置功能，减少脚本与入口。不确定的项请保持关闭。"
+msgstr "按需禁用 WordPress 内置功能，减少脚本与入口。不确定的项请保持关闭。"
+
+msgid "挡住 fonts.googleapis.com / fonts.gstatic.com。若同时打开「本地托管 Google 字体」，会先下载再替换，拦不住已换成本站的文件。"
+msgstr "挡住 fonts.googleapis.com / fonts.gstatic.com。若同时打开「本地托管 Google 字体」，会先下载再替换，拦不住已换成本站的文件。"
+
+msgid "排坑提示（厂商专属坑点）"
+msgstr "排坑提示（厂商专属坑点）"
+
+msgid "排序"
+msgstr "排序"
+
+msgid "排序预览"
+msgstr "排序预览"
+
+msgid "排队中"
+msgstr "排队中"
+
+msgid "推荐配置"
+msgstr "推荐配置"
+
+msgid "推荐配置只打开低风险瘦身：禁用 Emoji、禁止自己给自己留言（Self-Ping）、去掉 RSD / WLW 和版本号。不会改 XML-RPC、评论、访客 REST。"
+msgstr "推荐配置只打开低风险瘦身：禁用 Emoji、禁止自己给自己留言（Self-Ping）、去掉 RSD / WLW 和版本号。不会改 XML-RPC、评论、访客 REST。"
+
+msgid "提交中…"
+msgstr "提交中…"
+
+msgid "提前打招呼，不是整站缓存预热。不懂可以只开下面两个开关、填一个数字，域名和文件列表留空也行。"
+msgstr "提前打招呼，不是整站缓存预热。不懂可以只开下面两个开关、填一个数字，域名和文件列表留空也行。"
+
+msgid "提示"
+msgstr "提示"
+
+msgid "插件语言"
+msgstr "插件语言"
+
+msgid "插件运行日志"
+msgstr "插件运行日志"
+
+msgid "插件运行日志条数"
+msgstr "插件运行日志条数"
+
+msgid "插入图片库"
+msgstr "插入图片库"
+
+msgid "搜索"
+msgstr "搜索"
+
+msgid "搜索..."
+msgstr "搜索..."
+
+msgid "搜索…"
+msgstr "搜索…"
+
+msgid "搜索图标"
+msgstr "搜索图标"
+
+msgid "搜索地区或 Region ID…"
+msgstr "搜索地区或 Region ID…"
+
+msgid "搜索地区或地域简称…"
+msgstr "搜索地区或地域简称…"
+
+msgid "搜索广州、上海或 ap-guangzhou"
+msgstr "搜索广州、上海或 ap-guangzhou"
+
+msgid "搜索日志内容…"
+msgstr "搜索日志内容…"
+
+msgid "搜索杭州、北京或 oss-cn-hangzhou"
+msgstr "搜索杭州、北京或 oss-cn-hangzhou"
+
+msgid "搜索选项..."
+msgstr "搜索选项..."
+
+msgid "搜索选项…"
+msgstr "搜索选项…"
+
+msgid "搜索颜色..."
+msgstr "搜索颜色..."
+
+msgid "摘要"
+msgstr "摘要"
+
+msgid "操作"
+msgstr "操作"
+
+msgid "操作失败"
+msgstr "操作失败"
+
+msgid "操作完成"
+msgstr "操作完成"
+
+msgid "收起"
+msgstr "收起"
+
+msgid "改完主题、插件或开关后，可立刻清掉已生成的页面和压缩文件。字体本地下载的文件会留着。顶部工具栏也有「清空闪电缓存」。"
+msgstr "改完主题、插件或开关后，可立刻清掉已生成的页面和压缩文件。字体本地下载的文件会留着。顶部工具栏也有「清空闪电缓存」。"
+
+msgid "政务云"
+msgstr "政务云"
+
+msgid "数值:"
+msgstr "数值:"
+
+msgid "数值不能大于 %s"
+msgstr "数值不能大于 %s"
+
+msgid "数值不能小于 %s"
+msgstr "数值不能小于 %s"
+
+msgid "数值必须是 %s 的倍数"
+msgstr "数值必须是 %s 的倍数"
+
+msgid "数值范围：%1$s 到 %2$s"
+msgstr "数值范围：%1$s 到 %2$s"
+
+msgid "数字无效"
+msgstr "数字无效"
+
+msgid "数字输入"
+msgstr "数字输入"
+
+msgid "数据"
+msgstr "数据"
+
+msgid "数据为上次扫描结果（%s），不是实时数据。缓存超过 7 天会失效。数据不会自动刷新，如需最新预估，请手动点击重新扫描。预估体积仅作为参考，实际释放空间以清理完成后为准。"
+msgstr "数据为上次扫描结果（%s），不是实时数据。缓存超过 7 天会失效。数据不会自动刷新，如需最新预估，请手动点击重新扫描。预估体积仅作为参考，实际释放空间以清理完成后为准。"
+
+msgid "数据为上次扫描结果，不是实时数据。缓存超过 7 天会失效。数据不会自动刷新，如需最新预估，请手动点击重新扫描。预估体积仅作为参考，实际释放空间以清理完成后为准。"
+msgstr "数据为上次扫描结果，不是实时数据。缓存超过 7 天会失效。数据不会自动刷新，如需最新预估，请手动点击重新扫描。预估体积仅作为参考，实际释放空间以清理完成后为准。"
+
+msgid "数据已清空。"
+msgstr "数据已清空。"
+
+msgid "数据已清空（仅前端，未配置 clear_action 时不会写入数据库）。"
+msgstr "数据已清空（仅前端，未配置 clear_action 时不会写入数据库）。"
+
+msgid "数据库"
+msgstr "数据库"
+
+msgid "数据库清理"
+msgstr "数据库清理"
+
+msgid "数据表"
+msgstr "数据表"
+
+msgid "整理数据表"
+msgstr "整理数据表"
+
+msgid "整理数据表（回收空出来的空间）"
+msgstr "整理数据表（回收空出来的空间）"
+
+msgid "整理数据表（顺带回收表空间）"
+msgstr "整理数据表（顺带回收表空间）"
+
+msgid "整理表空间，不等于删除内容。大站请在访问少时再做。"
+msgstr "整理表空间，不等于删除内容。大站请在访问少时再做。"
+
+msgid "整页缓存"
+msgstr "整页缓存"
+
+msgid "整页缓存默认关。打开后，未登录访客在主题查询完成时（template_redirect）才读磁盘 HTML，第一次访问仍会完整跑 WordPress，不如把缓存放在更早 PHP 入口快。登录用户、购物车/结账/账户、404、搜索、未列入「可缓存查询参数」的问号地址、以及带着登录或购物车 Cookie 的请求，都不会存、也不会读缓存，避免把私人页面给别人看。请先关掉其它整页缓存插件。"
+msgstr "整页缓存默认关。打开后，未登录访客在主题查询完成时（template_redirect）才读磁盘 HTML，第一次访问仍会完整跑 WordPress，不如把缓存放在更早 PHP 入口快。登录用户、购物车/结账/账户、404、搜索、未列入「可缓存查询参数」的问号地址、以及带着登录或购物车 Cookie 的请求，都不会存、也不会读缓存，避免把私人页面给别人看。请先关掉其它整页缓存插件。"
+
+msgid "整页缓存（未登录访客读生成好的 HTML）"
+msgstr "整页缓存（未登录访客读生成好的 HTML）"
+
+msgid "文件"
+msgstr "文件"
+
+msgid "文件优化"
+msgstr "文件优化"
+
+msgid "文件名:"
+msgstr "文件名:"
+
+msgid "文件地址（完整网址）"
+msgstr "文件地址（完整网址）"
+
+msgid "文件大小:"
+msgstr "文件大小:"
+
+msgid "文件大小超出限制"
+msgstr "文件大小超出限制"
+
+msgid "文件格式错误"
+msgstr "文件格式错误"
+
+msgid "文件类型（选错浏览器会忽略）"
+msgstr "文件类型（选错浏览器会忽略）"
+
+msgid "文件读取错误"
+msgstr "文件读取错误"
+
+msgid "文件过大"
+msgstr "文件过大"
+
+msgid "文件过大，对象存储拒绝接收。"
+msgstr "文件过大，对象存储拒绝接收。"
+
+msgid "文本"
+msgstr "文本"
+
+msgid "文章"
+msgstr "文章"
+
+msgid "文章与草稿"
+msgstr "文章与草稿"
+
+msgid "文章里贴外站链接时，WordPress 会自动变成卡片，同时多请求一次 wp-embed.min.js。很多站点觉得方便，想留着就不要开本项。"
+msgstr "文章里贴外站链接时，WordPress 会自动变成卡片，同时多请求一次 wp-embed.min.js。很多站点觉得方便，想留着就不要开本项。"
+
+msgid "新加坡"
+msgstr "新加坡"
+
+msgid "新项目"
+msgstr "新项目"
+
+msgid "方式（提前做什么）"
+msgstr "方式（提前做什么）"
+
+msgid "无匹配项"
+msgstr "无匹配项"
+
+msgid "无地域属性（中国内地）"
+msgstr "无地域属性（中国内地）"
+
+msgid "无效"
+msgstr "无效"
+
+msgid "无效分区"
+msgstr "无效分区"
+
+msgid "无效条目。"
+msgstr "无效条目。"
+
+msgid "无效的颜色值"
+msgstr "无效的颜色值"
+
+msgid "无法估算，站点数据量大，估算超时"
+msgstr "无法估算，站点数据量大，估算超时"
+
+msgid "无法保存"
+msgstr "无法保存"
+
+msgid "无法初始化连接，请检查 AccessKey、SecretKey、Bucket、Region、Endpoint。"
+msgstr "无法初始化连接，请检查 AccessKey、SecretKey、Bucket、Region、Endpoint。"
+
+msgid "无法打开媒体库"
+msgstr "无法打开媒体库"
+
+msgid "无法清空日志。"
+msgstr "无法清空日志。"
+
+msgid "无法生成七牛上传凭证，请检查 AccessKey 和 SecretKey。"
+msgstr "无法生成七牛上传凭证，请检查 AccessKey 和 SecretKey。"
+
+msgid "无法确定当前分区字段，数据库未改动。请打开一个配置页后再保存。"
+msgstr "无法确定当前分区字段，数据库未改动。请打开一个配置页后再保存。"
+
+msgid "无法确定当前分区，配置未保存。"
+msgstr "无法确定当前分区，配置未保存。"
+
+msgid "无法获取选择的媒体文件"
+msgstr "无法获取选择的媒体文件"
+
+msgid "无法读取所选文件，请重试或换一个文件"
+msgstr "无法读取所选文件，请重试或换一个文件"
+
+msgid "无法读取要上传的本地文件。"
+msgstr "无法读取要上传的本地文件。"
+
+msgid "无法连接到对象存储。请检查服务器网络、防火墙和接口地址。"
+msgstr "无法连接到对象存储。请检查服务器网络、防火墙和接口地址。"
+
+msgid "无结果"
+msgstr "无结果"
+
+msgid "无边框"
+msgstr "无边框"
+
+msgid "日"
+msgstr "日"
+
+msgid "日志已清空。"
+msgstr "日志已清空。"
+
+msgid "日期"
+msgstr "日期"
+
+msgid "日本（东京）"
+msgstr "日本（东京）"
+
+msgid "旧地址和新地址不能相同。"
+msgstr "旧地址和新地址不能相同。"
+
+msgid "旧地址过短，已取消替换以免误改数据库。"
+msgstr "旧地址过短，已取消替换以免误改数据库。"
+
+msgid "时"
+msgstr "时"
+
+msgid "时间"
+msgstr "时间"
+
+msgid "时间戳 + 随机串"
+msgstr "时间戳 + 随机串"
+
+msgid "星期一"
+msgstr "星期一"
+
+msgid "星期三"
+msgstr "星期三"
+
+msgid "星期二"
+msgstr "星期二"
+
+msgid "星期五"
+msgstr "星期五"
+
+msgid "星期六"
+msgstr "星期六"
+
+msgid "星期四"
+msgstr "星期四"
+
+msgid "星期日"
+msgstr "星期日"
+
+msgid "显示"
+msgstr "显示"
+
+msgid "显示 %1$d / %2$d 个选项"
+msgstr "显示 %1$d / %2$d 个选项"
+
+msgid "显示 %1$d / %2$d 项"
+msgstr "显示 %1$d / %2$d 项"
+
+msgid "显示密码"
+msgstr "显示密码"
+
+msgid "暂停"
+msgstr "暂停"
+
+msgid "暂无内容"
+msgstr "暂无内容"
+
+msgid "暂无历史记录"
+msgstr "暂无历史记录"
+
+msgid "暂无可用的调色板"
+msgstr "暂无可用的调色板"
+
+msgid "暂无图片"
+msgstr "暂无图片"
+
+msgid "暂无失败条目。超过 50 条时更早的失败不会出现在本表翻页里，请到下方迁移日志查看。重试只作用于本表列出的条目。"
+msgstr "暂无失败条目。超过 50 条时更早的失败不会出现在本表翻页里，请到下方迁移日志查看。重试只作用于本表列出的条目。"
+
+msgid "暂无失败记录。"
+msgstr "暂无失败记录。"
+
+msgid "暂无扫描记录，请点击「重新扫描」计算预估数据"
+msgstr "暂无扫描记录，请点击「重新扫描」计算预估数据"
+
+msgid "暂无扫描记录，请点击「重新扫描」计算预估数据。预估体积仅作为参考，实际释放空间以清理完成后为准。"
+msgstr "暂无扫描记录，请点击「重新扫描」计算预估数据。预估体积仅作为参考，实际释放空间以清理完成后为准。"
+
+msgid "暂无操作按钮"
+msgstr "暂无操作按钮"
+
+msgid "暂无数据"
+msgstr "暂无数据"
+
+msgid "暂无记录。请先在「垃圾清理」扫描或清理。"
+msgstr "暂无记录。请先在「垃圾清理」扫描或清理。"
+
+msgid "暂无迁移日志。"
+msgstr "暂无迁移日志。"
+
+msgid "暂无运行日志。"
+msgstr "暂无运行日志。"
+
+msgid "暂无运行日志。打开开关后，对象存储失败、数据库清理、清空缓存会出现在这里。"
+msgstr "暂无运行日志。打开开关后，对象存储失败、数据库清理、清空缓存会出现在这里。"
+
+msgid "暂无配置字段"
+msgstr "暂无配置字段"
+
+msgid "暂无项目"
+msgstr "暂无项目"
+
+msgid "暂无预检结果。"
+msgstr "暂无预检结果。"
+
+msgid "更多插件产品"
+msgstr "更多插件产品"
+
+msgid "更多插件产品与说明"
+msgstr "更多插件产品与说明"
+
+msgid "更换图片"
+msgstr "更换图片"
+
+msgid "更新图片库"
+msgstr "更新图片库"
+
+msgid "更新频率"
+msgstr "更新频率"
+
+msgid "曼谷"
+msgstr "曼谷"
+
+msgid "替换中…"
+msgstr "替换中…"
+
+msgid "替换失败，请稍后重试。"
+msgstr "替换失败，请稍后重试。"
+
+msgid "替换完成。"
+msgstr "替换完成。"
+
+msgid "替换成功。文章正文 %1$d 条，自定义字段 %2$d 条。"
+msgstr "替换成功。文章正文 %1$d 条，自定义字段 %2$d 条。"
+
+msgid "替换成的新地址"
+msgstr "替换成的新地址"
+
+msgid "最多 %d 个"
+msgstr "最多 %d 个"
+
+msgid "最多 %d 位小数"
+msgstr "最多 %d 位小数"
+
+msgid "最多 %d 项"
+msgstr "最多 %d 项"
+
+msgid "最多只能上传 {max} 张图片"
+msgstr "最多只能上传 {max} 张图片"
+
+msgid "最多只能选择 %1$d 张图片，已自动截取前 %2$d 张。"
+msgstr "最多只能选择 %1$d 张图片，已自动截取前 %2$d 张。"
+
+msgid "最多只能选择 %d 项"
+msgstr "最多只能选择 %d 项"
+
+msgid "最多启用 %d 个"
+msgstr "最多启用 %d 个"
+
+msgid "最大"
+msgstr "最大"
+
+msgid "最大值：%s"
+msgstr "最大值：%s"
+
+msgid "最小"
+msgstr "最小"
+
+msgid "最小值：%s"
+msgstr "最小值：%s"
+
+msgid "最少 %d 个"
+msgstr "最少 %d 个"
+
+msgid "最近一次写入"
+msgstr "最近一次写入"
+
+msgid "有人用 RSS（比如 Feedly）跟着你的新文章走。现在用的人少了。开了之后订阅器就拿不到更新，页头里的订阅链接也会去掉。"
+msgstr "有人用 RSS（比如 Feedly）跟着你的新文章走。现在用的人少了。开了之后订阅器就拿不到更新，页头里的订阅链接也会去掉。"
+
+msgid "有效期单位（按小时还是按天）"
+msgstr "有效期单位（按小时还是按天）"
+
+msgid "服务商（决定访问方式和默认区域）"
+msgstr "服务商（决定访问方式和默认区域）"
+
+msgid "服务器时间与对象存储相差约 %d 秒。超过约 15 分钟会导致签名失败，请校准系统时间（UTC）。"
+msgstr "服务器时间与对象存储相差约 %d 秒。超过约 15 分钟会导致签名失败，请校准系统时间（UTC）。"
+
+msgid "服务器时间与对象存储相差过大，请把系统时间校准到 UTC。"
+msgstr "服务器时间与对象存储相差过大，请把系统时间校准到 UTC。"
+
+msgid "服务器超时，配置可能已生效，请刷新设置页核对"
+msgstr "服务器超时，配置可能已生效，请刷新设置页核对"
+
+msgid "服务器返回了网页而不是 JSON（常见原因：PHP 报错或安全插件拦截）。请强制刷新后重试。"
+msgstr "服务器返回了网页而不是 JSON（常见原因：PHP 报错或安全插件拦截）。请强制刷新后重试。"
+
+msgid "未启用分区懒加载"
+msgstr "未启用分区懒加载"
+
+msgid "未填写自定义公网域名时，媒体地址不会改写成 R2 API 域名。请绑定自定义域后再保存。"
+msgstr "未填写自定义公网域名时，媒体地址不会改写成 R2 API 域名。请绑定自定义域后再保存。"
+
+msgid "未开始"
+msgstr "未开始"
+
+msgid "未找到匹配的图标"
+msgstr "未找到匹配的图标"
+
+msgid "未找到匹配的选项"
+msgstr "未找到匹配的选项"
+
+msgid "未找到匹配的颜色"
+msgstr "未找到匹配的颜色"
+
+msgid "未找到匹配项"
+msgstr "未找到匹配项"
+
+msgid "未提供图片 ID"
+msgstr "未提供图片 ID"
+
+msgid "未收到完整表单数据，请刷新页面后重试。"
+msgstr "未收到完整表单数据，请刷新页面后重试。"
+
+msgid "未检测到可保存的数据"
+msgstr "未检测到可保存的数据"
+
+msgid "未检测到可保存的数据。"
+msgstr "未检测到可保存的数据。"
+
+msgid "未登录访客不能使用本站接口。"
+msgstr "未登录访客不能使用本站接口。"
+
+msgid "未登录访客可读磁盘页"
+msgstr "未登录访客可读磁盘页"
+
+msgid "未知文件"
+msgstr "未知文件"
+
+msgid "未达到最小数量"
+msgstr "未达到最小数量"
+
+msgid "未达到最小长度"
+msgstr "未达到最小长度"
+
+msgid "未选择任何颜色"
+msgstr "未选择任何颜色"
+
+msgid "未选择背景图片"
+msgstr "未选择背景图片"
+
+msgid "未通过"
+msgstr "未通过"
+
+msgid "未配置密钥"
+msgstr "未配置密钥"
+
+msgid "未配置服务端动作，仅清空当前页面列表"
+msgstr "未配置服务端动作，仅清空当前页面列表"
+
+msgid "本地 ECharts 加载失败"
+msgstr "本地 ECharts 加载失败"
+
+msgid "本地原图不存在或不可读。"
+msgstr "本地原图不存在或不可读。"
+
+msgid "本地托管 Google 字体（字体放本站）"
+msgstr "本地托管 Google 字体（字体放本站）"
+
+msgid "本批已删完，还有剩余，请再点清理。"
+msgstr "本批已删完，还有剩余，请再点清理。"
+
+msgid "本批扫描入队 %d 个附件。"
+msgstr "本批扫描入队 %d 个附件。"
+
+msgid "本批清理完成，还有剩余，请继续点清理。"
+msgstr "本批清理完成，还有剩余，请继续点清理。"
+
+msgid "本次可回滚 %d 篇已备份的正文。"
+msgstr "本次可回滚 %d 篇已备份的正文。"
+
+msgid "本站已关闭订阅源。"
+msgstr "本站已关闭订阅源。"
+
+msgid "本页轮询大约展示最近 120 条迁移日志，首屏最多约 200 条；更早的记录不会出现在翻页里。"
+msgstr "本页轮询大约展示最近 120 条迁移日志，首屏最多约 200 条；更早的记录不会出现在翻页里。"
+
+msgid "权限不足"
+msgstr "权限不足"
+
+msgid "权限不足。"
+msgstr "权限不足。"
+
+msgid "权限不足。请检查密钥权限、桶 ACL，以及区域是否与桶一致。"
+msgstr "权限不足。请检查密钥权限、桶 ACL，以及区域是否与桶一致。"
+
+msgid "权限不足，无法保存当前配置。"
+msgstr "权限不足，无法保存当前配置。"
+
+msgid "条"
+msgstr "条"
+
+msgid "条可清理"
+msgstr "条可清理"
+
+msgid "条数据，共 %s 条"
+msgstr "条数据，共 %s 条"
+
+msgid "条目"
+msgstr "条目"
+
+msgid "杭州金融云外网"
+msgstr "杭州金融云外网"
+
+msgid "查看"
+msgstr "查看"
+
+msgid "查看完整内容"
+msgstr "查看完整内容"
+
+msgid "标成垃圾的评论。也可配合反垃圾插件减少来源。"
+msgstr "标成垃圾的评论。也可配合反垃圾插件减少来源。"
+
+msgid "标题"
+msgstr "标题"
+
+msgid "样式表 CSS"
+msgstr "样式表 CSS"
+
+msgid "核心能力一览"
+msgstr "核心能力一览"
+
+msgid "格式"
+msgstr "格式"
+
+msgid "格式化"
+msgstr "格式化"
+
+msgid "格式化代码"
+msgstr "格式化代码"
+
+msgid "格式化失败"
+msgstr "格式化失败"
+
+msgid "框架说明与接入指南"
+msgstr "框架说明与接入指南"
+
+msgid "桶内基础目录前缀"
+msgstr "桶内基础目录前缀"
+
+msgid "桶内基础目录前缀含有非法字符。不要填写 ../，也不要用 \\ : * ? \" < > |。"
+msgstr "桶内基础目录前缀含有非法字符。不要填写 ../，也不要用 \\ : * ? \" < > |。"
+
+msgid "桶名不要带英文句点，也不要写成带域名的完整地址。"
+msgstr "桶名不要带英文句点，也不要写成带域名的完整地址。"
+
+msgid "桶名填自定义段，APPID 单独填。图片请用已绑定的自定义加速域名，不要用 COS API 域名。"
+msgstr "桶名填自定义段，APPID 单独填。图片请用已绑定的自定义加速域名，不要用 COS API 域名。"
+
+msgid "检查项"
+msgstr "检查项"
+
+msgid "检测到其它性能插件同时启用：%s。重复改同一处资源时，页面可能更慢或行为对不上。建议只留一套。"
+msgstr "检测到其它性能插件同时启用：%s。重复改同一处资源时，页面可能更慢或行为对不上。建议只留一套。"
+
+msgid "检测到跨分区字段，已拒绝保存。请只保存当前页，或使用「保存全部」。"
+msgstr "检测到跨分区字段，已拒绝保存。请只保存当前页，或使用「保存全部」。"
+
+msgid "检测到跨分区字段，配置未保存。"
+msgstr "检测到跨分区字段，配置未保存。"
+
+msgid "概览"
+msgstr "概览"
+
+msgid "欢迎"
+msgstr "欢迎"
+
+msgid "欢迎使用闪电WP性能"
+msgstr "欢迎使用闪电WP性能"
+
+msgid "欢迎使用霹雳框架"
+msgstr "欢迎使用霹雳框架"
+
+msgid "欧洲"
+msgstr "欧洲"
+
+msgid "欧洲与美洲"
+msgstr "欧洲与美洲"
+
+msgid "正在写入推荐配置…"
+msgstr "正在写入推荐配置…"
+
+msgid "正在切换语言…"
+msgstr "正在切换语言…"
+
+msgid "正在加载设置…"
+msgstr "正在加载设置…"
+
+msgid "正在回滚正文，不能同时启动迁移。"
+msgstr "正在回滚正文，不能同时启动迁移。"
+
+msgid "正在回滚，不能重试。"
+msgstr "正在回滚，不能重试。"
+
+msgid "正在扫描…"
+msgstr "正在扫描…"
+
+msgid "正在清理…"
+msgstr "正在清理…"
+
+msgid "正在清空缓存…"
+msgstr "正在清空缓存…"
+
+msgid "正在计算体积"
+msgstr "正在计算体积"
+
+msgid "正文备份失败，已跳过链接替换。"
+msgstr "正文备份失败，已跳过链接替换。"
+
+msgid "正文替换进行中：%s"
+msgstr "正文替换进行中：%s"
+
+msgid "正文里贴了自己网站的链接，WordPress 会给自己留一条 Pingback，基本是噪音，还浪费资源。建议打开本项。"
+msgstr "正文里贴了自己网站的链接，WordPress 会给自己留一条 Pingback，基本是噪音，还浪费资源。建议打开本项。"
+
+msgid "此字段"
+msgstr "此字段"
+
+msgid "此字段为必填项"
+msgstr "此字段为必填项"
+
+msgid "步进必须为 %s"
+msgstr "步进必须为 %s"
+
+msgid "每周"
+msgstr "每周"
+
+msgid "每周（weekly）"
+msgstr "每周（weekly）"
+
+msgid "每天"
+msgstr "每天"
+
+msgid "每天（daily）"
+msgstr "每天（daily）"
+
+msgid "每小时（hourly）"
+msgstr "每小时（hourly）"
+
+msgid "每年（yearly）"
+msgstr "每年（yearly）"
+
+msgid "每月（monthly）"
+msgstr "每月（monthly）"
+
+msgid "每次保存都会多一份历史。保留份数由「定时清理」决定。"
+msgstr "每次保存都会多一份历史。保留份数由「定时清理」决定。"
+
+msgid "每次保存都会多一份历史。时间一长占空间。拉到 0 表示不限制份数、也不自动清光。默认 5。若要一篇都不留，请勾选下面的「修订全部不留」。"
+msgstr "每次保存都会多一份历史。时间一长占空间。拉到 0 表示不限制份数、也不自动清光。默认 5。若要一篇都不留，请勾选下面的「修订全部不留」。"
+
+msgid "每行一个关键词（文件名、class、域名）。"
+msgstr "每行一个关键词（文件名、class、域名）。"
+
+msgid "每行一个命名空间或路径片段，例如 oembed、contact-form。"
+msgstr "每行一个命名空间或路径片段，例如 oembed、contact-form。"
+
+msgid "每行一个地址或路径。写成 /wp-content/plugins/某插件/(.*).css 可整目录跳过。"
+msgstr "每行一个地址或路径。写成 /wp-content/plugins/某插件/(.*).css 可整目录跳过。"
+
+msgid "每行一个地址或路径。支付、验证码、客服脚本建议写在这里。压缩、defer、延迟加载都会跳过这些文件。"
+msgstr "每行一个地址或路径。支付、验证码、客服脚本建议写在这里。压缩、defer、延迟加载都会跳过这些文件。"
+
+msgid "每行一个相对站点根目录的路径，例如 wp-content/mu-plugins。"
+msgstr "每行一个相对站点根目录的路径，例如 wp-content/mu-plugins。"
+
+msgid "每页显示"
+msgstr "每页显示"
+
+msgid "水平重复"
+msgstr "水平重复"
+
+msgid "永不缓存 Cookie（带着这些就不缓存）"
+msgstr "永不缓存 Cookie（带着这些就不缓存）"
+
+msgid "永不缓存 User Agent（这些浏览器不走缓存）"
+msgstr "永不缓存 User Agent（这些浏览器不走缓存）"
+
+msgid "永不缓存网址（这些页面不存缓存）"
+msgstr "永不缓存网址（这些页面不存缓存）"
+
+msgid "没有任务。"
+msgstr "没有任务。"
+
+msgid "没有可回滚的任务。"
+msgstr "没有可回滚的任务。"
+
+msgid "没有可终止的迁移任务。"
+msgstr "没有可终止的迁移任务。"
+
+msgid "没有已暂停的任务。"
+msgstr "没有已暂停的任务。"
+
+msgid "没有找到匹配的选项"
+msgstr "没有找到匹配的选项"
+
+msgid "没有找到导入数据"
+msgstr "没有找到导入数据"
+
+msgid "没有进行中的任务。"
+msgstr "没有进行中的任务。"
+
+msgid "法兰克福"
+msgstr "法兰克福"
+
+msgid "法国（巴黎）"
+msgstr "法国（巴黎）"
+
+msgid "注意"
+msgstr "注意"
+
+msgid "注意：已关闭 WP-Cron。没有系统定时任务时，关网页后迁移可能不会继续。"
+msgstr "注意：已关闭 WP-Cron。没有系统定时任务时，关网页后迁移可能不会继续。"
+
+msgid "注意：当前只用 WordPress 定时任务。站点没有访客访问时，迁移会暂停，有人打开网站后才会继续。"
+msgstr "注意：当前只用 WordPress 定时任务。站点没有访客访问时，迁移会暂停，有人打开网站后才会继续。"
+
+msgid "泰国（曼谷）"
+msgstr "泰国（曼谷）"
+
+msgid "测试中…"
+msgstr "测试中…"
+
+msgid "测试连接"
+msgstr "测试连接"
+
+msgid "测试连接（不保存当前填写）"
+msgstr "测试连接（不保存当前填写）"
+
+msgid "深圳金融"
+msgstr "深圳金融"
+
+msgid "深圳金融云外网"
+msgstr "深圳金融云外网"
+
+msgid "添加一个外站"
+msgstr "添加一个外站"
+
+msgid "添加一个文件"
+msgstr "添加一个文件"
+
+msgid "添加图片"
+msgstr "添加图片"
+
+msgid "添加自定义颜色"
+msgstr "添加自定义颜色"
+
+msgid "添加项目"
+msgstr "添加项目"
+
+msgid "添加颜色"
+msgstr "添加颜色"
+
+msgid "清理"
+msgstr "清理"
+
+msgid "清理不会在本页立即删库。批量删除将在后续版本接入。"
+msgstr "清理不会在本页立即删库。批量删除将在后续版本接入。"
+
+msgid "清理中…"
+msgstr "清理中…"
+
+msgid "清理后会出现时间"
+msgstr "清理后会出现时间"
+
+msgid "清理完成。"
+msgstr "清理完成。"
+
+msgid "清理完成，本批处理 %d 条。"
+msgstr "清理完成，本批处理 %d 条。"
+
+msgid "清理时删光修订（历史稿一份不留）"
+msgstr "清理时删光修订（历史稿一份不留）"
+
+msgid "清理记录（扫描和清理留下的条目）"
+msgstr "清理记录（扫描和清理留下的条目）"
+
+msgid "清理项目"
+msgstr "清理项目"
+
+msgid "清空"
+msgstr "清空"
+
+msgid "清空中"
+msgstr "清空中"
+
+msgid "清空全部"
+msgstr "清空全部"
+
+msgid "清空图标"
+msgstr "清空图标"
+
+msgid "清空失败"
+msgstr "清空失败"
+
+msgid "清空日志"
+msgstr "清空日志"
+
+msgid "清空选择"
+msgstr "清空选择"
+
+msgid "清空闪电缓存"
+msgstr "清空闪电缓存"
+
+msgid "清空页面缓存"
+msgstr "清空页面缓存"
+
+msgid "清除"
+msgstr "清除"
+
+msgid "源码里会写你用的是哪一版 WordPress。有人觉得藏起来能少挨一些针对旧版本的扫描。"
+msgstr "源码里会写你用的是哪一版 WordPress。有人觉得藏起来能少挨一些针对旧版本的扫描。"
+
+msgid "滚动"
+msgstr "滚动"
+
+msgid "点击下方按钮添加第一个项目"
+msgstr "点击下方按钮添加第一个项目"
+
+msgid "点击后展开侧栏「定制插件联系开发者」二维码"
+msgstr "点击后展开侧栏「定制插件联系开发者」二维码"
+
+msgid "点击或拖拽文件到此处"
+msgstr "点击或拖拽文件到此处"
+
+msgid "点击查看完整内容"
+msgstr "点击查看完整内容"
+
+msgid "点击选择颜色"
+msgstr "点击选择颜色"
+
+msgid "点名预载某个文件"
+msgstr "点名预载某个文件"
+
+msgid "点线"
+msgstr "点线"
+
+msgid "状态"
+msgstr "状态"
+
+msgid "现在"
+msgstr "现在"
+
+msgid "用 RAM 用户创建 AccessKey，不要用主账号密钥。"
+msgstr "用 RAM 用户创建 AccessKey，不要用主账号密钥。"
+
+msgid "用上面两个地址做一次替换，不会写进存储设置。首次请先备份数据库。"
+msgstr "用上面两个地址做一次替换，不会写进存储设置。首次请先备份数据库。"
+
+msgid "用了 CDN、统计或外链字体才需要。没有外链就不用加。只填主机名，不要带 http。"
+msgstr "用了 CDN、统计或外链字体才需要。没有外链就不用加。只填主机名，不要带 http。"
+
+msgid "用子账号 SecretId / SecretKey，不要用登录密码。"
+msgstr "用子账号 SecretId / SecretKey，不要用登录密码。"
+
+msgid "用当前填写试连，不会保存。结果在按钮旁显示。"
+msgstr "用当前填写试连，不会保存。结果在按钮旁显示。"
+
+msgid "用本地默认图"
+msgstr "用本地默认图"
+
+msgid "用空间密钥上传，无需 Region / Endpoint。图片公网请填已绑定的加速域名。"
+msgstr "用空间密钥上传，无需 Region / Endpoint。图片公网请填已绑定的加速域名。"
+
+msgid "留空表示不限制；仍会套用上方级别 / 通道 / 搜索筛选。"
+msgstr "留空表示不限制；仍会套用上方级别 / 通道 / 搜索筛选。"
+
+msgid "瘦身与速度按需打开。Delay JS、压缩、整页缓存确认站点后再开"
+msgstr "瘦身与速度按需打开。Delay JS、压缩、整页缓存确认站点后再开"
+
+msgid "登录后看网站，页面最顶上那条 WordPress 黑条会藏起来。部分主题本来就会显示它。"
+msgstr "登录后看网站，页面最顶上那条 WordPress 黑条会藏起来。部分主题本来就会显示它。"
+
+msgid "目标不存在。请检查桶名、区域和对象路径。"
+msgstr "目标不存在。请检查桶名、区域和对象路径。"
+
+msgid "硅谷（美西）"
+msgstr "硅谷（美西）"
+
+msgid "确定"
+msgstr "确定"
+
+msgid "确定删除全部"
+msgstr "确定删除全部"
+
+msgid "确定对已勾选的 %d 项执行「%s」？"
+msgstr "确定对已勾选的 %d 项执行「%s」？"
+
+msgid "确定导入"
+msgstr "确定导入"
+
+msgid "确定清空全部运行日志？此操作不可恢复。"
+msgstr "确定清空全部运行日志？此操作不可恢复。"
+
+msgid "确定补齐"
+msgstr "确定补齐"
+
+msgid "确定要删除已勾选的 %d 项吗？此操作不可撤销。"
+msgstr "确定要删除已勾选的 %d 项吗？此操作不可撤销。"
+
+msgid "确定要删除此项吗？"
+msgstr "确定要删除此项吗？"
+
+msgid "确定要将当前页面中的空白项补齐为默认值吗？已填写的内容不会被覆盖。"
+msgstr "确定要将当前页面中的空白项补齐为默认值吗？已填写的内容不会被覆盖。"
+
+msgid "确定要执行此操作吗？"
+msgstr "确定要执行此操作吗？"
+
+msgid "确定要清空全部吗？"
+msgstr "确定要清空全部吗？"
+
+msgid "确定要清空当前表格中的所有数据吗？此操作不可撤销。"
+msgstr "确定要清空当前表格中的所有数据吗？此操作不可撤销。"
+
+msgid "确定要移除此项吗？"
+msgstr "确定要移除此项吗？"
+
+msgid "确定要移除这个媒体文件吗？"
+msgstr "确定要移除这个媒体文件吗？"
+
+msgid "确定要移除这个文件吗？"
+msgstr "确定要移除这个文件吗？"
+
+msgid "确定要重置当前页面的所有设置吗？此操作将恢复为默认值，操作不可撤销。"
+msgstr "确定要重置当前页面的所有设置吗？此操作将恢复为默认值，操作不可撤销。"
+
+msgid "确定要重置所有设置吗？此操作不可撤销。"
+msgstr "确定要重置所有设置吗？此操作不可撤销。"
+
+msgid "确定重置"
+msgstr "确定重置"
+
+msgid "确定？"
+msgstr "确定？"
+
+msgid "确认"
+msgstr "确认"
+
+msgid "确认删除"
+msgstr "确认删除"
+
+msgid "确认回滚"
+msgstr "确认回滚"
+
+msgid "确认导入配置"
+msgstr "确认导入配置"
+
+msgid "确认清空"
+msgstr "确认清空"
+
+msgid "确认移除"
+msgstr "确认移除"
+
+msgid "确认网关已开 S3 兼容 API，并准备公网域名。"
+msgstr "确认网关已开 S3 兼容 API，并准备公网域名。"
+
+msgid "禁用 Emoji（少加载表情脚本）"
+msgstr "禁用 Emoji（少加载表情脚本）"
+
+msgid "禁用 RSS（订阅器拿不到更新）"
+msgstr "禁用 RSS（订阅器拿不到更新）"
+
+msgid "禁用 XML-RPC（关掉远程发文接口）"
+msgstr "禁用 XML-RPC（关掉远程发文接口）"
+
+msgid "禁用 oEmbed（文章里不自动变卡片）"
+msgstr "禁用 oEmbed（文章里不自动变卡片）"
+
+msgid "禁用管理黑条（前台不显示顶栏）"
+msgstr "禁用管理黑条（前台不显示顶栏）"
+
+msgid "禁用自己 Pingback（不给自己留引用）"
+msgstr "禁用自己 Pingback（不给自己留引用）"
+
+msgid "禁用访客 REST（没登录不能调接口）"
+msgstr "禁用访客 REST（没登录不能调接口）"
+
+msgid "禁用评论（全站不能再评）"
+msgstr "禁用评论（全站不能再评）"
+
+msgid "秒"
+msgstr "秒"
+
+msgid "移除"
+msgstr "移除"
+
+msgid "移除 REST 链接（页头不打印接口地址）"
+msgstr "移除 REST 链接（页头不打印接口地址）"
+
+msgid "移除 RSD（远程发文链接）"
+msgstr "移除 RSD（远程发文链接）"
+
+msgid "移除 WP 版本号（少暴露版本）"
+msgstr "移除 WP 版本号（少暴露版本）"
+
+msgid "移除 jQuery Migrate（去掉老兼容脚本）"
+msgstr "移除 jQuery Migrate（去掉老兼容脚本）"
+
+msgid "移除 wlwmanifest（老写博客软件用）"
+msgstr "移除 wlwmanifest（老写博客软件用）"
+
+msgid "移除 wp_head 中的多余输出：Feed、generator、RSD、wlwmanifest、shortlink、REST 发现链接等。"
+msgstr "移除 wp_head 中的多余输出：Feed、generator、RSD、wlwmanifest、shortlink、REST 发现链接等。"
+
+msgid "移除媒体文件时出现错误"
+msgstr "移除媒体文件时出现错误"
+
+msgid "移除短链接（不要 ?p=123）"
+msgstr "移除短链接（不要 ?p=123）"
+
+msgid "移除背景图片"
+msgstr "移除背景图片"
+
+msgid "移除评论者网站（表单里不要网址栏）"
+msgstr "移除评论者网站（表单里不要网址栏）"
+
+msgid "移除颜色"
+msgstr "移除颜色"
+
+msgid "稳定版"
+msgstr "稳定版"
+
+msgid "空白项已按默认值补齐"
+msgstr "空白项已按默认值补齐"
+
+msgid "空间不存在，请检查空间名称。"
+msgstr "空间不存在，请检查空间名称。"
+
+msgid "站点瘦身"
+msgstr "站点瘦身"
+
+msgid "第 %1$d / %2$d 页"
+msgstr "第 %1$d / %2$d 页"
+
+msgid "第 %1$s / %2$s 页"
+msgstr "第 %1$s / %2$s 页"
+
+msgid "筛选已保存"
+msgstr "筛选已保存"
+
+msgid "筛选选项…"
+msgstr "筛选选项…"
+
+msgid "签名不匹配。请核对 SecretKey、区域，并校准服务器 UTC 时间。"
+msgstr "签名不匹配。请核对 SecretKey、区域，并校准服务器 UTC 时间。"
+
+msgid "签名区域。不确定可填 us-east-1。"
+msgstr "签名区域。不确定可填 us-east-1。"
+
+msgid "签名区域填 us-east-1 或 auto。"
+msgstr "签名区域填 us-east-1 或 auto。"
+
+msgid "类型"
+msgstr "类型"
+
+msgid "系列"
+msgstr "系列"
+
+msgid "系统"
+msgstr "系统"
+
+msgid "系统信息"
+msgstr "系统信息"
+
+msgid "级别"
+msgstr "级别"
+
+msgid "纳入地图"
+msgstr "纳入地图"
+
+msgid "组件库"
+msgstr "组件库"
+
+msgid "终止"
+msgstr "终止"
+
+msgid "绑定自定义域名并完成 CNAME。国内站点域名需备案。"
+msgstr "绑定自定义域名并完成 CNAME。国内站点域名需备案。"
+
+msgid "结束"
+msgstr "结束"
+
+msgid "结束日期"
+msgstr "结束日期"
+
+msgid "结果"
+msgstr "结果"
+
+msgid "给手机客户端、Jetpack、远程发文章用的老接口，也常被拿来撞密码。不用这些就关掉。不确定就别开。"
+msgstr "给手机客户端、Jetpack、远程发文章用的老接口，也常被拿来撞密码。不用这些就关掉。不确定就别开。"
+
+msgid "给缺少宽高的图片补上 width / height。"
+msgstr "给缺少宽高的图片补上 width / height。"
+
+msgid "给脚本加上 defer，不挡页面排版。菜单、支付异常时关掉，或写进排除。"
+msgstr "给脚本加上 defer，不挡页面排版。菜单、支付异常时关掉，或写进排除。"
+
+msgid "统一配置读写与校验，便于宿主接入"
+msgstr "统一配置读写与校验，便于宿主接入"
+
+msgid "继续"
+msgstr "继续"
+
+msgid "缓存有效期（隔多久作废）"
+msgstr "缓存有效期（隔多久作废）"
+
+msgid "编辑图片库"
+msgstr "编辑图片库"
+
+msgid "编辑时 WordPress 会自动存临时稿。超过这里填的天数，清理时才会删。"
+msgstr "编辑时 WordPress 会自动存临时稿。超过这里填的天数，清理时才会删。"
+
+msgid "编辑时自动存的临时稿。超过保留天数的才会清。"
+msgstr "编辑时自动存的临时稿。超过保留天数的才会清。"
+
+msgid "编辑过程中堆积的历史稿、自动草稿和回收站内容。"
+msgstr "编辑过程中堆积的历史稿、自动草稿和回收站内容。"
+
+msgid "缩略图上传失败：%s"
+msgstr "缩略图上传失败：%s"
+
+msgid "缺少 ajaxurl"
+msgstr "缺少 ajaxurl"
+
+msgid "缺少 field_id 或 ajaxurl"
+msgstr "缺少 field_id 或 ajaxurl"
+
+msgid "缺少字段 id"
+msgstr "缺少字段 id"
+
+msgid "缺少选项 ID，请强制刷新后台后重试。"
+msgstr "缺少选项 ID，请强制刷新后台后重试。"
+
+msgid "网址格式不正确。"
+msgstr "网址格式不正确。"
+
+msgid "网址问号后面的叫查询参数。例如 https://你的站点/?utm_source=weixin 里的 utm_source。默认：带问号的地址不缓存，以免每个人看到的广告来源页都各存一份。若某种参数可以共用同一份缓存（常见是统计用的 utm_source、utm_medium），把参数名写在这里，每行一个，不要写成整段网址。不确定就留空。"
+msgstr "网址问号后面的叫查询参数。例如 https://你的站点/?utm_source=weixin 里的 utm_source。默认：带问号的地址不缓存，以免每个人看到的广告来源页都各存一份。若某种参数可以共用同一份缓存（常见是统计用的 utm_source、utm_medium），把参数名写在这里，每行一个，不要写成整段网址。不确定就留空。"
+
+msgid "网站前台不要定时刷新"
+msgstr "网站前台不要定时刷新"
+
+msgid "美国（弗吉尼亚）"
+msgstr "美国（弗吉尼亚）"
+
+msgid "美国（硅谷）"
+msgstr "美国（硅谷）"
+
+msgid "联系我们"
+msgstr "联系我们"
+
+msgid "背景位置"
+msgstr "背景位置"
+
+msgid "背景图懒加载（CSS 背景也推迟）"
+msgstr "背景图懒加载（CSS 背景也推迟）"
+
+msgid "背景图片"
+msgstr "背景图片"
+
+msgid "背景尺寸"
+msgstr "背景尺寸"
+
+msgid "背景重复"
+msgstr "背景重复"
+
+msgid "背景附着"
+msgstr "背景附着"
+
+msgid "背景颜色"
+msgstr "背景颜色"
+
+msgid "脚本 JS（慎用）"
+msgstr "脚本 JS（慎用）"
+
+msgid "腾讯云 APPID"
+msgstr "腾讯云 APPID"
+
+msgid "腾讯云 COS"
+msgstr "腾讯云 COS"
+
+msgid "腾讯云区域"
+msgstr "腾讯云区域"
+
+msgid "腾讯云账号 APPID，纯数字。"
+msgstr "腾讯云账号 APPID，纯数字。"
+
+msgid "自动"
+msgstr "自动"
+
+msgid "自动保存"
+msgstr "自动保存"
+
+msgid "自动保存间隔（写文章多久存一次）"
+msgstr "自动保存间隔（写文章多久存一次）"
+
+msgid "自动清理周期（多久跑一次）"
+msgstr "自动清理周期（多久跑一次）"
+
+msgid "自动清理和手动清理时，每篇最多留几份。拉到 0 表示不按份数删修订（不限制）。若要清光历史稿，请勾选下面的「清理时删光修订」。"
+msgstr "自动清理和手动清理时，每篇最多留几份。拉到 0 表示不按份数删修订（不限制）。若要清光历史稿，请勾选下面的「清理时删光修订」。"
+
+msgid "自动清理时是否顺便回收表空间。对常见 InnoDB 效果有限，大网站请在半夜再开。"
+msgstr "自动清理时是否顺便回收表空间。对常见 InnoDB 效果有限，大网站请在半夜再开。"
+
+msgid "自动滚动"
+msgstr "自动滚动"
+
+msgid "自动草稿"
+msgstr "自动草稿"
+
+msgid "自动草稿保留（超过几天再删）"
+msgstr "自动草稿保留（超过几天再删）"
+
+msgid "自动草稿（编辑时临时存的稿）"
+msgstr "自动草稿（编辑时临时存的稿）"
+
+msgid "自定义 / 加速域名（公网看图）"
+msgstr "自定义 / 加速域名（公网看图）"
+
+msgid "自定义 S3"
+msgstr "自定义 S3"
+
+msgid "自定义前缀 + 清理后的原名"
+msgstr "自定义前缀 + 清理后的原名"
+
+msgid "自定义加速域名（公网看图）。"
+msgstr "自定义加速域名（公网看图）。"
+
+msgid "自定义加速域名（公网看图）。不要填 *.myqcloud.com。"
+msgstr "自定义加速域名（公网看图）。不要填 *.myqcloud.com。"
+
+msgid "自定义加速域名（公网看图）。不要填 oss-*.aliyuncs.com。"
+msgstr "自定义加速域名（公网看图）。不要填 oss-*.aliyuncs.com。"
+
+msgid "自定义域名必须完成 CNAME / DNS 解析后才能公网访问。"
+msgstr "自定义域名必须完成 CNAME / DNS 解析后才能公网访问。"
+
+msgid "自定义域名必须完成 CNAME；中国内地请使用已备案域名。"
+msgstr "自定义域名必须完成 CNAME；中国内地请使用已备案域名。"
+
+msgid "自定义域名需完成 CNAME；中国内地站点请使用已备案域名。"
+msgstr "自定义域名需完成 CNAME；中国内地站点请使用已备案域名。"
+
+msgid "自定义文件名前缀"
+msgstr "自定义文件名前缀"
+
+msgid "至少 %1$d 项，最多 %2$d 项"
+msgstr "至少 %1$d 项，最多 %2$d 项"
+
+msgid "至少 %d 项"
+msgstr "至少 %d 项"
+
+msgid "至少需要上传 {min} 张图片"
+msgstr "至少需要上传 {min} 张图片"
+
+msgid "至少需要保留 %d 个项目"
+msgstr "至少需要保留 %d 个项目"
+
+msgid "至少需要选择 %d 项"
+msgstr "至少需要选择 %d 项"
+
+msgid "色相"
+msgstr "色相"
+
+msgid "英国（伦敦）"
+msgstr "英国（伦敦）"
+
+msgid "范围"
+msgstr "范围"
+
+msgid "获取密钥步骤"
+msgstr "获取密钥步骤"
+
+msgid "菜单组 %d"
+msgstr "菜单组 %d"
+
+msgid "菲律宾（马尼拉）"
+msgstr "菲律宾（马尼拉）"
+
+msgid "虚线"
+msgstr "虚线"
+
+msgid "行号"
+msgstr "行号"
+
+msgid "补全图片尺寸（减少布局跳动）"
+msgstr "补全图片尺寸（减少布局跳动）"
+
+msgid "补齐空白项失败"
+msgstr "补齐空白项失败"
+
+msgid "表内总条数"
+msgstr "表内总条数"
+
+msgid "表单 JSON 为空，数据库未改动。请刷新页面后重试。"
+msgstr "表单 JSON 为空，数据库未改动。请刷新页面后重试。"
+
+msgid "表单 JSON 缺少配置根节点，数据库未改动。请强制刷新后重试。"
+msgstr "表单 JSON 缺少配置根节点，数据库未改动。请强制刷新后重试。"
+
+msgid "表单 JSON 解析失败（可能被截断或损坏），数据库未改动。请刷新页面后重试。"
+msgstr "表单 JSON 解析失败（可能被截断或损坏），数据库未改动。请刷新页面后重试。"
+
+msgid "表单 JSON 解析失败，数据库未改动。"
+msgstr "表单 JSON 解析失败，数据库未改动。"
+
+msgid "表单数据过大或无法序列化，请缩小本次保存范围后重试。"
+msgstr "表单数据过大或无法序列化，请缩小本次保存范围后重试。"
+
+msgid "表情是小小的心情图标，好玩，但很多网站并不需要。开了会少加载一套转换脚本，页面轻一点。手机输入法自带的表情一般不受影响。"
+msgstr "表情是小小的心情图标，好玩，但很多网站并不需要。开了会少加载一套转换脚本，页面轻一点。手机输入法自带的表情一般不受影响。"
+
+msgid "表格"
+msgstr "表格"
+
+msgid "表格刷新失败"
+msgstr "表格刷新失败"
+
+msgid "表格字段类未加载"
+msgstr "表格字段类未加载"
+
+msgid "表格数据加载中…"
+msgstr "表格数据加载中…"
+
+msgid "表里已有记录"
+msgstr "表里已有记录"
+
+msgid "西北 2（中卫）"
+msgstr "西北 2（中卫）"
+
+msgid "西南 1（成都）"
+msgstr "西南 1（成都）"
+
+msgid "要改写正文的内容类型"
+msgstr "要改写正文的内容类型"
+
+msgid "要替换的旧地址"
+msgstr "要替换的旧地址"
+
+msgid "覆盖"
+msgstr "覆盖"
+
+msgid "警告"
+msgstr "警告"
+
+msgid "警告：这将删除所有配置数据！此操作不可撤销，确定要重置全部设置吗？操作不可撤销。"
+msgstr "警告：这将删除所有配置数据！此操作不可撤销，确定要重置全部设置吗？操作不可撤销。"
+
+msgid "警示"
+msgstr "警示"
+
+msgid "计算中…"
+msgstr "计算中…"
+
+msgid "记下账号 APPID，创建存储桶并选择地域。"
+msgstr "记下账号 APPID，创建存储桶并选择地域。"
+
+msgid "记录对象存储连通测试失败"
+msgstr "记录对象存储连通测试失败"
+
+msgid "记录条数"
+msgstr "记录条数"
+
+msgid "设置媒体文件时出现错误"
+msgstr "设置媒体文件时出现错误"
+
+msgid "设置已保存"
+msgstr "设置已保存"
+
+msgid "设置已保存。"
+msgstr "设置已保存。"
+
+msgid "设置已保存，但部分字段验证未通过，已保留原值"
+msgstr "设置已保存，但部分字段验证未通过，已保留原值"
+
+msgid "设置已保存，但部分字段验证未通过，已保留原值。"
+msgstr "设置已保存，但部分字段验证未通过，已保留原值。"
+
+msgid "设置已重置"
+msgstr "设置已重置"
+
+msgid "设置面板"
+msgstr "设置面板"
+
+msgid "设置页加载失败"
+msgstr "设置页加载失败"
+
+msgid "访客动手之前先不执行脚本，提速更明显，也更容易弄坏菜单、轮播。开启后「合并 JS」不生效。"
+msgstr "访客动手之前先不执行脚本，提速更明显，也更容易弄坏菜单、轮播。开启后「合并 JS」不生效。"
+
+msgid "访客接口"
+msgstr "访客接口"
+
+msgid "访客还没点，只是鼠标在站内文章/栏目链接上停一下，浏览器会先偷偷下一点。点进去会感觉快。不用填任何地址。后台编辑时不会开。"
+msgstr "访客还没点，只是鼠标在站内文章/栏目链接上停一下，浏览器会先偷偷下一点。点进去会感觉快。不用填任何地址。后台编辑时不会开。"
+
+msgid "访问官网"
+msgstr "访问官网"
+
+msgid "评论"
+msgstr "评论"
+
+msgid "评论头像"
+msgstr "评论头像"
+
+msgid "评论头像来源。"
+msgstr "评论头像来源。"
+
+msgid "评论表单里默认有一个「网站」栏，会给评论者加外链。去掉后，垃圾评论少一点，页面也干净一点。"
+msgstr "评论表单里默认有一个「网站」栏，会给评论者加外链。去掉后，垃圾评论少一点，页面也干净一点。"
+
+msgid "该时间段内没有可导出的日志"
+msgstr "该时间段内没有可导出的日志"
+
+msgid "该记录不存在"
+msgstr "该记录不存在"
+
+msgid "详情"
+msgstr "详情"
+
+msgid "语言切换失败。"
+msgstr "语言切换失败。"
+
+msgid "说明"
+msgstr "说明"
+
+msgid "请先勾选要清理的项目。"
+msgstr "请先勾选要清理的项目。"
+
+msgid "请先勾选风险确认。"
+msgstr "请先勾选风险确认。"
+
+msgid "请先打开一个配置页面，再保存当前页。"
+msgstr "请先打开一个配置页面，再保存当前页。"
+
+msgid "请先打开一个配置页面，再补齐空白项。"
+msgstr "请先打开一个配置页面，再补齐空白项。"
+
+msgid "请先打开一个配置页面，再重置当前页。"
+msgstr "请先打开一个配置页面，再重置当前页。"
+
+msgid "请先选择要删除的图片。"
+msgstr "请先选择要删除的图片。"
+
+msgid "请填写完整的 http:// 或 https:// 地址。"
+msgstr "请填写完整的 http:// 或 https:// 地址。"
+
+msgid "请填写完整网址，必须以 http:// 或 https:// 开头。"
+msgstr "请填写完整网址，必须以 http:// 或 https:// 开头。"
+
+msgid "请填写已绑定的自定义加速域名，否则前台不会改写为云上地址。"
+msgstr "请填写已绑定的自定义加速域名，否则前台不会改写为云上地址。"
+
+msgid "请填写有效的邮箱地址。"
+msgstr "请填写有效的邮箱地址。"
+
+msgid "请填写腾讯云 APPID。未填写时无法保存对象存储设置。"
+msgstr "请填写腾讯云 APPID。未填写时无法保存对象存储设置。"
+
+msgid "请填写腾讯云 APPID，保存时会自动拼成 桶名-APPID。"
+msgstr "请填写腾讯云 APPID，保存时会自动拼成 桶名-APPID。"
+
+msgid "请填写要替换的旧地址和新地址。"
+msgstr "请填写要替换的旧地址和新地址。"
+
+msgid "请求失败。"
+msgstr "请求失败。"
+
+msgid "请求失败，请刷新后重试。"
+msgstr "请求失败，请刷新后重试。"
+
+msgid "请求过于频繁，对象存储已限流，请稍后重试。"
+msgstr "请求过于频繁，对象存储已限流，请稍后重试。"
+
+msgid "请确保字段类 \"%s\" 已正确加载"
+msgstr "请确保字段类 \"%s\" 已正确加载"
+
+msgid "请至少选择文章或页面。"
+msgstr "请至少选择文章或页面。"
+
+msgid "请输入内容…"
+msgstr "请输入内容…"
+
+msgid "请输入有效的URL地址"
+msgstr "请输入有效的URL地址"
+
+msgid "请输入有效的数字"
+msgstr "请输入有效的数字"
+
+msgid "请输入有效的日期格式：%s"
+msgstr "请输入有效的日期格式：%s"
+
+msgid "请输入有效的邮箱地址"
+msgstr "请输入有效的邮箱地址"
+
+msgid "请输入有效的颜色值"
+msgstr "请输入有效的颜色值"
+
+msgid "请选择JSON格式的配置文件"
+msgstr "请选择JSON格式的配置文件"
+
+msgid "请选择…"
+msgstr "请选择…"
+
+msgid "请选择日期"
+msgstr "请选择日期"
+
+msgid "请选择时间"
+msgstr "请选择时间"
+
+msgid "调色板"
+msgstr "调色板"
+
+msgid "调试"
+msgstr "调试"
+
+msgid "谨慎"
+msgstr "谨慎"
+
+msgid "账号 APPID，纯数字。保存时会与桶名拼成 桶名-APPID。未填写时无法保存。"
+msgstr "账号 APPID，纯数字。保存时会与桶名拼成 桶名-APPID。未填写时无法保存。"
+
+msgid "资源预载"
+msgstr "资源预载"
+
+msgid "走 Cravatar 镜像"
+msgstr "走 Cravatar 镜像"
+
+msgid "超出最大长度"
+msgstr "超出最大长度"
+
+msgid "超出范围"
+msgstr "超出范围"
+
+msgid "跟随 WordPress（仅本插件）"
+msgstr "跟随 WordPress（仅本插件）"
+
+msgid "较安全"
+msgstr "较安全"
+
+msgid "输入"
+msgstr "输入"
+
+msgid "输入格式不正确"
+msgstr "输入格式不正确"
+
+msgid "输入颜色值"
+msgstr "输入颜色值"
+
+msgid "输出格式"
+msgstr "输出格式"
+
+msgid "边框宽度"
+msgstr "边框宽度"
+
+msgid "边框样式"
+msgstr "边框样式"
+
+msgid "边框预览"
+msgstr "边框预览"
+
+msgid "边框预览效果"
+msgstr "边框预览效果"
+
+msgid "边框颜色"
+msgstr "边框颜色"
+
+msgid "迁移"
+msgstr "迁移"
+
+msgid "迁移任务已创建，开始扫描媒体库。"
+msgstr "迁移任务已创建，开始扫描媒体库。"
+
+msgid "迁移任务已完成。"
+msgstr "迁移任务已完成。"
+
+msgid "迁移日志（轮询约 120 条，首屏最多约 200 条）"
+msgstr "迁移日志（轮询约 120 条，首屏最多约 200 条）"
+
+msgid "迁移正在运行，不能同时回滚正文。请先暂停或等待完成。"
+msgstr "迁移正在运行，不能同时回滚正文。请先暂停或等待完成。"
+
+msgid "迁移进度"
+msgstr "迁移进度"
+
+msgid "过期临时数据"
+msgstr "过期临时数据"
+
+msgid "过期临时数据（过期缓存）"
+msgstr "过期临时数据（过期缓存）"
+
+msgid "过期缓存和已经没主数据的附加信息。"
+msgstr "过期缓存和已经没主数据的附加信息。"
+
+msgid "过期记录由定时任务删除。默认 30 天。"
+msgstr "过期记录由定时任务删除。默认 30 天。"
+
+msgid "运行日志"
+msgstr "运行日志"
+
+msgid "运行日志记录失败与清理结果，前台缓存命中不会写入"
+msgstr "运行日志记录失败与清理结果，前台缓存命中不会写入"
+
+msgid "近 24 小时 · 信息"
+msgstr "近 24 小时 · 信息"
+
+msgid "近 24 小时 · 警告"
+msgstr "近 24 小时 · 警告"
+
+msgid "近 24 小时 · 错误"
+msgstr "近 24 小时 · 错误"
+
+msgid "近1小时"
+msgstr "近1小时"
+
+msgid "近24小时"
+msgstr "近24小时"
+
+msgid "近7天"
+msgstr "近7天"
+
+msgid "还可输入 %d 字"
+msgstr "还可输入 %d 字"
+
+msgid "还没有写入"
+msgstr "还没有写入"
+
+msgid "还没有清理记录"
+msgstr "还没有清理记录"
+
+msgid "这个前缀会加在桶内文件路径最前面，用来区分「这张图属于哪个网站」。多个网站共用同一个存储桶时，如果都用默认的 wp-content/uploads，路径会撞在一起（都是 wp-content/uploads/2026/10/xxx.jpg），后传的可能盖掉先传的。每个站点请填不同前缀，例如本站填 site2_uploads，桶内就是 site2_uploads/2026/10/xxx.jpg，另一个站填 site1_uploads。只填目录名，不要带域名，不要以斜杠开头或结尾。不填时默认 wp-content/uploads，和 WordPress 媒体库目录一致。原图和缩略图都会带上；从媒体库删除附件时，也会按带前缀的路径删除云上文件。不要填写 ../。"
+msgstr "这个前缀会加在桶内文件路径最前面，用来区分「这张图属于哪个网站」。多个网站共用同一个存储桶时，如果都用默认的 wp-content/uploads，路径会撞在一起（都是 wp-content/uploads/2026/10/xxx.jpg），后传的可能盖掉先传的。每个站点请填不同前缀，例如本站填 site2_uploads，桶内就是 site2_uploads/2026/10/xxx.jpg，另一个站填 site1_uploads。只填目录名，不要带域名，不要以斜杠开头或结尾。不填时默认 wp-content/uploads，和 WordPress 媒体库目录一致。原图和缩略图都会带上；从媒体库删除附件时，也会按带前缀的路径删除云上文件。不要填写 ../。"
+
+msgid "这是给 Windows Live Writer 用的。现在几乎没人用那个软件写博客，可以去掉。"
+msgstr "这是给 Windows Live Writer 用的。现在几乎没人用那个软件写博客，可以去掉。"
+
+msgid "这是给很老的 jQuery 写法做兼容的，会多占一点加载。多数新主题可以去掉。只改前台，后台编辑器不动。去掉后前台脚本报错，再把本项关掉。"
+msgstr "这是给很老的 jQuery 写法做兼容的，会多占一点加载。多数新主题可以去掉。只改前台，后台编辑器不动。去掉后前台脚本报错，再把本项关掉。"
+
+msgid "这是高风险功能：会把历史媒体上传到对象存储，并改写所选内容类型正文里的图片地址。关闭本页不会中止后台队列。回滚只还原已备份的正文链接，不会删除云上文件，也不会清除附件的云标记。默认不删除本地文件。"
+msgstr "这是高风险功能：会把历史媒体上传到对象存储，并改写所选内容类型正文里的图片地址。关闭本页不会中止后台队列。回滚只还原已备份的正文链接，不会删除云上文件，也不会清除附件的云标记。默认不删除本地文件。"
+
+msgid "这里做不改存储配置的快捷操作。数据库原链接替换只改文章正文和自定义字段里已经写死的地址，不会上传文件。失败记录是上传没成功的附件，可重试或忽略。首次替换请先备份数据库。密钥、桶和域名请到「存储设置」里改。"
+msgstr "这里做不改存储配置的快捷操作。数据库原链接替换只改文章正文和自定义字段里已经写死的地址，不会上传文件。失败记录是上传没成功的附件，可重试或忽略。首次替换请先备份数据库。密钥、桶和域名请到「存储设置」里改。"
+
+msgid "这里管「留多少、隔多久自动清」。真正动手删数据请去「垃圾清理」。未勾选整理数据表时，定时任务不会去整理表。"
+msgstr "这里管「留多少、隔多久自动清」。真正动手删数据请去「垃圾清理」。未勾选整理数据表时，定时任务不会去整理表。"
+
+msgid "这里记插件运行与错误，包括数据库扫描、手动清理和定时清理。对象存储「快捷操作」里的失败记录仍保留。前台缓存命中不会写入。"
+msgstr "这里记插件运行与错误，包括数据库扫描、手动清理和定时清理。对象存储「快捷操作」里的失败记录仍保留。前台缓存命中不会写入。"
+
+msgid "进入全屏"
+msgstr "进入全屏"
+
+msgid "进度"
+msgstr "进度"
+
+msgid "进行中"
+msgstr "进行中"
+
+msgid "连接失败。"
+msgstr "连接失败。"
+
+msgid "连接失败（HTTP %d）。请核对密钥、Bucket、Region、Endpoint。"
+msgstr "连接失败（HTTP %d）。请核对密钥、Bucket、Region、Endpoint。"
+
+msgid "连接对象存储超时。请检查服务器网络和防火墙。"
+msgstr "连接对象存储超时。请检查服务器网络和防火墙。"
+
+msgid "连接成功。"
+msgstr "连接成功。"
+
+msgid "连连接也建好（适合 CDN / 字体）"
+msgstr "连连接也建好（适合 CDN / 字体）"
+
+msgid "退出全屏"
+msgstr "退出全屏"
+
+msgid "退出批量"
+msgstr "退出批量"
+
+msgid "适合全站都会用到的 Logo、主样式、字体文件。可从媒体库复制链接。不知道地址就用上面的「预载首屏图」。"
+msgstr "适合全站都会用到的 Logo、主样式、字体文件。可从媒体库复制链接。不知道地址就用上面的「预载首屏图」。"
+
+msgid "选择"
+msgstr "选择"
+
+msgid "选择位置"
+msgstr "选择位置"
+
+msgid "选择图标"
+msgstr "选择图标"
+
+msgid "选择图标..."
+msgstr "选择图标..."
+
+msgid "选择图片"
+msgstr "选择图片"
+
+msgid "选择媒体"
+msgstr "选择媒体"
+
+msgid "选择尺寸"
+msgstr "选择尺寸"
+
+msgid "选择年份"
+msgstr "选择年份"
+
+msgid "选择插件界面语言"
+msgstr "选择插件界面语言"
+
+msgid "选择文件"
+msgstr "选择文件"
+
+msgid "选择时间"
+msgstr "选择时间"
+
+msgid "选择月份"
+msgstr "选择月份"
+
+msgid "选择的值无效"
+msgstr "选择的值无效"
+
+msgid "选择第 %d 行"
+msgstr "选择第 %d 行"
+
+msgid "选择背景图片"
+msgstr "选择背景图片"
+
+msgid "选择要改写的内容类型"
+msgstr "选择要改写的内容类型"
+
+msgid "选择重复方式"
+msgstr "选择重复方式"
+
+msgid "选择附着方式"
+msgstr "选择附着方式"
+
+msgid "选择颜色"
+msgstr "选择颜色"
+
+msgid "选项为官方专用 Region ID，可输入中文或 ID 筛选。接口地址由插件自动拼接。"
+msgstr "选项为官方专用 Region ID，可输入中文或 ID 筛选。接口地址由插件自动拼接。"
+
+msgid "选项为官方地域简称，可输入中文或 ID 筛选。接口地址由插件自动生成。"
+msgstr "选项为官方地域简称，可输入中文或 ID 筛选。接口地址由插件自动生成。"
+
+msgid "通过"
+msgstr "通过"
+
+msgid "通道"
+msgstr "通道"
+
+msgid "速度优化"
+msgstr "速度优化"
+
+msgid "遇到问题可查阅文档或联系霹雳设计团队"
+msgstr "遇到问题可查阅文档或联系霹雳设计团队"
+
+msgid "部分字段未出现在 POST 中，已通过 preserve_existing 保留库中旧值。"
+msgstr "部分字段未出现在 POST 中，已通过 preserve_existing 保留库中旧值。"
+
+msgid "部分字段未通过验证"
+msgstr "部分字段未通过验证"
+
+msgid "部分已保存"
+msgstr "部分已保存"
+
+msgid "配置保存在 WordPress 选项表，支持导入导出与重置"
+msgstr "配置保存在 WordPress 选项表，支持导入导出与重置"
+
+msgid "配置包不含会员授权状态。"
+msgstr "配置包不含会员授权状态。"
+
+msgid "配置字段尚未就绪，请刷新设置页后重试导入"
+msgstr "配置字段尚未就绪，请刷新设置页后重试导入"
+
+msgid "配置导入失败"
+msgstr "配置导入失败"
+
+msgid "配置导入成功"
+msgstr "配置导入成功"
+
+msgid "配置文件与当前选项不匹配"
+msgstr "配置文件与当前选项不匹配"
+
+msgid "配置文件中没有找到选项数据"
+msgstr "配置文件中没有找到选项数据"
+
+msgid "配置文件格式错误"
+msgstr "配置文件格式错误"
+
+msgid "配置文件格式错误，请检查文件内容"
+msgstr "配置文件格式错误，请检查文件内容"
+
+msgid "配置文件过大（上限 5MB）"
+msgstr "配置文件过大（上限 5MB）"
+
+msgid "配置错误"
+msgstr "配置错误"
+
+msgid "重命名规则"
+msgstr "重命名规则"
+
+msgid "重复"
+msgstr "重复"
+
+msgid "重复器"
+msgstr "重复器"
+
+msgid "重复器字段ID \"%s\" 与父级字段冲突，请使用不同的字段ID。"
+msgstr "重复器字段ID \"%s\" 与父级字段冲突，请使用不同的字段ID。"
+
+msgid "重庆"
+msgstr "重庆"
+
+msgid "重新扫描"
+msgstr "重新扫描"
+
+msgid "重新显示合规说明"
+msgstr "重新显示合规说明"
+
+msgid "重置"
+msgstr "重置"
+
+msgid "重置为默认值"
+msgstr "重置为默认值"
+
+msgid "重置全部"
+msgstr "重置全部"
+
+msgid "重置失败"
+msgstr "重置失败"
+
+msgid "重置当前页"
+msgstr "重置当前页"
+
+msgid "重置当前页面"
+msgstr "重置当前页面"
+
+msgid "重置成功"
+msgstr "重置成功"
+
+msgid "重置空白项"
+msgstr "重置空白项"
+
+msgid "重置过程中发生网络错误，请稍后重试"
+msgstr "重置过程中发生网络错误，请稍后重试"
+
+msgid "重置过程中发生错误"
+msgstr "重置过程中发生错误"
+
+msgid "重试"
+msgstr "重试"
+
+msgid "金融云"
+msgstr "金融云"
+
+msgid "金融云外网"
+msgstr "金融云外网"
+
+msgid "鉴权失败。请核对 AccessKey 和 SecretKey。"
+msgstr "鉴权失败。请核对 AccessKey 和 SecretKey。"
+
+#. Description of the plugin
+msgid "针对 WordPress 的性能优化：站点瘦身、CDN / 预载 / 懒加载 / 脚本、可选整页缓存、对象存储、数据库清理。"
+msgstr "针对 WordPress 的性能优化：站点瘦身、CDN / 预载 / 懒加载 / 脚本、可选整页缓存、对象存储、数据库清理。"
+
+msgid "错误"
+msgstr "错误"
+
+msgid "错误：未定义字段结构"
+msgstr "错误：未定义字段结构"
+
+msgid "长度不能少于 %d 个字符"
+msgstr "长度不能少于 %d 个字符"
+
+msgid "长度不能超过 %d 个字符"
+msgstr "长度不能超过 %d 个字符"
+
+#. Plugin Name of the plugin
+msgid "闪电WP性能"
+msgstr "闪电WP性能"
+
+msgid "闪电WP性能 %s"
+msgstr "闪电WP性能 %s"
+
+msgid "闪电WP性能:"
+msgstr "闪电WP性能:"
+
+msgid "闪电WP性能：站点瘦身、速度优化、对象存储、数据库清理。总开关激活后基础瘦身可用。Delay JS、压缩、整页缓存默认关，要管理员自己打开。卸载默认不删配置和缓存。整页缓存在主题查询之后才读文件，第一次访问仍会完整跑 WordPress。"
+msgstr "闪电WP性能：站点瘦身、速度优化、对象存储、数据库清理。总开关激活后基础瘦身可用。Delay JS、压缩、整页缓存默认关，要管理员自己打开。卸载默认不删配置和缓存。整页缓存在主题查询之后才读文件，第一次访问仍会完整跑 WordPress。"
+
+msgid "阿联酋（迪拜）"
+msgstr "阿联酋（迪拜）"
+
+msgid "阿里云 OSS"
+msgstr "阿里云 OSS"
+
+msgid "阿里云、腾讯云、R2、七牛与兼容 S3。自定义域名、桶内前缀与一键迁移。"
+msgstr "阿里云、腾讯云、R2、七牛与兼容 S3。自定义域名、桶内前缀与一键迁移。"
+
+msgid "阿里云区域（Region ID）"
+msgstr "阿里云区域（Region ID）"
+
+msgid "附件"
+msgstr "附件"
+
+msgid "降序"
+msgstr "降序"
+
+msgid "隐藏密码"
+msgstr "隐藏密码"
+
+msgid "雅加达"
+msgstr "雅加达"
+
+msgid "霹雳 PILI"
+msgstr "霹雳 PILI"
+
+msgid "霹雳设计出品"
+msgstr "霹雳设计出品"
+
+msgid "非中国内地加速"
+msgstr "非中国内地加速"
+
+msgid "韩国（首尔）"
+msgstr "韩国（首尔）"
+
+msgid "页头冗余、Emoji、访客 REST、心跳与评论头像。不确定的项保持关闭。"
+msgstr "页头冗余、Emoji、访客 REST、心跳与评论头像。不确定的项保持关闭。"
+
+msgid "页头清理"
+msgstr "页头清理"
+
+msgid "页面"
+msgstr "页面"
+
+msgid "页面不存在"
+msgstr "页面不存在"
+
+msgid "页面缓存写入失败。"
+msgstr "页面缓存写入失败。"
+
+msgid "页面缓存最多留多久。到期后下次访问会重新生成。拉到 0 表示一直留着、不按时间作废。拿不准就保持 10，单位在下面选小时或天。"
+msgstr "页面缓存最多留多久。到期后下次访问会重新生成。拉到 0 表示一直留着、不按时间作废。拿不准就保持 10，单位在下面选小时或天。"
+
+msgid "页面里 YouTube 视频较多时，能明显加快加载。"
+msgstr "页面里 YouTube 视频较多时，能明显加快加载。"
+
+msgid "项目"
+msgstr "项目"
+
+msgid "项目 %d"
+msgstr "项目 %d"
+
+msgid "预估体积仅作为参考，实际释放空间以清理完成后为准。"
+msgstr "预估体积仅作为参考，实际释放空间以清理完成后为准。"
+
+msgid "预估大小"
+msgstr "预估大小"
+
+msgid "预加载字体（字更早点出来）"
+msgstr "预加载字体（字更早点出来）"
+
+msgid "预检不通过时不能启动。连通性会在点启动时再测一次。"
+msgstr "预检不通过时不能启动。连通性会在点启动时再测一次。"
+
+msgid "预检未通过"
+msgstr "预检未通过"
+
+msgid "预检未通过，不能启动迁移。"
+msgstr "预检未通过，不能启动迁移。"
+
+msgid "预检通过。"
+msgstr "预检通过。"
+
+msgid "预览效果："
+msgstr "预览效果："
+
+msgid "预览模式"
+msgstr "预览模式"
+
+msgid "预计体积"
+msgstr "预计体积"
+
+msgid "预设颜色"
+msgstr "预设颜色"
+
+msgid "预载字体文件时请打开。普通本站图片、CSS 不用开。"
+msgstr "预载字体文件时请打开。普通本站图片、CSS 不用开。"
+
+msgid "预载文件（点名提前下载）"
+msgstr "预载文件（点名提前下载）"
+
+msgid "预载链接（鼠标悬停先下载那一页）"
+msgstr "预载链接（鼠标悬停先下载那一页）"
+
+msgid "预载首屏图（最上头几张图提前下）"
+msgstr "预载首屏图（最上头几张图提前下）"
+
+msgid "预载首屏字体，减轻文字跳动。"
+msgstr "预载首屏字体，减轻文字跳动。"
+
+msgid "颜色"
+msgstr "颜色"
+
+msgid "颜色值"
+msgstr "颜色值"
+
+msgid "颜色已复制"
+msgstr "颜色已复制"
+
+msgid "额外路径（还要包含这些）"
+msgstr "额外路径（还要包含这些）"
+
+msgid "风险"
+msgstr "风险"
+
+msgid "首尔"
+msgstr "首尔"
+
+msgid "马来西亚（吉隆坡）"
+msgstr "马来西亚（吉隆坡）"
+
+msgid "马来西亚（柔佛州）"
+msgstr "马来西亚（柔佛州）"
+
+msgid "高级规则"
+msgstr "高级规则"
+
+msgid "高风险项默认关闭，按需打开后再保存"
+msgstr "高风险项默认关闭，按需打开后再保存"
+
+msgid "高风险默认关"
+msgstr "高风险默认关"
+
+msgid "默认关。打开后文章、页面都不能再评，主题评论区会显示关闭，不会白屏。还要互动就别开。"
+msgstr "默认关。打开后文章、页面都不能再评，主题评论区会显示关闭，不会白屏。还要互动就别开。"
+
+msgid "默认关闭"
+msgstr "默认关闭"
+
+msgid "默认关闭，避免反复点「测试连接」刷屏。打开后，测试失败会写入本页（成功仍不记）。"
+msgstr "默认关闭，避免反复点「测试连接」刷屏。打开后，测试失败会写入本页（成功仍不记）。"
+
+msgid "默认大约每 60 秒存一次草稿。存稀一点能少写数据库。"
+msgstr "默认大约每 60 秒存一次草稿。存稀一点能少写数据库。"
+
+msgid "默认掩码显示，可点右侧眼睛查看。保存前去掉首尾空格。"
+msgstr "默认掩码显示，可点右侧眼睛查看。保存前去掉首尾空格。"
+
+msgid "默认掩码显示，可点右侧眼睛查看。单独加密保存，不会写入普通配置。"
+msgstr "默认掩码显示，可点右侧眼睛查看。单独加密保存，不会写入普通配置。"
+
+msgid "默认文章和页面。可多选；自定义类型请在下拉里勾上。至少选一项才能启动。"
+msgstr "默认文章和页面。可多选；自定义类型请在下拉里勾上。至少选一项才能启动。"
+
+msgid "默认走国外头像。本地默认图用站点自己的图；禁用就不显示头像；镜像走 Cravatar。"
+msgstr "默认走国外头像。本地默认图用站点自己的图；禁用就不显示头像；镜像走 Cravatar。"
+
+msgid "（无内容）"
+msgstr "（无内容）"

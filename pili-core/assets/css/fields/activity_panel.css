@@ -1,0 +1,431 @@
+/**
+ * XUN activity_panel — AI 发文热力合卡（talentsync 风格）
+ */
+
+.pili-activity-panel {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	background: #fff;
+	border: 1px solid #fff;
+	border-radius: 0.5rem;
+	padding: 1.5rem;
+	box-shadow: 0 10px 40px -12px rgba(15, 23, 42, 0.08), 0 2px 8px rgba(15, 23, 42, 0.03);
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	transition: box-shadow 0.2s ease;
+}
+
+@media (min-width: 1024px) {
+	.pili-activity-panel {
+		padding: 1.75rem;
+	}
+}
+
+.pili-activity-panel__top {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 1rem;
+	padding-bottom: 0.5rem;
+}
+
+.pili-activity-panel__title-row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.pili-activity-panel__heading {
+	margin: 0;
+	color: #111827;
+	font-size: 1.125rem;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+	line-height: 1.3;
+}
+
+.pili-activity-panel__badge {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.125rem 0.5rem;
+	border-radius: 9999px;
+	font-size: 0.6875rem;
+	font-weight: 700;
+	line-height: 1.4;
+}
+
+.pili-activity-panel__badge--emerald {
+	background: #ecfdf5;
+	color: #059669;
+}
+
+.pili-activity-panel__badge--amber {
+	background: #fffbeb;
+	color: #d97706;
+}
+
+.pili-activity-panel__badge--red {
+	background: #fef2f2;
+	color: #dc2626;
+}
+
+.pili-activity-panel__badge--indigo {
+	background: #eef2ff;
+	color: #4f46e5;
+}
+
+.pili-activity-panel__badge--gray {
+	background: #f3f4f6;
+	color: #6b7280;
+}
+
+.pili-activity-panel__metrics {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	gap: 1.5rem 2.5rem;
+	margin-top: 0.75rem;
+}
+
+.pili-activity-panel__metric-value {
+	margin: 0;
+	color: #0c1024;
+	font-size: 1.875rem;
+	font-weight: 800;
+	letter-spacing: -0.03em;
+	line-height: 1.1;
+	font-variant-numeric: tabular-nums;
+}
+
+@media (min-width: 640px) {
+	.pili-activity-panel__metric-value {
+		font-size: 2.25rem;
+	}
+}
+
+.pili-activity-panel__metric-unit {
+	font-size: 0.875rem;
+	font-weight: 600;
+	color: #9ca3af;
+}
+
+.pili-activity-panel__metric-label {
+	margin: 0.25rem 0 0;
+	color: #9ca3af;
+	font-size: 0.75rem;
+	font-weight: 500;
+	line-height: 1.35;
+}
+
+.pili-activity-panel__controls {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 0.75rem;
+}
+
+.pili-activity-panel__period {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.375rem 0.875rem;
+	border-radius: 9999px;
+	background: #f6f7fd;
+	color: #374151;
+	font-size: 0.75rem;
+	font-weight: 600;
+}
+
+.pili-activity-panel__period i {
+	color: #6366f1;
+	font-size: 0.875rem;
+	line-height: 1;
+}
+
+.pili-activity-panel__legend {
+	display: flex;
+	align-items: center;
+	gap: 0.375rem;
+	color: #9ca3af;
+	font-size: 0.6875rem;
+	font-weight: 500;
+}
+
+.pili-activity-panel__swatch {
+	width: 0.75rem;
+	height: 0.75rem;
+	border-radius: 3px;
+	display: inline-block;
+}
+
+.pili-activity-panel__heat-wrap {
+	overflow-x: auto;
+	padding: 0.25rem 0 0.5rem;
+	-webkit-overflow-scrolling: touch;
+}
+
+.pili-activity-panel__heat {
+	min-width: max(100%, calc(2.375rem + var(--pili-act-weeks, 12) * 1.65rem));
+	display: flex;
+	flex-direction: column;
+	gap: 0.375rem;
+}
+
+.pili-activity-panel__months {
+	display: grid;
+	grid-template-columns: 2.375rem repeat(var(--pili-act-weeks, 12), minmax(0, 1fr));
+	gap: 0.375rem;
+	color: #9ca3af;
+	font-size: 0.6875rem;
+	font-weight: 500;
+	padding-bottom: 0.25rem;
+}
+
+.pili-activity-panel__months-gutter {
+	grid-column: 1;
+}
+
+.pili-activity-panel__month {
+	text-align: left;
+	padding-left: 0.125rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.pili-activity-panel__month.is-current {
+	color: #4f46e5;
+	font-weight: 700;
+}
+
+.pili-activity-panel__heat-row {
+	display: grid;
+	grid-template-columns: 2.375rem repeat(var(--pili-act-weeks, 12), minmax(0, 1fr));
+	gap: 0.375rem;
+	align-items: center;
+}
+
+.pili-activity-panel__wd {
+	color: #9ca3af;
+	font-size: 0.6875rem;
+	font-weight: 500;
+	text-align: right;
+	padding-right: 0.25rem;
+}
+
+.pili-activity-panel__cell {
+	display: block;
+	height: 1.5rem;
+	min-height: 1.5rem;
+	border-radius: 5px;
+	background: #eef2f9;
+}
+
+.pili-activity-panel__cell--empty {
+	visibility: hidden;
+}
+
+.pili-activity-panel__cell--l0 { background: #eef2f9; }
+.pili-activity-panel__cell--l1 { background: #c7d2fe; }
+.pili-activity-panel__cell--l2 { background: #818cf8; }
+.pili-activity-panel__cell--l3 { background: #4f46e5; }
+.pili-activity-panel__cell--l4 { background: #1e1b4b; }
+
+.pili-activity-panel__cell:not(.pili-activity-panel__cell--empty):hover {
+	box-shadow: 0 0 0 2px rgba(129, 140, 248, 0.55);
+}
+
+.pili-activity-panel__foot {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.75rem;
+	padding-top: 0.75rem;
+	border-top: 1px solid #f3f4f6;
+}
+
+.pili-activity-panel__chips {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.pili-activity-panel__chip {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.375rem;
+	padding: 0.25rem 0.75rem;
+	border-radius: 9999px;
+	font-size: 0.75rem;
+	font-weight: 600;
+	line-height: 1.35;
+}
+
+.pili-activity-panel__chip i {
+	font-size: 0.875rem;
+	line-height: 1;
+}
+
+.pili-activity-panel__chip--indigo {
+	background: #eef2ff;
+	color: #4338ca;
+}
+
+.pili-activity-panel__chip--cyan {
+	background: #ecfeff;
+	color: #0e7490;
+}
+
+.pili-activity-panel__chip--amber {
+	background: #fffbeb;
+	color: #b45309;
+}
+
+.pili-activity-panel__chip--emerald {
+	background: #ecfdf5;
+	color: #047857;
+}
+
+.pili-activity-panel__chip--rose {
+	background: #fff1f2;
+	color: #be123c;
+}
+
+.pili-activity-panel__chip--slate {
+	background: #f1f5f9;
+	color: #475569;
+}
+
+.pili-activity-panel__action {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.125rem;
+	color: #4f46e5;
+	font-size: 0.75rem;
+	font-weight: 600;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.pili-activity-panel__action:hover,
+.pili-activity-panel__action:focus {
+	text-decoration: underline;
+}
+
+.pili-activity-panel__action i {
+	font-size: 0.875rem;
+	line-height: 1;
+}
+
+.pili-activity-panel[data-pili-activity-motion="1"]:not(.is-in) .pili-activity-panel__cell:not(.pili-activity-panel__cell--empty) {
+	transform: scale(0.35);
+	opacity: 0;
+}
+
+.pili-activity-panel[data-pili-activity-motion="1"]:not(.is-in) .pili-activity-panel__chip {
+	opacity: 0;
+	transform: translateY(6px);
+}
+
+.pili-activity-panel.is-in .pili-activity-panel__metric-value {
+	animation: xunActMetricPop 0.65s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.pili-activity-panel.is-in .pili-activity-panel__cell:not(.pili-activity-panel__cell--empty) {
+	animation: xunActCell 0.42s cubic-bezier(0.2, 0.85, 0.2, 1) both;
+}
+
+.pili-activity-panel.is-in .pili-activity-panel__chip {
+	animation: xunActChip 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.pili-activity-panel.is-in .pili-activity-panel__chip:nth-child(2) { animation-delay: 0.06s; }
+.pili-activity-panel.is-in .pili-activity-panel__chip:nth-child(3) { animation-delay: 0.12s; }
+.pili-activity-panel.is-in .pili-activity-panel__chip:nth-child(4) { animation-delay: 0.18s; }
+
+@keyframes xunActMetricPop {
+	from { transform: scale(0.84); opacity: 0.35; }
+	to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes xunActCell {
+	from { transform: scale(0.35); opacity: 0; }
+	to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes xunActChip {
+	from { opacity: 0; transform: translateY(6px); }
+	to { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.pili-activity-panel.is-in .pili-activity-panel__metric-value,
+	.pili-activity-panel.is-in .pili-activity-panel__cell:not(.pili-activity-panel__cell--empty),
+	.pili-activity-panel.is-in .pili-activity-panel__chip,
+	.pili-activity-panel[data-pili-activity-motion="1"]:not(.is-in) .pili-activity-panel__cell:not(.pili-activity-panel__cell--empty),
+	.pili-activity-panel[data-pili-activity-motion="1"]:not(.is-in) .pili-activity-panel__chip {
+		animation: none;
+		opacity: 1;
+		transform: none;
+	}
+}
+
+/* 仪表盘：活动卡 + 词库卡同行 */
+.pilipost-dash-row {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1.25rem;
+	align-items: stretch;
+	margin: 0 0 1.25rem;
+	width: 100%;
+}
+
+@media (min-width: 1024px) {
+	.pilipost-dash-row--stock {
+		grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+	}
+
+	.pilipost-dash-row--charts {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+}
+
+.pilipost-dash-row__cell {
+	min-width: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.pilipost-dash-row__cell > .pili-field,
+.pilipost-dash-row__cell > .pili-field-activity_panel,
+.pilipost-dash-row__cell > .pili-field-resource_panel,
+.pilipost-dash-row__cell > .pili-field-usage_panel,
+.pilipost-dash-row__cell > .pili-field-chart,
+.pilipost-dash-row__cell > .pili-field-chart_panel {
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+}
+
+.pilipost-dash-row .pili-activity-panel,
+.pilipost-dash-row .pili-resource-panel,
+.pilipost-dash-row .pili-usage-panel,
+.pilipost-dash-row .pili-chart-panel {
+	margin-bottom: 0;
+	flex: 1 1 auto;
+}
+
+.pilipost-dash-row--charts .pili-chart-field {
+	flex: 0 1 auto;
+	margin-bottom: 0;
+	height: auto;
+	max-height: 100%;
+	align-self: center;
+}

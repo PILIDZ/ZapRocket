@@ -1,0 +1,398 @@
+/**
+ * XUN pilibot_guide — PiliBot 学习引导
+ */
+.pili-pilibot-guide {
+	margin: 0 0 1rem;
+	font-size: 0.875rem;
+}
+
+.pili-pilibot-guide__buddy {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	margin: 4px 0 16px;
+	padding: 40px 16px 16px;
+	border-radius: 14px;
+	border: 1px solid #e5e7eb;
+	background:
+		radial-gradient(120% 80% at 0% 0%, rgba(59, 130, 246, 0.08), transparent 55%),
+		linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+	text-align: center;
+	animation: pili-pilibot-guide-in 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.pili-pilibot-guide__face {
+	flex: 0 0 auto;
+	width: 120px;
+	height: 120px;
+	line-height: 0;
+}
+
+.pili-pilibot-guide__face .pili-pilibot,
+.pili-pilibot-guide__face .pili-pilibot__stage,
+.pili-pilibot-guide__face .pili-pilibot__canvas {
+	display: block;
+	width: 100% !important;
+	height: 100% !important;
+	max-width: 100%;
+	max-height: 100%;
+	margin: 0;
+	padding: 0;
+	background: transparent !important;
+	box-shadow: none !important;
+}
+
+.pili-pilibot-guide__face .pili-pilibot__meta {
+	display: none !important;
+}
+
+.pili-pilibot-guide__bubble {
+	position: relative;
+	width: 100%;
+	max-width: 420px;
+	padding: 10px 14px 12px;
+	border-radius: 12px;
+	background: #fff;
+	border: 1px solid #e5e7eb;
+	box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+	text-align: left;
+}
+
+.pili-pilibot-guide__bubble::before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: -6px;
+	margin-left: -6px;
+	width: 12px;
+	height: 12px;
+	background: #fff;
+	border-left: 1px solid #e5e7eb;
+	border-top: 1px solid #e5e7eb;
+	transform: rotate(45deg);
+}
+
+.pili-pilibot-guide__eyebrow {
+	margin: 0 0 4px;
+	font-size: 11px;
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: #64748b;
+}
+
+.pili-pilibot-guide__text {
+	margin: 0;
+	font-size: 14px;
+	line-height: 1.55;
+	color: #0f172a;
+	transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.pili-pilibot-guide__text.is-swap {
+	opacity: 0;
+	transform: translateY(4px);
+}
+
+.pili-pilibot-guide__toolbar {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 2;
+	display: inline-flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	gap: 4px;
+	max-width: calc(100% - 20px);
+}
+
+.pili-pilibot-guide__ctrl {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 4px;
+	margin: 0;
+	padding: 3px 8px;
+	min-height: 26px;
+	border: 1px solid #e2e8f0;
+	border-radius: 999px;
+	background: rgba(248, 250, 252, 0.96);
+	color: #475569;
+	font-size: 11px;
+	line-height: 1.4;
+	cursor: pointer;
+	box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+	transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+}
+
+.pili-pilibot-guide__ctrl i {
+	font-size: 13px;
+	line-height: 1;
+}
+
+.pili-pilibot-guide__ctrl:hover,
+.pili-pilibot-guide__ctrl:focus {
+	background: #eef2ff;
+	border-color: #b8c7f8;
+	color: #1447e6;
+	outline: none;
+}
+
+.pili-pilibot-guide__ctrl:disabled {
+	opacity: 0.42;
+	cursor: default;
+	pointer-events: none;
+}
+
+.pili-pilibot-guide__prev,
+.pili-pilibot-guide__next {
+	padding: 3px 6px;
+	min-width: 26px;
+}
+
+.pili-pilibot-guide__progress {
+	display: inline-flex;
+	align-items: center;
+	min-width: 2.6em;
+	padding: 0 2px;
+	font-size: 11px;
+	font-variant-numeric: tabular-nums;
+	color: #64748b;
+	user-select: none;
+}
+
+.pili-pilibot-guide__speed span {
+	font-variant-numeric: tabular-nums;
+	min-width: 2.4em;
+	text-align: left;
+}
+
+.pili-pilibot-guide__replay.is-playing {
+	pointer-events: none;
+	opacity: 0.72;
+}
+
+.pili-pilibot-guide__replay.is-playing i {
+	animation: pili-pilibot-guide-spin 0.8s linear infinite;
+}
+
+/* —— 回访顶栏（首次讲解结束后 / 再次进入） —— */
+.pili-pilibot-guide.is-buddy-docked .pili-pilibot-guide__buddy {
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 10px;
+	margin: 0 0 12px;
+	padding: 8px 10px 8px 12px;
+	text-align: left;
+	animation: none;
+}
+
+.pili-pilibot-guide.is-buddy-docked .pili-pilibot-guide__face {
+	width: 40px;
+	height: 40px;
+	flex: 0 0 40px;
+}
+
+.pili-pilibot-guide.is-buddy-docked .pili-pilibot-guide__bubble {
+	flex: 1 1 auto;
+	max-width: none;
+	min-width: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	box-shadow: none;
+}
+
+.pili-pilibot-guide.is-buddy-docked .pili-pilibot-guide__bubble::before {
+	display: none;
+}
+
+.pili-pilibot-guide.is-buddy-docked .pili-pilibot-guide__eyebrow {
+	display: none;
+}
+
+.pili-pilibot-guide.is-buddy-docked .pili-pilibot-guide__text {
+	font-size: 13px;
+	line-height: 1.4;
+	color: #475569;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.pili-pilibot-guide.is-buddy-docked .pili-pilibot-guide__toolbar {
+	position: static;
+	flex: 0 0 auto;
+	margin-left: auto;
+	max-width: none;
+}
+
+.pili-pilibot-guide.is-buddy-docked .pili-pilibot-guide__prev,
+.pili-pilibot-guide.is-buddy-docked .pili-pilibot-guide__next,
+.pili-pilibot-guide.is-buddy-docked .pili-pilibot-guide__progress {
+	display: none;
+}
+
+.pili-pilibot-guide.is-buddy-docked .pili-pilibot-guide__heading,
+.pili-pilibot-guide.is-buddy-docked .pili-pilibot-guide__lead,
+.pili-pilibot-guide.is-buddy-docked .pili-pilibot-guide__grid {
+	display: none !important;
+}
+
+.pili-pilibot-guide__heading {
+	margin: 0 0 0.35rem;
+	font-weight: 600;
+	color: #1f2937;
+}
+
+.pili-pilibot-guide__lead {
+	margin: 0 0 0.75rem;
+	font-size: 12px;
+	line-height: 1.5;
+	color: #6b7280;
+}
+
+.pili-pilibot-guide__grid {
+	display: grid;
+	gap: 0.75rem;
+	grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+.pili-pilibot-guide__card {
+	position: relative;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	border: 1px solid #e5e7eb;
+	background: #fff;
+	box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+	height: 100%;
+	transition:
+		border-color 0.35s ease,
+		box-shadow 0.35s ease,
+		transform 0.35s cubic-bezier(0.33, 1, 0.32, 1),
+		opacity 0.35s ease,
+		background-color 0.35s ease;
+}
+
+.pili-pilibot-guide__card-top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.5rem;
+	margin-bottom: 0.75rem;
+}
+
+.pili-pilibot-guide__card-icon {
+	font-size: 1.125rem;
+	color: #9ca3af;
+	line-height: 1;
+}
+
+.pili-pilibot-guide__card-title {
+	margin: 0 0 0.35rem;
+	font-weight: 500;
+	font-size: 0.9375rem;
+	color: #111827;
+}
+
+.pili-pilibot-guide__card-desc {
+	margin: 0;
+	font-size: 12px;
+	line-height: 1.55;
+	color: #4b5563;
+}
+
+.pili-pilibot-guide__grid.is-touring .pili-pilibot-guide__card.is-dim {
+	opacity: 0.42;
+	transform: scale(0.98);
+	filter: grayscale(0.15);
+	box-shadow: none;
+}
+
+.pili-pilibot-guide__grid.is-touring .pili-pilibot-guide__card.is-spotlight {
+	opacity: 1;
+	transform: translateY(-4px) scale(1.02);
+	border-color: #8aa3f5;
+	background:
+		radial-gradient(120% 90% at 0% 0%, rgba(20, 71, 230, 0.12), transparent 55%),
+		#ffffff;
+	box-shadow:
+		0 0 0 2px rgba(20, 71, 230, 0.22),
+		0 10px 24px rgba(20, 71, 230, 0.14);
+	z-index: 1;
+	animation: pili-pilibot-guide-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes pili-pilibot-guide-in {
+	from {
+		opacity: 0;
+		transform: translateY(18px) scale(0.96);
+	}
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+@keyframes pili-pilibot-guide-spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes pili-pilibot-guide-pulse {
+	0%,
+	100% {
+		box-shadow:
+			0 0 0 2px rgba(20, 71, 230, 0.22),
+			0 10px 24px rgba(20, 71, 230, 0.14);
+	}
+	50% {
+		box-shadow:
+			0 0 0 3px rgba(20, 71, 230, 0.34),
+			0 14px 28px rgba(20, 71, 230, 0.18);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.pili-pilibot-guide__buddy,
+	.pili-pilibot-guide__grid.is-touring .pili-pilibot-guide__card.is-spotlight,
+	.pili-pilibot-guide__replay.is-playing i {
+		animation: none !important;
+	}
+}
+
+@media (max-width: 640px) {
+	.pili-pilibot-guide__face {
+		width: 96px;
+		height: 96px;
+	}
+
+	.pili-pilibot-guide__buddy {
+		padding: 42px 12px 12px;
+	}
+
+	.pili-pilibot-guide.is-buddy-docked .pili-pilibot-guide__buddy {
+		flex-wrap: wrap;
+		padding: 8px 10px;
+	}
+
+	.pili-pilibot-guide.is-buddy-docked .pili-pilibot-guide__text {
+		white-space: normal;
+	}
+
+	.pili-pilibot-guide.is-buddy-docked .pili-pilibot-guide__toolbar {
+		width: 100%;
+		justify-content: flex-end;
+		margin-left: 0;
+	}
+
+	.pili-pilibot-guide.is-buddy-docked .pili-pilibot-guide__replay span {
+		display: none;
+	}
+}

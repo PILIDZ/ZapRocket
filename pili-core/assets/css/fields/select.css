@@ -1,0 +1,59 @@
+/**
+ * XUN select：打开时抬升层级，避免与下方字段叠层。
+ * 下拉层实际定位由 select.js（fixed）处理。
+ */
+
+.pili-select-field {
+	position: relative;
+	z-index: 1;
+}
+
+.pili-select-field.is-open {
+	z-index: 60;
+}
+
+/* 字段行（含标题）一并抬升，避免被 space-y 后续兄弟盖住 */
+.pili-form [data-field-id]:has(.pili-select-field.is-open),
+.pili-framework-page [data-field-id]:has(.pili-select-field.is-open) {
+	position: relative;
+	z-index: 60;
+}
+
+.pili-select-dropdown {
+	z-index: 10;
+	box-sizing: border-box;
+	background: #fff;
+	overflow: hidden;
+}
+
+.pili-select-dropdown.pili-select-dropdown--portal {
+	/* 挂到 body 后：脱离卡片 overflow / 兄弟叠层 */
+	position: fixed !important;
+	margin-top: 0 !important;
+	z-index: 100060 !important;
+	box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.18), 0 8px 10px -6px rgba(15, 23, 42, 0.12);
+	/* 禁止 transition 造成「从顶部落下」的观感 */
+	transition: none !important;
+}
+
+.pili-select-dropdown.pili-select-dropdown--portal .pili-select-options {
+	-webkit-overflow-scrolling: touch;
+}
+
+/* 动态禁用选项（setDisabledValues / setOptionDisabled） */
+.pili-select-option.is-disabled,
+.pili-select-option[aria-disabled="true"],
+.pili-select-option[data-disabled="1"] {
+	opacity: 0.45;
+	cursor: not-allowed !important;
+	color: #9ca3af !important;
+	background-color: transparent !important;
+}
+
+.pili-select-option.is-disabled:hover,
+.pili-select-option[aria-disabled="true"]:hover,
+.pili-select-option[data-disabled="1"]:hover {
+	background-color: transparent !important;
+	color: #9ca3af !important;
+}
+

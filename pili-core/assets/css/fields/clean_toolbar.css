@@ -1,0 +1,254 @@
+/**
+ * clean_toolbar — gauge + stats + scan/run.
+ */
+.pili-clean-toolbar {
+	border: 1px solid var(--pili-border, #e5e7eb);
+	border-radius: 12px;
+	background: #fff;
+	padding: 24px;
+}
+
+.pili-clean-toolbar__hero {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 22px;
+	align-items: center;
+}
+
+@media (min-width: 1100px) {
+	.pili-clean-toolbar__hero {
+		grid-template-columns: minmax(280px, 1.15fr) minmax(240px, 1fr) 180px;
+	}
+}
+
+.pili-clean-toolbar__intro {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 20px;
+}
+
+.pili-clean-toolbar__gauge {
+	position: relative;
+	flex: 0 0 auto;
+	width: 168px;
+	height: 168px;
+}
+
+.pili-clean-toolbar__dial {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.pili-clean-toolbar__track {
+	stroke: #e5e7eb;
+}
+
+.pili-clean-toolbar__arc {
+	stroke: var(--pili-color-accent, #2563eb);
+	stroke-dasharray: 314.16;
+	stroke-dashoffset: 314.16;
+	transition: stroke-dashoffset 0.35s ease;
+}
+
+.pili-clean-toolbar__gauge-center {
+	position: absolute;
+	inset: 22px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 999px;
+	background: #fff;
+	box-shadow: inset 0 0 0 1px #eef2f7;
+}
+
+.pili-clean-toolbar__gauge-kicker,
+.pili-clean-toolbar__gauge-unit {
+	font-size: 11px;
+	line-height: 1.2;
+	color: #6b7280;
+}
+
+.pili-clean-toolbar__gauge-value {
+	margin: 2px 0 0;
+	font-size: 26px;
+	font-weight: 750;
+	line-height: 1;
+	color: #111827;
+	font-variant-numeric: tabular-nums;
+}
+
+.pili-clean-toolbar__copy {
+	min-width: 0;
+	flex: 1;
+}
+
+.pili-clean-toolbar__badge {
+	display: inline-flex;
+	margin: 0 0 8px;
+	padding: 3px 8px;
+	border-radius: 8px;
+	border: 1px solid #dbeafe;
+	background: #eff6ff;
+	color: #1d4ed8;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1.3;
+}
+
+.pili-clean-toolbar__title {
+	margin: 0 0 8px;
+	font-size: 22px;
+	line-height: 1.3;
+	font-weight: 700;
+	color: #111827;
+}
+
+.pili-clean-toolbar__title em {
+	font-style: normal;
+	color: var(--pili-color-accent, #2563eb);
+	text-decoration: underline;
+	text-underline-offset: 4px;
+}
+
+.pili-clean-toolbar__lead {
+	margin: 0;
+	max-width: 38em;
+	font-size: 13px;
+	line-height: 1.6;
+	color: #6b7280;
+}
+
+.pili-clean-toolbar__stats {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+}
+
+.pili-clean-toolbar__stat {
+	padding: 14px 14px 12px;
+	border: 1px solid #e5e7eb;
+	border-radius: 12px;
+	background: #f8fafc;
+}
+
+.pili-clean-toolbar__stat-head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 8px;
+	margin: 0 0 2px;
+}
+
+.pili-clean-toolbar__stat-icon {
+	flex: 0 0 auto;
+	font-size: 16px;
+	line-height: 1;
+}
+
+.pili-clean-toolbar__stat--selected .pili-clean-toolbar__stat-icon {
+	color: #2563eb;
+}
+
+.pili-clean-toolbar__stat--size .pili-clean-toolbar__stat-icon {
+	color: #0ea5e9;
+}
+
+.pili-clean-toolbar__stat--last .pili-clean-toolbar__stat-icon {
+	color: #10b981;
+}
+
+.pili-clean-toolbar__stat--items .pili-clean-toolbar__stat-icon {
+	color: #8b5cf6;
+}
+
+.pili-clean-toolbar__stat-label,
+.pili-clean-toolbar__stat-hint {
+	margin: 0;
+	font-size: 12px;
+	line-height: 1.4;
+	color: #6b7280;
+}
+
+.pili-clean-toolbar__stat-value {
+	margin: 6px 0 4px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.15;
+	color: #111827;
+	font-variant-numeric: tabular-nums;
+}
+
+.pili-clean-toolbar__loading {
+	display: inline-flex;
+	align-items: center;
+}
+
+.pili-clean-toolbar__loading[hidden] {
+	display: none;
+}
+
+.pili-clean-toolbar__gauge-center .pili-clean-toolbar__loading {
+	margin-top: 4px;
+}
+
+.pili-clean-toolbar__cta {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	justify-content: center;
+}
+
+@media (min-width: 1100px) {
+	.pili-clean-toolbar__cta {
+		padding-left: 18px;
+		border-left: 1px solid #e5e7eb;
+		min-height: 168px;
+	}
+}
+
+.pili-clean-toolbar__cta .pili-table-action-btn {
+	width: 100%;
+	justify-content: center;
+	padding: 10px 14px;
+	font-size: 13px;
+}
+
+.pili-clean-toolbar__cta-note {
+	margin: 4px 0 0;
+	font-size: 12px;
+	line-height: 1.45;
+	color: #6b7280;
+	text-align: center;
+}
+
+.pili-clean-toolbar__progress {
+	margin-top: 16px;
+}
+
+.pili-clean-toolbar__bar {
+	height: 6px;
+	border-radius: 99px;
+	background: #e5e7eb;
+	overflow: hidden;
+}
+
+.pili-clean-toolbar__bar-fill {
+	display: block;
+	height: 100%;
+	width: 0;
+	background: var(--pili-color-accent, #2563eb);
+	transition: width 0.2s ease;
+}
+
+.pili-clean-toolbar__status {
+	margin: 8px 0 0;
+	font-size: 12px;
+	color: #6b7280;
+}

@@ -1,0 +1,10 @@
+/* PILI design tokens — host may override on .pili-inst-* */
+:root,
+.pili-inst-default {
+  --pili-color-accent: #2563eb;
+  --pili-color-accent-hover: #1d4ed8;
+  --pili-radius: 8px;
+  --pili-space: 8px;
+  --pili-font-size: 14px;
+  --pili-border: #e5e7eb;
+}

@@ -1,0 +1,297 @@
+/**
+ * XUN metric_cards — 仪表盘专用标识卡（不影响 stat_cards）
+ * 可带上方消耗趋势图：.pili-metric-cards-section--with-chart
+ */
+
+.pili-metric-cards-section {
+	margin: 0 0 1.25rem;
+	background: #fff;
+	border: 1px solid rgba(226, 232, 240, 0.95);
+	border-radius: 0.5rem;
+	box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+	padding: 1.25rem 1.25rem 1rem;
+	box-sizing: border-box;
+}
+
+.pili-metric-cards-section__head {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.pili-metric-cards-section__head h2 {
+	margin: 0;
+	font-size: 1rem;
+	font-weight: 700;
+	color: #0f172a;
+	letter-spacing: -0.01em;
+}
+
+.pili-metric-cards-section__head i {
+	color: #64748b;
+	font-size: 1.125rem;
+	line-height: 1;
+}
+
+.pili-metric-cards-section__chart {
+	margin: 0 0 1.25rem;
+	padding: 0.5rem 0.75rem 0.375rem;
+	border-radius: 0.5rem;
+	background: #fff;
+	border: 1px solid #f1f5f9;
+	overflow: hidden;
+}
+
+.pili-metric-cards-section__chart .pili-chart-field {
+	margin: 0;
+	width: 100%;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.pili-metric-cards-section__chart .pili-chart-canvas {
+	min-height: 200px;
+}
+
+.pili-metric-cards-section__cards {
+	margin: 0;
+}
+
+.pili-metric-cards-section--with-chart .pili-metric-cards-section__cards {
+	padding-top: 0.25rem;
+	border-top: 1px solid #f1f5f9;
+}
+
+.pili-metric-cards {
+	display: grid;
+	gap: 0.875rem;
+	width: 100%;
+	grid-template-columns: repeat(auto-fit, minmax(11.5rem, 1fr));
+	padding-top: 1rem;
+}
+
+.pili-metric-cards-section:not(.pili-metric-cards-section--with-chart) .pili-metric-cards {
+	padding-top: 0;
+}
+
+.pili-metric-cards > .pili-metric-card {
+	min-width: 0;
+}
+
+@media (min-width: 640px) {
+	.pili-metric-cards[style*="--pili-metric-cols-sm"] {
+		grid-template-columns: repeat(var(--pili-metric-cols-sm), minmax(0, 1fr)) !important;
+	}
+}
+
+@media (min-width: 768px) {
+	.pili-metric-cards[style*="--pili-metric-cols-md"] {
+		grid-template-columns: repeat(var(--pili-metric-cols-md), minmax(0, 1fr)) !important;
+	}
+}
+
+@media (min-width: 1024px) {
+	.pili-metric-cards[style*="--pili-metric-cols-lg"] {
+		grid-template-columns: repeat(var(--pili-metric-cols-lg), minmax(0, 1fr)) !important;
+	}
+}
+
+@media (min-width: 1280px) {
+	.pili-metric-cards[style*="--pili-metric-cols-xl"] {
+		grid-template-columns: repeat(var(--pili-metric-cols-xl), minmax(0, 1fr)) !important;
+	}
+}
+
+.pili-metric-card {
+	background: #f8fafc;
+	border: 1px solid rgba(226, 232, 240, 0.95);
+	border-radius: 0.5rem;
+	padding: 1rem 1.125rem;
+	box-shadow: none;
+	transition: border-color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+	box-sizing: border-box;
+}
+
+.pili-metric-card:hover {
+	background: #fff;
+	border-color: #cbd5e1;
+	box-shadow: 0 8px 20px -8px rgba(15, 23, 42, 0.08);
+}
+
+.pili-metric-card__meta {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.5rem;
+	margin-bottom: 0.875rem;
+}
+
+.pili-metric-card__meta-left {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	min-width: 0;
+}
+
+.pili-metric-card__icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 0.5rem;
+	flex: 0 0 auto;
+	font-size: 1rem;
+	line-height: 1;
+}
+
+.pili-metric-card__icon--blue {
+	background: #eff6ff;
+	color: #2563eb;
+}
+
+.pili-metric-card__icon--orange {
+	background: #fff7ed;
+	color: #ea580c;
+}
+
+.pili-metric-card__icon--green {
+	background: #ecfdf5;
+	color: #059669;
+}
+
+.pili-metric-card__icon--purple {
+	background: #f5f3ff;
+	color: #7c3aed;
+}
+
+.pili-metric-card__icon--yellow {
+	background: #fffbeb;
+	color: #d97706;
+}
+
+.pili-metric-card__icon--red {
+	background: #fff1f2;
+	color: #e11d48;
+}
+
+.pili-metric-card__icon--teal {
+	background: #f0fdfa;
+	color: #0d9488;
+}
+
+.pili-metric-card__icon--cyan {
+	background: #ecfeff;
+	color: #0891b2;
+}
+
+.pili-metric-card__icon--slate {
+	background: #f1f5f9;
+	color: #475569;
+}
+
+.pili-metric-card__label {
+	font-size: 0.8125rem;
+	font-weight: 500;
+	color: #64748b;
+	line-height: 1.25;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.pili-metric-card__action {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 999px;
+	color: #94a3b8;
+	text-decoration: none;
+	flex: 0 0 auto;
+	transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.pili-metric-card__action:hover {
+	color: #334155;
+	background: #e2e8f0;
+}
+
+.pili-metric-card__body {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	align-items: flex-start;
+}
+
+.pili-metric-card__value {
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #0f172a;
+	letter-spacing: -0.02em;
+	line-height: 1.15;
+	word-break: break-word;
+}
+
+.pili-metric-cards-section.is-in .pili-metric-card__value {
+	animation: xunMetricValuePop 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@keyframes xunMetricValuePop {
+	from { transform: scale(0.86); opacity: 0.4; }
+	to { transform: scale(1); opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.pili-metric-cards-section.is-in .pili-metric-card__value {
+		animation: none;
+	}
+}
+
+.pili-metric-card__trend {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.2rem;
+	padding: 0.15rem 0.45rem;
+	border-radius: 999px;
+	border: 1px solid transparent;
+	font-size: 0.75rem;
+	font-weight: 500;
+	line-height: 1.25;
+	max-width: 100%;
+}
+
+.pili-metric-card__trend i {
+	font-size: 0.875rem;
+	line-height: 1;
+}
+
+.pili-metric-card__trend-suffix {
+	opacity: 0.85;
+}
+
+.pili-metric-card__trend--up {
+	background: #ecfdf5;
+	color: #047857;
+	border-color: #a7f3d0;
+}
+
+.pili-metric-card__trend--down {
+	background: #fff1f2;
+	color: #be123c;
+	border-color: #fecdd3;
+}
+
+.pili-metric-card__trend--flat {
+	background: #fff;
+	color: #64748b;
+	border-color: #e2e8f0;
+}
+
+.pili-metric-cards-section__foot {
+	margin-top: 0.875rem;
+	padding-top: 0.75rem;
+	border-top: 1px solid #f1f5f9;
+}

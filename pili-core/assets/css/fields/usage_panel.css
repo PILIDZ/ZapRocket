@@ -1,0 +1,369 @@
+/**
+ * XUN usage_panel — Token 用途（圆角环形 + 功能图例；今日/七日/本月）
+ */
+
+.pili-usage-panel {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 0.75rem;
+	background: #fff;
+	border: 1px solid #fff;
+	border-radius: 0.5rem;
+	padding: 1.5rem;
+	box-shadow: 0 10px 40px -12px rgba(15, 23, 42, 0.08), 0 2px 8px rgba(15, 23, 42, 0.03);
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0 0 1.25rem;
+}
+
+@media (min-width: 1024px) {
+	.pili-usage-panel {
+		padding: 1.75rem;
+	}
+}
+
+.pili-usage-panel__head {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 0.75rem;
+	margin-bottom: 0.125rem;
+}
+
+.pili-usage-panel__titles {
+	min-width: 0;
+}
+
+.pili-usage-panel__heading {
+	margin: 0;
+	color: #111827;
+	font-size: 1rem;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+	line-height: 1.3;
+}
+
+.pili-usage-panel__subheading {
+	margin: 0.125rem 0 0;
+	color: #9ca3af;
+	font-size: 0.6875rem;
+	font-weight: 500;
+	line-height: 1.4;
+}
+
+.pili-usage-panel__head-right {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 0.5rem;
+	flex-shrink: 0;
+}
+
+.pili-usage-panel__tabs {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.125rem;
+	padding: 0.125rem;
+	border-radius: 0.5rem;
+	background: #f3f4f6;
+}
+
+.pili-usage-panel__tab {
+	appearance: none;
+	border: 0;
+	margin: 0;
+	padding: 0.25rem 0.625rem;
+	border-radius: 0.375rem;
+	background: transparent;
+	color: #6b7280;
+	font-size: 0.6875rem;
+	font-weight: 600;
+	line-height: 1.3;
+	cursor: pointer;
+	transition: background 0.15s ease, color 0.15s ease;
+}
+
+.pili-usage-panel__tab:hover,
+.pili-usage-panel__tab:focus {
+	color: #374151;
+	outline: none;
+}
+
+.pili-usage-panel__tab.is-active {
+	background: #fff;
+	color: #111827;
+	box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+}
+
+.pili-usage-panel__badge {
+	display: inline-flex;
+	align-items: center;
+	flex-shrink: 0;
+	padding: 0.25rem 0.625rem;
+	border-radius: 9999px;
+	background: #eef2ff;
+	color: #4338ca;
+	font-size: 0.75rem;
+	font-weight: 700;
+	line-height: 1.2;
+	white-space: nowrap;
+}
+
+.pili-usage-panel__action {
+	display: inline-flex;
+	align-items: center;
+	flex-shrink: 0;
+	color: #9ca3af;
+	font-size: 0.75rem;
+	font-weight: 600;
+	text-decoration: none;
+	transition: color 0.15s ease;
+	white-space: nowrap;
+}
+
+.pili-usage-panel__action:hover,
+.pili-usage-panel__action:focus {
+	color: #4f46e5;
+}
+
+.pili-usage-panel__body {
+	display: flex;
+	align-items: stretch;
+	justify-content: space-between;
+	gap: 1rem;
+	padding: 0.5rem 0;
+	min-width: 0;
+}
+
+.pili-usage-panel__donut {
+	position: relative;
+	flex: 0 0 auto;
+	align-self: center;
+	width: 9.5rem;
+	height: 9.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.pili-usage-panel__chart.pili-chart-field {
+	position: absolute;
+	inset: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+
+.pili-usage-panel__chart .pili-chart-canvas {
+	width: 100% !important;
+	height: 100% !important;
+	min-height: 0;
+}
+
+.pili-usage-panel__svg {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.pili-usage-panel__slice {
+	transition: stroke-width 0.2s ease, opacity 0.2s ease;
+}
+
+.pili-usage-panel__slice:hover {
+	stroke-width: 16;
+	opacity: 0.92;
+}
+
+.pili-usage-panel__center {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	pointer-events: none;
+	z-index: 1;
+}
+
+.pili-usage-panel__center-value {
+	color: #0c1024;
+	font-size: 1.25rem;
+	font-weight: 800;
+	letter-spacing: -0.03em;
+	line-height: 1.15;
+}
+
+.pili-usage-panel__center-hint {
+	margin-top: 0.125rem;
+	color: #9ca3af;
+	font-size: 0.625rem;
+	font-weight: 500;
+}
+
+.pili-usage-panel__legend {
+	flex: 1 1 auto;
+	min-width: 0;
+	min-height: 0;
+	/* 与左侧环同高，超出滚动，避免条目撑高整卡 */
+	max-height: 9.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	overflow-x: hidden;
+	overflow-y: auto;
+	overscroll-behavior: contain;
+	padding-right: 0.125rem;
+	-webkit-overflow-scrolling: touch;
+	scrollbar-width: thin;
+	scrollbar-color: #c7d2fe transparent;
+}
+
+.pili-usage-panel__legend::-webkit-scrollbar {
+	width: 4px;
+}
+
+.pili-usage-panel__legend::-webkit-scrollbar-thumb {
+	background: #c7d2fe;
+	border-radius: 9999px;
+}
+
+.pili-usage-panel__legend::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+.pili-usage-panel__empty {
+	margin: 0;
+	color: #9ca3af;
+	font-size: 0.75rem;
+	line-height: 1.5;
+}
+
+.pili-usage-panel__leg {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.5rem;
+	padding: 0.5rem;
+	border-radius: 0.75rem;
+	background: rgba(238, 242, 255, 0.45);
+	transition: background 0.15s ease;
+}
+
+.pili-usage-panel__leg:hover {
+	background: #eef2ff;
+}
+
+.pili-usage-panel__leg-left {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.375rem;
+	min-width: 0;
+}
+
+.pili-usage-panel__dot {
+	width: 0.625rem;
+	height: 0.625rem;
+	border-radius: 9999px;
+	flex-shrink: 0;
+}
+
+.pili-usage-panel__leg-label {
+	color: #374151;
+	font-size: 0.75rem;
+	font-weight: 500;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.pili-usage-panel__leg-right {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	flex-shrink: 0;
+	line-height: 1.15;
+}
+
+.pili-usage-panel__leg-pct {
+	font-size: 0.75rem;
+	font-weight: 700;
+}
+
+.pili-usage-panel__leg-tokens {
+	color: #9ca3af;
+	font-size: 0.625rem;
+}
+
+.pili-usage-panel__footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.75rem;
+	padding-top: 0.75rem;
+	margin-top: 0.125rem;
+	border-top: 1px solid #f3f4f6;
+	color: #9ca3af;
+	font-size: 0.6875rem;
+	line-height: 1.4;
+}
+
+.pili-usage-panel__footer-left b,
+.pili-usage-panel__footer-left strong {
+	color: #374151;
+	font-weight: 700;
+}
+
+.pili-usage-panel__footer-right {
+	font-weight: 500;
+	white-space: nowrap;
+}
+
+.pili-usage-panel__footer-right--emerald {
+	color: #059669;
+}
+
+.pili-usage-panel__footer-right--amber {
+	color: #d97706;
+}
+
+.pili-usage-panel__footer-right--gray {
+	color: #6b7280;
+}
+
+.pili-usage-panel__footer-right--red {
+	color: #dc2626;
+}
+
+@media (max-width: 640px) {
+	.pili-usage-panel__head {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.pili-usage-panel__head-right {
+		align-items: flex-start;
+	}
+
+	.pili-usage-panel__body {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.pili-usage-panel__donut {
+		margin: 0 auto;
+	}
+
+	.pili-usage-panel__legend {
+		max-height: 11rem;
+	}
+}
+
+/* 仪表盘：图表行样式见 activity_panel.css（.pilipost-dash-row--charts） */
+.pilipost-dash-row .pili-usage-panel {
+	margin-bottom: 0;
+	flex: 1 1 auto;
+}

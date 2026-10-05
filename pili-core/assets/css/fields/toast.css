@@ -1,0 +1,275 @@
+/**
+ * XUN toast field — SaaS 轻提示
+ * 全圆角胶囊；默认底部居中；PiliBot 表情透明底
+ */
+
+/* 字段外壳：toast 不占流式布局空间 */
+.pili-field-toast {
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	min-height: 0 !important;
+}
+
+.pili-field-toast > .clear {
+	display: none !important;
+}
+
+.pili-toast-host {
+	position: fixed;
+	z-index: 100010;
+	display: flex;
+	flex-direction: column;
+	gap: 0.55rem;
+	width: min(22.5rem, calc(100vw - 1.5rem));
+	max-width: calc(100vw - 1.5rem);
+	pointer-events: none;
+	box-sizing: border-box;
+}
+
+.pili-toast-host--top-right {
+	top: 2.75rem;
+	right: 1rem;
+	align-items: flex-end;
+}
+
+.pili-toast-host--top-left {
+	top: 2.75rem;
+	left: 1rem;
+	align-items: flex-start;
+}
+
+.pili-toast-host--top-center {
+	top: 2.75rem;
+	left: 50%;
+	transform: translateX(-50%);
+	align-items: center;
+}
+
+.pili-toast-host--bottom-right {
+	right: 1rem;
+	bottom: 1.25rem;
+	align-items: flex-end;
+}
+
+.pili-toast-host--bottom-left {
+	left: 1rem;
+	bottom: 1.25rem;
+	align-items: flex-start;
+}
+
+.pili-toast-host--bottom-center {
+	left: 50%;
+	bottom: 1.25rem;
+	transform: translateX(-50%);
+	align-items: center;
+}
+
+/* WP 顶栏下多留一点 */
+body.admin-bar .pili-toast-host--top-right,
+body.admin-bar .pili-toast-host--top-left,
+body.admin-bar .pili-toast-host--top-center {
+	top: 3.5rem;
+}
+
+@media (max-width: 782px) {
+	body.admin-bar .pili-toast-host--top-right,
+	body.admin-bar .pili-toast-host--top-left,
+	body.admin-bar .pili-toast-host--top-center {
+		top: 4.25rem;
+	}
+}
+
+.pili-toast {
+	pointer-events: auto;
+	display: flex;
+	align-items: center;
+	gap: 0.65rem;
+	width: 100%;
+	padding: 0.65rem 0.9rem;
+	border: 1px solid #e5e7eb;
+	border-radius: 9999px;
+	background: #fff;
+	box-shadow: 0 12px 32px rgba(15, 23, 42, 0.14);
+	color: #111827;
+	opacity: 0;
+	transform: translateY(-6px);
+	transition: opacity 0.18s ease, transform 0.18s ease;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+
+.pili-toast.pili-toast--pilibot {
+	align-items: center;
+	gap: 0.55rem;
+	min-height: 0;
+	padding: 0.4rem 0.75rem 0.4rem 0.4rem;
+}
+
+.pili-toast__bot {
+	flex: 0 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 3.5rem;
+	height: 3.5rem;
+	border-radius: 9999px;
+	overflow: hidden;
+	background: transparent;
+	line-height: 0;
+}
+
+.pili-toast__bot-canvas {
+	display: block;
+	width: 100% !important;
+	height: 100% !important;
+	border-radius: 9999px;
+	background: transparent !important;
+	cursor: default;
+	touch-action: none;
+}
+
+.pili-toast-host--bottom-right .pili-toast,
+.pili-toast-host--bottom-left .pili-toast,
+.pili-toast-host--bottom-center .pili-toast {
+	transform: translateY(6px);
+}
+
+.pili-toast.is-in {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.pili-toast.is-out {
+	opacity: 0;
+	transform: translateY(-6px);
+}
+
+.pili-toast-host--bottom-right .pili-toast.is-out,
+.pili-toast-host--bottom-left .pili-toast.is-out,
+.pili-toast-host--bottom-center .pili-toast.is-out {
+	transform: translateY(6px);
+}
+
+.pili-toast__icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 1.5rem;
+	height: 1.5rem;
+	margin-top: 0.05rem;
+	flex: 0 0 auto;
+	border-radius: 999px;
+	line-height: 1;
+}
+
+.pili-toast__icon i {
+	font-size: 1rem;
+	line-height: 1;
+}
+
+.pili-toast__body {
+	flex: 1 1 auto;
+	min-width: 0;
+}
+
+.pili-toast__title {
+	margin: 0 0 0.15rem;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 1.35;
+	color: #111827;
+}
+
+.pili-toast__message {
+	margin: 0;
+	font-size: 13px;
+	line-height: 1.5;
+	color: #374151;
+	word-break: break-word;
+}
+
+.pili-toast__close {
+	display: inline-flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	width: 1.65rem !important;
+	height: 1.65rem !important;
+	min-width: 1.65rem !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	border-radius: 9999px !important;
+	background: transparent !important;
+	color: #9ca3af !important;
+	cursor: pointer !important;
+	box-shadow: none !important;
+	flex: 0 0 auto;
+}
+
+.pili-toast__close:hover {
+	background: #f3f4f6 !important;
+	color: #374151 !important;
+}
+
+.pili-toast__close i {
+	font-size: 0.95rem;
+	line-height: 1;
+}
+
+.pili-toast--success {
+	border-color: #bbf7d0;
+	background: #f0fdf4;
+}
+
+.pili-toast--success .pili-toast__icon {
+	background: #dcfce7;
+	color: #16a34a;
+}
+
+.pili-toast--error {
+	border-color: #fecaca;
+	background: #fef2f2;
+}
+
+.pili-toast--error .pili-toast__icon {
+	background: #fee2e2;
+	color: #dc2626;
+}
+
+.pili-toast--warning {
+	border-color: #fde68a;
+	background: #fffbeb;
+}
+
+.pili-toast--warning .pili-toast__icon {
+	background: #fef3c7;
+	color: #d97706;
+}
+
+.pili-toast--info {
+	border-color: #bfdbfe;
+	background: #eff6ff;
+}
+
+.pili-toast--info .pili-toast__icon {
+	background: #dbeafe;
+	color: #2563eb;
+}
+
+@media (max-width: 640px) {
+	.pili-toast-host--top-right,
+	.pili-toast-host--top-left,
+	.pili-toast-host--bottom-right,
+	.pili-toast-host--bottom-left {
+		left: 0.75rem;
+		right: 0.75rem;
+		width: auto;
+		align-items: stretch;
+	}
+
+	.pili-toast-host--top-center,
+	.pili-toast-host--bottom-center {
+		width: calc(100vw - 1.5rem);
+	}
+}

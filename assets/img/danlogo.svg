@@ -1,0 +1,11 @@
+<svg id="zr-danlogo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300.01 360" role="img" aria-label="danlogo">
+	<title>danlogo</title>
+	<defs>
+		<style>
+			.zr-danlogo-a { fill: #0265fe; }
+			.zr-danlogo-b { fill: #01d293; }
+		</style>
+	</defs>
+	<path class="zr-danlogo-a" d="M755.2,239S531.57,464.45,533.38,464.45h120Z" transform="translate(-533.37 -239)"/>
+	<path class="zr-danlogo-b" d="M611.56,599S835.19,373.55,833.37,373.55h-120Z" transform="translate(-533.37 -239)"/>
+</svg>

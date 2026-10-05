@@ -1,0 +1,105 @@
+/**
+ * sitemap_items field layout
+ */
+.pili-sitemap-items {
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #e5e7eb;
+	border-radius: 0.5rem;
+	background: #fff;
+	overflow: hidden;
+}
+
+.pili-sitemap-items__head,
+.pili-sitemap-items__row {
+	display: grid;
+	grid-template-columns: minmax(8rem, 1.2fr) minmax(5rem, 0.6fr) minmax(9rem, 1fr) minmax(10rem, 1.4fr);
+	gap: 0.75rem;
+	align-items: center;
+	padding: 0.75rem 1rem;
+	box-sizing: border-box;
+}
+
+.pili-sitemap-items__head {
+	background: #f9fafb;
+	border-bottom: 1px solid #e5e7eb;
+	font-size: 12px;
+	font-weight: 600;
+	color: #6b7280;
+	text-transform: none;
+}
+
+.pili-sitemap-items__row + .pili-sitemap-items__row {
+	border-top: 1px solid #f3f4f6;
+}
+
+.pili-sitemap-items__row:hover {
+	background: #fafafa;
+}
+
+.pili-sitemap-items__label {
+	display: block;
+	font-size: 13px;
+	font-weight: 600;
+	color: #111827;
+	line-height: 1.35;
+}
+
+.pili-sitemap-items__hint {
+	display: block;
+	margin-top: 0.15rem;
+	font-size: 12px;
+	color: #9ca3af;
+	line-height: 1.35;
+}
+
+.pili-sitemap-items__col .pili-field {
+	margin: 0;
+}
+
+.pili-sitemap-items__col .pili-title,
+.pili-sitemap-items__col .pili-fieldset > .mt-3 {
+	display: none;
+}
+
+.pili-sitemap-items__col .pili-fieldset {
+	margin: 0;
+	padding: 0;
+}
+
+.pili-sitemap-items__col--switch .pili-field-switch,
+.pili-sitemap-items__col--switch [data-pili-switch] {
+	justify-content: flex-start;
+}
+
+/* 行内优先级滑块：收紧间距，避免表格被撑高 */
+.pili-sitemap-items__col--prio .pili-slider-field > .relative.mb-4 {
+	margin-bottom: 0.5rem;
+}
+
+.pili-sitemap-items__col--prio .pili-slider-field input[type="number"] {
+	max-width: 4.5rem;
+}
+
+@media (max-width: 782px) {
+	.pili-sitemap-items__head {
+		display: none;
+	}
+
+	.pili-sitemap-items__row {
+		grid-template-columns: 1fr;
+		gap: 0.5rem;
+		padding: 0.85rem 0.9rem;
+	}
+
+	.pili-sitemap-items__col--switch::before,
+	.pili-sitemap-items__col--freq::before,
+	.pili-sitemap-items__col--prio::before {
+		display: block;
+		content: attr(data-mobile-label);
+		font-size: 11px;
+		font-weight: 600;
+		color: #6b7280;
+		margin-bottom: 0.25rem;
+	}
+}

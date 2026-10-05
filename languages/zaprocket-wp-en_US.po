@@ -1,0 +1,4215 @@
+# Copyright (C) 2026 霹雳设计
+# This file is distributed under the same license as the ZapRocket plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: ZapRocket 1.2.1\n"
+"Report-Msgid-Bugs-To: https://piliai.com/\n"
+"POT-Creation-Date: 2026-10-05 14:40+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Domain: zaprocket\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "%d 条"
+msgstr "%d items"
+
+msgid "%d 项"
+msgstr "%d items"
+
+msgid "%s是必填项"
+msgstr "%s is required"
+
+msgid "1 分钟"
+msgstr "1 minute"
+
+msgid "10月"
+msgstr "October"
+
+msgid "11月"
+msgstr "November"
+
+msgid "12月"
+msgstr "December"
+
+msgid "1月"
+msgstr "January"
+
+msgid "2 分钟"
+msgstr "2 minutes"
+
+msgid "2月"
+msgstr "February"
+
+msgid "3 分钟"
+msgstr "3 minutes"
+
+msgid "30 秒"
+msgstr "30 seconds"
+
+msgid "3月"
+msgstr "March"
+
+msgid "4月"
+msgstr "April"
+
+msgid "5月"
+msgstr "May"
+
+msgid "6月"
+msgstr "June"
+
+msgid "7月"
+msgstr "July"
+
+msgid "8月"
+msgstr "August"
+
+msgid "9月"
+msgstr "September"
+
+msgid "API 域名只用于上传管理，不能当图片地址。必须带 http:// 或 https://，不要带桶名。"
+msgstr "The API host is for upload management only, not for image URLs. It must start with http:// or https://, and must not include the bucket name."
+
+msgid "API 域名只用于上传管理；浏览器看图必须走自定义域名。"
+msgstr "The API host is for upload management only. Browsers must load images from a custom domain."
+
+msgid "API 域名（上传用）。不要当图片地址。"
+msgstr "API host (uploads only). Do not use it as an image URL."
+
+msgid "API 域名（上传用），不要带桶名。"
+msgstr "API host (uploads only). Do not include the bucket name."
+
+msgid "APPID 必填。自定义域名未做 CNAME 时，前台无法用加速域名访问。"
+msgstr "APPID is required. Without a CNAME on the custom domain, the front end cannot use the acceleration domain."
+
+msgid "Access Key ID，默认掩码显示。"
+msgstr "Access Key ID. Masked by default."
+
+msgid "AccessKey 不正确，请核对访问密钥 ID。"
+msgstr "AccessKey is incorrect. Check the access key ID."
+
+msgid "AccessKey（访问密钥 ID）"
+msgstr "AccessKey (access key ID)"
+
+msgid "Bucket 所在区域，可搜索中文或 Region ID。"
+msgstr "Bucket region. Search by Chinese name or Region ID."
+
+msgid "Bucket（存储桶 / 空间名称）"
+msgstr "Bucket (bucket / space name)"
+
+msgid "CDN / 懒加载 / 压缩 / 缓存等"
+msgstr "CDN / lazy load / minify / cache, etc."
+
+msgid "CDN 地址（加速域名）"
+msgstr "CDN URL (accelerator hostname)"
+
+msgid "CDN 排除（这些不换地址）"
+msgstr "CDN exclusions (keep original URLs)"
+
+msgid "CDN、预载、懒加载、脚本压缩与延迟。压缩、Delay JS、整页缓存默认关。"
+msgstr "CDN, preload, lazy load, script minify and delay. Minify, Delay JS, and page cache stay off by default."
+
+msgid "CDN加速"
+msgstr "CDN"
+
+msgid "CSS 压缩（减小 CSS 体积）"
+msgstr "Minify CSS (smaller CSS files)"
+
+msgid "CSS 排除（这些文件不压缩）"
+msgstr "CSS exclusions (do not minify these files)"
+
+msgid "CSS 文件"
+msgstr "CSS files"
+
+msgid "Cloudflare R2"
+msgstr "Cloudflare R2"
+
+msgid "Cookie 是网站存在浏览器里的一小段记号，用来记住登录、购物车等。填写：每行一个名称，或名称里的一段文字。只要这次访问带着匹配的 Cookie，就不走缓存，避免「登录后还看到未登录的页面」。名称可在浏览器开发者工具 → 应用/存储 → Cookie 里看到。示例：wordpress_logged_in 。不确定就留空。"
+msgstr "A cookie is a small token the site stores in the browser, used to remember logins, carts, and similar state. Enter one name per line, or a fragment of a name. If this visit sends a matching cookie, the page is not served from cache, so a logged-in user does not see a logged-out page. You can find names in browser developer tools → Application/Storage → Cookies. Example: wordpress_logged_in. Leave empty if you are unsure."
+
+msgid "ECharts 加载失败"
+msgstr "Failed to load ECharts"
+
+msgid "Endpoint 不要带桶名。未绑定自定义域时不会改写前台地址。"
+msgstr "Do not put the bucket name in the Endpoint. Front-end URLs are not rewritten until a custom domain is bound."
+
+msgid "Endpoint 必须以 http:// 或 https:// 开头。"
+msgstr "Endpoint must start with http:// or https://."
+
+msgid "Endpoint 是 API 地址，不要当作图片域名。"
+msgstr "Endpoint is an API URL. Do not use it as an image domain."
+
+msgid "Endpoint 是 API 地址，只用于上传。图片公网必须用已绑定的自定义域，不能用 r2.cloudflarestorage.com。"
+msgstr "Endpoint is an API URL for uploads only. Public image URLs must use a bound custom domain, not r2.cloudflarestorage.com."
+
+msgid "Endpoint（API 接口地址，仅上传）"
+msgstr "Endpoint (API URL, uploads only)"
+
+msgid "Gravatar（评论头像来源）"
+msgstr "Gravatar (comment avatar source)"
+
+msgid "HTTPS 证书校验失败。请检查服务器 CA 证书与接口地址。"
+msgstr "HTTPS certificate verification failed. Check the server CA bundle and the API URL."
+
+msgid "Heartbeat（后台定时刷新）"
+msgstr "Heartbeat (admin polling)"
+
+msgid "JS 压缩（减小 JS 体积）"
+msgstr "Minify JS (smaller JS files)"
+
+msgid "JS 延迟加载（点一下或滚动后再跑）"
+msgstr "Delay JS (run after a click or scroll)"
+
+msgid "JS 异步加载（页面先出来再跑脚本）"
+msgstr "Async JS (render the page first, then run scripts)"
+
+msgid "JS 排除（这些文件不压缩、不合并）"
+msgstr "JS exclusions (do not minify or combine these files)"
+
+msgid "JavaScript 文件"
+msgstr "JavaScript files"
+
+msgid "MD5 哈希文件名"
+msgstr "MD5 hashed file name"
+
+msgid "PHP 内存限制：%s"
+msgstr "PHP memory limit: %s"
+
+msgid "PHP 最大执行时间：%s"
+msgstr "PHP max execution time: %s"
+
+msgid "PHP 版本"
+msgstr "PHP version"
+
+msgid "R2 Access Key ID，默认掩码显示。"
+msgstr "R2 Access Key ID. Masked by default."
+
+msgid "R2 Secret Access Key，加密保存。"
+msgstr "R2 Secret Access Key. Stored encrypted."
+
+msgid "R2 填 us-east-1 或 auto。自定义 S3 按厂商文档填写。"
+msgstr "For R2 use us-east-1 or auto. For custom S3 follow the vendor docs."
+
+msgid "RAM AccessKey ID，默认掩码显示。"
+msgstr "RAM AccessKey ID. Masked by default."
+
+msgid "RAM AccessKey Secret，加密保存。"
+msgstr "RAM AccessKey Secret. Stored encrypted."
+
+msgid "RAM 授权 OSS 读写后，复制 AccessKey ID 与 Secret。"
+msgstr "After granting the RAM user OSS read/write, copy the AccessKey ID and Secret."
+
+msgid "REST API 给区块编辑器和第三方用。本项默认关。打开后只拦未登录访客访问 /wp-json/，已登录后台写文章不受影响。不会关掉整个 REST，站点不会因此白屏。前台表单若要用接口，把路径写进排除。"
+msgstr "REST API is used by the block editor and third-party apps. This option is off by default. When on, it only blocks unauthenticated visitors from /wp-json/. Logged-in editors in the admin are unaffected. It does not disable REST entirely, so the site will not go blank. If a front-end form needs the API, add its path to the exclusions."
+
+msgid "REST 排除（这些接口仍然放行）"
+msgstr "REST exclusions (these endpoints stay allowed)"
+
+msgid "Region（区域）"
+msgstr "Region"
+
+msgid "S3 桶名，不要带域名。"
+msgstr "S3 bucket name. Do not include a domain."
+
+msgid "Secret Access Key，加密保存。"
+msgstr "Secret Access Key. Stored encrypted."
+
+msgid "SecretId，默认掩码显示。"
+msgstr "SecretId. Masked by default."
+
+msgid "SecretKey（访问密钥）"
+msgstr "SecretKey (secret access key)"
+
+msgid "SecretKey，加密保存。"
+msgstr "SecretKey. Stored encrypted."
+
+msgid "URL 包含所列片段则不替换。每行一项，例如 .php、preview=。"
+msgstr "URLs that contain any listed fragment are not rewritten. One item per line, for example .php or preview=."
+
+msgid "User Agent 是浏览器报给网站的身份，例如手机 Safari。填写：每行一段文字。只要访问者的身份里包含这段，就不给他缓存页。适合「某种 App 内置浏览器显示错乱」时单独排除。 (.*) 表示中间可以是任意内容。普通网站一般不用填。示例：(.*)Mobile(.*)Safari(.*)"
+msgstr "User Agent is the identity the browser sends, such as mobile Safari. Enter one fragment per line. If the visitor’s identity contains that fragment, they do not get a cached page. Useful when an in-app browser renders incorrectly. (.*) matches any content in between. Most sites can leave this empty. Example: (.*)Mobile(.*)Safari(.*)"
+
+msgid "WordPress 会在页头加 EditURI。用第三方软件远程发文章时才需要。大部分站点用不上。"
+msgstr "WordPress adds EditURI in the page head. You only need it for remote publishing with third-party software. Most sites can skip it."
+
+msgid "WordPress 版本"
+msgstr "WordPress version"
+
+msgid "WordPress 默认"
+msgstr "WordPress default"
+
+msgid "YouTube 预览图（先出图再播）"
+msgstr "YouTube preview image (show the image first, then play)"
+
+msgid "Y年m月d日"
+msgstr "Y-m-d"
+
+msgid "https://你的域名/wp-content/uploads/logo.png"
+msgstr "https://your-domain/wp-content/uploads/logo.png"
+
+msgid "iframe 懒加载（视频框滚到再加载）"
+msgstr "Lazy-load iframes (load video frames when they scroll into view)"
+
+msgid "inputs_grid：请在字段配置中设置 keys（键名 => 标签）。"
+msgstr "inputs_grid: set keys (key => label) in the field config."
+
+msgid "of"
+msgstr "of"
+
+msgid "options 表里过期的 transient。未过期的不会动。"
+msgstr "Expired transients in the options table. Unexpired ones are left alone."
+
+msgid "preserve_existing=false 且存在未提交字段，这些字段可能被清空。"
+msgstr "preserve_existing=false and unsubmitted fields exist; those fields may be cleared."
+
+msgid "uploads 目录可读"
+msgstr "uploads directory is readable"
+
+msgid "一"
+msgstr "one"
+
+msgid "一月"
+msgstr "January"
+
+msgid "一般是对象存储自定义域名加桶内目录。例如 https://img.example.com/wp-content/uploads。不会上传文件。"
+msgstr "Usually the object-storage custom domain plus the in-bucket directory, for example https://img.example.com/wp-content/uploads. This does not upload files."
+
+msgid "一般是本站媒体库前缀。只替换文章正文和自定义字段里完全匹配的字符串。例如 https://www.example.com/wp-content/uploads。"
+msgstr "Usually this site’s media library prefix. Only exact matches in post content and custom fields are replaced, for example https://www.example.com/wp-content/uploads."
+
+msgid "一键迁移"
+msgstr "One-click migrate"
+
+msgid "七月"
+msgstr "July"
+
+msgid "七牛 AccessKey，默认掩码显示。"
+msgstr "Qiniu AccessKey. Masked by default."
+
+msgid "七牛 Kodo"
+msgstr "Qiniu Kodo"
+
+msgid "七牛 SecretKey，加密保存。"
+msgstr "Qiniu SecretKey. Stored encrypted."
+
+msgid "七牛上传凭证无效。请核对 AccessKey 和 SecretKey。"
+msgstr "Qiniu upload token is invalid. Check AccessKey and SecretKey."
+
+msgid "七牛上传失败。请核对空间名、密钥和网络。"
+msgstr "Qiniu upload failed. Check the space name, keys, and network."
+
+msgid "七牛请求失败。请核对空间名与密钥。"
+msgstr "Qiniu request failed. Check the space name and keys."
+
+msgid "三"
+msgstr "three"
+
+msgid "三月"
+msgstr "March"
+
+msgid "上"
+msgstr "Top"
+
+msgid "上/下午"
+msgstr "AM/PM"
+
+msgid "上一条"
+msgstr "Previous"
+
+msgid "上一页"
+msgstr "Previous page"
+
+msgid "上个月"
+msgstr "Previous month"
+
+msgid "上传与替换中"
+msgstr "Uploading and replacing"
+
+msgid "上传中…"
+msgstr "Uploading…"
+
+msgid "上传文件"
+msgstr "Upload files"
+
+msgid "上午"
+msgstr "AM"
+
+msgid "上次可回滚"
+msgstr "Last rollbackable"
+
+msgid "上次失败"
+msgstr "Last failed"
+
+msgid "上次已上传"
+msgstr "Last uploaded"
+
+msgid "上次已扫描"
+msgstr "Last scanned"
+
+msgid "上次清理"
+msgstr "Last cleanup"
+
+msgid "上海"
+msgstr "Shanghai"
+
+msgid "上海金融"
+msgstr "Shanghai Finance"
+
+msgid "上海金融云外网"
+msgstr "Shanghai Finance public"
+
+msgid "上移"
+msgstr "Move up"
+
+msgid "上边框"
+msgstr "Top border"
+
+msgid "下"
+msgstr "Bottom"
+
+msgid "下一条"
+msgstr "Next"
+
+msgid "下一页"
+msgstr "Next page"
+
+msgid "下个月"
+msgstr "Next month"
+
+msgid "下列字段本次提交为空，但库中曾有非空值（可能是用户清空，也可能是表单异常）。"
+msgstr "These fields are empty in this submit but had values in the database (cleared by the user, or a form error)."
+
+msgid "下午"
+msgstr "PM"
+
+msgid "下移"
+msgstr "Move down"
+
+msgid "下边框"
+msgstr "Bottom border"
+
+msgid "不勾选不能启动。此开关不会当作长期配置保存。"
+msgstr "You must check this to start. This switch is not saved as a lasting setting."
+
+msgid "不支持的字段类型"
+msgstr "Unsupported field type"
+
+msgid "不支持的文件类型"
+msgstr "Unsupported file type"
+
+msgid "不支持的文件类型。允许的类型：%s"
+msgstr "Unsupported file type. Allowed types: %s"
+
+msgid "不支持的语言。"
+msgstr "Unsupported language."
+
+msgid "不改（大约 1 分钟）"
+msgstr "Leave unchanged (about 1 minute)"
+
+msgid "不改，跟 WordPress 默认一样"
+msgstr "Leave unchanged; same as the WordPress default"
+
+msgid "不是有效的配置文件"
+msgstr "This is not a valid settings file"
+
+msgid "不显示头像"
+msgstr "Do not show avatars"
+
+msgid "不用自己贴图片地址。填 1 或 2 即可：把当前页从上往下数的头几张图提前下载，减轻「字出来了图还在转」。填 0 表示不自动预载。最多 5。"
+msgstr "You do not need to paste image URLs. Enter 1 or 2 to preload the first few images from the top of the page, so text does not appear while images still spin. Enter 0 to disable automatic preload. Maximum 5."
+
+msgid "不确定就选「连连接也建好」。"
+msgstr "If you are unsure, choose “Also establish the connection”."
+
+msgid "不能大于 %s"
+msgstr "Cannot be greater than %s"
+
+msgid "不能小于 %s"
+msgstr "Cannot be less than %s"
+
+msgid "不自动跑"
+msgstr "Do not run automatically"
+
+msgid "不要与 WP Rocket、LiteSpeed Cache 等同时开同类缓存或压缩"
+msgstr "Do not enable the same kind of cache or minify together with WP Rocket, LiteSpeed Cache, and similar plugins"
+
+msgid "不重复"
+msgstr "No repeat"
+
+msgid "不限制"
+msgstr "Unlimited"
+
+msgid "东京"
+msgstr "Tokyo"
+
+msgid "丢掉但仍暂存在回收站的评论。"
+msgstr "Comments that were discarded but still sit in the trash."
+
+msgid "丢进回收站还没清空的文章。"
+msgstr "Posts that were moved to trash and have not been emptied."
+
+msgid "个项目"
+msgstr "items"
+
+msgid "中上"
+msgstr "Top center"
+
+msgid "中下"
+msgstr "Bottom center"
+
+msgid "中东"
+msgstr "Middle East"
+
+msgid "中国大陆"
+msgstr "Chinese mainland"
+
+msgid "中国香港"
+msgstr "Hong Kong, China"
+
+msgid "临时数据"
+msgstr "Transients"
+
+msgid "为桶绑定自定义域名并完成 DNS / CNAME，前台才会改写媒体地址。"
+msgstr "Bind a custom domain to the bucket and finish DNS / CNAME before front-end media URLs are rewritten."
+
+msgid "主机名（只填域名）"
+msgstr "Hostname (domain only)"
+
+msgid "九月"
+msgstr "September"
+
+msgid "二"
+msgstr "two"
+
+msgid "二月"
+msgstr "February"
+
+msgid "云上路径已符合前缀：%s"
+msgstr "Cloud path already matches the prefix: %s"
+
+msgid "五"
+msgstr "five"
+
+msgid "五月"
+msgstr "May"
+
+msgid "亚太"
+msgstr "Asia Pacific"
+
+msgid "亚太 - 中国"
+msgstr "Asia Pacific - China"
+
+msgid "亚太 - 其他"
+msgstr "Asia Pacific - other"
+
+msgid "仅切换本插件后台界面语言，不会修改 WordPress 站点语言"
+msgstr "Only switches this plugin’s admin UI language. It does not change the WordPress site language."
+
+msgid "仅在「垃圾清理」或定时清理勾了修订项时生效。打开后会按「全删」处理，不再看上面的份数。默认关闭。"
+msgstr "Applies only when revisions are checked in Cleanup or scheduled cleanup. When on, revisions are fully deleted and the count above is ignored. Off by default."
+
+msgid "仅在原图和全部额外尺寸都上传成功后删除本机文件。卸载插件不会删除云上文件。"
+msgstr "Delete local files only after the original and every extra size have uploaded successfully. Uninstalling the plugin does not delete files in the cloud."
+
+msgid "仅在规则选「自定义前缀」时生效。会加在清理后的原名前面，例如 sitea-photo.jpg。"
+msgstr "Applies only when the rule is Custom prefix. It is prepended to the cleaned original name, for example sitea-photo.jpg."
+
+msgid "仅填写桶名或空间名，不要带域名。"
+msgstr "Enter only the bucket or space name, without a domain."
+
+msgid "仅替换勾选目录中的静态资源。wp-includes 含核心脚本，谨慎启用。"
+msgstr "Rewrite static assets only in the checked directories. wp-includes contains core scripts; enable with care."
+
+msgid "今天"
+msgstr "Today"
+
+msgid "从不（never）"
+msgstr "Never"
+
+msgid "从左侧菜单进入对应分区开始配置"
+msgstr "Open a section from the left menu to start configuring"
+
+msgid "从左侧选择分区开始配置。组件测试页请点「基础输入」等分组。"
+msgstr "Choose a section on the left to start. For the component lab, open groups such as Basic inputs."
+
+msgid "从这里开始"
+msgstr "Start here"
+
+msgid "代码"
+msgstr "Code"
+
+msgid "代码已复制到剪贴板"
+msgstr "Code copied to clipboard"
+
+msgid "代码格式化完成"
+msgstr "Code formatted"
+
+msgid "仪表盘少刷新一点（写文章不受影响）"
+msgstr "Refresh the dashboard less often (editing posts is unaffected)"
+
+msgid "任务"
+msgstr "Task"
+
+msgid "任务已启动。关闭本页不会中止后台队列。"
+msgstr "Task started. Closing this page does not stop the background queue."
+
+msgid "任务已暂停。"
+msgstr "Task paused."
+
+msgid "任务已终止。已上传的云文件不会自动删除。"
+msgstr "Task stopped. Uploaded cloud files are not deleted automatically."
+
+msgid "任务已继续。"
+msgstr "Task resumed."
+
+msgid "任务控制"
+msgstr "Task controls"
+
+msgid "份"
+msgstr "copies"
+
+msgid "优先级"
+msgstr "Priority"
+
+msgid "传输加速"
+msgstr "Transfer acceleration"
+
+msgid "估算"
+msgstr "Estimate"
+
+msgid "体积为估算值，仅供参考；部分数据只能估算，无法拿到精确值。实际释放空间以清理完成后为准。"
+msgstr "Sizes are estimates only. Some data can only be estimated, not measured exactly. Actual freed space is known after cleanup finishes."
+
+msgid "作者微信二维码"
+msgstr "Author WeChat QR code"
+
+msgid "你更新任意一篇文章或页面时，除了那一篇本身，还会把这里列出的地址缓存一并清掉。适合首页、列表页、栏目页，避免新文章发出去了列表还是旧的。填写：每行一条路径，可粘贴完整网址（域名会自动去掉）。整栏都清可写 /blog/(.*) 。不确定就留空。"
+msgstr "When you update any post or page, ZapRocket also purges the listed URLs from cache. Use this for the home, lists, and archives so a new post does not leave stale listings. One path per line; you may paste a full URL (the domain is stripped). To purge a whole section, use /blog/(.*). Leave empty if you are unsure."
+
+msgid "使用技巧"
+msgstr "Tips"
+
+msgid "使用文档"
+msgstr "Docs"
+
+msgid "使用空间密钥，不要用登录密码。"
+msgstr "Use the space keys, not the login password."
+
+msgid "使用这些图片"
+msgstr "Use these images"
+
+msgid "保存中..."
+msgstr "Saving…"
+
+msgid "保存失败"
+msgstr "Save failed"
+
+msgid "保存失败:"
+msgstr "Save failed:"
+
+msgid "保存失败：数据库写入未通过校验"
+msgstr "Save failed: database write did not pass checks"
+
+msgid "保存失败：数据库写入未通过校验。"
+msgstr "Save failed: database write did not pass checks."
+
+msgid "保存设置"
+msgstr "Save settings"
+
+msgid "保存设置配置"
+msgstr "Save all settings"
+
+msgid "保存过程中发生未知错误"
+msgstr "An unknown error occurred while saving"
+
+msgid "保存过程中发生网络错误，请稍后重试"
+msgstr "A network error occurred while saving. Try again later."
+
+msgid "保留原文件名，只清理中文 / 空格 / 特殊符号"
+msgstr "Keep the original file name; only clean Chinese characters / spaces / special characters"
+
+msgid "保留天数"
+msgstr "Retention days"
+
+msgid "信息"
+msgstr "Info"
+
+msgid "修改后保存即可生效，组件测试页可逐项验证"
+msgstr "Save after changes to apply them. Use the component lab to check each field."
+
+msgid "修订全部不留（新保存不再留历史稿）"
+msgstr "Keep no revisions (new saves will not store history)"
+
+msgid "修订版本"
+msgstr "Revisions"
+
+msgid "修订版本保留（每篇最多留几份）"
+msgstr "Revision retention (maximum copies per post)"
+
+msgid "修订版本（保存时多出来的历史稿）"
+msgstr "Revisions (history copies created on save)"
+
+msgid "值"
+msgstr "Value"
+
+msgid "值不能大于 %s"
+msgstr "Value cannot be greater than %s"
+
+msgid "值不能小于 %s"
+msgstr "Value cannot be less than %s"
+
+msgid "像素"
+msgstr "Pixels"
+
+msgid "允许跨域（字体一般要开）"
+msgstr "Allow CORS (usually required for fonts)"
+
+msgid "先勾选再清理。删了不能恢复，动手前请备份。预估体积仅供参考，实际释放空间以清理完成后为准。数据不会自动刷新，如需最新预估，请手动点击重新扫描。"
+msgstr "Check items first, then clean. Deletion cannot be undone; back up first. Size estimates are approximate. Actual freed space is known after cleanup. Data does not refresh by itself; click Rescan for a new estimate."
+
+msgid "全屏"
+msgstr "Fullscreen"
+
+msgid "全屏编辑"
+msgstr "Fullscreen editor"
+
+msgid "全球传输加速"
+msgstr "Global transfer acceleration"
+
+msgid "全球加速"
+msgstr "Global acceleration"
+
+msgid "全选"
+msgstr "Select all"
+
+msgid "全选当前页"
+msgstr "Select all on this page"
+
+msgid "全部启用"
+msgstr "Enable all"
+
+msgid "全部展开"
+msgstr "Expand all"
+
+msgid "全部折叠"
+msgstr "Collapse all"
+
+msgid "全部时间"
+msgstr "All time"
+
+msgid "全部禁用"
+msgstr "Disable all"
+
+msgid "全部级别"
+msgstr "All levels"
+
+msgid "全部通道"
+msgstr "All channels"
+
+msgid "八月"
+msgstr "August"
+
+msgid "公网展示请填写已可访问的自定义域名。"
+msgstr "For public URLs, enter a custom domain that already resolves."
+
+msgid "六"
+msgstr "six"
+
+msgid "六月"
+msgstr "June"
+
+msgid "共 %d 个选项"
+msgstr "%d options"
+
+msgid "关"
+msgstr "Off"
+
+msgid "关掉后本页不再写入，已有记录仍可查看。"
+msgstr "When this is off, this page stops writing. Existing records remain visible."
+
+msgid "关闭"
+msgstr "Close"
+
+msgid "关闭取色器"
+msgstr "Close color picker"
+
+msgid "关闭后瘦身、前台优化全部停掉（含心跳/修订/自动保存），站点跟没装本插件一样。本设置页仍可访问。"
+msgstr "When this is off, slim-down and front-end optimizations all stop (including Heartbeat, revisions, and autosave). The site behaves as if the plugin is not installed. This settings screen remains available."
+
+msgid "关闭弹窗"
+msgstr "Close dialog"
+
+msgid "关闭说明"
+msgstr "Close help"
+
+msgid "内容类型"
+msgstr "Content types"
+
+msgid "内容长度不能少于 %1$d 个字符，当前 %2$d 个字符"
+msgstr "Content must be at least %1$d characters (currently %2$d)"
+
+msgid "内容长度不能超过 %1$d 个字符，当前 %2$d 个字符"
+msgstr "Content must be at most %1$d characters (currently %2$d)"
+
+msgid "内嵌"
+msgstr "Inset"
+
+msgid "写入推荐配置失败。"
+msgstr "Failed to write recommended settings."
+
+msgid "写在这里的页面每次都出现场内容，不读缓存。适合登录、退出、购物车、结账、会员中心。填写：每行一条；可粘贴完整网址，保存时会自动去掉 https://域名，只留后面的路径。单页示例：/wp-login.php 。某一栏下面全部页面示例：/docs/(.*) ，其中 (.*) 表示「这一段后面不管是什么都算」。WooCommerce 的购物车、结账、我的账户默认已经不缓存，一般不用再写。不确定就先留空。"
+msgstr "Pages listed here always render live and never read cache. Use this for login, logout, cart, checkout, and account. One item per line; you may paste a full URL. On save, https://domain is stripped and only the path is kept. Single page example: /wp-login.php. Entire section example: /docs/(.*), where (.*) means anything after this prefix. WooCommerce cart, checkout, and My Account are already excluded by default. Leave empty if you are unsure."
+
+msgid "写文章、仪表盘会定时跟服务器打招呼。太勤了占 CPU。写文章时不会一刀切关掉，避免丢稿。"
+msgstr "The post editor and dashboard periodically ping the server. Too often uses CPU. Heartbeat is not fully disabled while editing, so drafts are not lost."
+
+msgid "写文章时 WordPress 会定时跟服务器打招呼：自动存草稿、刷新仪表盘。太勤了会占 CPU。写文章时不要把它彻底关掉，不然可能丢稿。"
+msgstr "While you edit, WordPress periodically pings the server to autosave drafts and refresh the dashboard. Too often uses CPU. Do not turn Heartbeat fully off while editing, or you may lose drafts."
+
+msgid "准备工作"
+msgstr "Preparation"
+
+msgid "凸起"
+msgstr "Ridge"
+
+msgid "凹槽"
+msgstr "Groove"
+
+msgid "分"
+msgstr "Minute"
+
+msgid "分区 HTML 为空"
+msgstr "Section HTML is empty"
+
+msgid "分区不存在"
+msgstr "Section does not exist"
+
+msgid "分区内容加载失败，请刷新后重试。"
+msgstr "The section failed to load. Refresh and try again."
+
+msgid "分区加载失败"
+msgstr "Section load failed"
+
+msgid "分类"
+msgstr "Categories"
+
+msgid "列表里的项目数"
+msgstr "Items in the list"
+
+msgid "创建 Bucket，记下 Region ID（如 oss-cn-hangzhou）。"
+msgstr "Create a Bucket and note the Region ID (for example oss-cn-hangzhou)."
+
+msgid "创建 R2 桶，记下 Account ID 以填写 Endpoint。"
+msgstr "Create an R2 bucket and note the Account ID for the Endpoint."
+
+msgid "创建具备该桶读写权限的 R2 API 令牌。"
+msgstr "Create an R2 API token with read/write access to that bucket."
+
+msgid "创建具备该桶读写权限的密钥。"
+msgstr "Create keys with read/write access to that bucket."
+
+msgid "创建空间，绑定加速域名并完成 CNAME。国内站点域名需备案。"
+msgstr "Create a space, bind the acceleration domain, and finish CNAME. Domains for sites in mainland China must be ICP-filed."
+
+msgid "删了不能恢复，请先备份。预估体积仅参考，数据不会自动刷新。"
+msgstr "Deletion cannot be undone. Back up first. Size estimates are approximate. Data does not refresh by itself."
+
+msgid "删除"
+msgstr "Delete"
+
+msgid "删除中…"
+msgstr "Deleting…"
+
+msgid "删除云上对象失败。"
+msgstr "Failed to delete the cloud object."
+
+msgid "删除失败"
+msgstr "Delete failed"
+
+msgid "删除已选"
+msgstr "Delete selected"
+
+msgid "删除成功。"
+msgstr "Deleted."
+
+msgid "删除所选"
+msgstr "Delete selected"
+
+msgid "删除选中"
+msgstr "Delete selected"
+
+msgid "删除项目"
+msgstr "Delete item"
+
+msgid "利雅得"
+msgstr "Riyadh"
+
+msgid "刷新"
+msgstr "Refresh"
+
+msgid "刷新中"
+msgstr "Refreshing"
+
+msgid "刷新失败"
+msgstr "Refresh failed"
+
+msgid "前台优化"
+msgstr "Front-end optimizations"
+
+msgid "前台站点"
+msgstr "Front end"
+
+msgid "功能开关"
+msgstr "Feature switches"
+
+msgid "加载中"
+msgstr "Loading"
+
+msgid "加载中..."
+msgstr "Loading..."
+
+msgid "加载中…"
+msgstr "Loading…"
+
+msgid "加载失败"
+msgstr "Load failed"
+
+msgid "加载数据失败"
+msgstr "Failed to load data"
+
+msgid "加速域名不是接口地址。未完成 CNAME 时前台不会改写图片地址。"
+msgstr "The acceleration domain is not the API URL. Image URLs are not rewritten until CNAME is finished."
+
+msgid "加速域名必须完成 CNAME；中国内地请使用已备案域名。"
+msgstr "The acceleration domain must complete CNAME. In mainland China use an ICP-filed domain."
+
+msgid "加速域名（公网看图），需已做 CNAME。"
+msgstr "Acceleration domain (public images); CNAME required."
+
+msgid "勾选安全项"
+msgstr "Check the safety items"
+
+msgid "包含"
+msgstr "Contain"
+
+msgid "包含目录（哪些文件夹走加速）"
+msgstr "Included directories (which folders use the accelerator)"
+
+msgid "北京"
+msgstr "Beijing"
+
+msgid "北京金融"
+msgstr "Beijing Finance"
+
+msgid "北京金融云外网"
+msgstr "Beijing Finance public"
+
+msgid "北美"
+msgstr "North America"
+
+msgid "区块 %d"
+msgstr "Block %d"
+
+msgid "区域下拉选择，接口地址自动拼接。图片公网访问请用已绑定的自定义域名，不要用 API 域名。"
+msgstr "Pick a region; the API URL is built automatically. For public image URLs use the bound custom domain, not the API host."
+
+msgid "十一月"
+msgstr "November"
+
+msgid "十二月"
+msgstr "December"
+
+msgid "十月"
+msgstr "October"
+
+msgid "升序"
+msgstr "Ascending"
+
+msgid "华东 1（杭州）"
+msgstr "East China 1 (Hangzhou)"
+
+msgid "华东 2（上海）"
+msgstr "East China 2 (Shanghai)"
+
+msgid "华中 1（武汉-本地地域）"
+msgstr "Central China 1 (Wuhan local)"
+
+msgid "华北 1（青岛）"
+msgstr "North China 1 (Qingdao)"
+
+msgid "华北 2 阿里政务云 1"
+msgstr "North China 2 Alibaba Government 1"
+
+msgid "华北 2（北京）"
+msgstr "North China 2 (Beijing)"
+
+msgid "华北 3（张家口）"
+msgstr "North China 3 (Zhangjiakou)"
+
+msgid "华北 5（呼和浩特）"
+msgstr "North China 5 (Hohhot)"
+
+msgid "华北 6（乌兰察布）"
+msgstr "North China 6 (Ulanqab)"
+
+msgid "华南 1（深圳）"
+msgstr "South China 1 (Shenzhen)"
+
+msgid "华南 2（河源）"
+msgstr "South China 2 (Heyuan)"
+
+msgid "华南 3（广州）"
+msgstr "South China 3 (Guangzhou)"
+
+msgid "单项清理尚未接删除接口："
+msgstr "Single-item clean is not wired to delete yet:"
+
+msgid "南京"
+msgstr "Nanjing"
+
+msgid "南美"
+msgstr "South America"
+
+msgid "印度尼西亚（雅加达）"
+msgstr "Indonesia (Jakarta)"
+
+msgid "危险"
+msgstr "Danger"
+
+msgid "危险操作"
+msgstr "Dangerous action"
+
+msgid "卸载时删除 option、运行日志表、uploads/zaprocket 与 wp-content/cache/zaprocket。默认关闭。"
+msgstr "On uninstall, delete options, the run-log table, uploads/zaprocket, and wp-content/cache/zaprocket. Off by default."
+
+msgid "卸载时删除数据（卸插件一并清空）"
+msgstr "Delete data on uninstall (wipe when the plugin is removed)"
+
+msgid "历史媒体用「一键迁移」；只改正文死链用「快捷操作」"
+msgstr "Use One-click migrate for historical media; use Quick actions only to fix dead links in content"
+
+msgid "历史颜色"
+msgstr "Color history"
+
+msgid "压缩、合并、defer、延迟加载都会改前台，默认全关，需管理员手动打开。开了「JS 延迟加载」时，「合并 JS」不生效。菜单、支付、轮播出问题就关掉对应项，或写进排除。"
+msgstr "Minify, combine, defer, and delay JS all change the front end. They are all off by default and must be turned on by an administrator. When Delay JS is on, Combine JS has no effect. If menus, payments, or carousels break, turn off the related option or add files to exclusions."
+
+msgid "原因"
+msgstr "Reason"
+
+msgid "原图上传失败。"
+msgstr "Original image upload failed."
+
+msgid "原图尺寸都传完后删除本地文件"
+msgstr "Delete local files after every original size has been uploaded"
+
+msgid "去掉空格和注释，文件更小、下载更快。"
+msgstr "Strip whitespace and comments so files are smaller and download faster."
+
+msgid "去掉空格和注释，脚本更小。"
+msgstr "Strip whitespace and comments so scripts are smaller."
+
+msgid "参数不正确。请检查桶名、区域和对象路径格式。"
+msgstr "Invalid parameters. Check the bucket name, region, and object path format."
+
+msgid "双线"
+msgstr "Double"
+
+msgid "发文清缓存网址（更新文章时一并清）"
+msgstr "Purge URLs on publish (also clear these when a post is updated)"
+
+msgid "发现"
+msgstr "Found"
+
+msgid "取消"
+msgstr "Cancel"
+
+msgid "取消全选"
+msgstr "Deselect all"
+
+msgid "取消勾选"
+msgstr "Uncheck"
+
+msgid "取色"
+msgstr "Pick color"
+
+msgid "取色器"
+msgstr "Color picker"
+
+msgid "取色失败"
+msgstr "Eyedropper failed"
+
+msgid "另有导入正在进行，请稍后再试"
+msgstr "Another import is already running. Try again later."
+
+msgid "只填域名，例如 cdn.example.com 或 fonts.gstatic.com，不要写成整段网址。"
+msgstr "Enter only a hostname, for example cdn.example.com or fonts.gstatic.com, not a full URL."
+
+msgid "只填桶名。"
+msgstr "Enter only the bucket name."
+
+msgid "只填桶名自定义段，不要带 -APPID。"
+msgstr "Enter only the custom bucket segment, without -APPID."
+
+msgid "只填桶名，不要带域名。"
+msgstr "Enter only the bucket name, without a domain."
+
+msgid "只处理媒体库里新上传的附件（含 REST / 远程导入 / 媒体替换）。文章正文里已经写死的旧链接、上传失败的附件，请到「快捷操作」。要把历史文件也传到云上，请用「一键迁移」。不上传主题或插件静态文件。密钥单独加密保存，不会写进普通配置。"
+msgstr "Only newly uploaded media-library attachments are handled (including REST / remote import / media replace). Hard-coded old URLs in post content and failed uploads go to Quick actions. To send historical files to the cloud, use One-click migrate. Theme and plugin static files are not uploaded. Keys are stored encrypted and are not written to ordinary settings."
+
+msgid "只改对象存储上的对象 Key，不改 WordPress 媒体库里的原始文件名和数据库引用。WebP / AVIF 等副本跟主文件同一套规则。默认关。"
+msgstr "Only the object Key on object storage is changed. The original file name and database references in the WordPress Media Library stay the same. WebP / AVIF copies use the same rules as the main file. Off by default."
+
+msgid "只是不在网页头部打印接口链接。接口本身还在，后台写文章不受影响。很多站点用不上这段代码。"
+msgstr "This only stops printing the API link in the page head. The API still works, and editing in the admin is unaffected. Many sites do not need this output."
+
+msgid "只查域名（轻）"
+msgstr "DNS-prefetch only (light)"
+
+msgid "只能再添加 %1$d 张图片，已自动截取前 %2$d 张。"
+msgstr "Only %1$d more image(s) allowed; kept the first %2$d."
+
+msgid "可回滚正文"
+msgstr "Rollback content"
+
+msgid "可复用的后台字段与交互组件"
+msgstr "Reusable admin fields and UI components"
+
+msgid "可清理项"
+msgstr "Cleanable items"
+
+msgid "可用项目"
+msgstr "Available items"
+
+msgid "可缓存查询参数（带这些问号也缓存）"
+msgstr "Cacheable query parameters (cache even with these query strings)"
+
+msgid "可释放空间"
+msgstr "Space that can be freed"
+
+msgid "右"
+msgstr "Right"
+
+msgid "右上"
+msgstr "Top right"
+
+msgid "右下"
+msgstr "Bottom right"
+
+msgid "右中"
+msgstr "Middle right"
+
+msgid "右边框"
+msgstr "Right border"
+
+msgid "各字段均附带说明，便于快速理解用途"
+msgstr "Each field includes a note so you can see what it is for"
+
+msgid "合并 JS（减少请求次数）"
+msgstr "Combine JS (fewer requests)"
+
+msgid "合计"
+msgstr "Total"
+
+msgid "同时开着其它性能插件时，可能重复改同一处：%s。建议只留一套负责前台加速。"
+msgstr "Another performance plugin is also active and may change the same assets: %s. Keep only one plugin in charge of front-end acceleration."
+
+msgid "名称"
+msgstr "Name"
+
+msgid "含未过期记录"
+msgstr "Includes unexpired records"
+
+msgid "启动前预检"
+msgstr "Preflight before start"
+
+msgid "启动后关闭本页不会中止队列。终止不会自动回滚，也不会删除云上文件。"
+msgstr "Closing this page after start does not stop the queue. Stop does not roll back or delete cloud files."
+
+msgid "启动迁移"
+msgstr "Start migrate"
+
+msgid "启用"
+msgstr "Enable"
+
+msgid "启用 CDN（静态文件换加速域名）"
+msgstr "Enable CDN (serve static files from the accelerator hostname)"
+
+msgid "启用上传文件自动重命名"
+msgstr "Enable automatic rename of uploaded files"
+
+msgid "启用优化（关掉后前台暂停）"
+msgstr "Enable optimizations (front end pauses when this is off)"
+
+msgid "启用后匿名请求 /wp-json/ 将被拒绝。联系表单等请加入排除路由。不会全局关闭 REST。"
+msgstr "When enabled, anonymous requests to /wp-json/ are denied. Add contact forms and similar routes to exclusions. REST is not disabled globally."
+
+msgid "启用对象存储（新媒体上传到云）"
+msgstr "Enable object storage (upload new media to the cloud)"
+
+msgid "启用运行日志"
+msgstr "Enable run log"
+
+msgid "周一"
+msgstr "Mon"
+
+msgid "周三"
+msgstr "Wed"
+
+msgid "周二"
+msgstr "Tue"
+
+msgid "周五"
+msgstr "Fri"
+
+msgid "周六"
+msgstr "Sat"
+
+msgid "周四"
+msgstr "Thu"
+
+msgid "周日"
+msgstr "Sun"
+
+msgid "和上面的数字一起读：选「小时」则 10 就是 10 小时；选「天」则 10 就是 10 天。"
+msgstr "Read together with the number above: Hours means 10 is 10 hours; Days means 10 is 10 days."
+
+msgid "品牌"
+msgstr "Brand"
+
+msgid "善用导入/导出备份当前配置"
+msgstr "Use import/export to back up the current settings"
+
+msgid "四"
+msgstr "four"
+
+msgid "四月"
+msgstr "April"
+
+msgid "回收站文章"
+msgstr "Trashed posts"
+
+msgid "回收站文章（丢掉还没清空的）"
+msgstr "Trashed posts (discarded but not emptied)"
+
+msgid "回收站评论"
+msgstr "Trashed comments"
+
+msgid "回收站评论（丢掉还没清空的）"
+msgstr "Trashed comments (discarded but not emptied)"
+
+msgid "回收表里空出来的空间。对常见 InnoDB 效果有限，白天可能短暂停一下。"
+msgstr "Reclaim unused space in tables. Effect is limited on typical InnoDB, and it may pause briefly during the day."
+
+msgid "回滚中"
+msgstr "Rolling back"
+
+msgid "回滚只会还原已备份的正文链接，不会删除云上文件，也不会清除附件云标记。确定继续？"
+msgstr "Rollback restores only backed-up content URLs. It does not delete cloud files or clear attachment cloud flags. Continue?"
+
+msgid "回滚正文链接"
+msgstr "Roll back content URLs"
+
+msgid "固定"
+msgstr "Fixed"
+
+msgid "图标"
+msgstr "Icon"
+
+msgid "图标 '%s' 未找到"
+msgstr "Icon '%s' was not found"
+
+msgid "图片"
+msgstr "Images"
+
+msgid "图片 ID: %d"
+msgstr "Image ID: %d"
+
+msgid "图片对外地址。须已绑定并完成 CNAME。国内厂商请用已备案域名。不要填 API 域名。"
+msgstr "Public image URL. The domain must be bound with CNAME complete. For mainland China vendors use an ICP-filed domain. Do not enter the API host."
+
+msgid "图片已移除。"
+msgstr "Image removed."
+
+msgid "图片库已更新，共 %d 张图片。"
+msgstr "Gallery updated (%d images)."
+
+msgid "图片库已清空。"
+msgstr "Gallery cleared."
+
+msgid "图片懒加载（滚到再下载）"
+msgstr "Lazy-load images (download when they scroll into view)"
+
+msgid "图片文件"
+msgstr "Image file"
+
+msgid "图片没有额外尺寸文件，未调度缩略图上传。"
+msgstr "The image has no extra size files, so thumbnail upload was not scheduled."
+
+msgid "图表"
+msgstr "Chart"
+
+msgid "图表初始化失败"
+msgstr "Chart init failed"
+
+msgid "图表加载失败"
+msgstr "Chart failed to load"
+
+msgid "图表字段类未加载"
+msgstr "Chart field class is not loaded"
+
+msgid "图表数据加载中…"
+msgstr "Loading chart data…"
+
+msgid "图表数据请求失败"
+msgstr "Chart data request failed"
+
+msgid "圣保罗"
+msgstr "Sao Paulo"
+
+msgid "在密钥管理复制 AccessKey 和 SecretKey。"
+msgstr "Copy AccessKey and SecretKey from key management."
+
+msgid "垂直重复"
+msgstr "Repeat vertically"
+
+msgid "垃圾清理"
+msgstr "Cleanup"
+
+msgid "垃圾留言和回收站里的评论。"
+msgstr "Spam comments and comments in the trash."
+
+msgid "垃圾评论"
+msgstr "Spam comments"
+
+msgid "垃圾评论（标成垃圾的留言）"
+msgstr "Spam comments (marked as spam)"
+
+msgid "填写 API Endpoint 用于上传；公网看图请另填自定义域名。"
+msgstr "Enter an API Endpoint for uploads; enter a separate custom domain for public images."
+
+msgid "填写示例"
+msgstr "Example"
+
+msgid "填写示例：%s"
+msgstr "Example: %s"
+
+msgid "填空间名，不要带域名。"
+msgstr "Enter the space name, without a domain."
+
+msgid "墨西哥"
+msgstr "Mexico"
+
+msgid "处理"
+msgstr "Process"
+
+msgid "处理中…"
+msgstr "Processing…"
+
+msgid "处理失败"
+msgstr "Processing failed"
+
+msgid "处理媒体选择时出现错误"
+msgstr "Error while handling media selection"
+
+msgid "处理完成"
+msgstr "Done"
+
+msgid "处理条数"
+msgstr "Items processed"
+
+msgid "复制"
+msgstr "Copy"
+
+msgid "复制代码"
+msgstr "Copy code"
+
+msgid "复制功能不可用"
+msgstr "Copy is unavailable"
+
+msgid "复制失败"
+msgstr "Copy failed"
+
+msgid "复制失败，请手动复制"
+msgstr "Copy failed; copy manually"
+
+msgid "复制此项"
+msgstr "Clone this item"
+
+msgid "复制项目"
+msgstr "Clone item"
+
+msgid "复制颜色"
+msgstr "Copy color"
+
+msgid "外凸"
+msgstr "Outset"
+
+msgid "外站名单（提前打招呼）"
+msgstr "Third-party hosts (preconnect)"
+
+msgid "外站预连接"
+msgstr "Preconnect to third-party hosts"
+
+msgid "大阪"
+msgstr "Osaka"
+
+msgid "天"
+msgstr "Days"
+
+msgid "失败"
+msgstr "Failed"
+
+msgid "失败条目不属于当前任务。"
+msgstr "This failed item does not belong to the current task."
+
+msgid "失败条目（最多列出最近 50 条）"
+msgstr "Failed items (latest 50)"
+
+msgid "失败次数"
+msgstr "Failures"
+
+msgid "失败表最多列出最近 50 条。超过后更早的失败不会出现在本表翻页里，请到下方迁移日志查看。重试只作用于本表列出的条目。"
+msgstr "The fail table lists at most the latest 50 items. Older failures are not in this table’s pages; check migrate logs below. Retry only applies to rows listed here."
+
+msgid "失败记录（上传没成功的附件）"
+msgstr "Failed records (attachments that did not upload)"
+
+msgid "套用低风险推荐"
+msgstr "Apply low-risk recommendations"
+
+msgid "如果你已经用了好看的固定链接（比如 /文章名/），源码里那种 ?p=123 的短链就没意义了，可以去掉。"
+msgstr "If you already use pretty permalinks (for example /post-name/), the ?p=123 shortlink in the source is unused and can be removed."
+
+msgid "媒体"
+msgstr "Media"
+
+msgid "媒体优化"
+msgstr "Media optimization"
+
+msgid "媒体库"
+msgstr "Media library"
+
+msgid "媒体库不可用，请刷新页面重试"
+msgstr "Media library is unavailable. Refresh and try again"
+
+msgid "媒体库未正确加载，请刷新页面重试"
+msgstr "Media library did not load correctly. Refresh and try again"
+
+msgid "子项 %d"
+msgstr "Item %d"
+
+msgid "字体文件"
+msgstr "Font files"
+
+msgid "字段ID冲突错误"
+msgstr "Field ID conflict"
+
+msgid "字段不存在"
+msgstr "Field does not exist"
+
+msgid "字段渲染错误:"
+msgstr "Field render error:"
+
+msgid "字段类型 \"%s\" 未找到"
+msgstr "Field type \"%s\" was not found"
+
+msgid "字段类型未指定"
+msgstr "Field type is not set"
+
+msgid "字段组件"
+msgstr "Field components"
+
+msgid "字段配置无效"
+msgstr "Invalid field config"
+
+msgid "存储桶或空间不存在。请检查名称、APPID 和区域。"
+msgstr "Bucket or space does not exist. Check the name, APPID, and region."
+
+msgid "存储桶所在地域，可搜索中文或简称。"
+msgstr "Bucket region. Search by Chinese name or short code."
+
+msgid "存储空间不存在。"
+msgstr "Storage space does not exist."
+
+msgid "存储设置"
+msgstr "Storage settings"
+
+msgid "孤立元数据"
+msgstr "Orphaned metadata"
+
+msgid "孤立元数据（主数据没了还留着的）"
+msgstr "Orphaned metadata (left behind after the parent data is gone)"
+
+msgid "安全校验失败，请刷新页面后重试"
+msgstr "Security check failed. Refresh the page and try again."
+
+msgid "安全验证失败"
+msgstr "Security check failed"
+
+msgid "安全验证失败，请刷新页面后重试。"
+msgstr "Security check failed. Refresh the page and try again."
+
+msgid "完整内容"
+msgstr "Full content"
+
+msgid "完整网址，以 https:// 开头。可从媒体库复制。"
+msgstr "Full URL starting with https://. You can copy it from the Media Library."
+
+msgid "官方文档"
+msgstr "Official docs"
+
+msgid "定制插件联系开发者"
+msgstr "Contact the developer for custom plugins"
+
+msgid "定时清理"
+msgstr "Scheduled cleanup"
+
+msgid "定时清理处理 %d 条。"
+msgstr "Scheduled cleanup processed %d items."
+
+msgid "实时预览"
+msgstr "Live preview"
+
+msgid "实线"
+msgstr "Solid"
+
+msgid "密码"
+msgstr "Password"
+
+msgid "对应文章或评论已经没了，却还留着的附加信息。"
+msgstr "Extra data left behind after the related post or comment is gone."
+
+msgid "对比度:"
+msgstr "Contrast:"
+
+msgid "对比度不足"
+msgstr "Poor contrast"
+
+msgid "对比度良好"
+msgstr "Good contrast"
+
+msgid "对象不存在。请检查对象路径。"
+msgstr "Object does not exist. Check the object path."
+
+msgid "对象存储"
+msgstr "Object storage"
+
+msgid "对象存储先测试连接再迁移；数据库清理前请备份"
+msgstr "Test the object-storage connection before migrate; back up the database before cleanup"
+
+msgid "对象存储服务暂时不可用，请稍后重试。"
+msgstr "Object storage is temporarily unavailable. Try again later."
+
+msgid "对象存储请求失败。请核对配置后重试。"
+msgstr "Object storage request failed. Check the settings and try again."
+
+msgid "对象存储请求失败（HTTP %d）。请核对密钥、桶名和区域。"
+msgstr "Object storage request failed (HTTP %d). Check the keys, bucket, and region."
+
+msgid "对象存储连通"
+msgstr "Object storage reachable"
+
+msgid "对象存储配置不完整。请填写 AccessKey、SecretKey、Bucket。"
+msgstr "Object storage is incomplete. Please fill in AccessKey, SecretKey, and Bucket."
+
+msgid "导入中..."
+msgstr "Importing…"
+
+msgid "导入失败"
+msgstr "Import failed"
+
+msgid "导入成功"
+msgstr "Imported"
+
+msgid "导入过程中发生网络错误，请稍后重试"
+msgstr "A network error occurred while importing. Try again later."
+
+msgid "导入过程中发生错误"
+msgstr "An error occurred while importing"
+
+msgid "导入配置"
+msgstr "Import settings"
+
+msgid "导入配置将覆盖当前所有设置，此操作不可撤销。确定要继续吗？"
+msgstr "Importing will overwrite all current settings. This cannot be undone. Continue?"
+
+msgid "导出"
+msgstr "Export"
+
+msgid "导出 CSV"
+msgstr "Export CSV"
+
+msgid "导出中"
+msgstr "Exporting"
+
+msgid "导出中..."
+msgstr "Exporting…"
+
+msgid "导出失败"
+msgstr "Export failed"
+
+msgid "导出成功"
+msgstr "Exported"
+
+msgid "导出时间段"
+msgstr "Export time range"
+
+msgid "导出过程中发生网络错误，请稍后重试"
+msgstr "A network error occurred while exporting. Try again later."
+
+msgid "导出过程中发生错误"
+msgstr "An error occurred while exporting"
+
+msgid "导出配置"
+msgstr "Export settings"
+
+msgid "将保存所有已加载分区的配置，弱机上可能较慢。推荐日常使用「保存当前页」。是否继续？"
+msgstr "This saves every loaded section. It can be slow on weak machines. Prefer Save current page for daily use. Continue?"
+
+msgid "将匹配目录下的静态资源 URL 替换为 CDN 主机。CDN URL 为空时不替换。"
+msgstr "Rewrite static asset URLs in matching directories to the CDN host. Nothing is rewritten when the CDN URL is empty."
+
+msgid "将本站静态资源 URL 改写到 CDN 主机。须填写独立 CDN URL；Cloudflare 整站代理且无单独加速域名时不要启用。PHP 页面地址不会改写。"
+msgstr "Rewrite this site’s static asset URLs to the CDN host. You must set a dedicated CDN URL. Do not enable this if Cloudflare proxies the whole site and you have no separate accelerator hostname. PHP page URLs are not rewritten."
+
+msgid "小数位数不能超过 %d 位"
+msgstr "No more than %d decimal places"
+
+msgid "小时"
+msgstr "Hours"
+
+msgid "尝试使用其他关键词搜索"
+msgstr "Try a different search term"
+
+msgid "尺寸:"
+msgstr "Size:"
+
+msgid "居中"
+msgstr "Center"
+
+msgid "展开"
+msgstr "Expand"
+
+msgid "展开全部"
+msgstr "Expand all"
+
+msgid "展开或折叠"
+msgstr "Expand or collapse"
+
+msgid "展开或折叠此项目"
+msgstr "Expand or collapse this item"
+
+msgid "展开或收起"
+msgstr "Expand or collapse"
+
+msgid "展开详情"
+msgstr "Show details"
+
+msgid "左"
+msgstr "Left"
+
+msgid "左上"
+msgstr "Top left"
+
+msgid "左下"
+msgstr "Bottom left"
+
+msgid "左中"
+msgstr "Middle left"
+
+msgid "左边框"
+msgstr "Left border"
+
+msgid "已上传"
+msgstr "Uploaded"
+
+msgid "已上传：%1$s → %2$s"
+msgstr "Uploaded: %1$s → %2$s"
+
+msgid "已从前端列表移除（未配置 delete_action 时不会写入数据库）。"
+msgstr "Removed from the client list (no delete_action; not persisted)."
+
+msgid "已保存"
+msgstr "Saved"
+
+msgid "已保存变更字段"
+msgstr "Changed fields saved"
+
+msgid "已保存密钥"
+msgstr "Keys saved"
+
+msgid "已保存密钥（留空则不改）"
+msgstr "Saved key (leave empty to keep it)"
+
+msgid "已刷新"
+msgstr "Refreshed"
+
+msgid "已加入重试。"
+msgstr "Queued for retry."
+
+msgid "已加入重试：%s"
+msgstr "Queued for retry: %s"
+
+msgid "已勾选"
+msgstr "Checked"
+
+msgid "已启用"
+msgstr "Enabled"
+
+msgid "已启用对象存储"
+msgstr "Object storage enabled"
+
+msgid "已启用项目"
+msgstr "Enabled items"
+
+msgid "已启用项目："
+msgstr "Enabled items:"
+
+msgid "已回滚"
+msgstr "Rolled back"
+
+msgid "已回滚 %d 篇内容的图片链接。附件云标记未删除。"
+msgstr "Rolled back image URLs in %d posts. Attachment cloud flags were not removed."
+
+msgid "已填写自定义公网域名"
+msgstr "Custom public domain filled in"
+
+msgid "已填写，保存后生效"
+msgstr "Filled in; takes effect after save"
+
+msgid "已处理。"
+msgstr "Done."
+
+msgid "已复制到剪贴板"
+msgstr "Copied to clipboard"
+
+msgid "已套用低风险推荐。请刷新本页核对开关。"
+msgstr "Low-risk recommendations applied. Refresh this page to review the switches."
+
+msgid "已套用低风险推荐配置（Emoji、Self-Ping、RSD、WLW、版本号）。"
+msgstr "Applied low-risk recommendations (Emoji, Self-Ping, RSD, WLW, version number)."
+
+msgid "已完成"
+msgstr "Done"
+
+msgid "已完成。"
+msgstr "Done."
+
+msgid "已开启 CDN 加速。已上云的媒体地址不会再被 CDN 改写，避免两个域名抢同一张图。"
+msgstr "CDN is on. Media already on object storage will not be rewritten by CDN, so two hostnames do not fight over the same image."
+
+msgid "已开始下载日志文件"
+msgstr "Started downloading the log file"
+
+msgid "已开速度项"
+msgstr "Speed options on"
+
+msgid "已打开低风险瘦身项。刷新本页后，可在「关掉用不到的功能」「网页源代码瘦身」里核对。高风险项（XML-RPC、评论、访客 REST）未改。"
+msgstr "Low-risk slim-down options are on. After you refresh, review them under unused features and source cleanup. High-risk items (XML-RPC, comments, visitor REST) were not changed."
+
+msgid "已扫描"
+msgstr "Scanned"
+
+msgid "已按桶内前缀重传：%1$s → %2$s"
+msgstr "Re-uploaded with bucket prefix: %1$s → %2$s"
+
+msgid "已暂停"
+msgstr "Paused"
+
+msgid "已暂停。"
+msgstr "Paused."
+
+msgid "已替换正文链接（已修改文章数据库，支持回滚）：%s"
+msgstr "Replaced content URLs (post database updated; rollback supported): %s"
+
+msgid "已有暂停中的迁移任务，请先继续或终止后再新建。"
+msgstr "A paused migrate task already exists. Resume or stop it before starting a new one."
+
+msgid "已有迁移任务在运行。"
+msgstr "A migrate task is already running."
+
+msgid "已清空日志"
+msgstr "Logs cleared"
+
+msgid "已清空页面缓存和压缩文件。"
+msgstr "Page cache and minified files have been cleared."
+
+msgid "已清空页面缓存和压缩文件。字体文件仍保留。"
+msgstr "Page cache and minified files have been cleared. Font files are kept."
+
+msgid "已禁用"
+msgstr "Disabled"
+
+msgid "已禁用项目："
+msgstr "Disabled items:"
+
+msgid "已终止"
+msgstr "Stopped"
+
+msgid "已终止。"
+msgstr "Stopped."
+
+msgid "已继续。"
+msgstr "Resumed."
+
+msgid "已设置附件云标记，前台动态替换图片，文章数据库正文未改动，无需回滚：%s"
+msgstr "Attachment cloud flag set; front end rewrites images dynamically; post content in the database was not changed, so rollback is not needed: %s"
+
+msgid "已达到最多启用数量限制（%d 个），多出来的项目可以保留但不能启用。"
+msgstr "Maximum enabled items reached (%d). Extra items can stay but cannot be enabled."
+
+msgid "已达到最大数量"
+msgstr "Maximum items reached"
+
+msgid "已达到最大项目数量限制（%d 个）"
+msgstr "Maximum items reached (%d)"
+
+msgid "已选 %1$d / 共 %2$d 个选项"
+msgstr "%1$d of %2$d selected"
+
+msgid "已选 %d 项"
+msgstr "%d selected"
+
+msgid "已选择 %1$d / %2$d 项"
+msgstr "%1$d of %2$d selected"
+
+msgid "已选择 %d 项"
+msgstr "%d selected"
+
+msgid "已选择的颜色"
+msgstr "Selected color"
+
+msgid "巴西（圣保罗）"
+msgstr "Brazil (Sao Paulo)"
+
+msgid "广州"
+msgstr "Guangzhou"
+
+msgid "开"
+msgstr "On"
+
+msgid "开关"
+msgstr "Switch"
+
+msgid "开发友好"
+msgstr "Developer friendly"
+
+msgid "开始"
+msgstr "Start"
+
+msgid "开始导出"
+msgstr "Start export"
+
+msgid "开始日期"
+msgstr "Start date"
+
+msgid "开始时间不能晚于结束时间"
+msgstr "Start time cannot be later than end time"
+
+msgid "开始替换"
+msgstr "Start replace"
+
+msgid "开始替换（不保存当前填写）"
+msgstr "Start replace (does not save the current form)"
+
+msgid "弗吉尼亚（美东）"
+msgstr "Virginia (US East)"
+
+msgid "当前主题"
+msgstr "Current theme"
+
+msgid "当前任务没有可恢复的正文备份（图片仅前台动态替换，文章原始内容未修改）。"
+msgstr "This task has no restorable content backups (images are rewritten on the front end only; original post content was not changed)."
+
+msgid "当前值"
+msgstr "Current value"
+
+msgid "当前分区尚未加载完成，请稍后重试。"
+msgstr "This section is still loading. Try again in a moment."
+
+msgid "当前勾选的清理项"
+msgstr "Currently checked clean items"
+
+msgid "当前显示区间：%1$d-%2$d"
+msgstr "Showing %1$d–%2$d"
+
+msgid "当前服务商不支持该特性，已隐藏对应设置。"
+msgstr "This provider does not support that feature, so the related settings are hidden."
+
+msgid "当前服务商专属接入教程"
+msgstr "Setup guide for the current provider"
+
+msgid "当前没有其它迁移任务占用（含暂停、回滚）"
+msgstr "No other migrate task is occupying the queue (including pause and rollback)"
+
+msgid "当前没有可恢复的正文备份（图片仅前台动态替换，文章原始内容未修改）。"
+msgstr "There is no restorable content backup (images are rewritten on the front end only; original post content was not changed)."
+
+msgid "当前没有可恢复的正文备份（图片仅前台动态替换，文章原始内容未修改）。回滚不会删除云上文件，也不会清除附件云标记。"
+msgstr "This task has no restorable content backups (images are rewritten on the front end only; original post content was not changed). Rollback does not delete cloud files or clear attachment cloud flags."
+
+msgid "当前没有可清空的数据。"
+msgstr "Nothing to clear."
+
+msgid "当前页码"
+msgstr "Current page"
+
+msgid "当前页设置已保存"
+msgstr "Current page settings saved"
+
+msgid "当前页设置已保存。"
+msgstr "Current page settings saved."
+
+msgid "当前页面已重置"
+msgstr "This page was reset"
+
+msgid "当前页面没有可填充的空白项"
+msgstr "This page has no empty items to fill"
+
+msgid "德国（法兰克福）"
+msgstr "Germany (Frankfurt)"
+
+msgid "必填。写成完整地址，末尾不要斜杠，例如 https://cdn.example.com。也可以只填域名，保存时会补上 https://。"
+msgstr "Required. Enter a full URL with no trailing slash, for example https://cdn.example.com. A hostname alone is also accepted; https:// is added on save."
+
+msgid "快捷操作"
+msgstr "Quick actions"
+
+msgid "快捷时间段"
+msgstr "Quick time range"
+
+msgid "快捷选择"
+msgstr "Quick pick"
+
+msgid "快速开始"
+msgstr "Quick start"
+
+msgid "忽略"
+msgstr "Ignore"
+
+msgid "性能友好"
+msgstr "Performance friendly"
+
+msgid "总开关已关闭"
+msgstr "Master switch is off"
+
+msgid "总开关已打开"
+msgstr "Master switch is on"
+
+msgid "总是（always）"
+msgstr "Always"
+
+msgid "您没有权限访问闪电WP性能设置页面。"
+msgstr "You do not have permission to access the ZapRocket settings page."
+
+msgid "感谢使用霹雳框架，让后台配置更清晰可靠"
+msgstr "Thanks for using the PILI framework for clearer, more reliable admin settings"
+
+msgid "懒加载分区与按需资源，减轻首屏压力"
+msgstr "Lazy-load sections and assets to lighten the first screen"
+
+msgid "懒加载排除（这些不推迟）"
+msgstr "Lazy-load exclusions (do not delay these)"
+
+msgid "成功"
+msgstr "Success"
+
+msgid "成功删除 %d 张图片。"
+msgstr "Deleted %d images."
+
+msgid "成功次数"
+msgstr "Successes"
+
+msgid "成都"
+msgstr "Chengdu"
+
+msgid "我已备份数据库，并理解可能造成短时图文不一致"
+msgstr "I have backed up the database and understand images may be briefly inconsistent"
+
+msgid "或点击浏览"
+msgstr "or click to browse"
+
+msgid "所有配置已重置"
+msgstr "All settings were reset"
+
+msgid "所选图片已存在于图片库中。"
+msgstr "Selected images are already in the gallery."
+
+msgid "手动清理"
+msgstr "Manual cleanup"
+
+msgid "手风琴字段缺少必需的 \"accordions\" 配置数组。"
+msgstr "Accordion field is missing the required \"accordions\" config array."
+
+msgid "打开「概览」总开关，需要时套用低风险推荐"
+msgstr "Turn on the Overview master switch, then apply low-risk recommendations if needed"
+
+msgid "打开后，媒体库新上传会先传到对象存储。密钥、桶名未填完整时不会真正启用。"
+msgstr "When on, new media-library uploads go to object storage first. Nothing is enabled until keys and bucket are complete."
+
+msgid "打开后，新保存不再生成修订（相当于保留 0 份）。上面的份数滑块会被忽略。不会立刻批量删掉已经存在的历史稿，那是「垃圾清理」的事。默认关闭。"
+msgstr "When on, new saves no longer create revisions (same as keeping 0 copies). The copies slider above is ignored. Existing history is not bulk-deleted; that belongs to Cleanup. Off by default."
+
+msgid "打开日期选择器"
+msgstr "Open date picker"
+
+msgid "打开时间选择器"
+msgstr "Open time picker"
+
+msgid "打开站点"
+msgstr "Open site"
+
+msgid "打开站点首页预览效果"
+msgstr "Open the site home page to preview"
+
+msgid "扫描 / 体积估算"
+msgstr "Scan / size estimate"
+
+msgid "扫描、手动清理、定时清理、套用推荐配置都会记在这里。关掉「概览」里的「优化日志」则不再写入。"
+msgstr "Scan, manual cleanup, scheduled cleanup, and applying recommendations are recorded here. Nothing is written if Optimization log is off on Overview."
+
+msgid "扫描中"
+msgstr "Scanning"
+
+msgid "扫描占位完成：尚未连接数据库统计。"
+msgstr "Scan placeholder finished: database stats are not connected yet."
+
+msgid "扫描完成。确认后点「清理」。"
+msgstr "Scan complete. Click Clean when you are ready."
+
+msgid "扫描完成，合计 %1$d 条，预估 %2$s。"
+msgstr "Scan finished: %1$d items, estimate %2$s."
+
+msgid "扫描完成，开始上传并替换正文链接。"
+msgstr "Scan finished. Starting upload and content URL replace."
+
+msgid "扫描按媒体库总量估算；上传与替换按已完成条目计算，替换未完成时不会到 100%。"
+msgstr "Scan estimates from the whole media library; upload and replace use finished items. Progress stays below 100% until replace finishes."
+
+msgid "扫描接口将在后续版本接入，体积先显示为 —。"
+msgstr "The scan API will ship later; size shows as — for now."
+
+msgid "批量操作"
+msgstr "Bulk actions"
+
+msgid "找不到 %1$s。请确认插件内已包含 %2$s 目录。"
+msgstr "Could not find %1$s. Confirm the plugin includes the %2$s directory."
+
+msgid "技术支持"
+msgstr "Support"
+
+msgid "把 fonts.googleapis.com 的样式和 woff2 下到 uploads/zaprocket/fonts/。第一次打开该字体可能稍慢。"
+msgstr "Download styles and woff2 files from fonts.googleapis.com into uploads/zaprocket/fonts/. The first visit for that font may be slightly slower."
+
+msgid "把多个脚本合成一个。要先开「JS 压缩」。网站已是 HTTP/2 时一般不必开。开了「JS 延迟加载」后本项无效。"
+msgstr "Combine multiple scripts into one. Minify JS must be on first. Usually unnecessary on HTTP/2. Disabled when Delay JS is on."
+
+msgid "把整页存到 wp-content/cache/zaprocket，第二次打开更快。默认关。登录页、购物车、结账、账户页、404、搜索页不会缓存。和其它整页缓存插件一起开会乱。"
+msgstr "Store the full page in wp-content/cache/zaprocket so the next visit is faster. Off by default. Login, cart, checkout, account, 404, and search pages are not cached. Using another full-page cache plugin at the same time will conflict."
+
+msgid "折叠"
+msgstr "Collapse"
+
+msgid "折叠/展开"
+msgstr "Collapse/expand"
+
+msgid "折叠全部"
+msgstr "Collapse all"
+
+msgid "拖拽项目到此处启用"
+msgstr "Drop items here to enable"
+
+msgid "拖拽项目到此处禁用"
+msgstr "Drop items here to disable"
+
+msgid "拦截谷歌字体（前台不加载外链字体）"
+msgstr "Block Google Fonts (do not load remote fonts on the front end)"
+
+msgid "按「垃圾清理」里勾过的项目执行。"
+msgstr "Run the items checked under Cleanup."
+
+msgid "按当前筛选与时间段导出为 .log 文件"
+msgstr "Export a .log file using the current filters and time range"
+
+msgid "按时间倒序。可搜索类型、状态或说明。导出只包含当前页。"
+msgstr "Newest first. Search by type, status, or notes. Export includes the current page only."
+
+msgid "按时间列出。「重试」再排一次上传，「忽略」只清这条记录和排队标记。"
+msgstr "Listed by time. Retry queues another upload. Dismiss only clears this row and its queue flag."
+
+msgid "按状态统计"
+msgstr "By status"
+
+msgid "按需启用懒加载与分区保存，降低误改风险"
+msgstr "Turn on lazy load and per-section save as needed to reduce accidental changes"
+
+msgid "按需禁用 WordPress 内置功能，减少脚本与入口。不确定的项请保持关闭。"
+msgstr "Disable built-in WordPress features as needed to reduce scripts and entry points. Keep uncertain items off."
+
+msgid "挡住 fonts.googleapis.com / fonts.gstatic.com。若同时打开「本地托管 Google 字体」，会先下载再替换，拦不住已换成本站的文件。"
+msgstr "Block fonts.googleapis.com / fonts.gstatic.com. If Host Google Fonts locally is also on, files are downloaded and replaced first; files already served from this site are not blocked."
+
+msgid "排坑提示（厂商专属坑点）"
+msgstr "Gotchas (provider-specific pitfalls)"
+
+msgid "排序"
+msgstr "Sort"
+
+msgid "排序预览"
+msgstr "Sort preview"
+
+msgid "排队中"
+msgstr "Queued"
+
+msgid "推荐配置"
+msgstr "Recommended settings"
+
+msgid "推荐配置只打开低风险瘦身：禁用 Emoji、禁止自己给自己留言（Self-Ping）、去掉 RSD / WLW 和版本号。不会改 XML-RPC、评论、访客 REST。"
+msgstr "Recommended settings only turn on low-risk slim-down: disable Emoji, block self-pingbacks (Self-Ping), and remove RSD / WLW and the version number. XML-RPC, comments, and visitor REST are not changed."
+
+msgid "提交中…"
+msgstr "Submitting…"
+
+msgid "提前打招呼，不是整站缓存预热。不懂可以只开下面两个开关、填一个数字，域名和文件列表留空也行。"
+msgstr "This preconnects; it is not full-site cache warmup. If you are unsure, you can turn on the two switches below, enter a number, and leave host and file lists empty."
+
+msgid "提示"
+msgstr "Notice"
+
+msgid "插件语言"
+msgstr "Plugin language"
+
+msgid "插件运行日志"
+msgstr "Plugin run log"
+
+msgid "插件运行日志条数"
+msgstr "Plugin run log count"
+
+msgid "插入图片库"
+msgstr "Insert gallery"
+
+msgid "搜索"
+msgstr "Search"
+
+msgid "搜索..."
+msgstr "Search..."
+
+msgid "搜索…"
+msgstr "Search…"
+
+msgid "搜索图标"
+msgstr "Search icons"
+
+msgid "搜索地区或 Region ID…"
+msgstr "Search region or Region ID…"
+
+msgid "搜索地区或地域简称…"
+msgstr "Search region or short code…"
+
+msgid "搜索广州、上海或 ap-guangzhou"
+msgstr "Search Guangzhou, Shanghai, or ap-guangzhou"
+
+msgid "搜索日志内容…"
+msgstr "Search log messages…"
+
+msgid "搜索杭州、北京或 oss-cn-hangzhou"
+msgstr "Search Hangzhou, Beijing, or oss-cn-hangzhou"
+
+msgid "搜索选项..."
+msgstr "Search options..."
+
+msgid "搜索选项…"
+msgstr "Search options…"
+
+msgid "搜索颜色..."
+msgstr "Search colors..."
+
+msgid "摘要"
+msgstr "Summary"
+
+msgid "操作"
+msgstr "Actions"
+
+msgid "操作失败"
+msgstr "Action failed"
+
+msgid "操作完成"
+msgstr "Done"
+
+msgid "收起"
+msgstr "Collapse"
+
+msgid "改完主题、插件或开关后，可立刻清掉已生成的页面和压缩文件。字体本地下载的文件会留着。顶部工具栏也有「清空闪电缓存」。"
+msgstr "After changing a theme, plugin, or switch, you can immediately clear generated pages and minified files. Locally downloaded fonts are kept. The toolbar also has Clear ZapRocket cache."
+
+msgid "政务云"
+msgstr "Government cloud"
+
+msgid "数值:"
+msgstr "Number:"
+
+msgid "数值不能大于 %s"
+msgstr "Value cannot be greater than %s"
+
+msgid "数值不能小于 %s"
+msgstr "Value cannot be less than %s"
+
+msgid "数值必须是 %s 的倍数"
+msgstr "Value must be a multiple of %s"
+
+msgid "数值范围：%1$s 到 %2$s"
+msgstr "Range: %1$s to %2$s"
+
+msgid "数字无效"
+msgstr "Invalid number"
+
+msgid "数字输入"
+msgstr "Number input"
+
+msgid "数据"
+msgstr "Data"
+
+msgid "数据为上次扫描结果（%s），不是实时数据。缓存超过 7 天会失效。数据不会自动刷新，如需最新预估，请手动点击重新扫描。预估体积仅作为参考，实际释放空间以清理完成后为准。"
+msgstr "This is the last scan (%s), not live data. Cache expires after 7 days. Data does not refresh by itself; click Rescan for a new estimate. Size estimates are approximate. Actual freed space is known after cleanup."
+
+msgid "数据为上次扫描结果，不是实时数据。缓存超过 7 天会失效。数据不会自动刷新，如需最新预估，请手动点击重新扫描。预估体积仅作为参考，实际释放空间以清理完成后为准。"
+msgstr "This is the last scan, not live data. Cache expires after 7 days. Data does not refresh by itself; click Rescan for a new estimate. Size estimates are approximate. Actual freed space is known after cleanup."
+
+msgid "数据已清空。"
+msgstr "Data cleared."
+
+msgid "数据已清空（仅前端，未配置 clear_action 时不会写入数据库）。"
+msgstr "Data cleared (client only; no clear_action configured)."
+
+msgid "数据库"
+msgstr "Database"
+
+msgid "数据库清理"
+msgstr "Database cleanup"
+
+msgid "数据表"
+msgstr "Tables"
+
+msgid "整理数据表"
+msgstr "Optimize tables"
+
+msgid "整理数据表（回收空出来的空间）"
+msgstr "Optimize tables (reclaim unused space)"
+
+msgid "整理数据表（顺带回收表空间）"
+msgstr "Optimize tables (also reclaim table space)"
+
+msgid "整理表空间，不等于删除内容。大站请在访问少时再做。"
+msgstr "Optimizing table space does not delete content. On large sites, do this during low traffic."
+
+msgid "整页缓存"
+msgstr "Page cache"
+
+msgid "整页缓存默认关。打开后，未登录访客在主题查询完成时（template_redirect）才读磁盘 HTML，第一次访问仍会完整跑 WordPress，不如把缓存放在更早 PHP 入口快。登录用户、购物车/结账/账户、404、搜索、未列入「可缓存查询参数」的问号地址、以及带着登录或购物车 Cookie 的请求，都不会存、也不会读缓存，避免把私人页面给别人看。请先关掉其它整页缓存插件。"
+msgstr "Page cache is off by default. When on, logged-out visitors read HTML from disk only after the theme query finishes (template_redirect). The first visit still runs a full WordPress request, which is slower than caching at an earlier PHP entry. Logged-in users, cart/checkout/account, 404, search, query strings not listed under Cacheable query parameters, and requests with login or cart cookies are neither stored nor served from cache, so private pages are not shown to others. Turn off other page cache plugins first."
+
+msgid "整页缓存（未登录访客读生成好的 HTML）"
+msgstr "Page cache (logged-out visitors read generated HTML)"
+
+msgid "文件"
+msgstr "File"
+
+msgid "文件优化"
+msgstr "File optimization"
+
+msgid "文件名:"
+msgstr "File name:"
+
+msgid "文件地址（完整网址）"
+msgstr "File URL (full URL)"
+
+msgid "文件大小:"
+msgstr "File size:"
+
+msgid "文件大小超出限制"
+msgstr "File size exceeds the limit"
+
+msgid "文件格式错误"
+msgstr "Wrong file format"
+
+msgid "文件类型（选错浏览器会忽略）"
+msgstr "File type (browsers ignore a wrong type)"
+
+msgid "文件读取错误"
+msgstr "Could not read the file"
+
+msgid "文件过大"
+msgstr "File is too large"
+
+msgid "文件过大，对象存储拒绝接收。"
+msgstr "File is too large; object storage rejected it."
+
+msgid "文本"
+msgstr "Text"
+
+msgid "文章"
+msgstr "Posts"
+
+msgid "文章与草稿"
+msgstr "Posts and drafts"
+
+msgid "文章里贴外站链接时，WordPress 会自动变成卡片，同时多请求一次 wp-embed.min.js。很多站点觉得方便，想留着就不要开本项。"
+msgstr "When you paste an external link in a post, WordPress turns it into a card and loads wp-embed.min.js. Many sites like this; leave this option off if you want to keep it."
+
+msgid "新加坡"
+msgstr "Singapore"
+
+msgid "新项目"
+msgstr "New item"
+
+msgid "方式（提前做什么）"
+msgstr "Mode (what to prefetch)"
+
+msgid "无匹配项"
+msgstr "No matches"
+
+msgid "无地域属性（中国内地）"
+msgstr "No region attribute (mainland China)"
+
+msgid "无效"
+msgstr "Invalid"
+
+msgid "无效分区"
+msgstr "Invalid section"
+
+msgid "无效条目。"
+msgstr "Invalid item."
+
+msgid "无效的颜色值"
+msgstr "Invalid color value"
+
+msgid "无法估算，站点数据量大，估算超时"
+msgstr "Could not estimate; the site is large and the estimate timed out"
+
+msgid "无法保存"
+msgstr "Cannot save"
+
+msgid "无法初始化连接，请检查 AccessKey、SecretKey、Bucket、Region、Endpoint。"
+msgstr "Could not initialize the connection. Check AccessKey, SecretKey, Bucket, Region, and Endpoint."
+
+msgid "无法打开媒体库"
+msgstr "Could not open the media library"
+
+msgid "无法清空日志。"
+msgstr "Could not clear logs."
+
+msgid "无法生成七牛上传凭证，请检查 AccessKey 和 SecretKey。"
+msgstr "Could not create a Qiniu upload token. Check AccessKey and SecretKey."
+
+msgid "无法确定当前分区字段，数据库未改动。请打开一个配置页后再保存。"
+msgstr "Could not determine this section’s fields. The database was not changed. Open a settings page, then save."
+
+msgid "无法确定当前分区，配置未保存。"
+msgstr "Could not determine the current section. Settings were not saved."
+
+msgid "无法获取选择的媒体文件"
+msgstr "Could not get the selected media"
+
+msgid "无法读取所选文件，请重试或换一个文件"
+msgstr "Could not read the selected file. Try again or pick another file."
+
+msgid "无法读取要上传的本地文件。"
+msgstr "The local file to upload could not be read."
+
+msgid "无法连接到对象存储。请检查服务器网络、防火墙和接口地址。"
+msgstr "Could not connect to object storage. Check server network, firewall, and the API URL."
+
+msgid "无结果"
+msgstr "No results"
+
+msgid "无边框"
+msgstr "No border"
+
+msgid "日"
+msgstr "Day"
+
+msgid "日志已清空。"
+msgstr "Logs cleared."
+
+msgid "日期"
+msgstr "Date"
+
+msgid "日本（东京）"
+msgstr "Japan (Tokyo)"
+
+msgid "旧地址和新地址不能相同。"
+msgstr "Old URL and new URL cannot be the same."
+
+msgid "旧地址过短，已取消替换以免误改数据库。"
+msgstr "Old URL is too short. Replace was cancelled to avoid damaging the database."
+
+msgid "时"
+msgstr "Hour"
+
+msgid "时间"
+msgstr "Time"
+
+msgid "时间戳 + 随机串"
+msgstr "Timestamp + random string"
+
+msgid "星期一"
+msgstr "Monday"
+
+msgid "星期三"
+msgstr "Wednesday"
+
+msgid "星期二"
+msgstr "Tuesday"
+
+msgid "星期五"
+msgstr "Friday"
+
+msgid "星期六"
+msgstr "Saturday"
+
+msgid "星期四"
+msgstr "Thursday"
+
+msgid "星期日"
+msgstr "Sunday"
+
+msgid "显示"
+msgstr "Show"
+
+msgid "显示 %1$d / %2$d 个选项"
+msgstr "Showing %1$d of %2$d options"
+
+msgid "显示 %1$d / %2$d 项"
+msgstr "Showing %1$d of %2$d"
+
+msgid "显示密码"
+msgstr "Show password"
+
+msgid "暂停"
+msgstr "Pause"
+
+msgid "暂无内容"
+msgstr "No content yet"
+
+msgid "暂无历史记录"
+msgstr "No history yet"
+
+msgid "暂无可用的调色板"
+msgstr "No palettes available"
+
+msgid "暂无图片"
+msgstr "No images yet"
+
+msgid "暂无失败条目。超过 50 条时更早的失败不会出现在本表翻页里，请到下方迁移日志查看。重试只作用于本表列出的条目。"
+msgstr "No failed items. Older failures beyond 50 are not in this table’s pages; check migrate logs below. Retry only applies to rows listed here."
+
+msgid "暂无失败记录。"
+msgstr "No failed records."
+
+msgid "暂无扫描记录，请点击「重新扫描」计算预估数据"
+msgstr "No scan yet. Click Rescan to estimate"
+
+msgid "暂无扫描记录，请点击「重新扫描」计算预估数据。预估体积仅作为参考，实际释放空间以清理完成后为准。"
+msgstr "No scan yet. Click Rescan to estimate. Size estimates are approximate. Actual freed space is known after cleanup."
+
+msgid "暂无操作按钮"
+msgstr "No actions yet"
+
+msgid "暂无数据"
+msgstr "No data"
+
+msgid "暂无记录。请先在「垃圾清理」扫描或清理。"
+msgstr "No records yet. Scan or clean under Cleanup first."
+
+msgid "暂无迁移日志。"
+msgstr "No migrate logs."
+
+msgid "暂无运行日志。"
+msgstr "No run logs."
+
+msgid "暂无运行日志。打开开关后，对象存储失败、数据库清理、清空缓存会出现在这里。"
+msgstr "No run logs yet. After you turn this on, object-storage failures, database cleanup, and cache purge appear here."
+
+msgid "暂无配置字段"
+msgstr "No settings fields yet"
+
+msgid "暂无项目"
+msgstr "No items"
+
+msgid "暂无预检结果。"
+msgstr "No preflight results yet."
+
+msgid "更多插件产品"
+msgstr "More plugins"
+
+msgid "更多插件产品与说明"
+msgstr "More plugins and documentation"
+
+msgid "更换图片"
+msgstr "Change image"
+
+msgid "更新图片库"
+msgstr "Update gallery"
+
+msgid "更新频率"
+msgstr "Update frequency"
+
+msgid "曼谷"
+msgstr "Bangkok"
+
+msgid "替换中…"
+msgstr "Replacing…"
+
+msgid "替换失败，请稍后重试。"
+msgstr "Replace failed. Try again later."
+
+msgid "替换完成。"
+msgstr "Replace finished."
+
+msgid "替换成功。文章正文 %1$d 条，自定义字段 %2$d 条。"
+msgstr "Replace succeeded. Post content: %1$d. Custom fields: %2$d."
+
+msgid "替换成的新地址"
+msgstr "New URL to replace with"
+
+msgid "最多 %d 个"
+msgstr "At most %d"
+
+msgid "最多 %d 位小数"
+msgstr "At most %d decimal places"
+
+msgid "最多 %d 项"
+msgstr "At most %d items"
+
+msgid "最多只能上传 {max} 张图片"
+msgstr "You can upload at most {max} images"
+
+msgid "最多只能选择 %1$d 张图片，已自动截取前 %2$d 张。"
+msgstr "Select at most %1$d image(s); kept the first %2$d."
+
+msgid "最多只能选择 %d 项"
+msgstr "Select at most %d items"
+
+msgid "最多启用 %d 个"
+msgstr "Enable at most %d"
+
+msgid "最大"
+msgstr "Maximum"
+
+msgid "最大值：%s"
+msgstr "Maximum: %s"
+
+msgid "最小"
+msgstr "Minimum"
+
+msgid "最小值：%s"
+msgstr "Minimum: %s"
+
+msgid "最少 %d 个"
+msgstr "At least %d"
+
+msgid "最近一次写入"
+msgstr "Last written"
+
+msgid "有人用 RSS（比如 Feedly）跟着你的新文章走。现在用的人少了。开了之后订阅器就拿不到更新，页头里的订阅链接也会去掉。"
+msgstr "Some people follow new posts with RSS (for example Feedly). Fewer people use it now. When this is on, feed readers cannot get updates, and feed links in the page head are also removed."
+
+msgid "有效期单位（按小时还是按天）"
+msgstr "Lifetime unit (hours or days)"
+
+msgid "服务商（决定访问方式和默认区域）"
+msgstr "Provider (sets access style and default region)"
+
+msgid "服务器时间与对象存储相差约 %d 秒。超过约 15 分钟会导致签名失败，请校准系统时间（UTC）。"
+msgstr "Server time differs from object storage by about %d seconds. More than about 15 minutes causes signing to fail. Sync system time (UTC)."
+
+msgid "服务器时间与对象存储相差过大，请把系统时间校准到 UTC。"
+msgstr "Server time differs too much from object storage. Set system time to UTC."
+
+msgid "服务器超时，配置可能已生效，请刷新设置页核对"
+msgstr "The server timed out. Settings may already be applied. Refresh the settings page to check."
+
+msgid "服务器返回了网页而不是 JSON（常见原因：PHP 报错或安全插件拦截）。请强制刷新后重试。"
+msgstr "The server returned a web page instead of JSON (often a PHP error or a security plugin). Hard-refresh and try again."
+
+msgid "未启用分区懒加载"
+msgstr "Section lazy load is off"
+
+msgid "未填写自定义公网域名时，媒体地址不会改写成 R2 API 域名。请绑定自定义域后再保存。"
+msgstr "Without a custom public domain, media URLs are not rewritten to the R2 API host. Bind a custom domain before saving."
+
+msgid "未开始"
+msgstr "Not started"
+
+msgid "未找到匹配的图标"
+msgstr "No matching icons"
+
+msgid "未找到匹配的选项"
+msgstr "No matching options"
+
+msgid "未找到匹配的颜色"
+msgstr "No matching colors"
+
+msgid "未找到匹配项"
+msgstr "No matches"
+
+msgid "未提供图片 ID"
+msgstr "No image ID provided"
+
+msgid "未收到完整表单数据，请刷新页面后重试。"
+msgstr "The full form was not received. Refresh and try again."
+
+msgid "未检测到可保存的数据"
+msgstr "No data to save"
+
+msgid "未检测到可保存的数据。"
+msgstr "No data to save."
+
+msgid "未登录访客不能使用本站接口。"
+msgstr "Logged-out visitors cannot use this site’s API."
+
+msgid "未登录访客可读磁盘页"
+msgstr "Logged-out visitors can read pages from disk"
+
+msgid "未知文件"
+msgstr "Unknown file"
+
+msgid "未达到最小数量"
+msgstr "Minimum items not reached"
+
+msgid "未达到最小长度"
+msgstr "Minimum length not reached"
+
+msgid "未选择任何颜色"
+msgstr "No color selected"
+
+msgid "未选择背景图片"
+msgstr "No background image selected"
+
+msgid "未通过"
+msgstr "Failed"
+
+msgid "未配置密钥"
+msgstr "Keys not configured"
+
+msgid "未配置服务端动作，仅清空当前页面列表"
+msgstr "No server action configured; only the list on this page is cleared"
+
+msgid "本地 ECharts 加载失败"
+msgstr "Failed to load local ECharts"
+
+msgid "本地原图不存在或不可读。"
+msgstr "The local original image is missing or unreadable."
+
+msgid "本地托管 Google 字体（字体放本站）"
+msgstr "Host Google Fonts locally (serve fonts from this site)"
+
+msgid "本批已删完，还有剩余，请再点清理。"
+msgstr "This batch was deleted, but more remains. Click Clean again."
+
+msgid "本批扫描入队 %d 个附件。"
+msgstr "This scan batch queued %d attachments."
+
+msgid "本批清理完成，还有剩余，请继续点清理。"
+msgstr "This batch finished, but more remains. Click Clean again."
+
+msgid "本次可回滚 %d 篇已备份的正文。"
+msgstr "This run can roll back %d posts with content backups."
+
+msgid "本站已关闭订阅源。"
+msgstr "Feeds are disabled on this site."
+
+msgid "本页轮询大约展示最近 120 条迁移日志，首屏最多约 200 条；更早的记录不会出现在翻页里。"
+msgstr "This page’s polling shows about the latest 120 migrate logs, up to about 200 on first load; older records are not in these pages."
+
+msgid "权限不足"
+msgstr "Insufficient permissions"
+
+msgid "权限不足。"
+msgstr "Insufficient permissions."
+
+msgid "权限不足。请检查密钥权限、桶 ACL，以及区域是否与桶一致。"
+msgstr "Insufficient permission. Check key permissions, bucket ACL, and that the region matches the bucket."
+
+msgid "权限不足，无法保存当前配置。"
+msgstr "You do not have permission to save these settings."
+
+msgid "条"
+msgstr "items"
+
+msgid "条可清理"
+msgstr "cleanable"
+
+msgid "条数据，共 %s 条"
+msgstr "%s total"
+
+msgid "条目"
+msgstr "Item"
+
+msgid "杭州金融云外网"
+msgstr "Hangzhou Finance public"
+
+msgid "查看"
+msgstr "View"
+
+msgid "查看完整内容"
+msgstr "View full content"
+
+msgid "标成垃圾的评论。也可配合反垃圾插件减少来源。"
+msgstr "Comments marked as spam. You can also use an anti-spam plugin to reduce incoming spam."
+
+msgid "标题"
+msgstr "Title"
+
+msgid "样式表 CSS"
+msgstr "Stylesheets (CSS)"
+
+msgid "核心能力一览"
+msgstr "Capabilities"
+
+msgid "格式"
+msgstr "Format"
+
+msgid "格式化"
+msgstr "Format"
+
+msgid "格式化代码"
+msgstr "Format code"
+
+msgid "格式化失败"
+msgstr "Format failed"
+
+msgid "框架说明与接入指南"
+msgstr "Framework notes and integration guide"
+
+msgid "桶内基础目录前缀"
+msgstr "In-bucket directory prefix"
+
+msgid "桶内基础目录前缀含有非法字符。不要填写 ../，也不要用 \\ : * ? \" < > |。"
+msgstr "The in-bucket directory prefix has illegal characters. Do not use ../ or \\ : * ? \" < > |."
+
+msgid "桶名不要带英文句点，也不要写成带域名的完整地址。"
+msgstr "Do not put a period in the bucket name, and do not paste a full domain URL."
+
+msgid "桶名填自定义段，APPID 单独填。图片请用已绑定的自定义加速域名，不要用 COS API 域名。"
+msgstr "Enter the custom bucket segment; enter APPID separately. For images use the bound custom acceleration domain, not the COS API host."
+
+msgid "检查项"
+msgstr "Checks"
+
+msgid "检测到其它性能插件同时启用：%s。重复改同一处资源时，页面可能更慢或行为对不上。建议只留一套。"
+msgstr "Another performance plugin is also active: %s. Changing the same assets twice can make the page slower or behave inconsistently. Keep only one plugin."
+
+msgid "检测到跨分区字段，已拒绝保存。请只保存当前页，或使用「保存全部」。"
+msgstr "Fields from another section were detected. Save was rejected. Save the current page only, or use Save all."
+
+msgid "检测到跨分区字段，配置未保存。"
+msgstr "Fields from another section were detected. Settings were not saved."
+
+msgid "概览"
+msgstr "Overview"
+
+msgid "欢迎"
+msgstr "Welcome"
+
+msgid "欢迎使用闪电WP性能"
+msgstr "Welcome to ZapRocket"
+
+msgid "欢迎使用霹雳框架"
+msgstr "Welcome to the PILI framework"
+
+msgid "欧洲"
+msgstr "Europe"
+
+msgid "欧洲与美洲"
+msgstr "Europe and Americas"
+
+msgid "正在写入推荐配置…"
+msgstr "Writing recommended settings…"
+
+msgid "正在切换语言…"
+msgstr "Switching language…"
+
+msgid "正在加载设置…"
+msgstr "Loading settings…"
+
+msgid "正在回滚正文，不能同时启动迁移。"
+msgstr "A content rollback is running; you cannot start migrate at the same time."
+
+msgid "正在回滚，不能重试。"
+msgstr "A rollback is running; retry is not available."
+
+msgid "正在扫描…"
+msgstr "Scanning…"
+
+msgid "正在清理…"
+msgstr "Cleaning…"
+
+msgid "正在清空缓存…"
+msgstr "Clearing cache…"
+
+msgid "正在计算体积"
+msgstr "Calculating size"
+
+msgid "正文备份失败，已跳过链接替换。"
+msgstr "Content backup failed; URL replace was skipped."
+
+msgid "正文替换进行中：%s"
+msgstr "Content replace in progress: %s"
+
+msgid "正文里贴了自己网站的链接，WordPress 会给自己留一条 Pingback，基本是噪音，还浪费资源。建议打开本项。"
+msgstr "When the content includes a link to this same site, WordPress leaves a Pingback to itself. It is mostly noise and wastes resources. Turning this on is recommended."
+
+msgid "此字段"
+msgstr "This field"
+
+msgid "此字段为必填项"
+msgstr "This field is required"
+
+msgid "步进必须为 %s"
+msgstr "Step must be %s"
+
+msgid "每周"
+msgstr "Weekly"
+
+msgid "每周（weekly）"
+msgstr "Weekly"
+
+msgid "每天"
+msgstr "Daily"
+
+msgid "每天（daily）"
+msgstr "Daily"
+
+msgid "每小时（hourly）"
+msgstr "Hourly"
+
+msgid "每年（yearly）"
+msgstr "Yearly"
+
+msgid "每月（monthly）"
+msgstr "Monthly"
+
+msgid "每次保存都会多一份历史。保留份数由「定时清理」决定。"
+msgstr "Each save creates another history copy. How many to keep is set under Scheduled cleanup."
+
+msgid "每次保存都会多一份历史。时间一长占空间。拉到 0 表示不限制份数、也不自动清光。默认 5。若要一篇都不留，请勾选下面的「修订全部不留」。"
+msgstr "Each save creates another history copy. Over time this uses space. 0 means no limit and no automatic wipe. Default is 5. To keep none, check Keep no revisions below."
+
+msgid "每行一个关键词（文件名、class、域名）。"
+msgstr "One keyword per line (file name, class, or domain)."
+
+msgid "每行一个命名空间或路径片段，例如 oembed、contact-form。"
+msgstr "One namespace or path fragment per line, for example oembed or contact-form."
+
+msgid "每行一个地址或路径。写成 /wp-content/plugins/某插件/(.*).css 可整目录跳过。"
+msgstr "One URL or path per line. Use /wp-content/plugins/some-plugin/(.*).css to skip a whole directory."
+
+msgid "每行一个地址或路径。支付、验证码、客服脚本建议写在这里。压缩、defer、延迟加载都会跳过这些文件。"
+msgstr "One URL or path per line. Put payment, captcha, and chat scripts here. Minify, defer, and delay JS skip these files."
+
+msgid "每行一个相对站点根目录的路径，例如 wp-content/mu-plugins。"
+msgstr "One path relative to the site root per line, for example wp-content/mu-plugins."
+
+msgid "每页显示"
+msgstr "Per page"
+
+msgid "水平重复"
+msgstr "Repeat horizontally"
+
+msgid "永不缓存 Cookie（带着这些就不缓存）"
+msgstr "Never cache cookies (skip cache when these are present)"
+
+msgid "永不缓存 User Agent（这些浏览器不走缓存）"
+msgstr "Never cache User Agents (these browsers skip cache)"
+
+msgid "永不缓存网址（这些页面不存缓存）"
+msgstr "Never cache URLs (these pages are not stored)"
+
+msgid "没有任务。"
+msgstr "No task."
+
+msgid "没有可回滚的任务。"
+msgstr "No task to roll back."
+
+msgid "没有可终止的迁移任务。"
+msgstr "No migrate task to stop."
+
+msgid "没有已暂停的任务。"
+msgstr "No paused task."
+
+msgid "没有找到匹配的选项"
+msgstr "No matching options"
+
+msgid "没有找到导入数据"
+msgstr "No import data found"
+
+msgid "没有进行中的任务。"
+msgstr "No task in progress."
+
+msgid "法兰克福"
+msgstr "Frankfurt"
+
+msgid "法国（巴黎）"
+msgstr "France (Paris)"
+
+msgid "注意"
+msgstr "Note"
+
+msgid "注意：已关闭 WP-Cron。没有系统定时任务时，关网页后迁移可能不会继续。"
+msgstr "Note: WP-Cron is off. Without a system cron job, migrate may stop after you close the page."
+
+msgid "注意：当前只用 WordPress 定时任务。站点没有访客访问时，迁移会暂停，有人打开网站后才会继续。"
+msgstr "Note: this uses WordPress cron only. Migrate pauses when the site has no visitors and continues when someone opens the site."
+
+msgid "泰国（曼谷）"
+msgstr "Thailand (Bangkok)"
+
+msgid "测试中…"
+msgstr "Testing…"
+
+msgid "测试连接"
+msgstr "Test connection"
+
+msgid "测试连接（不保存当前填写）"
+msgstr "Test connection (does not save the current form)"
+
+msgid "深圳金融"
+msgstr "Shenzhen Finance"
+
+msgid "深圳金融云外网"
+msgstr "Shenzhen Finance public"
+
+msgid "添加一个外站"
+msgstr "Add a third-party host"
+
+msgid "添加一个文件"
+msgstr "Add a file"
+
+msgid "添加图片"
+msgstr "Add images"
+
+msgid "添加自定义颜色"
+msgstr "Add custom color"
+
+msgid "添加项目"
+msgstr "Add item"
+
+msgid "添加颜色"
+msgstr "Add color"
+
+msgid "清理"
+msgstr "Clean"
+
+msgid "清理不会在本页立即删库。批量删除将在后续版本接入。"
+msgstr "Cleanup on this page does not delete from the database immediately. Batch delete will ship later."
+
+msgid "清理中…"
+msgstr "Cleaning…"
+
+msgid "清理后会出现时间"
+msgstr "A timestamp appears after cleanup"
+
+msgid "清理完成。"
+msgstr "Cleanup complete."
+
+msgid "清理完成，本批处理 %d 条。"
+msgstr "Cleanup complete. This batch processed %d items."
+
+msgid "清理时删光修订（历史稿一份不留）"
+msgstr "Delete all revisions on cleanup (keep no history copies)"
+
+msgid "清理记录（扫描和清理留下的条目）"
+msgstr "Cleanup log (entries from scan and cleanup)"
+
+msgid "清理项目"
+msgstr "Clean items"
+
+msgid "清空"
+msgstr "Clear"
+
+msgid "清空中"
+msgstr "Clearing"
+
+msgid "清空全部"
+msgstr "Clear all"
+
+msgid "清空图标"
+msgstr "Clear icon"
+
+msgid "清空失败"
+msgstr "Clear failed"
+
+msgid "清空日志"
+msgstr "Clear logs"
+
+msgid "清空选择"
+msgstr "Clear selection"
+
+msgid "清空闪电缓存"
+msgstr "Clear ZapRocket cache"
+
+msgid "清空页面缓存"
+msgstr "Clear page cache"
+
+msgid "清除"
+msgstr "Clear"
+
+msgid "源码里会写你用的是哪一版 WordPress。有人觉得藏起来能少挨一些针对旧版本的扫描。"
+msgstr "The source includes which WordPress version you run. Hiding it can reduce scans that target old versions."
+
+msgid "滚动"
+msgstr "Scroll"
+
+msgid "点击下方按钮添加第一个项目"
+msgstr "Click the button below to add the first item"
+
+msgid "点击后展开侧栏「定制插件联系开发者」二维码"
+msgstr "Click to expand the sidebar “Contact the developer” QR code"
+
+msgid "点击或拖拽文件到此处"
+msgstr "Click or drop files here"
+
+msgid "点击查看完整内容"
+msgstr "Click to view full content"
+
+msgid "点击选择颜色"
+msgstr "Click to pick a color"
+
+msgid "点名预载某个文件"
+msgstr "Preload a specific file"
+
+msgid "点线"
+msgstr "Dotted"
+
+msgid "状态"
+msgstr "Status"
+
+msgid "现在"
+msgstr "Now"
+
+msgid "用 RAM 用户创建 AccessKey，不要用主账号密钥。"
+msgstr "Create AccessKey with a RAM user, not the root account key."
+
+msgid "用上面两个地址做一次替换，不会写进存储设置。首次请先备份数据库。"
+msgstr "Replace using the two URLs above. This is not saved to storage settings. Back up the database before the first replace."
+
+msgid "用了 CDN、统计或外链字体才需要。没有外链就不用加。只填主机名，不要带 http。"
+msgstr "Needed only if you use a CDN, analytics, or remote fonts. Skip if you have no third-party hosts. Enter hostnames only, without http."
+
+msgid "用子账号 SecretId / SecretKey，不要用登录密码。"
+msgstr "Use a sub-account SecretId / SecretKey, not the login password."
+
+msgid "用当前填写试连，不会保存。结果在按钮旁显示。"
+msgstr "Tests the current form without saving. The result appears beside the button."
+
+msgid "用本地默认图"
+msgstr "Use the local default image"
+
+msgid "用空间密钥上传，无需 Region / Endpoint。图片公网请填已绑定的加速域名。"
+msgstr "Upload with space keys; Region / Endpoint are not required. For public images enter the bound acceleration domain."
+
+msgid "留空表示不限制；仍会套用上方级别 / 通道 / 搜索筛选。"
+msgstr "Empty means no limit; level / channel / search filters above still apply."
+
+msgid "瘦身与速度按需打开。Delay JS、压缩、整页缓存确认站点后再开"
+msgstr "Turn on slim-down and speed as needed. Enable Delay JS, minify, and page cache only after you confirm the site"
+
+msgid "登录后看网站，页面最顶上那条 WordPress 黑条会藏起来。部分主题本来就会显示它。"
+msgstr "When viewing the site while logged in, the WordPress admin bar at the top is hidden. Some themes already show it."
+
+msgid "目标不存在。请检查桶名、区域和对象路径。"
+msgstr "Target does not exist. Check the bucket name, region, and object path."
+
+msgid "硅谷（美西）"
+msgstr "Silicon Valley (US West)"
+
+msgid "确定"
+msgstr "OK"
+
+msgid "确定删除全部"
+msgstr "Delete all"
+
+msgid "确定对已勾选的 %d 项执行「%s」？"
+msgstr "Apply this to %d selected items: %s?"
+
+msgid "确定导入"
+msgstr "Import"
+
+msgid "确定清空全部运行日志？此操作不可恢复。"
+msgstr "Clear all run logs? This cannot be undone."
+
+msgid "确定补齐"
+msgstr "Fill blanks"
+
+msgid "确定要删除已勾选的 %d 项吗？此操作不可撤销。"
+msgstr "Delete %d selected item(s)? This cannot be undone."
+
+msgid "确定要删除此项吗？"
+msgstr "Delete this item?"
+
+msgid "确定要将当前页面中的空白项补齐为默认值吗？已填写的内容不会被覆盖。"
+msgstr "Fill empty items on this page with defaults? Existing values will not be overwritten."
+
+msgid "确定要执行此操作吗？"
+msgstr "Do you want to continue?"
+
+msgid "确定要清空全部吗？"
+msgstr "Clear everything?"
+
+msgid "确定要清空当前表格中的所有数据吗？此操作不可撤销。"
+msgstr "Clear all rows in this table? This cannot be undone."
+
+msgid "确定要移除此项吗？"
+msgstr "Remove this item?"
+
+msgid "确定要移除这个媒体文件吗？"
+msgstr "Remove this media file?"
+
+msgid "确定要移除这个文件吗？"
+msgstr "Remove this file?"
+
+msgid "确定要重置当前页面的所有设置吗？此操作将恢复为默认值，操作不可撤销。"
+msgstr "Reset all settings on this page to defaults? This cannot be undone."
+
+msgid "确定要重置所有设置吗？此操作不可撤销。"
+msgstr "Reset all settings? This cannot be undone."
+
+msgid "确定重置"
+msgstr "Reset"
+
+msgid "确定？"
+msgstr "Are you sure?"
+
+msgid "确认"
+msgstr "Confirm"
+
+msgid "确认删除"
+msgstr "Confirm delete"
+
+msgid "确认回滚"
+msgstr "Confirm rollback"
+
+msgid "确认导入配置"
+msgstr "Confirm import"
+
+msgid "确认清空"
+msgstr "Confirm clear"
+
+msgid "确认移除"
+msgstr "Confirm remove"
+
+msgid "确认网关已开 S3 兼容 API，并准备公网域名。"
+msgstr "Confirm the gateway has S3-compatible API enabled and a public domain is ready."
+
+msgid "禁用 Emoji（少加载表情脚本）"
+msgstr "Disable Emoji (load fewer emoji scripts)"
+
+msgid "禁用 RSS（订阅器拿不到更新）"
+msgstr "Disable RSS (feed readers cannot get updates)"
+
+msgid "禁用 XML-RPC（关掉远程发文接口）"
+msgstr "Disable XML-RPC (turn off the remote publishing API)"
+
+msgid "禁用 oEmbed（文章里不自动变卡片）"
+msgstr "Disable oEmbed (do not auto-convert links into cards)"
+
+msgid "禁用管理黑条（前台不显示顶栏）"
+msgstr "Disable the admin bar (hide it on the front end)"
+
+msgid "禁用自己 Pingback（不给自己留引用）"
+msgstr "Disable self Pingback (do not ping your own site)"
+
+msgid "禁用访客 REST（没登录不能调接口）"
+msgstr "Disable visitor REST (logged-out users cannot call the API)"
+
+msgid "禁用评论（全站不能再评）"
+msgstr "Disable comments (no new comments site-wide)"
+
+msgid "秒"
+msgstr "Second"
+
+msgid "移除"
+msgstr "Remove"
+
+msgid "移除 REST 链接（页头不打印接口地址）"
+msgstr "Remove REST links (do not print API URLs in the head)"
+
+msgid "移除 RSD（远程发文链接）"
+msgstr "Remove RSD (remote publishing link)"
+
+msgid "移除 WP 版本号（少暴露版本）"
+msgstr "Remove WP version (expose less version info)"
+
+msgid "移除 jQuery Migrate（去掉老兼容脚本）"
+msgstr "Remove jQuery Migrate (drop the legacy compatibility script)"
+
+msgid "移除 wlwmanifest（老写博客软件用）"
+msgstr "Remove wlwmanifest (used by old blogging software)"
+
+msgid "移除 wp_head 中的多余输出：Feed、generator、RSD、wlwmanifest、shortlink、REST 发现链接等。"
+msgstr "Remove extra wp_head output: feeds, generator, RSD, wlwmanifest, shortlink, REST discovery links, and similar."
+
+msgid "移除媒体文件时出现错误"
+msgstr "Error while removing media"
+
+msgid "移除短链接（不要 ?p=123）"
+msgstr "Remove shortlinks (no ?p=123)"
+
+msgid "移除背景图片"
+msgstr "Remove background image"
+
+msgid "移除评论者网站（表单里不要网址栏）"
+msgstr "Remove commenter website (no URL field on the form)"
+
+msgid "移除颜色"
+msgstr "Remove color"
+
+msgid "稳定版"
+msgstr "Stable"
+
+msgid "空白项已按默认值补齐"
+msgstr "Empty items were filled with defaults"
+
+msgid "空间不存在，请检查空间名称。"
+msgstr "Space does not exist. Check the space name."
+
+msgid "站点瘦身"
+msgstr "Site slim-down"
+
+msgid "第 %1$d / %2$d 页"
+msgstr "Page %1$d of %2$d"
+
+msgid "第 %1$s / %2$s 页"
+msgstr "Page %1$s of %2$s"
+
+msgid "筛选已保存"
+msgstr "Filters saved"
+
+msgid "筛选选项…"
+msgstr "Filter options…"
+
+msgid "签名不匹配。请核对 SecretKey、区域，并校准服务器 UTC 时间。"
+msgstr "Signature mismatch. Check SecretKey, region, and server UTC time."
+
+msgid "签名区域。不确定可填 us-east-1。"
+msgstr "Signing region. If unsure, use us-east-1."
+
+msgid "签名区域填 us-east-1 或 auto。"
+msgstr "Signing region: us-east-1 or auto."
+
+msgid "类型"
+msgstr "Type"
+
+msgid "系列"
+msgstr "Series"
+
+msgid "系统"
+msgstr "System"
+
+msgid "系统信息"
+msgstr "System info"
+
+msgid "级别"
+msgstr "Level"
+
+msgid "纳入地图"
+msgstr "Include on map"
+
+msgid "组件库"
+msgstr "Component library"
+
+msgid "终止"
+msgstr "Stop"
+
+msgid "绑定自定义域名并完成 CNAME。国内站点域名需备案。"
+msgstr "Bind a custom domain and finish CNAME. Domains for sites in mainland China must be ICP-filed."
+
+msgid "结束"
+msgstr "End"
+
+msgid "结束日期"
+msgstr "End date"
+
+msgid "结果"
+msgstr "Result"
+
+msgid "给手机客户端、Jetpack、远程发文章用的老接口，也常被拿来撞密码。不用这些就关掉。不确定就别开。"
+msgstr "A legacy API for mobile apps, Jetpack, and remote publishing, also often used for password guessing. Turn it off if you do not need those. Leave it alone if you are unsure."
+
+msgid "给缺少宽高的图片补上 width / height。"
+msgstr "Add width / height to images that are missing dimensions."
+
+msgid "给脚本加上 defer，不挡页面排版。菜单、支付异常时关掉，或写进排除。"
+msgstr "Add defer to scripts so they do not block layout. Turn this off or add exclusions if menus or payments break."
+
+msgid "统一配置读写与校验，便于宿主接入"
+msgstr "Unified settings read/write and validation for hosts"
+
+msgid "继续"
+msgstr "Resume"
+
+msgid "缓存有效期（隔多久作废）"
+msgstr "Cache lifetime (how long until it expires)"
+
+msgid "编辑图片库"
+msgstr "Edit gallery"
+
+msgid "编辑时 WordPress 会自动存临时稿。超过这里填的天数，清理时才会删。"
+msgstr "While you edit, WordPress autosaves temporary drafts. Cleanup deletes them only after they exceed the days entered here."
+
+msgid "编辑时自动存的临时稿。超过保留天数的才会清。"
+msgstr "Temporary drafts created while editing. Only those older than the retention days are cleaned."
+
+msgid "编辑过程中堆积的历史稿、自动草稿和回收站内容。"
+msgstr "History copies, auto-drafts, and trash accumulated while editing."
+
+msgid "缩略图上传失败：%s"
+msgstr "Thumbnail upload failed: %s"
+
+msgid "缺少 ajaxurl"
+msgstr "Missing ajaxurl"
+
+msgid "缺少 field_id 或 ajaxurl"
+msgstr "Missing field_id or ajaxurl"
+
+msgid "缺少字段 id"
+msgstr "Missing field id"
+
+msgid "缺少选项 ID，请强制刷新后台后重试。"
+msgstr "Missing option ID. Hard-refresh the admin and try again."
+
+msgid "网址格式不正确。"
+msgstr "Invalid URL format."
+
+msgid "网址问号后面的叫查询参数。例如 https://你的站点/?utm_source=weixin 里的 utm_source。默认：带问号的地址不缓存，以免每个人看到的广告来源页都各存一份。若某种参数可以共用同一份缓存（常见是统计用的 utm_source、utm_medium），把参数名写在这里，每行一个，不要写成整段网址。不确定就留空。"
+msgstr "The part after the question mark in a URL is the query string. For example, utm_source in https://your-site/?utm_source=weixin. By default, URLs with a query string are not cached, so each ad-source page is not stored separately. If some parameters can share the same cache (often analytics such as utm_source and utm_medium), list those parameter names here, one per line, not a full URL. Leave empty if you are unsure."
+
+msgid "网站前台不要定时刷新"
+msgstr "Do not poll on the front end"
+
+msgid "美国（弗吉尼亚）"
+msgstr "United States (Virginia)"
+
+msgid "美国（硅谷）"
+msgstr "United States (Silicon Valley)"
+
+msgid "联系我们"
+msgstr "Contact us"
+
+msgid "背景位置"
+msgstr "Background position"
+
+msgid "背景图懒加载（CSS 背景也推迟）"
+msgstr "Lazy-load background images (also delay CSS backgrounds)"
+
+msgid "背景图片"
+msgstr "Background image"
+
+msgid "背景尺寸"
+msgstr "Background size"
+
+msgid "背景重复"
+msgstr "Background repeat"
+
+msgid "背景附着"
+msgstr "Background attachment"
+
+msgid "背景颜色"
+msgstr "Background color"
+
+msgid "脚本 JS（慎用）"
+msgstr "JavaScript (use with care)"
+
+msgid "腾讯云 APPID"
+msgstr "Tencent Cloud APPID"
+
+msgid "腾讯云 COS"
+msgstr "Tencent Cloud COS"
+
+msgid "腾讯云区域"
+msgstr "Tencent Cloud region"
+
+msgid "腾讯云账号 APPID，纯数字。"
+msgstr "Tencent Cloud account APPID (digits only)."
+
+msgid "自动"
+msgstr "Auto"
+
+msgid "自动保存"
+msgstr "Autosave"
+
+msgid "自动保存间隔（写文章多久存一次）"
+msgstr "Autosave interval (how often to save while editing)"
+
+msgid "自动清理周期（多久跑一次）"
+msgstr "Scheduled cleanup interval (how often it runs)"
+
+msgid "自动清理和手动清理时，每篇最多留几份。拉到 0 表示不按份数删修订（不限制）。若要清光历史稿，请勾选下面的「清理时删光修订」。"
+msgstr "On automatic and manual cleanup, keep at most this many copies per post. 0 means do not delete revisions by count (no limit). To wipe history, check Delete all revisions on cleanup below."
+
+msgid "自动清理时是否顺便回收表空间。对常见 InnoDB 效果有限，大网站请在半夜再开。"
+msgstr "Whether scheduled cleanup also reclaims table space. Effect is limited on typical InnoDB. On large sites, enable it overnight."
+
+msgid "自动滚动"
+msgstr "Auto-scroll"
+
+msgid "自动草稿"
+msgstr "Auto-drafts"
+
+msgid "自动草稿保留（超过几天再删）"
+msgstr "Auto-draft retention (delete after how many days)"
+
+msgid "自动草稿（编辑时临时存的稿）"
+msgstr "Auto-drafts (temporary copies while editing)"
+
+msgid "自定义 / 加速域名（公网看图）"
+msgstr "Custom / acceleration domain (public images)"
+
+msgid "自定义 S3"
+msgstr "Custom S3"
+
+msgid "自定义前缀 + 清理后的原名"
+msgstr "Custom prefix + cleaned original name"
+
+msgid "自定义加速域名（公网看图）。"
+msgstr "Custom acceleration domain (public images)."
+
+msgid "自定义加速域名（公网看图）。不要填 *.myqcloud.com。"
+msgstr "Custom acceleration domain (public images). Do not use *.myqcloud.com."
+
+msgid "自定义加速域名（公网看图）。不要填 oss-*.aliyuncs.com。"
+msgstr "Custom acceleration domain (public images). Do not use oss-*.aliyuncs.com."
+
+msgid "自定义域名必须完成 CNAME / DNS 解析后才能公网访问。"
+msgstr "The custom domain must finish CNAME / DNS before it is reachable on the public internet."
+
+msgid "自定义域名必须完成 CNAME；中国内地请使用已备案域名。"
+msgstr "The custom domain must finish CNAME. In mainland China use an ICP-filed domain."
+
+msgid "自定义域名需完成 CNAME；中国内地站点请使用已备案域名。"
+msgstr "The custom domain needs CNAME. Sites in mainland China should use an ICP-filed domain."
+
+msgid "自定义文件名前缀"
+msgstr "Custom file name prefix"
+
+msgid "至少 %1$d 项，最多 %2$d 项"
+msgstr "At least %1$d and at most %2$d items"
+
+msgid "至少 %d 项"
+msgstr "At least %d items"
+
+msgid "至少需要上传 {min} 张图片"
+msgstr "Upload at least {min} images"
+
+msgid "至少需要保留 %d 个项目"
+msgstr "Keep at least %d items"
+
+msgid "至少需要选择 %d 项"
+msgstr "Select at least %d items"
+
+msgid "色相"
+msgstr "Hue"
+
+msgid "英国（伦敦）"
+msgstr "United Kingdom (London)"
+
+msgid "范围"
+msgstr "Range"
+
+msgid "获取密钥步骤"
+msgstr "How to get keys"
+
+msgid "菜单组 %d"
+msgstr "Menu group %d"
+
+msgid "菲律宾（马尼拉）"
+msgstr "Philippines (Manila)"
+
+msgid "虚线"
+msgstr "Dashed"
+
+msgid "行号"
+msgstr "Line number"
+
+msgid "补全图片尺寸（减少布局跳动）"
+msgstr "Add image dimensions (reduce layout shift)"
+
+msgid "补齐空白项失败"
+msgstr "Failed to fill empty items"
+
+msgid "表内总条数"
+msgstr "Rows in table"
+
+msgid "表单 JSON 为空，数据库未改动。请刷新页面后重试。"
+msgstr "Form JSON is empty. The database was not changed. Refresh and try again."
+
+msgid "表单 JSON 缺少配置根节点，数据库未改动。请强制刷新后重试。"
+msgstr "Form JSON is missing the settings root. The database was not changed. Hard-refresh and try again."
+
+msgid "表单 JSON 解析失败（可能被截断或损坏），数据库未改动。请刷新页面后重试。"
+msgstr "Form JSON could not be parsed (truncated or damaged). The database was not changed. Refresh and try again."
+
+msgid "表单 JSON 解析失败，数据库未改动。"
+msgstr "Form JSON could not be parsed. The database was not changed."
+
+msgid "表单数据过大或无法序列化，请缩小本次保存范围后重试。"
+msgstr "The form is too large or cannot be serialized. Save a smaller range and try again."
+
+msgid "表情是小小的心情图标，好玩，但很多网站并不需要。开了会少加载一套转换脚本，页面轻一点。手机输入法自带的表情一般不受影响。"
+msgstr "Emoji are small mood icons. Fun, but many sites do not need them. Turning this on loads fewer conversion scripts and lightens the page. Emoji from mobile keyboards are usually unaffected."
+
+msgid "表格"
+msgstr "Table"
+
+msgid "表格刷新失败"
+msgstr "Table refresh failed"
+
+msgid "表格字段类未加载"
+msgstr "Table field class is not loaded"
+
+msgid "表格数据加载中…"
+msgstr "Loading table data…"
+
+msgid "表里已有记录"
+msgstr "Existing rows in the table"
+
+msgid "西北 2（中卫）"
+msgstr "Northwest 2 (Zhongwei)"
+
+msgid "西南 1（成都）"
+msgstr "Southwest 1 (Chengdu)"
+
+msgid "要改写正文的内容类型"
+msgstr "Content types to rewrite"
+
+msgid "要替换的旧地址"
+msgstr "Old URL to replace"
+
+msgid "覆盖"
+msgstr "Cover"
+
+msgid "警告"
+msgstr "Warning"
+
+msgid "警告：这将删除所有配置数据！此操作不可撤销，确定要重置全部设置吗？操作不可撤销。"
+msgstr "Warning: this deletes all settings data and cannot be undone. Reset everything?"
+
+msgid "警示"
+msgstr "Caution"
+
+msgid "计算中…"
+msgstr "Calculating…"
+
+msgid "记下账号 APPID，创建存储桶并选择地域。"
+msgstr "Note the account APPID, create a bucket, and pick a region."
+
+msgid "记录对象存储连通测试失败"
+msgstr "Log object-storage connection-test failures"
+
+msgid "记录条数"
+msgstr "Log entries"
+
+msgid "设置媒体文件时出现错误"
+msgstr "Error while setting media"
+
+msgid "设置已保存"
+msgstr "Settings saved"
+
+msgid "设置已保存。"
+msgstr "Settings saved."
+
+msgid "设置已保存，但部分字段验证未通过，已保留原值"
+msgstr "Settings saved, but some fields failed validation and kept their previous values"
+
+msgid "设置已保存，但部分字段验证未通过，已保留原值。"
+msgstr "Settings saved, but some fields failed validation and kept their previous values."
+
+msgid "设置已重置"
+msgstr "Settings were reset"
+
+msgid "设置面板"
+msgstr "Settings panel"
+
+msgid "设置页加载失败"
+msgstr "Settings page failed to load"
+
+msgid "访客动手之前先不执行脚本，提速更明显，也更容易弄坏菜单、轮播。开启后「合并 JS」不生效。"
+msgstr "Scripts do not run until the visitor interacts. Speed gains are larger, but menus and carousels break more easily. Combine JS has no effect when this is on."
+
+msgid "访客接口"
+msgstr "Visitor API"
+
+msgid "访客还没点，只是鼠标在站内文章/栏目链接上停一下，浏览器会先偷偷下一点。点进去会感觉快。不用填任何地址。后台编辑时不会开。"
+msgstr "Before the visitor clicks, hovering a post or archive link on this site lets the browser fetch a little in advance, so the next page feels faster. You do not enter any URLs. This stays off in the admin editor."
+
+msgid "访问官网"
+msgstr "Visit website"
+
+msgid "评论"
+msgstr "Comments"
+
+msgid "评论头像"
+msgstr "Comment avatars"
+
+msgid "评论头像来源。"
+msgstr "Comment avatar source."
+
+msgid "评论表单里默认有一个「网站」栏，会给评论者加外链。去掉后，垃圾评论少一点，页面也干净一点。"
+msgstr "The comment form includes a Website field that adds an outbound link for the commenter. Removing it reduces spam a bit and keeps the page cleaner."
+
+msgid "该时间段内没有可导出的日志"
+msgstr "No logs to export in this time range"
+
+msgid "该记录不存在"
+msgstr "Record not found"
+
+msgid "详情"
+msgstr "Details"
+
+msgid "语言切换失败。"
+msgstr "Language switch failed."
+
+msgid "说明"
+msgstr "Notes"
+
+msgid "请先勾选要清理的项目。"
+msgstr "Select the items to clean first."
+
+msgid "请先勾选风险确认。"
+msgstr "Check the risk confirmation first."
+
+msgid "请先打开一个配置页面，再保存当前页。"
+msgstr "Open a settings page first, then save the current page."
+
+msgid "请先打开一个配置页面，再补齐空白项。"
+msgstr "Open a settings page first, then fill empty items."
+
+msgid "请先打开一个配置页面，再重置当前页。"
+msgstr "Open a settings page first, then reset the current page."
+
+msgid "请先选择要删除的图片。"
+msgstr "Select images to delete first."
+
+msgid "请填写完整的 http:// 或 https:// 地址。"
+msgstr "Enter a full http:// or https:// URL."
+
+msgid "请填写完整网址，必须以 http:// 或 https:// 开头。"
+msgstr "Enter a full URL starting with http:// or https://."
+
+msgid "请填写已绑定的自定义加速域名，否则前台不会改写为云上地址。"
+msgstr "Enter a bound custom acceleration domain, or the front end will not rewrite to cloud URLs."
+
+msgid "请填写有效的邮箱地址。"
+msgstr "Enter a valid email address."
+
+msgid "请填写腾讯云 APPID。未填写时无法保存对象存储设置。"
+msgstr "Enter the Tencent Cloud APPID. Settings cannot be saved without it."
+
+msgid "请填写腾讯云 APPID，保存时会自动拼成 桶名-APPID。"
+msgstr "Enter the Tencent Cloud APPID. On save it is joined as bucket-APPID."
+
+msgid "请填写要替换的旧地址和新地址。"
+msgstr "Enter the old URL and the new URL to replace."
+
+msgid "请求失败。"
+msgstr "Request failed."
+
+msgid "请求失败，请刷新后重试。"
+msgstr "The request failed. Refresh and try again."
+
+msgid "请求过于频繁，对象存储已限流，请稍后重试。"
+msgstr "Too many requests; object storage is rate-limiting. Try again later."
+
+msgid "请确保字段类 \"%s\" 已正确加载"
+msgstr "Make sure field class \"%s\" is loaded"
+
+msgid "请至少选择文章或页面。"
+msgstr "Select at least posts or pages."
+
+msgid "请输入内容…"
+msgstr "Enter content…"
+
+msgid "请输入有效的URL地址"
+msgstr "Enter a valid URL"
+
+msgid "请输入有效的数字"
+msgstr "Enter a valid number"
+
+msgid "请输入有效的日期格式：%s"
+msgstr "Enter a valid date format: %s"
+
+msgid "请输入有效的邮箱地址"
+msgstr "Enter a valid email address"
+
+msgid "请输入有效的颜色值"
+msgstr "Enter a valid color value"
+
+msgid "请选择JSON格式的配置文件"
+msgstr "Choose a JSON settings file"
+
+msgid "请选择…"
+msgstr "Select…"
+
+msgid "请选择日期"
+msgstr "Select a date"
+
+msgid "请选择时间"
+msgstr "Select a time"
+
+msgid "调色板"
+msgstr "Palette"
+
+msgid "调试"
+msgstr "Debug"
+
+msgid "谨慎"
+msgstr "Caution"
+
+msgid "账号 APPID，纯数字。保存时会与桶名拼成 桶名-APPID。未填写时无法保存。"
+msgstr "Account APPID (digits only). On save it is joined as bucket-APPID. Cannot save if empty."
+
+msgid "资源预载"
+msgstr "Resource preload"
+
+msgid "走 Cravatar 镜像"
+msgstr "Use the Cravatar mirror"
+
+msgid "超出最大长度"
+msgstr "Maximum length exceeded"
+
+msgid "超出范围"
+msgstr "Out of range"
+
+msgid "跟随 WordPress（仅本插件）"
+msgstr "Follow WordPress (this plugin only)"
+
+msgid "较安全"
+msgstr "Safer"
+
+msgid "输入"
+msgstr "Input"
+
+msgid "输入格式不正确"
+msgstr "Invalid input format"
+
+msgid "输入颜色值"
+msgstr "Enter a color value"
+
+msgid "输出格式"
+msgstr "Output format"
+
+msgid "边框宽度"
+msgstr "Border width"
+
+msgid "边框样式"
+msgstr "Border style"
+
+msgid "边框预览"
+msgstr "Border preview"
+
+msgid "边框预览效果"
+msgstr "Border preview"
+
+msgid "边框颜色"
+msgstr "Border color"
+
+msgid "迁移"
+msgstr "Migrate"
+
+msgid "迁移任务已创建，开始扫描媒体库。"
+msgstr "Migrate task created. Scanning the media library."
+
+msgid "迁移任务已完成。"
+msgstr "Migrate task finished."
+
+msgid "迁移日志（轮询约 120 条，首屏最多约 200 条）"
+msgstr "Migrate logs (about 120 via polling, up to about 200 on first load)"
+
+msgid "迁移正在运行，不能同时回滚正文。请先暂停或等待完成。"
+msgstr "Migrate is running; content rollback cannot run at the same time. Pause or wait until it finishes."
+
+msgid "迁移进度"
+msgstr "Migrate progress"
+
+msgid "过期临时数据"
+msgstr "Expired transients"
+
+msgid "过期临时数据（过期缓存）"
+msgstr "Expired transients (expired cache)"
+
+msgid "过期缓存和已经没主数据的附加信息。"
+msgstr "Expired cache and leftover data whose parent is gone."
+
+msgid "过期记录由定时任务删除。默认 30 天。"
+msgstr "Expired records are deleted by a scheduled task. Default 30 days."
+
+msgid "运行日志"
+msgstr "Run log"
+
+msgid "运行日志记录失败与清理结果，前台缓存命中不会写入"
+msgstr "The run log records failures and cleanup results; front-end cache hits are not written"
+
+msgid "近 24 小时 · 信息"
+msgstr "Last 24 hours · info"
+
+msgid "近 24 小时 · 警告"
+msgstr "Last 24 hours · warning"
+
+msgid "近 24 小时 · 错误"
+msgstr "Last 24 hours · error"
+
+msgid "近1小时"
+msgstr "Last 1 hour"
+
+msgid "近24小时"
+msgstr "Last 24 hours"
+
+msgid "近7天"
+msgstr "Last 7 days"
+
+msgid "还可输入 %d 字"
+msgstr "%d characters remaining"
+
+msgid "还没有写入"
+msgstr "Nothing written yet"
+
+msgid "还没有清理记录"
+msgstr "No cleanup records yet"
+
+msgid "这个前缀会加在桶内文件路径最前面，用来区分「这张图属于哪个网站」。多个网站共用同一个存储桶时，如果都用默认的 wp-content/uploads，路径会撞在一起（都是 wp-content/uploads/2026/10/xxx.jpg），后传的可能盖掉先传的。每个站点请填不同前缀，例如本站填 site2_uploads，桶内就是 site2_uploads/2026/10/xxx.jpg，另一个站填 site1_uploads。只填目录名，不要带域名，不要以斜杠开头或结尾。不填时默认 wp-content/uploads，和 WordPress 媒体库目录一致。原图和缩略图都会带上；从媒体库删除附件时，也会按带前缀的路径删除云上文件。不要填写 ../。"
+msgstr "This prefix is prepended to object keys so you can tell which site an image belongs to. If several sites share one bucket and all use the default wp-content/uploads, paths collide (all wp-content/uploads/2026/10/xxx.jpg) and a later upload can overwrite an earlier one. Give each site a different prefix, for example site2_uploads on this site (objects become site2_uploads/2026/10/xxx.jpg) and site1_uploads on another. Enter a directory name only, with no domain and no leading or trailing slash. If left empty, wp-content/uploads is used, matching the WordPress media directory. Originals and thumbnails both get the prefix; deleting an attachment from the media library also deletes the prefixed cloud object. Do not enter ../."
+
+msgid "这是给 Windows Live Writer 用的。现在几乎没人用那个软件写博客，可以去掉。"
+msgstr "This is for Windows Live Writer. Almost nobody uses that software to blog now, so it can be removed."
+
+msgid "这是给很老的 jQuery 写法做兼容的，会多占一点加载。多数新主题可以去掉。只改前台，后台编辑器不动。去掉后前台脚本报错，再把本项关掉。"
+msgstr "This keeps compatibility with very old jQuery code and adds a little load. Most modern themes can drop it. Front end only; the admin editor is unchanged. If front-end scripts error after removal, turn this option off."
+
+msgid "这是高风险功能：会把历史媒体上传到对象存储，并改写所选内容类型正文里的图片地址。关闭本页不会中止后台队列。回滚只还原已备份的正文链接，不会删除云上文件，也不会清除附件的云标记。默认不删除本地文件。"
+msgstr "This is high risk: historical media is uploaded to object storage, and image URLs in the selected content types are rewritten. Closing this page does not stop the background queue. Rollback restores only backed-up content URLs. It does not delete cloud files or clear attachment cloud flags. Local files are not deleted by default."
+
+msgid "这里做不改存储配置的快捷操作。数据库原链接替换只改文章正文和自定义字段里已经写死的地址，不会上传文件。失败记录是上传没成功的附件，可重试或忽略。首次替换请先备份数据库。密钥、桶和域名请到「存储设置」里改。"
+msgstr "Quick actions that do not change storage settings. Database URL replace only updates hard-coded URLs in post content and custom fields; it does not upload files. Failed records are attachments that did not upload; you can retry or dismiss. Back up the database before the first replace. Change keys, bucket, and domain under Storage settings."
+
+msgid "这里管「留多少、隔多久自动清」。真正动手删数据请去「垃圾清理」。未勾选整理数据表时，定时任务不会去整理表。"
+msgstr "This screen sets how much to keep and how often to clean automatically. Actual deletion is under Cleanup. Tables are not optimized unless that item is selected."
+
+msgid "这里记插件运行与错误，包括数据库扫描、手动清理和定时清理。对象存储「快捷操作」里的失败记录仍保留。前台缓存命中不会写入。"
+msgstr "This records plugin runs and errors, including database scans, manual cleanup, and scheduled cleanup. Failed-upload records on object-storage Quick actions stay there. Front-end cache hits are not written."
+
+msgid "进入全屏"
+msgstr "Enter fullscreen"
+
+msgid "进度"
+msgstr "Progress"
+
+msgid "进行中"
+msgstr "In progress"
+
+msgid "连接失败。"
+msgstr "Connection failed."
+
+msgid "连接失败（HTTP %d）。请核对密钥、Bucket、Region、Endpoint。"
+msgstr "Connection failed (HTTP %d). Check the key, Bucket, Region, and Endpoint."
+
+msgid "连接对象存储超时。请检查服务器网络和防火墙。"
+msgstr "Timed out connecting to object storage. Check server network and firewall."
+
+msgid "连接成功。"
+msgstr "Connection succeeded."
+
+msgid "连连接也建好（适合 CDN / 字体）"
+msgstr "Also establish the connection (good for CDN / fonts)"
+
+msgid "退出全屏"
+msgstr "Exit fullscreen"
+
+msgid "退出批量"
+msgstr "Exit bulk"
+
+msgid "适合全站都会用到的 Logo、主样式、字体文件。可从媒体库复制链接。不知道地址就用上面的「预载首屏图」。"
+msgstr "Use this for site-wide Logo, main styles, and font files. You can copy the URL from the Media Library. If you do not know the URL, use Preload above-the-fold images above."
+
+msgid "选择"
+msgstr "Select"
+
+msgid "选择位置"
+msgstr "Choose position"
+
+msgid "选择图标"
+msgstr "Select icon"
+
+msgid "选择图标..."
+msgstr "Select icon..."
+
+msgid "选择图片"
+msgstr "Select images"
+
+msgid "选择媒体"
+msgstr "Select media"
+
+msgid "选择尺寸"
+msgstr "Choose size"
+
+msgid "选择年份"
+msgstr "Choose year"
+
+msgid "选择插件界面语言"
+msgstr "Choose plugin UI language"
+
+msgid "选择文件"
+msgstr "Select file"
+
+msgid "选择时间"
+msgstr "Select time"
+
+msgid "选择月份"
+msgstr "Choose month"
+
+msgid "选择的值无效"
+msgstr "Invalid selected value"
+
+msgid "选择第 %d 行"
+msgstr "Select row %d"
+
+msgid "选择背景图片"
+msgstr "Select background image"
+
+msgid "选择要改写的内容类型"
+msgstr "Choose content types to rewrite"
+
+msgid "选择重复方式"
+msgstr "Choose repeat"
+
+msgid "选择附着方式"
+msgstr "Choose attachment"
+
+msgid "选择颜色"
+msgstr "Select color"
+
+msgid "选项为官方专用 Region ID，可输入中文或 ID 筛选。接口地址由插件自动拼接。"
+msgstr "Options are official Region IDs. Filter by Chinese name or ID. The plugin builds the API URL."
+
+msgid "选项为官方地域简称，可输入中文或 ID 筛选。接口地址由插件自动生成。"
+msgstr "Options are official region short codes. Filter by Chinese name or ID. The plugin builds the API URL."
+
+msgid "通过"
+msgstr "Passed"
+
+msgid "通道"
+msgstr "Channel"
+
+msgid "速度优化"
+msgstr "Speed"
+
+msgid "遇到问题可查阅文档或联系霹雳设计团队"
+msgstr "If something goes wrong, read the docs or contact PILI Design"
+
+msgid "部分字段未出现在 POST 中，已通过 preserve_existing 保留库中旧值。"
+msgstr "Some fields were missing from POST. Previous database values were kept via preserve_existing."
+
+msgid "部分字段未通过验证"
+msgstr "Some fields failed validation"
+
+msgid "部分已保存"
+msgstr "Partially saved"
+
+msgid "配置保存在 WordPress 选项表，支持导入导出与重置"
+msgstr "Settings live in the WordPress options table and support import, export, and reset"
+
+msgid "配置包不含会员授权状态。"
+msgstr "The settings package does not include license status."
+
+msgid "配置字段尚未就绪，请刷新设置页后重试导入"
+msgstr "Settings fields are not ready. Refresh the settings page and import again."
+
+msgid "配置导入失败"
+msgstr "Settings import failed"
+
+msgid "配置导入成功"
+msgstr "Settings imported"
+
+msgid "配置文件与当前选项不匹配"
+msgstr "The settings file does not match the current options"
+
+msgid "配置文件中没有找到选项数据"
+msgstr "No option data was found in the settings file"
+
+msgid "配置文件格式错误"
+msgstr "The settings file format is invalid"
+
+msgid "配置文件格式错误，请检查文件内容"
+msgstr "The settings file format is invalid. Check the file contents."
+
+msgid "配置文件过大（上限 5MB）"
+msgstr "The settings file is too large (5 MB limit)"
+
+msgid "配置错误"
+msgstr "Config error"
+
+msgid "重命名规则"
+msgstr "Rename rule"
+
+msgid "重复"
+msgstr "Repeat"
+
+msgid "重复器"
+msgstr "Repeater"
+
+msgid "重复器字段ID \"%s\" 与父级字段冲突，请使用不同的字段ID。"
+msgstr "Repeater field ID \"%s\" conflicts with the parent field. Use a different field ID."
+
+msgid "重庆"
+msgstr "Chongqing"
+
+msgid "重新扫描"
+msgstr "Rescan"
+
+msgid "重新显示合规说明"
+msgstr "Show the compliance note again"
+
+msgid "重置"
+msgstr "Reset"
+
+msgid "重置为默认值"
+msgstr "Reset to defaults"
+
+msgid "重置全部"
+msgstr "Reset all"
+
+msgid "重置失败"
+msgstr "Reset failed"
+
+msgid "重置当前页"
+msgstr "Reset current page"
+
+msgid "重置当前页面"
+msgstr "Reset this page"
+
+msgid "重置成功"
+msgstr "Reset complete"
+
+msgid "重置空白项"
+msgstr "Fill empty items"
+
+msgid "重置过程中发生网络错误，请稍后重试"
+msgstr "A network error occurred while resetting. Try again later."
+
+msgid "重置过程中发生错误"
+msgstr "An error occurred while resetting"
+
+msgid "重试"
+msgstr "Retry"
+
+msgid "金融云"
+msgstr "Finance cloud"
+
+msgid "金融云外网"
+msgstr "Finance cloud public"
+
+msgid "鉴权失败。请核对 AccessKey 和 SecretKey。"
+msgstr "Authentication failed. Check AccessKey and SecretKey."
+
+#. Description of the plugin
+msgid "针对 WordPress 的性能优化：站点瘦身、CDN / 预载 / 懒加载 / 脚本、可选整页缓存、对象存储、数据库清理。"
+msgstr "Performance optimization for WordPress: site slim-down, CDN / preload / lazy load / scripts, optional page cache, object storage, and database cleanup."
+
+msgid "错误"
+msgstr "Error"
+
+msgid "错误：未定义字段结构"
+msgstr "Error: field structure is not defined"
+
+msgid "长度不能少于 %d 个字符"
+msgstr "Length must be at least %d characters"
+
+msgid "长度不能超过 %d 个字符"
+msgstr "Length must be at most %d characters"
+
+#. Plugin Name of the plugin
+msgid "闪电WP性能"
+msgstr "ZapRocket"
+
+msgid "闪电WP性能 %s"
+msgstr "ZapRocket %s"
+
+msgid "闪电WP性能:"
+msgstr "ZapRocket:"
+
+msgid "闪电WP性能：站点瘦身、速度优化、对象存储、数据库清理。总开关激活后基础瘦身可用。Delay JS、压缩、整页缓存默认关，要管理员自己打开。卸载默认不删配置和缓存。整页缓存在主题查询之后才读文件，第一次访问仍会完整跑 WordPress。"
+msgstr "ZapRocket: site slim-down, speed, object storage, and database cleanup. Basic slim-down works after the master switch is on. Delay JS, minify, and page cache stay off until an admin enables them. Uninstall does not delete settings or cache by default. Page cache reads the file after the theme query, so the first visit still runs WordPress fully."
+
+msgid "阿联酋（迪拜）"
+msgstr "UAE (Dubai)"
+
+msgid "阿里云 OSS"
+msgstr "Alibaba Cloud OSS"
+
+msgid "阿里云、腾讯云、R2、七牛与兼容 S3。自定义域名、桶内前缀与一键迁移。"
+msgstr "Aliyun, Tencent Cloud, R2, Qiniu, and S3-compatible storage. Custom domain, bucket prefix, and one-click migrate."
+
+msgid "阿里云区域（Region ID）"
+msgstr "Alibaba Cloud region (Region ID)"
+
+msgid "附件"
+msgstr "Attachments"
+
+msgid "降序"
+msgstr "Descending"
+
+msgid "隐藏密码"
+msgstr "Hide password"
+
+msgid "雅加达"
+msgstr "Jakarta"
+
+msgid "霹雳 PILI"
+msgstr "PILI"
+
+msgid "霹雳设计出品"
+msgstr "By PILI Design"
+
+msgid "非中国内地加速"
+msgstr "Acceleration outside mainland China"
+
+msgid "韩国（首尔）"
+msgstr "South Korea (Seoul)"
+
+msgid "页头冗余、Emoji、访客 REST、心跳与评论头像。不确定的项保持关闭。"
+msgstr "Head clutter, Emoji, visitor REST, Heartbeat, and comment avatars. Leave anything you are unsure about off."
+
+msgid "页头清理"
+msgstr "Head cleanup"
+
+msgid "页面"
+msgstr "Pages"
+
+msgid "页面不存在"
+msgstr "Page not found"
+
+msgid "页面缓存写入失败。"
+msgstr "Failed to write page cache."
+
+msgid "页面缓存最多留多久。到期后下次访问会重新生成。拉到 0 表示一直留着、不按时间作废。拿不准就保持 10，单位在下面选小时或天。"
+msgstr "How long page cache is kept. After it expires, the next visit regenerates it. 0 means keep it forever with no time-based expiry. If you are unsure, keep 10 and choose hours or days below."
+
+msgid "页面里 YouTube 视频较多时，能明显加快加载。"
+msgstr "Helps a lot when a page has many YouTube videos."
+
+msgid "项目"
+msgstr "Item"
+
+msgid "项目 %d"
+msgstr "Item %d"
+
+msgid "预估体积仅作为参考，实际释放空间以清理完成后为准。"
+msgstr "Size estimates are approximate. Actual freed space is known after cleanup."
+
+msgid "预估大小"
+msgstr "Estimated size"
+
+msgid "预加载字体（字更早点出来）"
+msgstr "Preload fonts (text appears sooner)"
+
+msgid "预检不通过时不能启动。连通性会在点启动时再测一次。"
+msgstr "Cannot start if preflight fails. Connectivity is tested again when you click Start."
+
+msgid "预检未通过"
+msgstr "Preflight failed"
+
+msgid "预检未通过，不能启动迁移。"
+msgstr "Preflight failed; migrate cannot start."
+
+msgid "预检通过。"
+msgstr "Preflight passed."
+
+msgid "预览效果："
+msgstr "Preview:"
+
+msgid "预览模式"
+msgstr "Preview mode"
+
+msgid "预计体积"
+msgstr "Estimated size"
+
+msgid "预设颜色"
+msgstr "Preset colors"
+
+msgid "预载字体文件时请打开。普通本站图片、CSS 不用开。"
+msgstr "Turn this on when preloading font files. Ordinary local images and CSS do not need it."
+
+msgid "预载文件（点名提前下载）"
+msgstr "Preload files (download these early)"
+
+msgid "预载链接（鼠标悬停先下载那一页）"
+msgstr "Prefetch links (download that page on hover)"
+
+msgid "预载首屏图（最上头几张图提前下）"
+msgstr "Preload above-the-fold images (download the first few images early)"
+
+msgid "预载首屏字体，减轻文字跳动。"
+msgstr "Preload above-the-fold fonts to reduce text shift."
+
+msgid "颜色"
+msgstr "Color"
+
+msgid "颜色值"
+msgstr "Color value"
+
+msgid "颜色已复制"
+msgstr "Color copied"
+
+msgid "额外路径（还要包含这些）"
+msgstr "Extra paths (also include these)"
+
+msgid "风险"
+msgstr "Risk"
+
+msgid "首尔"
+msgstr "Seoul"
+
+msgid "马来西亚（吉隆坡）"
+msgstr "Malaysia (Kuala Lumpur)"
+
+msgid "马来西亚（柔佛州）"
+msgstr "Malaysia (Johor)"
+
+msgid "高级规则"
+msgstr "Advanced rules"
+
+msgid "高风险项默认关闭，按需打开后再保存"
+msgstr "High-risk options stay off by default; turn them on only as needed, then save"
+
+msgid "高风险默认关"
+msgstr "High-risk options off by default"
+
+msgid "默认关。打开后文章、页面都不能再评，主题评论区会显示关闭，不会白屏。还要互动就别开。"
+msgstr "Off by default. When on, posts and pages cannot receive new comments. Theme comment areas show as closed and will not go blank. Leave this off if you still want discussion."
+
+msgid "默认关闭"
+msgstr "Off by default"
+
+msgid "默认关闭，避免反复点「测试连接」刷屏。打开后，测试失败会写入本页（成功仍不记）。"
+msgstr "Off by default so repeated Test connection clicks do not flood the log. When on, failed tests are written here (successes are still omitted)."
+
+msgid "默认大约每 60 秒存一次草稿。存稀一点能少写数据库。"
+msgstr "By default a draft is saved about every 60 seconds. Saving less often writes to the database less."
+
+msgid "默认掩码显示，可点右侧眼睛查看。保存前去掉首尾空格。"
+msgstr "Masked by default; click the eye on the right to reveal. Trim leading and trailing spaces before save."
+
+msgid "默认掩码显示，可点右侧眼睛查看。单独加密保存，不会写入普通配置。"
+msgstr "Masked by default; click the eye on the right to reveal. Stored encrypted; not written to ordinary settings."
+
+msgid "默认文章和页面。可多选；自定义类型请在下拉里勾上。至少选一项才能启动。"
+msgstr "Posts and pages by default. Multiple types allowed; check custom types in the dropdown. Select at least one to start."
+
+msgid "默认走国外头像。本地默认图用站点自己的图；禁用就不显示头像；镜像走 Cravatar。"
+msgstr "Uses remote avatars by default. Local default image uses this site’s image; Disable hides avatars; Mirror uses Cravatar."
+
+msgid "（无内容）"
+msgstr "(empty)"

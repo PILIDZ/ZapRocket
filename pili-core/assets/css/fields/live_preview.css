@@ -1,0 +1,49 @@
+/**
+ * XUN live_preview field
+ */
+
+.pili-live-preview {
+	width: 100%;
+}
+
+.pili-live-preview__hint {
+	margin: 0 0 0.5rem;
+	font-size: 0.75rem;
+	line-height: 1.5;
+	color: #6b7280;
+}
+
+.pili-live-preview__stage {
+	width: 100%;
+	padding: 1rem 1.1rem;
+	border: 1px dashed #d1d5db;
+	border-radius: 0.75rem;
+	background:
+		linear-gradient(180deg, #f9fafb 0%, #ffffff 48%),
+		repeating-linear-gradient(
+			-45deg,
+			rgba(15, 23, 42, 0.03),
+			rgba(15, 23, 42, 0.03) 6px,
+			transparent 6px,
+			transparent 12px
+		);
+}
+
+.pili-live-preview__canvas {
+	pointer-events: none;
+	user-select: none;
+}
+
+.pili-live-preview__canvas .pilipost-ae {
+	margin-bottom: 0;
+}
+
+.pili-live-preview__empty {
+	margin: 0;
+	font-size: 0.8125rem;
+	color: #9ca3af;
+}
+
+.pili-live-preview.is-updating .pili-live-preview__stage {
+	border-color: #93c5fd;
+}

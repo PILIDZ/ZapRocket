@@ -1,0 +1,82 @@
+/* One-click OSS migrate console. */
+.pili-inst-zaprocket .zr-oss-mig {
+	max-width: 860px;
+}
+
+.pili-inst-zaprocket .zr-oss-mig__warn,
+.pili-inst-zaprocket .zr-oss-mig__cron {
+	margin: 0 0 10px;
+	padding: 10px 12px;
+	border-radius: 8px;
+	font-size: 13px;
+	line-height: 1.55;
+}
+
+.pili-inst-zaprocket .zr-oss-mig__warn {
+	background: #fff7ed;
+	border: 1px solid #fed7aa;
+	color: #9a3412;
+}
+
+.pili-inst-zaprocket .zr-oss-mig__cron {
+	background: #eff6ff;
+	border: 1px solid #bfdbfe;
+	color: #1e3a8a;
+}
+
+.pili-inst-zaprocket .zr-oss-mig__checks p {
+	margin: 4px 0;
+	font-size: 13px;
+}
+
+.pili-inst-zaprocket .zr-oss-mig__types {
+	margin: 12px 0;
+	padding: 10px 12px;
+	border: 1px solid #e5e7eb;
+	border-radius: 8px;
+}
+
+.pili-inst-zaprocket .zr-oss-mig__types label {
+	display: inline-block;
+	margin: 4px 12px 4px 0;
+	font-size: 13px;
+}
+
+.pili-inst-zaprocket .zr-oss-mig__ack {
+	display: block;
+	margin: 8px 0 12px;
+	font-size: 13px;
+}
+
+.pili-inst-zaprocket .zr-oss-mig__bar {
+	height: 10px;
+	background: #e5e7eb;
+	border-radius: 999px;
+	overflow: hidden;
+	margin: 12px 0 6px;
+}
+
+.pili-inst-zaprocket .zr-oss-mig__bar span {
+	display: block;
+	height: 100%;
+	width: 0;
+	background: #2563eb;
+}
+
+.pili-inst-zaprocket .zr-oss-mig__log {
+	max-height: 220px;
+	overflow: auto;
+	padding: 10px 12px;
+	background: #111827;
+	color: #e5e7eb;
+	font-size: 12px;
+	border-radius: 8px;
+}
+
+.pili-inst-zaprocket .zr-oss-mig__fail {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	font-size: 13px;
+	margin: 6px 0;
+}

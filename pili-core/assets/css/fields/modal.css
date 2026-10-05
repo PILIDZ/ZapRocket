@@ -1,0 +1,1601 @@
+/**
+ * XUN modal field — SaaS 弹窗
+ * 对齐 table / log_viewer：白卡片、灰边、圆角、主次按钮
+ */
+
+/* 字段外壳：弹窗不占流式布局空间 */
+.pili-field-modal {
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	min-height: 0 !important;
+}
+
+.pili-field-modal > .clear {
+	display: none !important;
+}
+
+.pili-modal {
+	position: fixed;
+	inset: 0;
+	z-index: 100000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	box-sizing: border-box;
+}
+
+.pili-modal[hidden],
+.pili-modal.is-closed {
+	display: none !important;
+}
+
+.pili-modal__mask {
+	position: absolute;
+	inset: 0;
+	background: rgba(15, 23, 42, 0.45);
+	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter: blur(2px);
+	opacity: 0;
+	transition: opacity 0.18s ease;
+}
+
+.pili-modal.is-open .pili-modal__mask {
+	opacity: 1;
+}
+
+.pili-modal__dialog {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-height: min(82vh, 680px);
+	background: #fff;
+	border: 1px solid #e5e7eb;
+	border-radius: 0.875rem;
+	box-shadow: 0 24px 64px rgba(15, 23, 42, 0.22);
+	overflow: hidden;
+	opacity: 0;
+	/* 不用 scale，避免 Windows 下中文字发糊 */
+	transform: translateY(8px);
+	transition: opacity 0.18s ease, transform 0.18s ease;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+.pili-modal.is-open .pili-modal__dialog {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.pili-modal--sm {
+	max-width: 420px;
+}
+
+.pili-modal--md {
+	max-width: 560px;
+}
+
+.pili-modal--lg {
+	max-width: 720px;
+}
+
+.pili-modal--xl {
+	max-width: 880px;
+}
+
+.pili-modal__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.75rem;
+	padding: 1rem 1.15rem;
+	border-bottom: 1px solid #f3f4f6;
+	background: #fff;
+	flex: 0 0 auto;
+}
+
+.pili-modal__title {
+	margin: 0;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.35;
+	color: #111827;
+}
+
+.pili-modal__close {
+	display: inline-flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	width: 2rem !important;
+	height: 2rem !important;
+	min-width: 2rem !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 1px solid transparent !important;
+	border-radius: 0.375rem !important;
+	background: transparent !important;
+	color: #6b7280 !important;
+	cursor: pointer !important;
+	box-shadow: none !important;
+	font-family: inherit !important;
+	line-height: 1 !important;
+}
+
+.pili-modal__close i {
+	font-size: 1.15rem;
+	line-height: 1;
+}
+
+.pili-modal__close:hover {
+	background: #f3f4f6 !important;
+	color: #111827 !important;
+}
+
+.pili-modal__body {
+	flex: 1 1 auto;
+	min-height: 0;
+	overflow: auto;
+	padding: 1.1rem 1.15rem;
+	color: #374151;
+	font-size: 13px;
+	line-height: 1.55;
+	-webkit-overflow-scrolling: touch;
+}
+
+.pili-modal__footer {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 0.5rem;
+	padding: 0.85rem 1.15rem;
+	border-top: 1px solid #f3f4f6;
+	background: #fafafa;
+	flex: 0 0 auto;
+}
+
+.pili-modal__footer:empty {
+	display: none;
+}
+
+.pili-modal__btn {
+	display: inline-flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	gap: 0.375rem !important;
+	min-height: 2.35rem !important;
+	margin: 0 !important;
+	padding: 0.5rem 0.9rem !important;
+	border-radius: 0.375rem !important;
+	font-size: 13px !important;
+	font-weight: 600 !important;
+	font-family: inherit !important;
+	line-height: 1.2 !important;
+	cursor: pointer !important;
+	text-decoration: none !important;
+	text-transform: none !important;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04) !important;
+	transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease !important;
+}
+
+.pili-modal__btn i {
+	font-size: 1rem;
+	line-height: 1;
+	pointer-events: none;
+}
+
+.pili-modal__btn--secondary {
+	border: 1px solid #d1d5db !important;
+	background: #fff !important;
+	color: #374151 !important;
+}
+
+.pili-modal__btn--secondary:hover {
+	background: #f9fafb !important;
+	border-color: #9ca3af !important;
+	color: #111827 !important;
+}
+
+.pili-modal__btn--primary {
+	border: 1px solid transparent !important;
+	background: #2563eb !important;
+	color: #fff !important;
+}
+
+.pili-modal__btn--primary:hover {
+	background: #1d4ed8 !important;
+}
+
+.pili-modal__btn--danger {
+	border: 1px solid #fecaca !important;
+	background: #fff !important;
+	color: #dc2626 !important;
+}
+
+.pili-modal__btn--danger:hover {
+	background: #fef2f2 !important;
+	border-color: #f87171 !important;
+}
+
+/* 导入引导：左右分栏 + 拖拽上传（两侧各自滚动，避免内容被裁切） */
+.pili-modal__body:has(.pili-modal-guide--split) {
+	padding: 0;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.pili-modal__body:has(.pili-modal-auth) {
+	padding: 0;
+	overflow: hidden;
+}
+
+.pili-modal-guide--split {
+	display: grid;
+	grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+	flex: 0 1 auto;
+	width: 100%;
+	/* 固定可视高度：左右各自滚动，避免把整窗撑满难操作 */
+	height: min(56vh, 440px);
+	min-height: 300px;
+	max-height: min(56vh, 440px);
+}
+
+.pili-modal-guide__pane {
+	padding: 1.15rem 1.2rem;
+	min-width: 0;
+	min-height: 0;
+}
+
+.pili-modal-guide__pane--info,
+.pili-modal-guide__pane--form,
+.pili-modal-guide__pane--upload {
+	overflow-x: hidden;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	overscroll-behavior: contain;
+}
+
+.pili-modal-guide__pane--info {
+	border-right: 1px solid #e5e7eb;
+	background: #fff;
+	color: #111827;
+	font-size: 14px;
+	line-height: 1.65;
+}
+
+.pili-modal-guide__pane--form {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	background: #fff;
+}
+
+.pili-modal-guide__pane--upload {
+	display: flex;
+	flex-direction: column;
+	gap: 0.65rem;
+	background: #f8fafc;
+}
+
+/* —— WP闪电快稿 · 知识库添加说明（左侧） —— */
+.pilipost-kb-guide {
+	display: flex;
+	flex-direction: column;
+	gap: 0.85rem;
+	background: #f8fafc !important;
+	color: #0f172a;
+}
+
+.pilipost-kb-guide__head {
+	margin: 0;
+	padding: 0 0 0.75rem;
+	border-bottom: 1px solid #e2e8f0;
+}
+
+.pilipost-kb-guide__eyebrow {
+	margin: 0 0 0.35rem;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: #2563eb;
+}
+
+.pilipost-kb-guide__lead {
+	margin: 0;
+	font-size: 13px;
+	line-height: 1.55;
+	color: #475569;
+}
+
+.pilipost-kb-guide__steps {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 0.55rem;
+}
+
+.pilipost-kb-guide__step {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.65rem;
+	margin: 0;
+	padding: 0.55rem 0.65rem;
+	border: 1px solid #e2e8f0;
+	border-radius: 0.5rem;
+	background: #fff;
+}
+
+.pilipost-kb-guide__step-num {
+	flex: 0 0 auto;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 1.35rem;
+	height: 1.35rem;
+	margin-top: 0.05rem;
+	border-radius: 999px;
+	background: #eff6ff;
+	color: #1d4ed8;
+	font-size: 11px;
+	font-weight: 700;
+	line-height: 1;
+}
+
+.pilipost-kb-guide__step-body {
+	min-width: 0;
+	flex: 1 1 auto;
+}
+
+.pilipost-kb-guide__step-title {
+	margin: 0 0 0.15rem;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 1.35;
+	color: #0f172a;
+}
+
+.pilipost-kb-guide__step-text {
+	margin: 0;
+	font-size: 12px;
+	line-height: 1.5;
+	color: #64748b;
+}
+
+.pilipost-kb-guide__sample {
+	margin: 0;
+	border: 1px solid #e2e8f0;
+	border-radius: 0.5rem;
+	background: #fff;
+	overflow: hidden;
+}
+
+.pilipost-kb-guide__sample-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.5rem;
+	padding: 0.4rem 0.65rem;
+	border-bottom: 1px solid #eef2f7;
+	background: #f1f5f9;
+}
+
+.pilipost-kb-guide__sample-label {
+	font-size: 12px;
+	font-weight: 700;
+	color: #334155;
+}
+
+.pilipost-kb-guide__sample-meta {
+	font-size: 11px;
+	font-weight: 600;
+	color: #94a3b8;
+	letter-spacing: 0.02em;
+}
+
+.pilipost-kb-guide__code {
+	margin: 0;
+	padding: 0.65rem 0.75rem;
+	border: 0;
+	border-radius: 0;
+	background: #fff;
+	color: #1e293b;
+	font-size: 12px;
+	line-height: 1.55;
+	overflow-x: auto;
+	white-space: pre;
+	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.pilipost-kb-guide__tools {
+	margin-top: auto;
+	padding: 0.7rem 0.75rem;
+	border: 1px dashed #cbd5e1;
+	border-radius: 0.5rem;
+	background: #fff;
+}
+
+.pilipost-kb-guide__tools-title {
+	margin: 0 0 0.2rem;
+	font-size: 13px;
+	font-weight: 700;
+	color: #0f172a;
+}
+
+.pilipost-kb-guide__tools-desc {
+	margin: 0 0 0.55rem;
+	font-size: 12px;
+	line-height: 1.5;
+	color: #64748b;
+}
+
+.pilipost-kb-guide__actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+}
+
+.pilipost-kb-guide__btn {
+	display: inline-flex !important;
+	align-items: center !important;
+	gap: 0.35rem !important;
+	min-height: 2rem !important;
+	margin: 0 !important;
+	padding: 0.3rem 0.7rem !important;
+	border: 1px solid #d1d5db !important;
+	border-radius: 0.375rem !important;
+	background: #fff !important;
+	color: #334155 !important;
+	font-size: 12px !important;
+	font-weight: 600 !important;
+	font-family: inherit !important;
+	line-height: 1.2 !important;
+	text-decoration: none !important;
+	cursor: pointer !important;
+	box-shadow: none !important;
+}
+
+.pilipost-kb-guide__btn:hover {
+	background: #f8fafc !important;
+	border-color: #94a3b8 !important;
+	color: #0f172a !important;
+}
+
+.pilipost-kb-guide__btn--primary {
+	border-color: #bfdbfe !important;
+	background: #eff6ff !important;
+	color: #1d4ed8 !important;
+}
+
+.pilipost-kb-guide__btn--primary:hover {
+	border-color: #93c5fd !important;
+	background: #dbeafe !important;
+	color: #1e40af !important;
+}
+
+.pilipost-kb-guide__btn i {
+	font-size: 14px !important;
+	line-height: 1 !important;
+}
+
+.pili-modal-guide__eyebrow {
+	margin: 0 0 0.4rem;
+	font-size: 13px;
+	font-weight: 700;
+	color: #2563eb;
+}
+
+.pili-modal-guide__lead {
+	margin: 0 0 1.1rem;
+	font-size: 14px;
+	line-height: 1.65;
+	color: #1f2937;
+}
+
+.pili-modal-guide__section {
+	margin: 0 0 0.9rem;
+}
+
+.pili-modal-guide__section-title {
+	margin: 0 0 0.4rem;
+	font-size: 14px;
+	font-weight: 700;
+	color: #111827;
+}
+
+.pili-modal-guide__hint {
+	margin: 0;
+	font-size: 14px;
+	line-height: 1.6;
+	color: #374151;
+}
+
+.pili-modal-guide__list {
+	margin: 0;
+	padding-left: 1.2rem;
+	font-size: 14px;
+	line-height: 1.65;
+	color: #1f2937;
+}
+
+.pili-modal-guide__list li + li {
+	margin-top: 0.3rem;
+}
+
+.pili-modal-guide__list code {
+	padding: 0.1rem 0.35rem;
+	border-radius: 0.25rem;
+	background: #eef2ff;
+	color: #1e3a8a;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.pili-modal-guide__code {
+	margin: 0 0 1rem;
+	padding: 0.8rem 0.9rem;
+	border: 1px solid #e5e7eb;
+	border-radius: 0.5rem;
+	background: #f8fafc;
+	color: #111827;
+	font-size: 13px;
+	line-height: 1.65;
+	overflow-x: auto;
+	white-space: pre;
+	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.pili-modal-guide__actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+.pili-modal-guide__tpl-btn {
+	display: inline-flex !important;
+	align-items: center !important;
+	gap: 0.4rem !important;
+	min-height: 2.35rem !important;
+	margin: 0 !important;
+	padding: 0.45rem 0.85rem !important;
+	border: 1px solid #d1d5db !important;
+	border-radius: 0.375rem !important;
+	background: #fff !important;
+	color: #111827 !important;
+	font-size: 13px !important;
+	font-weight: 600 !important;
+	font-family: inherit !important;
+	cursor: pointer !important;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04) !important;
+}
+
+.pili-modal-guide__tpl-btn:hover {
+	background: #f9fafb !important;
+	border-color: #9ca3af !important;
+	color: #111827 !important;
+}
+
+.pili-modal-guide__tpl-btn i {
+	font-size: 1rem;
+	line-height: 1;
+}
+
+.pili-modal-guide__upload-tip {
+	margin: 0;
+	font-size: 11px;
+	color: #9ca3af;
+	text-align: center;
+}
+
+.pili-modal-dropzone {
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0.35rem;
+	min-height: 220px;
+	padding: 1.25rem 1rem;
+	border: 1.5px dashed #cbd5e1;
+	border-radius: 0.75rem;
+	background: #fff;
+	color: #64748b;
+	text-align: center;
+	cursor: pointer;
+	transition: border-color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+	outline: none;
+	box-sizing: border-box;
+}
+
+.pili-modal-dropzone:hover,
+.pili-modal-dropzone:focus-visible {
+	border-color: #93c5fd;
+	background: #f8fbff;
+	box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.08);
+}
+
+.pili-modal-dropzone.is-dragover {
+	border-color: #3b82f6;
+	background: #eff6ff;
+	box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.14);
+	color: #1d4ed8;
+}
+
+.pili-modal-dropzone.is-ready {
+	border-style: solid;
+	border-color: #86efac;
+	background: #f0fdf4;
+	color: #166534;
+}
+
+.pili-modal-dropzone__icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 3rem;
+	height: 3rem;
+	margin-bottom: 0.25rem;
+	border-radius: 999px;
+	background: #eff6ff;
+	color: #2563eb;
+}
+
+.pili-modal-dropzone.is-dragover .pili-modal-dropzone__icon,
+.pili-modal-dropzone.is-ready .pili-modal-dropzone__icon {
+	background: #dbeafe;
+}
+
+.pili-modal-dropzone.is-ready .pili-modal-dropzone__icon {
+	background: #dcfce7;
+	color: #16a34a;
+}
+
+.pili-modal-dropzone__icon i {
+	font-size: 1.45rem;
+	line-height: 1;
+}
+
+.pili-modal-dropzone__title {
+	margin: 0;
+	font-size: 14px;
+	font-weight: 700;
+	color: #111827;
+}
+
+.pili-modal-dropzone.is-dragover .pili-modal-dropzone__title {
+	color: #1d4ed8;
+}
+
+.pili-modal-dropzone__desc {
+	margin: 0 0 0.35rem;
+	font-size: 12px;
+	color: #94a3b8;
+}
+
+.pili-modal-dropzone__file {
+	margin: 0 0 0.25rem;
+	max-width: 100%;
+	padding: 0.25rem 0.55rem;
+	border-radius: 999px;
+	background: #ecfdf5;
+	color: #166534;
+	font-size: 12px;
+	font-weight: 600;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.pili-modal-dropzone__file[hidden] {
+	display: none !important;
+}
+
+.pili-modal-dropzone__btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.3rem;
+	margin-top: 0.35rem;
+	padding: 0.4rem 0.8rem;
+	border: 1px solid #bfdbfe;
+	border-radius: 0.375rem;
+	background: #eff6ff;
+	color: #1d4ed8;
+	font-size: 12px;
+	font-weight: 700;
+	pointer-events: none;
+}
+
+.pili-modal-dropzone__btn i {
+	font-size: 0.95rem;
+	line-height: 1;
+}
+
+body.pili-modal-open {
+	overflow: hidden;
+}
+
+/* 任务队列 · 进度详情（表格 [查看] → PiliXunModal） */
+.pili-modal__body .pili-table-expand-body {
+	max-height: min(56vh, 26rem);
+	overflow: auto;
+	text-align: left;
+	white-space: normal;
+	word-break: break-word;
+	font-size: 13px;
+	line-height: 1.55;
+	color: #1f2937;
+}
+
+.pili-modal__body .pili-table-expand-body a {
+	color: #2563eb;
+	text-decoration: underline;
+}
+
+.pili-modal__body .pilipost-tq-progress-detail {
+	text-align: left;
+	white-space: normal;
+}
+
+.pili-modal__body .pilipost-tq-progress-detail__summary {
+	margin: 0 0 0.5rem;
+	font-size: 14px;
+	font-weight: 600;
+	color: #111827;
+}
+
+.pili-modal__body .pilipost-tq-progress-detail__list {
+	margin: 0;
+	padding: 0;
+}
+
+.pili-modal__body .pilipost-tq-progress-row {
+	display: flex;
+	gap: 0.5rem;
+	margin-bottom: 0.375rem;
+}
+
+.pili-modal__body .pilipost-tq-progress-row:last-child {
+	margin-bottom: 0;
+}
+
+.pili-modal__body .pilipost-tq-progress-row__label {
+	margin: 0;
+	flex: 0 0 auto;
+	min-width: 4.5rem;
+	color: #6b7280;
+	font-size: 14px;
+}
+
+.pili-modal__body .pilipost-tq-progress-row__value {
+	margin: 0;
+	flex: 1 1 auto;
+	color: #1f2937;
+	font-size: 14px;
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.pili-modal__body .pilipost-tq-progress-eta {
+	margin: 0 0 0.75rem;
+	padding: 0.5rem 0.75rem;
+	border: 1px solid #bae6fd;
+	border-radius: 0.375rem;
+	background: #f0f9ff;
+	color: #0c4a6e;
+	font-size: 14px;
+	word-break: break-word;
+}
+
+.pili-modal__body .pilipost-tq-progress-eta__title {
+	margin: 0 0 0.125rem;
+	font-weight: 600;
+}
+
+.pili-modal__body .pilipost-tq-progress-detail__meta {
+	margin: 0.75rem 0 0;
+	padding: 0.5rem 0 0;
+	list-style: none;
+	border-top: 1px solid #f3f4f6;
+	font-size: 12px;
+	color: #6b7280;
+}
+
+.pili-modal__body .pilipost-tq-progress-detail__meta li {
+	margin: 0 0 0.25rem;
+}
+
+/* 会员连接：内层自带标题与关闭，隐藏外层 header/footer */
+#pilipost-license-connect-modal.pili-modal--auth-frameless .pili-modal__header,
+#pilipost-license-connect-modal.pili-modal--auth-frameless .pili-modal__footer,
+#pilipost-license-login-modal.pili-modal--auth-frameless .pili-modal__header,
+#pilipost-license-login-modal.pili-modal--auth-frameless .pili-modal__footer {
+	display: none !important;
+}
+
+#pilipost-license-connect-modal.pili-modal--auth-frameless .pili-modal__body,
+#pilipost-license-login-modal.pili-modal--auth-frameless .pili-modal__body {
+	padding: 0;
+	overflow: hidden;
+}
+
+#pilipost-license-connect-modal.pili-modal--auth-frameless .pili-modal__dialog,
+#pilipost-license-login-modal.pili-modal--auth-frameless .pili-modal__dialog {
+	max-width: min(53.75rem, calc(100vw - 2rem));
+	max-height: min(92vh, 42rem);
+	border-radius: 1.25rem;
+}
+
+.pilipost-license-account {
+	padding: 0.15rem 0 0.25rem;
+}
+
+.pilipost-license-account__actions > a,
+.pilipost-license-account__actions > button {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+/* 抵消 WP 后台 a { color }，避免蓝底蓝字 */
+.pilipost-license-account__actions > a.bg-blue-600,
+.pilipost-license-account__actions > a.bg-blue-600:hover,
+.pilipost-license-account__actions > a.bg-blue-600:focus,
+.pilipost-license-account__actions > a.bg-blue-600:visited {
+	color: #fff !important;
+	text-decoration: none !important;
+}
+
+.pilipost-license-account__actions > a.bg-white,
+.pilipost-license-account__actions > a.bg-white:hover,
+.pilipost-license-account__actions > a.bg-white:focus,
+.pilipost-license-account__actions > a.bg-white:visited {
+	color: #374151 !important;
+	text-decoration: none !important;
+}
+
+.pilipost-license-account #pilipost-license-modal-account-msg.is-error {
+	color: #b91c1c;
+}
+
+.pilipost-license-account #pilipost-license-modal-account-msg.is-ok {
+	color: #047857;
+}
+
+.pilipost-license-account #pilipost-license-modal-account-msg.is-warn {
+	color: #b45309;
+}
+
+.pilipost-license-activate-flow {
+	box-sizing: border-box;
+}
+
+.pilipost-license-activate-flow__lead {
+	line-height: 1.5;
+}
+
+.pilipost-license-activate-flow__row {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.pilipost-license-activate-flow__step {
+	display: flex !important;
+	align-items: center;
+	gap: 0.75rem;
+	width: 100%;
+	margin: 0;
+	padding: 0.75rem 0.875rem;
+	border: 1px solid #e5e7eb !important;
+	border-radius: 0.75rem !important;
+	background: #fff !important;
+	box-shadow: none !important;
+	text-align: left;
+	text-decoration: none !important;
+	color: inherit !important;
+	cursor: pointer;
+	transition: border-color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+	box-sizing: border-box;
+}
+
+.pilipost-license-activate-flow__step + .pilipost-license-activate-flow__step {
+	margin-top: 0.5rem;
+}
+
+.pilipost-license-activate-flow__step:hover,
+.pilipost-license-activate-flow__step:focus {
+	border-color: #93c5fd !important;
+	background: #f8fbff !important;
+	color: inherit !important;
+	text-decoration: none !important;
+	outline: none;
+	box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+.pilipost-license-activate-flow__num {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	width: 1.75rem;
+	height: 1.75rem;
+	border-radius: 9999px;
+	background: #eff6ff;
+	color: #2563eb;
+	font-size: 0.8125rem;
+	font-weight: 700;
+	line-height: 1;
+}
+
+.pilipost-license-activate-flow__body {
+	display: flex;
+	flex-direction: column;
+	gap: 0.125rem;
+	min-width: 0;
+}
+
+.pilipost-license-activate-flow__title {
+	display: block;
+	font-size: 0.875rem;
+	font-weight: 600;
+	color: #111827;
+	line-height: 1.3;
+}
+
+.pilipost-license-activate-flow__desc {
+	display: block;
+	font-size: 0.75rem;
+	color: #6b7280;
+	line-height: 1.35;
+}
+
+.pilipost-license-activate-flow__icon {
+	flex-shrink: 0;
+	font-size: 1.125rem;
+	line-height: 1;
+	color: #9ca3af;
+}
+
+.pilipost-license-activate-flow__step:hover .pilipost-license-activate-flow__icon {
+	color: #2563eb;
+}
+
+.pilipost-license-account__link:hover {
+	text-decoration: underline !important;
+}
+
+#pilipost-license-activate.pilipost-license-activate--pulse {
+	outline: 2px solid #2563eb;
+	outline-offset: 4px;
+	border-radius: 0.75rem;
+	transition: outline-color 0.2s ease;
+}
+
+.pilipost-license-announcements-empty {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	padding: 1.75rem 1.25rem;
+	border-radius: 0.75rem;
+	background: #f8fafc;
+	text-align: center;
+}
+
+.pilipost-license-announcements-empty__icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 2.75rem;
+	height: 2.75rem;
+	margin: 0 0 0.75rem;
+	border-radius: 9999px;
+	background: #fff;
+	color: #94a3b8;
+	box-shadow: 0 0 0 1px #e2e8f0;
+}
+
+.pilipost-license-announcements-empty__icon i {
+	font-size: 1.25rem;
+	line-height: 1;
+}
+
+.pilipost-license-announcements-empty__title {
+	margin: 0 0 0.35rem;
+	font-size: 0.875rem;
+	font-weight: 600;
+	line-height: 1.35;
+	color: #334155;
+}
+
+.pilipost-license-announcements-empty__desc {
+	margin: 0;
+	max-width: 18rem;
+	font-size: 0.75rem;
+	line-height: 1.5;
+	color: #94a3b8;
+}
+
+.pili-modal-auth {
+	position: relative;
+	display: flex;
+	width: 100%;
+	min-height: 32rem;
+	max-height: min(88vh, 40rem);
+	overflow: hidden;
+}
+
+.pili-modal-auth__close {
+	position: absolute;
+	top: 0.875rem;
+	right: 0.875rem;
+	z-index: 4;
+	display: inline-flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	width: 2rem !important;
+	height: 2rem !important;
+	min-width: 2rem !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	border-radius: 0.625rem !important;
+	background: #f1f5f9 !important;
+	color: #64748b !important;
+	cursor: pointer !important;
+	box-shadow: none !important;
+}
+
+.pili-modal-auth__close:hover {
+	background: #e2e8f0 !important;
+	color: #0f172a !important;
+}
+
+.pili-modal-auth__close i {
+	font-size: 1.125rem;
+	line-height: 1;
+}
+
+.pili-modal-auth__visual {
+	display: none;
+	width: 46%;
+	flex-shrink: 0;
+	min-height: 32rem;
+	background-color: #1c1917;
+	background-image:
+		radial-gradient(ellipse 80% 70% at 20% 10%, rgba(37, 99, 235, 0.38), transparent 55%),
+		linear-gradient(160deg, #1c1917 0%, #292524 55%, #1c1917 100%);
+	background-size: cover;
+	background-position: center;
+}
+
+.pili-modal-auth__visual-mask {
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 2.125rem;
+	color: #fff;
+	background: linear-gradient(
+		180deg,
+		rgba(28, 25, 23, 0.05) 0%,
+		rgba(28, 25, 23, 0.72) 65%,
+		rgba(28, 25, 23, 0.88) 100%
+	);
+	box-sizing: border-box;
+}
+
+.pili-modal-auth__visual-logo {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 2.5rem;
+	height: 2.5rem;
+	margin-bottom: 0.875rem;
+	border: 1px solid rgba(255, 255, 255, 0.35);
+	border-radius: 0.75rem;
+	background: rgba(255, 255, 255, 0.2);
+	font-size: 1.25rem;
+	color: #fff;
+}
+
+.pili-modal-auth__visual-title {
+	margin: 0 0 0.5rem;
+	font-size: 1.5rem;
+	font-weight: 800;
+	line-height: 1.2;
+	color: #fff;
+}
+
+.pili-modal-auth__visual-tagline {
+	margin: 0 0 1.25rem;
+	font-size: 0.8125rem;
+	line-height: 1.7;
+	color: rgba(250, 250, 250, 0.95);
+}
+
+.pili-modal-auth__visual-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+.pili-modal-auth__visual-btn {
+	display: inline-flex !important;
+	align-items: center !important;
+	gap: 0.35rem !important;
+	min-height: 2.25rem !important;
+	margin: 0 !important;
+	padding: 0.4rem 0.85rem !important;
+	border: 1px solid rgba(255, 255, 255, 0.35) !important;
+	border-radius: 0.5rem !important;
+	background: rgba(255, 255, 255, 0.1) !important;
+	color: #fff !important;
+	font-size: 12px !important;
+	font-weight: 600 !important;
+	font-family: inherit !important;
+	line-height: 1.2 !important;
+	text-decoration: none !important;
+	cursor: pointer !important;
+	box-shadow: none !important;
+}
+
+.pili-modal-auth__visual-btn:hover {
+	background: rgba(255, 255, 255, 0.18) !important;
+	border-color: rgba(255, 255, 255, 0.5) !important;
+	color: #fff !important;
+}
+
+.pili-modal-auth__visual-btn--primary {
+	border-color: transparent !important;
+	background: #2563eb !important;
+}
+
+.pili-modal-auth__visual-btn--primary:hover {
+	background: #1d4ed8 !important;
+	border-color: transparent !important;
+}
+
+.pili-modal-auth__visual-btn i {
+	font-size: 0.95rem;
+	line-height: 1;
+}
+
+.pili-modal-auth__panel {
+	flex: 1 1 auto;
+	min-width: 0;
+	overflow: auto;
+	padding: 1.25rem 1.75rem 1.5rem;
+	background: #fff;
+	box-sizing: border-box;
+}
+
+.pili-modal-auth__mascot-head {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 6.75rem;
+	margin: 0 0 1.35rem;
+	overflow: hidden;
+	border-radius: 1rem;
+	background: linear-gradient(180deg, #dbeafe 0%, #eff6ff 55%, #f8fafc 100%);
+}
+
+.pili-modal-auth__mascot-head .pili-modal-auth__mascot-bot,
+.pili-modal-auth__mascot-head .pili-pilibot {
+	flex-shrink: 0;
+	width: 5.75rem;
+	height: 5.75rem;
+	filter: drop-shadow(0 8px 12px rgba(37, 99, 235, 0.18));
+}
+
+.pili-modal-auth__mascot-head .pili-pilibot__stage,
+.pili-modal-auth__mascot-head .pili-pilibot__canvas {
+	display: block;
+	width: 5.75rem !important;
+	height: 5.75rem !important;
+}
+
+.pili-modal-auth__mascot-head .pili-pilibot__meta {
+	display: none;
+}
+
+.pili-modal-auth__title {
+	margin: 0 0 0.25rem;
+	padding-right: 2rem;
+	font-size: 1.375rem;
+	font-weight: 800;
+	line-height: 1.25;
+	letter-spacing: -0.01em;
+	color: #0f172a;
+}
+
+.pili-modal-auth__subtitle {
+	margin: 0 0 1.15rem;
+	font-size: 0.8125rem;
+	line-height: 1.55;
+	color: #64748b;
+}
+
+.pili-modal-auth__fields {
+	display: flex;
+	flex-direction: column;
+	gap: 0.875rem;
+}
+
+.pili-modal-auth__field {
+	display: flex;
+	flex-direction: column;
+	gap: 0.375rem;
+}
+
+.pili-modal-auth__label-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.5rem;
+}
+
+.pili-modal-auth__label {
+	margin: 0;
+	font-size: 0.75rem;
+	font-weight: 600;
+	line-height: 1.3;
+	color: #64748b;
+}
+
+.pili-modal-auth__forgot {
+	font-size: 0.8125rem;
+	font-weight: 600;
+	color: #2563eb;
+	text-decoration: none;
+	line-height: 1.2;
+}
+
+.pili-modal-auth__forgot:hover {
+	text-decoration: underline;
+	color: #1d4ed8;
+}
+
+.pili-modal-auth__input {
+	display: block !important;
+	box-sizing: border-box !important;
+	width: 100% !important;
+	height: 2.625rem !important;
+	min-height: 2.625rem !important;
+	margin: 0 !important;
+	padding: 0 0.875rem !important;
+	border: 1px solid #e5e7eb !important;
+	border-radius: 0.625rem !important;
+	background: #fff !important;
+	color: #0f172a !important;
+	font-size: 0.875rem !important;
+	font-family: inherit !important;
+	line-height: 1.4 !important;
+	outline: none !important;
+	box-shadow: none !important;
+	transition: border-color 0.15s ease, box-shadow 0.15s ease !important;
+}
+
+.pili-modal-auth__input::placeholder {
+	color: #94a3b8 !important;
+	opacity: 1 !important;
+}
+
+.pili-modal-auth__input:focus {
+	border-color: #2563eb !important;
+	box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.14) !important;
+}
+
+.pili-modal-auth__input-row {
+	display: flex;
+	align-items: stretch;
+	width: 100%;
+	min-height: 2.625rem;
+	overflow: hidden;
+	border: 1px solid #e5e7eb;
+	border-radius: 0.625rem;
+	background: #fff;
+	box-sizing: border-box;
+	transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.pili-modal-auth__input-row:focus-within {
+	border-color: #2563eb;
+	box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.14);
+}
+
+.pili-modal-auth__leading-icon {
+	display: inline-flex;
+	flex: 0 0 2.5rem;
+	align-items: center;
+	justify-content: center;
+	width: 2.5rem;
+	color: #94a3b8;
+	font-size: 1.05rem;
+	line-height: 1;
+	pointer-events: none;
+}
+
+.pili-modal-auth__input-row .pili-modal-auth__input {
+	flex: 1 1 auto;
+	width: auto !important;
+	min-width: 0;
+	padding-left: 0 !important;
+	border: 0 !important;
+	border-radius: 0 !important;
+	box-shadow: none !important;
+	background: transparent !important;
+}
+
+.pili-modal-auth__input-row .pili-modal-auth__input:focus {
+	border: 0 !important;
+	box-shadow: none !important;
+}
+
+.pili-modal-auth__eye {
+	display: inline-flex !important;
+	flex: 0 0 2.625rem;
+	align-items: center !important;
+	justify-content: center !important;
+	width: 2.625rem !important;
+	height: 2.625rem !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	background: transparent !important;
+	color: #64748b !important;
+	cursor: pointer !important;
+	box-shadow: none !important;
+}
+
+.pili-modal-auth__eye:hover {
+	color: #0f172a !important;
+}
+
+.pili-modal-auth__eye i {
+	font-size: 1.125rem;
+	line-height: 1;
+}
+
+.pili-modal-auth__input-row--captcha .pili-modal-auth__captcha-btn {
+	display: inline-flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	flex: 0 0 auto;
+	height: 2.625rem !important;
+	margin: 0 !important;
+	padding: 0 0.25rem !important;
+	border: 0 !important;
+	background: transparent !important;
+	cursor: pointer !important;
+	box-shadow: none !important;
+}
+
+.pili-modal-auth__captcha-img {
+	display: block;
+	height: 2.25rem;
+	width: auto;
+	max-width: 7.5rem;
+	object-fit: contain;
+	border-radius: 0.25rem;
+	background: transparent;
+}
+
+.pili-modal-auth__captcha-btn.is-loading .pili-modal-auth__captcha-img,
+.pili-modal-auth__eye.is-loading i {
+	opacity: 0.45;
+}
+
+.pili-modal-auth__msg {
+	margin: 0.75rem 0 0;
+	padding: 0.55rem 0.75rem;
+	border: 1px solid #e5e7eb;
+	border-radius: 0.625rem;
+	font-size: 0.8125rem;
+	line-height: 1.45;
+	color: #64748b;
+	background: #f8fafc;
+}
+
+.pili-modal-auth__msg[hidden] {
+	display: none !important;
+}
+
+.pili-modal-auth__msg.is-warn {
+	color: #b45309;
+	background: #fffbeb;
+	border-color: #fde68a;
+}
+
+.pili-modal-auth__msg.is-error {
+	color: #b91c1c;
+	background: #fef2f2;
+	border-color: #fecaca;
+}
+
+.pili-modal-auth__msg.is-ok {
+	color: #15803d;
+	background: #f0fdf4;
+	border-color: #bbf7d0;
+}
+
+.pili-modal-auth__submit {
+	display: inline-flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	width: 100% !important;
+	min-height: 2.75rem !important;
+	margin: 1rem 0 0 !important;
+	padding: 0.65rem 1rem !important;
+	border: 1px solid transparent !important;
+	border-radius: 0.75rem !important;
+	background: #2563eb !important;
+	color: #fff !important;
+	font-size: 0.9375rem !important;
+	font-weight: 700 !important;
+	font-family: inherit !important;
+	line-height: 1.2 !important;
+	cursor: pointer !important;
+	box-shadow: none !important;
+	transition: background-color 0.15s ease !important;
+}
+
+.pili-modal-auth__submit:hover {
+	background: #1d4ed8 !important;
+}
+
+.pili-modal-auth__submit:disabled {
+	opacity: 0.65;
+	cursor: not-allowed !important;
+}
+
+.pili-modal-auth__oauth-steps {
+	display: flex;
+	flex-direction: column;
+	gap: 0.65rem;
+	margin: 1rem 0 0;
+}
+
+.pili-modal-auth__oauth-step {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.5rem;
+	margin: 0;
+	padding: 0.75rem 0.85rem;
+	border: 1px solid #e2e8f0;
+	border-radius: 0.75rem;
+	background: #f8fafc;
+	font-size: 0.8125rem;
+	line-height: 1.45;
+	color: #475569;
+}
+
+.pili-modal-auth__oauth-step i {
+	flex-shrink: 0;
+	margin-top: 0.1rem;
+	font-size: 1rem;
+	color: #2563eb;
+}
+
+.pili-modal-auth__footnote {
+	margin: 0.9rem 0 0;
+	font-size: 0.8125rem;
+	line-height: 1.45;
+	color: #94a3b8;
+	text-align: center;
+}
+
+.pili-modal-auth__footnote a {
+	color: #2563eb;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.pili-modal-auth__footnote a:hover {
+	text-decoration: underline;
+}
+
+.pili-modal-auth__tip {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 0.35rem;
+	margin: 0.55rem 0 0;
+	font-size: 0.75rem;
+	line-height: 1.5;
+	color: #94a3b8;
+	text-align: left;
+}
+
+.pili-modal-auth__tip i {
+	flex-shrink: 0;
+	margin-top: 0.1rem;
+	font-size: 0.875rem;
+	line-height: 1;
+	color: #94a3b8;
+}
+
+.pili-modal-guide__actions a.pili-modal-guide__tpl-btn {
+	text-decoration: none;
+}
+
+@media (min-width: 860px) {
+	.pili-modal-auth__visual {
+		display: block;
+	}
+}
+
+@media (max-width: 859px) {
+	.pili-modal-auth {
+		min-height: 0;
+		max-height: min(92vh, 40rem);
+	}
+
+	.pili-modal-auth__panel {
+		padding: 1.15rem 1.25rem 1.25rem;
+	}
+
+	.pili-modal-auth__title {
+		font-size: 1.25rem;
+	}
+
+	.pili-modal-auth__mascot-head {
+		height: 5.75rem;
+	}
+
+	.pili-modal-auth__mascot-head .pili-modal-auth__mascot-bot,
+	.pili-modal-auth__mascot-head .pili-pilibot,
+	.pili-modal-auth__mascot-head .pili-pilibot__stage,
+	.pili-modal-auth__mascot-head .pili-pilibot__canvas {
+		width: 4.75rem !important;
+		height: 4.75rem !important;
+	}
+}
+
+@media (max-width: 720px) {
+	.pili-modal-guide--split {
+		grid-template-columns: 1fr;
+		grid-template-rows: minmax(0, 0.4fr) minmax(0, 0.6fr);
+		height: min(64vh, 520px);
+		max-height: min(64vh, 520px);
+		min-height: 320px;
+	}
+
+	.pili-modal-guide__pane--info {
+		border-right: 0;
+		border-bottom: 1px solid #f3f4f6;
+		max-height: none;
+	}
+
+	.pili-modal-dropzone {
+		min-height: 180px;
+	}
+}
+
+@media (max-width: 640px) {
+	.pili-modal {
+		padding: 0.65rem;
+		align-items: flex-end;
+	}
+
+	.pili-modal__dialog {
+		max-height: 88vh;
+		border-radius: 0.875rem 0.875rem 0.5rem 0.5rem;
+	}
+
+	.pili-modal__footer {
+		justify-content: stretch;
+	}
+
+	.pili-modal__btn {
+		flex: 1 1 auto;
+	}
+}
